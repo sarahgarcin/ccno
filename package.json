@@ -12,6 +12,7 @@
   },
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
+    "barba.js": "^1.0.0",
     "bower": "^1.7.2",
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",

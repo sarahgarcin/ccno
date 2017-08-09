@@ -48,4 +48,13 @@
 <body
    data-login="<?php e($site->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
-   data-intended-template="<?php echo $page->intendedTemplate() ?>">
+   data-intended-template="<?php echo $page->intendedTemplate() ?>"
+    
+    <?php
+      //if(!$page->isHomePage()):
+        $section = getRubriqueFromUri($page->uri());
+      //?>
+        data-rubrique="<?= $section ?>"
+
+  >
+

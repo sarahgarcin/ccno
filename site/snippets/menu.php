@@ -2,7 +2,7 @@
 	<nav class="module--menu--mainNav">
 		<ul>
 	    <?php foreach($pages->visible() as $p): ?>
-	    	<li data-rubrique="<?= $p->slug() ?>" class="<?= r($p->isOpen(), ' is--active') ?>">
+	    	<li data-rubrique="<?= $p->slug() ?>" class="<?= r($p->isOpen(), 'is--active') ?>">
 	        	<?php echo $p->title()->html() ?>
 	      	<ul class="module--menu--submenu">
 	      		<?php foreach($p->children()->visible() as $child): ?>
