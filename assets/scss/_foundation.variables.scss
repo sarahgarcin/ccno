@@ -1,0 +1,33 @@
+// Variables to override foundation CSS
+$background-color: rgba(255,0,90,0.2);
+$row-width: 100%;
+// $total-columns: 18 ;
+
+// fonts
+$header-font-family: "directrice", serif;
+
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.2rem;
+$h3-font-size: 1rem;
+$h4-font-size: 1rem;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+
+// top bar
+$topbar-title-font-size: $h1-font-size;
+$topbar-height: 4rem;
+$topbar-bg-color: $background-color;
+$topbar-link-color: #000;
+$topbar-menu-link-color: #000;
+$topbar-menu-icon-color: #000;
+
+$topbar-dropdown-bg: $background-color;
+$topbar-link-font-family:$header-font-family; 
+$topbar-link-font-size: $h1-font-size;
+
+//hover 
+$topbar-link-color-hover: rgb(0,255,0);
+$topbar-link-bg-hover: $background-color;
+$topbar-link-bg-color-hover: $background-color;
+
+

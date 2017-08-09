@@ -1,0 +1,9 @@
+title: Accueil
+
+pages: article
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text

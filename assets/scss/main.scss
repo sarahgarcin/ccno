@@ -1,0 +1,86 @@
+// I M P O R T
+@import "_foundation.scss";
+@import "_font-awesome.scss";
+@import "_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+	font-size: 12px;
+	font-family: $font-family;
+	background: $background-color;
+	padding: 10px 20px; 
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $font-family;
+	color: #000;
+	line-height: 1;
+}
+
+p{line-height:1;}
+
+a{
+	font-family: $font-family;
+	line-height: 1.2;
+	color: #FFF;
+	&:hover{
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+ul{
+	margin:0;
+	li{
+		list-style:none;
+		line-height: 1.1;
+	}
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+figure{
+	margin:0;
+}
+
+.FigureImage-lazy {
+	padding:0 !important;
+}
+
+main{
+
+}
+
+.module--menu{
+	.module--menu--mainNav{
+		ul > li{
+			font-size: 4rem;
+			font-size: calc(4rem + 2vh);
+			cursor: pointer;
+			&:hover .module--menu--submenu{
+				display: block;
+			}
+			.module--menu--submenu{
+				display: none;
+				> li {
+					font-size: 1.5rem;
+					font-size: calc(1.5rem + 2vh);
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

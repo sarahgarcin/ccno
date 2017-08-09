@@ -1,0 +1,15 @@
+@import "../fonts/stylesheet.css";
+
+
+$font-family: "directrice", serif; 
+
+
+@mixin monochrome($couleur){
+	background: $couleur;
+  img{
+	  mix-blend-mode: screen;
+	  -webkit-filter: grayscale(100%) contrast(200%);
+	  filter: grayscale(100%) contrast(200%);
+	  opacity: 1;
+	}
+}

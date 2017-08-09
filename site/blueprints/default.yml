@@ -1,0 +1,17 @@
+title: Article
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  text:
+    label: Texte
+    type:  markdown
+  actus:
+    label: Afficher cette page comme une actu sur la page d'accueil ?
+    type: radio
+    default: non
+    options:
+      oui: oui
+      non: non
+
