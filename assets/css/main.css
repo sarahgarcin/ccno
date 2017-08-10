@@ -9012,12 +9012,6 @@ body {
   font-size: 12px;
   font-family: "directrice", serif;
   background: #fac8dc; }
-  body main {
-    opacity: 1;
-    transition: opacity 0.15s linear;
-    padding: 10px 20px; }
-  body.is--loading main {
-    opacity: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "directrice", serif;
@@ -9089,8 +9083,10 @@ figure {
         background-color: #fac8dc;
         border: none;
         font-family: "directrice", serif; }
+        .module--menu .module--menu--mainNav ul > li.active--rubrique:hover, .module--menu .module--menu--mainNav ul > li.is--active:hover {
+          font-family: "orleans", sans-serif; }
         .module--menu .module--menu--mainNav ul > li.active--rubrique .module--menu--submenu, .module--menu .module--menu--mainNav ul > li.is--active .module--menu--submenu {
-          display: none !important;
+          display: none;
           margin-left: 0; }
           .module--menu .module--menu--mainNav ul > li.active--rubrique .module--menu--submenu > li, .module--menu .module--menu--mainNav ul > li.is--active .module--menu--submenu > li {
             font-size: 2rem;
@@ -9116,8 +9112,14 @@ figure {
           .module--menu .module--menu--mainNav ul > li .module--menu--submenu > li a {
             color: #000; }
 
-#pjax-container {
-  padding-top: 150px; }
+main {
+  opacity: 1;
+  padding: 10px 20px;
+  height: 100vh;
+  display: block;
+  transition: all 1s; }
+  main#pjax-container {
+    padding-top: 150px; }
 
 body[data-rubrique="home"] .module--menu {
   height: auto;
@@ -9141,15 +9143,25 @@ body[data-rubrique="home"] .module--menu {
           color: #000; }
 
 body.is--loading .module--menu {
-  height: 100px; }
+  position: relative; }
   body.is--loading .module--menu .module--menu--mainNav ul > li {
     font-size: 1rem;
-    transition: all 0.4s;
-    background-color: #fac8dc;
-    border: none; }
+    transition: all 1s;
+    margin-bottom: 0px;
+    background-color: #FFF; }
+    body.is--loading .module--menu .module--menu--mainNav ul > li .module--menu--submenu > li {
+      background-color: #FFF; }
+
+body.is--loading main {
+  opacity: 0;
+  height: 0px;
+  display: none;
+  transition: all 1s; }
+  body.is--loading main#pjax-container {
+    padding-top: 0; }
 
 .icone-wrapper {
-  position: absolute;
+  position: fixed;
   width: 100px;
   z-index: 2; }
 

@@ -13,18 +13,6 @@ body {
 	font-family: $font-family;
 	background: $background-color;
 	//padding: 10px 20px; 
-
-	main {
-    opacity: 1;
-    transition: opacity 0.15s linear;
-    padding: 10px 20px; 
-  }
-
-  &.is--loading {
-    main {
-      opacity: 0;
-    }
-  }
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -71,7 +59,7 @@ figure{
 	padding:0 !important;
 }
 
-
+// CSS MENU 
 .module--menu{
 	align-items: flex-start;
   position: fixed;
@@ -101,6 +89,7 @@ figure{
 			&:hover, &.sub-open{
 				font-family: $orleans-font;
 			}
+			// css menu quand la page est ouverte
 			&.active--rubrique, &.is--active{
 				font-size: 4rem;
 				font-size: calc(3.8rem + 2vh);
@@ -108,8 +97,11 @@ figure{
 				background-color: $background-color;
 				border: none;
 				font-family: $font-family;
+				&:hover{
+					font-family: $orleans-font;
+				}
 				.module--menu--submenu{
-					display: none !important;
+					display: none;
 					margin-left:0;
 					> li {
 						font-size: 2rem;
@@ -146,10 +138,20 @@ figure{
 	}
 }
 
-#pjax-container{
-	padding-top:150px;
+// CSS MAIN 
+
+main {
+  opacity: 1;
+  padding: 10px 20px; 
+  height:100vh;
+  display: block;
+  transition: all 1s;
+  &#pjax-container{
+		padding-top:150px;
+	}
 }
 
+// CSS RELATIVE SEULEMENT À LA HOME
 body[data-rubrique="home"]{
 	.module--menu{
 		height: auto;
@@ -184,20 +186,39 @@ body[data-rubrique="home"]{
 
 body.is--loading{
 	.module--menu{
-		height: 100px;
+		//height: auto;
+		position: relative;
 		.module--menu--mainNav{
 			ul > li{
 				font-size: 1rem;
-	  		transition: all 0.4s;
-	  		background-color: $background-color;
-				border: none;
+	  		transition: all 1s;
+	  		margin-bottom: 0px;
+	  		background-color: #FFF;
+	  		//background-color: $background-color;
+				//border: none;
+				.module--menu--submenu{
+					> li{
+						background-color: #FFF;
+					}
+				}
 	  	}
 	  }
 	}
+  main {
+    opacity: 0;
+		height:0px;
+		display: none;
+		transition: all 1s;
+		// transition: all 10s linear, display 0.15s linear;
+		&#pjax-container{
+			padding-top:0;
+		}
+
+  }
 }
 
 .icone-wrapper{
-	position: absolute; 
+	position: fixed; 
 	width: 100px;
 	z-index: 2;
 }

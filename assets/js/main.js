@@ -14,12 +14,12 @@ function init(){
 
   $.pjax.defaults.timeout = 2000;
 
-	$('.module--menu--mainNav ul > li').on('click', function(){
+	$('.module--menu--mainNav > ul > li').on('click', function(){
 		if($(this).hasClass('sub-open')){
 			$(this).find('.module--menu--submenu').slideUp(600);
 			$(this).removeClass('sub-open');
 		}
-		else{
+		else {
 			$('.module--menu--mainNav ul > li').find('.module--menu--submenu').slideUp(600);
 			$('.module--menu--mainNav ul > li').removeClass('sub-open');
 			$(this).find('.module--menu--submenu').slideDown(600);
@@ -42,14 +42,16 @@ function init(){
 
 	$(document).on('pjax:success', function (e) {
     	$('body').removeClass('is--loading');
+
     	console.log('finish loading');
 	});
   $(document).on('pjax:end', function(event, content) {
   	console.log('end loading', content);
     // closeMenu();
     var r = $(event.target).find('meta').data('rubrique');
+    //$('li[data-rubrique='+r+']').find('.module--menu--submenu').hide();
     $('li').removeClass('is--active').removeClass('active--rubrique');
-    $('.module--menu--submenu').slideUp(600);
+    $('.module--menu--submenu').slideUp(100);
     $('body').attr('data-rubrique', r);
     $('li[data-rubrique='+r+']').addClass('active--rubrique');
     
@@ -65,7 +67,6 @@ function init(){
     	console.log("last", $(el));
 		  $(el).appendTo('#menu-bottom-list');
 		});
-    console.log("move element", position, last, firstElement, lastElement);
   });
 
 
@@ -85,7 +86,7 @@ function loadInPjax(url) {
     	    'fragment': '#pjax-container',
     	    'container': '#pjax-container',
     	  });
-    }, 150);
+    }, 1000);
 	}
 }
 
