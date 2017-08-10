@@ -1,8 +1,7 @@
 <?php snippet('header') ?>
-
 <?php snippet('icones') ?>
-
 <?php snippet('menu') ?>
+
 <main id="pjax-container">
   <meta data-rubrique="<?php
     echo $section = getRubriqueFromUri($page->uri());
@@ -12,6 +11,7 @@
 			<?php echo $page->text()->kirbytext() ?>
 	</div>
 </main>
+
 <?php snippet('menu2') ?>
 
 <?php snippet('footer') ?>

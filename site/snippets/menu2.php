@@ -1,12 +1,12 @@
 <header class="module--menu menu-bottom">
 	<nav class="module--menu--mainNav">
-		<ul>
+		<ul id="menu-bottom-list">
 			<?php $position = $page->parent()->num();
 						$count = $pages->visible()->count();
 						$last = $count - $position;
 			?>
 	    <?php foreach($pages->visible()->flip()->limit($last)->flip() as $p): ?>
-	    	<li data-rubrique="<?= $p->slug() ?>" class="<?= r($p->isOpen(), 'is--active') ?>">
+	    	<li data-rubrique="<?= $p->slug() ?>" class="<?= r($p->isOpen(), 'is--active') ?>" data-position="<?php echo $p->num() ?>">
 	        	<?php echo $p->title()->html() ?>
 	      	<ul class="module--menu--submenu">
 	      		<?php foreach($p->children()->visible() as $child): ?>

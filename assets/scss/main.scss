@@ -98,7 +98,7 @@ figure{
 			padding: 3px 20px 3px 20px;
 			border-bottom: 1px solid #000;
 			text-align: center;
-			&:hover{
+			&:hover, &.sub-open{
 				font-family: $orleans-font;
 			}
 			&.active--rubrique, &.is--active{
@@ -107,8 +107,9 @@ figure{
 				margin-bottom: 3.5vh;
 				background-color: $background-color;
 				border: none;
+				font-family: $font-family;
 				.module--menu--submenu{
-					display: none;
+					display: none !important;
 					margin-left:0;
 					> li {
 						font-size: 2rem;
@@ -151,7 +152,8 @@ figure{
 
 body[data-rubrique="home"]{
 	.module--menu{
-		height: 100vh;
+		height: auto;
+		position: absolute;
 		.module--menu--mainNav{
 			ul > li{
 				font-size: 4rem;

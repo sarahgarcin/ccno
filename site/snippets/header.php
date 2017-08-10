@@ -55,6 +55,6 @@
         $section = getRubriqueFromUri($page->uri());
       //?>
         data-rubrique="<?= $section ?>"
-
+        data-count = "<?= $pages->visible()->count()?>"
   >
 

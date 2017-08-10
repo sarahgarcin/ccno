@@ -9080,16 +9080,17 @@ figure {
       padding: 3px 20px 3px 20px;
       border-bottom: 1px solid #000;
       text-align: center; }
-      .module--menu .module--menu--mainNav ul > li:hover {
+      .module--menu .module--menu--mainNav ul > li:hover, .module--menu .module--menu--mainNav ul > li.sub-open {
         font-family: "orleans", sans-serif; }
       .module--menu .module--menu--mainNav ul > li.active--rubrique, .module--menu .module--menu--mainNav ul > li.is--active {
         font-size: 4rem;
         font-size: calc(3.8rem + 2vh);
         margin-bottom: 3.5vh;
         background-color: #fac8dc;
-        border: none; }
+        border: none;
+        font-family: "directrice", serif; }
         .module--menu .module--menu--mainNav ul > li.active--rubrique .module--menu--submenu, .module--menu .module--menu--mainNav ul > li.is--active .module--menu--submenu {
-          display: none;
+          display: none !important;
           margin-left: 0; }
           .module--menu .module--menu--mainNav ul > li.active--rubrique .module--menu--submenu > li, .module--menu .module--menu--mainNav ul > li.is--active .module--menu--submenu > li {
             font-size: 2rem;
@@ -9119,7 +9120,8 @@ figure {
   padding-top: 150px; }
 
 body[data-rubrique="home"] .module--menu {
-  height: 100vh; }
+  height: auto;
+  position: absolute; }
   body[data-rubrique="home"] .module--menu .module--menu--mainNav ul > li {
     font-size: 4rem;
     font-size: calc(3.8rem + 2vh);
