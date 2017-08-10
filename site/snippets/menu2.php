@@ -1,10 +1,11 @@
-<header class="module--menu menu-top">
+<header class="module--menu menu-bottom">
 	<nav class="module--menu--mainNav">
 		<ul>
 			<?php $position = $page->parent()->num();
 						$count = $pages->visible()->count();
+						$last = $count - $position;
 			?>
-	    <?php foreach($pages->visible()->limit($position) as $p): ?>
+	    <?php foreach($pages->visible()->flip()->limit($last)->flip() as $p): ?>
 	    	<li data-rubrique="<?= $p->slug() ?>" class="<?= r($p->isOpen(), 'is--active') ?>">
 	        	<?php echo $p->title()->html() ?>
 	      	<ul class="module--menu--submenu">

@@ -4,8 +4,17 @@
 
 @font-face {
     font-family: 'directrice';
-    src: url('directrice20170712-2-webfont.woff2') format('woff2'),
-         url('directrice20170712-2-webfont.woff') format('woff');
+    src: url('directrice20170809-2-webfont.woff2') format('woff2'),
+         url('directrice20170809-2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'orleans';
+    src: url('orleans_20170728-webfont.woff2') format('woff2'),
+         url('orleans_20170728-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

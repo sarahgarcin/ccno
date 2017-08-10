@@ -32,28 +32,28 @@ function init(){
 	};
 	$(".icone-wrapper").amac(elementsHome, 100);
 
-	$('.module--menu--submenu a').on('click', function() {
-		// var r = $t.data('rubrique');
-	 //  $('body').attr('data-rubrique', r);
-	 event.preventDefault();
-	 //  closeMenu();
-	  var url = $(this).attr('href');
-	  loadInPjax(url);
-	});
+	// $('.module--menu--submenu a').on('click', function() {
+	// 	// var r = $t.data('rubrique');
+	//  //  $('body').attr('data-rubrique', r);
+	//  event.preventDefault();
+	//  //  closeMenu();
+	//   var url = $(this).attr('href');
+	//   loadInPjax(url);
+	// });
 
-	$(document).on('pjax:success', function (e) {
-    	$('body').removeClass('is--loading');
-    	console.log('finish loading');
-	});
-  $(document).on('pjax:end', function(event, content) {
-  	console.log('end loading', content);
-    // closeMenu();
-    var r = $(event.target).find('meta').data('rubrique');
-    $('li').removeClass('is--active').removeClass('active--rubrique');
-    $('body').attr('data-rubrique', r);
-    $('li[data-rubrique='+r+']')
-    	.addClass('active--rubrique');
-  });
+	// $(document).on('pjax:success', function (e) {
+ //    	$('body').removeClass('is--loading');
+ //    	console.log('finish loading');
+	// });
+ //  $(document).on('pjax:end', function(event, content) {
+ //  	console.log('end loading', content);
+ //    // closeMenu();
+ //    var r = $(event.target).find('meta').data('rubrique');
+ //    $('li').removeClass('is--active').removeClass('active--rubrique');
+ //    $('body').attr('data-rubrique', r);
+ //    $('li[data-rubrique='+r+']')
+ //    	.addClass('active--rubrique');
+ //  });
 
 
 }

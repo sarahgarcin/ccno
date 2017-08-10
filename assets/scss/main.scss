@@ -30,10 +30,14 @@ body {
 h1,h2,h3,h4,h5,h6{
 	font-family: $font-family;
 	color: #000;
-	line-height: 1;
+	line-height: 1.2;
 }
 
-p{line-height:1;}
+p{
+	line-height:1.2;
+	font-size: 1.3rem;
+
+}
 
 a{
 	font-family: $font-family;
@@ -70,12 +74,19 @@ figure{
 
 .module--menu{
 	align-items: flex-start;
-  position: absolute;
+  position: fixed;
   width: 100%;
   flex-flow: row nowrap;
   z-index: 1;
   display: flex;
   background-color: $background-color;
+  &.menu-top{
+  	top: 0;
+  }
+  &.menu-bottom{
+  	bottom: 0;
+  	border-top: 1px solid #000;
+  }
 	.module--menu--mainNav{
 		width: 100%;
 		ul > li{
@@ -84,8 +95,12 @@ figure{
 			font-size: 1rem;
 			margin-bottom: 0;
 			background-color: #FFF;
-			padding: 5px 20px 5px 20px;
+			padding: 3px 20px 3px 20px;
 			border-bottom: 1px solid #000;
+			text-align: center;
+			&:hover{
+				font-family: $orleans-font;
+			}
 			&.active--rubrique, &.is--active{
 				font-size: 4rem;
 				font-size: calc(3.8rem + 2vh);

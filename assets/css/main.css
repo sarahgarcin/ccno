@@ -9022,10 +9022,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "directrice", serif;
   color: #000;
-  line-height: 1; }
+  line-height: 1.2; }
 
 p {
-  line-height: 1; }
+  line-height: 1.2;
+  font-size: 1.3rem; }
 
 a {
   font-family: "directrice", serif;
@@ -9055,7 +9056,7 @@ figure {
 .module--menu {
   -ms-flex-align: start;
   align-items: flex-start;
-  position: absolute;
+  position: fixed;
   width: 100%;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -9063,6 +9064,11 @@ figure {
   display: -ms-flexbox;
   display: flex;
   background-color: #fac8dc; }
+  .module--menu.menu-top {
+    top: 0; }
+  .module--menu.menu-bottom {
+    bottom: 0;
+    border-top: 1px solid #000; }
   .module--menu .module--menu--mainNav {
     width: 100%; }
     .module--menu .module--menu--mainNav ul > li {
@@ -9071,8 +9077,11 @@ figure {
       font-size: 1rem;
       margin-bottom: 0;
       background-color: #FFF;
-      padding: 5px 20px 5px 20px;
-      border-bottom: 1px solid #000; }
+      padding: 3px 20px 3px 20px;
+      border-bottom: 1px solid #000;
+      text-align: center; }
+      .module--menu .module--menu--mainNav ul > li:hover {
+        font-family: "orleans", sans-serif; }
       .module--menu .module--menu--mainNav ul > li.active--rubrique, .module--menu .module--menu--mainNav ul > li.is--active {
         font-size: 4rem;
         font-size: calc(3.8rem + 2vh);
