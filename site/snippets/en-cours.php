@@ -1,5 +1,5 @@
 <div class="site-en-construction">
-		<p>site en cours de construction 
-		<!-- — pour accéder à l’ancien site cliquer <a href="http://www.ccn-orleans.com/archives" title="Ancien site">ici</a> -->
+		<p><a href="http://dev.ccn-orleans.com" title="Ancien site">site en cours de construction 
+		— pour accéder à l’ancien site cliquez ici</a>
 		</p>
 </div>	

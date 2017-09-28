@@ -17,7 +17,20 @@ fields:
     type:  text
 
 
-
+  # pdf:
+  #   label: Pdfs à télécharger
+  #   type: structure
+  #   entry: >
+  #     {{title}}<br />
+  #     {{link}}
+  #   fields: 
+  #     title:
+  #       label: Nom à afficher
+  #       type: text
+  #     link: 
+  #       label: Choisir le Pdf
+  #       type: select
+  #       options: documents
   author:
     label: Author
     type:  text
@@ -29,6 +42,21 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
+  pdf:
+    label: Pdfs à télécharger
+    type: structure
+    entry: >
+      {{title}}<br />
+      {{link}}
+    fields: 
+      title:
+        label: Nom à afficher
+        type: text
+      link: 
+        label: Choisir le Pdf
+        type: select
+        options: documents
 
   address: 
     label : Coordonnées

@@ -4,6 +4,7 @@
 <div class ="row">
 
 	<?php snippet('left-col') ?>
+
 	<?php $actu = $pages->find('actualites')->children()->first() ?>
 	<main class="small-18 medium-13 columns" data-color="<?php echo $actu->color()?>">
 		<div class="image-icono">

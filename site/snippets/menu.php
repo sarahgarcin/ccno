@@ -4,7 +4,7 @@
 		<ul id="menu-top-list">
 	    <?php foreach($pages->visible() as $p): ?>
 	    	<?php if($p->hasChildren()):?>
-		    	<li class="<?= r($p->isOpen(), 'active') ?> small-3 columns" data-position="<?php echo $p->num() ?>">
+		    	<li class="<?= r($p->isOpen(), 'active') ?>" data-position="<?php echo $p->num() ?>">
 		        	<?php echo $p->title()->html() ?>
 		      	<ul class="module--menu--submenu">
 		      		<?php foreach($p->children()->visible() as $child): ?>
@@ -17,7 +17,7 @@
 		      	</ul>
 		      </li>
 		    <?php else: ?>
-		    	<li class="<?= r($p->isOpen(), 'active') ?> small-3 columns" data-position="<?php echo $p->num() ?>">
+		    	<li class="<?= r($p->isOpen(), 'active') ?>" data-position="<?php echo $p->num() ?>">
 		       	<a href="<?php echo $p->url()?>" title="<?php echo $p->title()?>">
 		       		<?php echo $p->title()->html() ?>
 		       	</a>
