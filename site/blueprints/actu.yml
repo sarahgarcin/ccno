@@ -1,0 +1,18 @@
+title: Actualité
+
+pages: false
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  infos: 
+    label: Infos - dates etc.
+    type: text
+  color: 
+    label: Couleur de fond
+    type:  text
+  text: 
+    label: Texte
+    type: markdown

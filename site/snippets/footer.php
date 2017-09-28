@@ -1,4 +1,6 @@
-
+	<div class="address show-for-small-only">
+		<?php echo $site->address()->kirbytext() ?>
+	</div>
 
   <!-- scripts -->
   <?php if ( c::get('environment') == 'local' ) : ?>

@@ -1,0 +1,9 @@
+title: Éléments de menu
+
+pages: true
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text

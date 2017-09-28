@@ -20,11 +20,8 @@ write your local dev url in the localDevUrl variable.
 
 var pluginsScripts = [
   'bower_components/jquery/dist/jquery.js',
-  'bower_components/jquery-pjax/jquery.pjax.js',
   'bower_components/foundation/js/foundation.js',
-  'bower_components/foundation/js/foundation/foundation.topbar.js',
   'bower_components/lazysizes/lazysizes.min.js',
-  'node_modules/barba.js/dist/barba.min.js'
 ];
 var userScripts = [
   'assets/js/main.js'

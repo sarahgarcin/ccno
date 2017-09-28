@@ -8,6 +8,16 @@ fields:
     label: Title
     type:  text
 
+  logo:
+    label: Logo
+    type:  text
+
+  shortcut:
+    label: Petit Logo
+    type:  text
+
+
+
   author:
     label: Author
     type:  text
@@ -19,3 +29,8 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
+  address: 
+    label : Coordonnées
+    type: markdown
+

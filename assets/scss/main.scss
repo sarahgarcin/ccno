@@ -2,6 +2,7 @@
 @import "_foundation.scss";
 @import "_font-awesome.scss";
 @import "_variables.scss";
+// 250, 75, 200
 
 * {
   box-sizing: border-box;
@@ -12,8 +13,7 @@ body {
 	font-size: 12px;
 	font-family: $font-family;
 	background: $background-color;
-	//padding: 10px 20px; 
-}
+} 
 
 h1,h2,h3,h4,h5,h6{
 	font-family: $font-family;
@@ -22,15 +22,16 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-	line-height:1.2;
+	line-height:1;
 	font-size: 1.3rem;
-
+	color: #000;
+	//letter-spacing: 0.04em;
 }
 
 a{
 	font-family: $font-family;
-	line-height: 1.2;
-	color: #FFF;
+	line-height: 1;
+	color: #000;
 	&:hover{
 		color: #000;
 		text-decoration: none;
@@ -42,6 +43,7 @@ ul{
 	li{
 		list-style:none;
 		line-height: 1;
+		color: #000;
 	}
 }
 
@@ -52,181 +54,346 @@ img {
 }
 
 figure{
-	margin:0;
+	margin:30px 0;
+	width: 60%;
+	filter: blur(5px);
+	transition: filter 0.5s; 
+	&:hover{
+		filter: blur(0);
+	}
 }
 
 .FigureImage-lazy {
 	padding:0 !important;
 }
 
-// CSS MENU 
-.module--menu{
-	align-items: flex-start;
-  position: fixed;
-  width: 100%;
-  flex-flow: row nowrap;
-  z-index: 1;
-  display: flex;
-  background-color: $background-color;
-  &.menu-top{
-  	top: 0;
-  }
-  &.menu-bottom{
-  	bottom: 0;
-  	border-top: 1px solid #000;
-  }
-	.module--menu--mainNav{
-		width: 100%;
-		ul > li{
-			cursor: pointer;
-			position:relative;
-			font-size: 1rem;
-			margin-bottom: 0;
-			background-color: #FFF;
-			padding: 3px 20px 3px 20px;
-			border-bottom: 1px solid #000;
-			text-align: center;
-			&:hover, &.sub-open{
-				font-family: $orleans-font;
-			}
-			// css menu quand la page est ouverte
-			&.active--rubrique, &.is--active{
-				font-size: 4rem;
-				font-size: calc(3.8rem + 2vh);
-				margin-bottom: 3.5vh;
-				background-color: $background-color;
-				border: none;
-				font-family: $font-family;
-				&:hover{
-					font-family: $orleans-font;
-				}
-				.module--menu--submenu{
-					display: none;
-					margin-left:0;
-					> li {
-						font-size: 2rem;
-						margin-bottom: 0;
-						border: none;
-						padding-top: 2px;
-						padding-bottom: 2px;
-						padding-left: 0;
-						background-color: $background-color;
-						a{
-							color: #FFF;
-							&:hover{
-								color: #000;
-							}
-						}
-					}
-				}
-			}
-			.module--menu--submenu{
-				display: none;
-				margin-left:0;
-				> li {
-					font-size: 1rem;
-					margin-bottom: 0;
-					border: none;
-					padding-top: 2px;
-					padding-bottom: 2px;
-					a{
-						color: #000;
-					}
+header{
+	background: #FFF;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+	top: 28px;
+	padding: 0.5rem 0.9375rem 0.9375rem 0.9375rem;
+	display:none;
+	filter: blur(5px);
+	transition: filter 0.5s; 	
+	&.active{
+		filter: blur(0);
+	}
+	h1{
+		font-size: rem-calc(30);
+		cursor: pointer;
+		&:hover{
+			filter: blur(2px);
+			color: #000;
+		}
+	}
+	nav > ul {
+		margin: 0;
+		> li {
+			font-size: rem-calc(20); 
+			text-transform: uppercase;
+			line-height: 1.2;
+			> ul {
+				margin: 0;
+				>li{
+					text-transform: none;
+					font-size: rem-calc(20); 
+					line-height: 1.2;
 				}
 			}
 		}
 	}
 }
 
-// CSS MAIN 
-
-main {
-  opacity: 1;
-  padding: 10px 20px; 
-  height:100vh;
-  display: block;
-  transition: all 1s;
-  &#pjax-container{
-		padding-top:150px;
-	}
+.picto-wrapper{
+	width: 12%;
+	min-width: 100px;
+	max-width: 150px;
+	position: absolute;
+	z-index:-1;
 }
 
-// CSS RELATIVE SEULEMENT À LA HOME
-body[data-rubrique="home"]{
-	.module--menu{
-		height: auto;
-		position: absolute;
-		.module--menu--mainNav{
-			ul > li{
-				font-size: 4rem;
-				font-size: calc(3.8rem + 2vh);
-				margin-bottom: 3.5vh;
-				background-color: $background-color;
-				border: none;
-				.module--menu--submenu{
-					> li {
-						font-size: 2rem;
-						margin-bottom: 0;
-						border: none;
-						padding-top: 2px;
-						padding-bottom: 2px;
-						padding-left: 0;
-						a{
-							color: #FFF;
-							&:hover{
-								color: #000;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-body.is--loading{
-	.module--menu{
-		//height: auto;
-		position: relative;
-		.module--menu--mainNav{
-			ul > li{
-				font-size: 1rem;
-	  		transition: all 1s;
-	  		margin-bottom: 0px;
-	  		background-color: #FFF;
-	  		//background-color: $background-color;
-				//border: none;
-				.module--menu--submenu{
-					> li{
-						background-color: #FFF;
-					}
-				}
-	  	}
-	  }
-	}
-  main {
-    opacity: 0;
-		height:0px;
-		display: none;
-		transition: all 1s;
-		// transition: all 10s linear, display 0.15s linear;
-		&#pjax-container{
-			padding-top:0;
-		}
-
-  }
-}
-
-.icone-wrapper{
+.left-col{
+	height:95vh;
 	position: fixed; 
-	width: 100px;
-	z-index: 2;
+	top: 30px;
+	h1, a{
+		font-size: 3rem;
+		line-height: 2.4rem;
+	}
+	.menu-btn{
+		font-size: rem-calc(30);
+		color: $rose;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover{
+			filter: blur(2px);
+			color: #000;
+		}
+	}
+	.carre-rose{
+		width: 150px;
+		height:150px;
+		background:  $rose;
+		margin-top: 1.5rem;
+	}
 }
+
+.address{
+	p, a, ul{
+		font-size: 1rem;
+	}
+	a:hover{
+		color:  rgb(250, 75, 200);
+	}
+	bottom: 0;
+	position:absolute;
+}
+
+.site-en-construction{
+	// background:rgb(250, 75, 200);
+	background:#DFDFDF;
+	padding: 5px 0px 8px 0px;
+	text-align: center;
+	position:fixed;
+	width: 100%;
+	z-index:20;
+	p, a{
+		margin: 0;
+		color: #6D6D6D;
+		font-size: 1rem;
+		a:hover{
+			color: #000;
+		}
+	}
+}
+
+main{
+	//margin-top: 10px;
+	padding-top: 30px;
+}
+
+.picto-deco{
+	position:fixed;
+	z-index: -1;
+}
+
+
+body[data-rubrique="home"]{
+	main{
+		padding-right: 4rem;
+		.image-icono{
+			position:absolute;
+			z-index:-1;
+			width: 50vw;
+			top: 2rem;
+			opacity: 0.8;
+			.icone-wrapper{
+				width: 28%;
+				min-width: 150px;
+				position: absolute;
+			}
+		}
+
+	}
+	.actu{
+		p, a{
+			font-size: 8.2vw;
+			line-height:0.8;
+
+		}
+		.actu-title {
+			margin-bottom: 14vh;
+		}
+
+		.actu-date{
+			text-align: right;
+		}
+		p.link{
+			text-align: right;
+			a{
+				color: rgb(250, 75, 200);
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.note{
+	position: absolute;
+	right: -150px;
+		color: $rose;
+		font-size: rem-calc(15) !important;
+}
+
+body[data-template="actu"], body[data-template="default"]{
+	.left-col{
+		h1, h1 a{
+			font-size: 1.8rem;
+			line-height: 1.45rem;
+		}
+		.carre-rose{
+			width: 100px;
+			height:100px;
+			background: rgb(250, 75, 200);
+			margin-top: 0.8rem;
+		}
+	}
+	main{
+		//margin-top: 2rem;
+		margin-bottom: 10rem;
+		position:relative;
+		.text{
+			margin-top: 2rem;
+			position:relative;
+
+			.prog{
+				margin-bottom: 3rem;
+				&:hover{
+					h3{color: rgb(250, 75, 200);}
+				}
+				h3,h4{
+					cursor: pointer;
+				}
+				p{
+					display: none;
+				}
+			}
+		}
+		.icone{
+			width: 300px;
+			position:absolute;
+			z-index: -1;
+			top: 0rem;
+			left: -15%;
+		}
+		figure{
+			margin-left: -17%;
+		}
+		i{
+      transform: skewX(-25deg);
+		}
+		h1{
+			font-size: 4.5rem;
+			width: 400px;
+			line-height: 0.8;
+		}
+		h2{
+			font-size: 2rem;
+			line-height: 2rem;
+			margin-bottom: 3rem;
+			margin-left: -15%;
+		}
+
+		h3{
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+
+		h4{
+			font-size: 2rem;
+			line-height: 2rem;
+			color: rgb(250, 75, 200);
+			margin-bottom: 1rem;
+		}
+		p{
+			line-height: 1.7rem;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+
+// .icone-wrapper{
+// 	position: fixed; 
+// 	width: 100px;
+// 	z-index: 2;
+// }
 
 .error-page{
 	position:absolute;
 	z-index: 99;
 	margin-top: 30px;
+}
+
+@media #{$small-only}{
+	.left-col{
+		position: relative; 
+		height:auto;
+		h1, a{
+			font-size: 1.5rem;
+			line-height: 0.85;
+		}
+
+	}
+	.address{
+		position:relative;		
+		p, a, ul{
+			font-size: 0.7rem;
+		}
+		padding-left:0.9375rem;
+	}
+
+	.site-en-construction{
+		p, a{
+			font-size: 0.7rem;
+		}
+	}
+
+	body[data-rubrique="home"]{
+		main{
+			padding-right: 0.9375rem;
+			float: left;
+			.actu{
+				p, a{
+					font-size: 12.5vw;
+				}
+			}
+			.image-icono{
+				width: 80vw;
+				top: 2rem;
+			}
+			.icone-new{
+				left:65%;
+				top: 8vh;
+			}
+		}
+	}
+
+	body[data-template="default"]{
+		main{
+			margin-bottom: 3rem;
+			float: left;
+			figure{
+				margin-left: -13%;
+				width: 75%;
+			}
+			h2{
+				margin-left: -10%;
+			}
+
+		}
+	}
+}
+
+@media #{$medium-only}{
+	.left-col{
+		h1, a{
+			font-size: 2rem;
+			line-height: 0.85;
+		}
+
+	}
+	.address{	
+		p, a, ul{
+			font-size: 0.9rem;
+		}
+	}
+
+
 }
 
 

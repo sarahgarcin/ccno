@@ -1,0 +1,13 @@
+title: Actualités
+
+pages: 
+  template: Actu
+  num: date
+  sort: flip
+
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text
