@@ -261,7 +261,9 @@ body[data-rubrique="home"]{
 		color: $rose;
 		font-size: rem-calc(15) !important;
 }
-body[data-template="default"], body[data-template="list"]{
+
+
+body[data-template="default"], body[data-template="list"], body[data-template="ateliers"]{
 	main{
 		padding-top: 6rem;
 	}
@@ -273,7 +275,7 @@ body[data-template="actu"]{
 	}
 }
 
-body[data-template="actu"], body[data-template="default"], body[data-template="list"],  body[data-template="agenda"]{
+body[data-template="actu"], body[data-template="default"], body[data-template="list"],  body[data-template="agenda"], body[data-template="ateliers"]{
 	.left-col{
 		h1, h1 a{
 			font-size: 1.8rem;
