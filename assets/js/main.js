@@ -71,7 +71,6 @@ function init(){
 		$(".picto-wrapper").each(function(){
 			var randomX = Math.random() * (windowW - 100);
 			var randomY = Math.random() * (mainH - 100);
-			console.log(randomX, randomY);
 			$(this).css({
 				"top": randomY,
 				"left": randomX
