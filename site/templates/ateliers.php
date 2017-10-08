@@ -14,7 +14,7 @@
 				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
 			</div>
 		<?php endif ?>
-		<nav>
+		<nav class="menu-page">
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>
 					<li>

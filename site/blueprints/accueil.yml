@@ -1,0 +1,33 @@
+title: Accueil studio
+
+pages: true
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  personne:
+    label: Personne(s)
+    type: text
+  text:
+    label: Texte
+    type:  markdown
+  dates: 
+    label: Dates
+    type: structure
+    entry: >
+      {{title}} — {{moment}} — {{hours}}
+    fields:
+      title:
+        label: Titre
+        type: text
+      moment: 
+        label: Date
+        type: date
+      hours: 
+        label: Heures
+        type: text
+  bio: 
+    label: Biographie 
+    type: markdown

@@ -85,6 +85,12 @@ function init(){
 		});
 	}
 
+	if($("body").attr("data-template")=="accueils"){
+		$(".accueils-module .accueils-element").on('click', function(){
+			$(this).next('.accueils-text').slideToggle(400);
+		});
+	}
+
 
 
 }

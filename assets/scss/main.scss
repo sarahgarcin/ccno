@@ -124,6 +124,22 @@ header{
 	z-index: 3;
 	top:29px;
 	padding: 3px 10px 0.5rem 5px;
+	li{
+		flex: 0 1 auto;
+		&:first-child{
+			pointer-events: none;
+		}
+		&:last-child{
+			&:after{
+				content:"";
+			}
+		}
+		&:after{
+			content: ">";
+			padding-right:0.8em;
+			padding-left:0.8em;
+		}
+	}
 }
 
 .picto-wrapper{
@@ -263,7 +279,7 @@ body[data-rubrique="home"]{
 }
 
 
-body[data-template="default"], body[data-template="list"], body[data-template="ateliers"]{
+body[data-template="default"], body[data-template="list"], body[data-template="ateliers"], body[data-template="accueils"]{
 	main{
 		padding-top: 6rem;
 	}
@@ -275,7 +291,7 @@ body[data-template="actu"]{
 	}
 }
 
-body[data-template="actu"], body[data-template="default"], body[data-template="list"],  body[data-template="agenda"], body[data-template="ateliers"]{
+body[data-template="actu"], body[data-template="default"], body[data-template="list"],  body[data-template="agenda"], body[data-template="ateliers"], body[data-template="accueils"]{
 	.left-col{
 		h1, h1 a{
 			font-size: 1.8rem;
@@ -391,6 +407,81 @@ body[data-template="list"]{
 	}
 }
 
+body[data-template="ateliers"]{
+	background: yellow;
+	.breadcrumb{
+		background: yellow;
+	}
+	nav.menu-page > ul > li {
+		flex: 0 1 auto;
+		&:last-child{
+			&:after{
+				content:"";
+			}
+		}
+		&:after{
+			content:"#";
+			font-family: "orleans";
+			padding-left: 0.5rem;
+			padding-right: 0.8rem;
+		}
+		a{
+			font-size: rem-calc(40);
+			text-transform: none;
+			&:hover{
+				color: $rose;
+			}
+		}
+	}
+}
+
+
+body[data-template="accueils"]{
+	main .text li::after{
+		content:"";
+	}
+	.accueils-module{
+		.accueils-element{
+			cursor: pointer;
+			&:hover h3, &:hover h2{
+				color: $rose;
+			}
+		}
+		h2{
+			font-family: "orleans", sans-serif;
+			font-size: 4rem;
+			line-height: 0.8;
+		}
+		h3{
+			font-size: 3rem;
+			margin-left: -15%;
+			margin-bottom: 2rem;
+		}
+		.events{
+			ul{
+				margin: 0;
+				.accueils-date{
+					margin-bottom: 1.5rem;
+					.date-event{
+						color: $rose;
+						font-size: 2.5rem;
+						line-height: 0.8;
+					}
+				}
+			}
+		}
+		.biography{
+			p, li{
+				font-size: 1rem;
+				line-height: 1;
+			}
+		}
+		.accueils-text{
+			display:none;
+		}
+	}
+
+}
 
 // .icone-wrapper{
 // 	position: fixed; 

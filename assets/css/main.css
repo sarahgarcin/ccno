@@ -9113,6 +9113,17 @@ nav > ul {
   z-index: 3;
   top: 29px;
   padding: 3px 10px 0.5rem 5px; }
+  .breadcrumb li {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+    .breadcrumb li:first-child {
+      pointer-events: none; }
+    .breadcrumb li:last-child:after {
+      content: ""; }
+    .breadcrumb li:after {
+      content: ">";
+      padding-right: 0.8em;
+      padding-left: 0.8em; }
 
 .picto-wrapper {
   width: 12%;
@@ -9217,73 +9228,73 @@ body[data-rubrique="home"] .actu p.link {
   color: #fa4bc8;
   font-size: 0.9375rem !important; }
 
-body[data-template="default"] main, body[data-template="list"] main, body[data-template="ateliers"] main {
+body[data-template="default"] main, body[data-template="list"] main, body[data-template="ateliers"] main, body[data-template="accueils"] main {
   padding-top: 6rem; }
 
 body[data-template="actu"] main {
   padding-top: 4.3rem; }
 
-body[data-template="actu"] .left-col h1, body[data-template="actu"] .left-col h1 a, body[data-template="default"] .left-col h1, body[data-template="default"] .left-col h1 a, body[data-template="list"] .left-col h1, body[data-template="list"] .left-col h1 a, body[data-template="agenda"] .left-col h1, body[data-template="agenda"] .left-col h1 a, body[data-template="ateliers"] .left-col h1, body[data-template="ateliers"] .left-col h1 a {
+body[data-template="actu"] .left-col h1, body[data-template="actu"] .left-col h1 a, body[data-template="default"] .left-col h1, body[data-template="default"] .left-col h1 a, body[data-template="list"] .left-col h1, body[data-template="list"] .left-col h1 a, body[data-template="agenda"] .left-col h1, body[data-template="agenda"] .left-col h1 a, body[data-template="ateliers"] .left-col h1, body[data-template="ateliers"] .left-col h1 a, body[data-template="accueils"] .left-col h1, body[data-template="accueils"] .left-col h1 a {
   font-size: 1.8rem;
   line-height: 1.45rem; }
 
-body[data-template="actu"] .left-col .menu-btn, body[data-template="default"] .left-col .menu-btn, body[data-template="list"] .left-col .menu-btn, body[data-template="agenda"] .left-col .menu-btn, body[data-template="ateliers"] .left-col .menu-btn {
+body[data-template="actu"] .left-col .menu-btn, body[data-template="default"] .left-col .menu-btn, body[data-template="list"] .left-col .menu-btn, body[data-template="agenda"] .left-col .menu-btn, body[data-template="ateliers"] .left-col .menu-btn, body[data-template="accueils"] .left-col .menu-btn {
   font-size: 1.5rem;
   padding-top: 2px; }
 
-body[data-template="actu"] .left-col .carre-rose, body[data-template="default"] .left-col .carre-rose, body[data-template="list"] .left-col .carre-rose, body[data-template="agenda"] .left-col .carre-rose, body[data-template="ateliers"] .left-col .carre-rose {
+body[data-template="actu"] .left-col .carre-rose, body[data-template="default"] .left-col .carre-rose, body[data-template="list"] .left-col .carre-rose, body[data-template="agenda"] .left-col .carre-rose, body[data-template="ateliers"] .left-col .carre-rose, body[data-template="accueils"] .left-col .carre-rose {
   width: 100px;
   height: 100px;
   background: #fa4bc8;
   margin-top: 0.8rem; }
 
-body[data-template="actu"] main, body[data-template="default"] main, body[data-template="list"] main, body[data-template="agenda"] main, body[data-template="ateliers"] main {
+body[data-template="actu"] main, body[data-template="default"] main, body[data-template="list"] main, body[data-template="agenda"] main, body[data-template="ateliers"] main, body[data-template="accueils"] main {
   margin-bottom: 10rem;
   position: relative; }
-  body[data-template="actu"] main .text, body[data-template="default"] main .text, body[data-template="list"] main .text, body[data-template="agenda"] main .text, body[data-template="ateliers"] main .text {
+  body[data-template="actu"] main .text, body[data-template="default"] main .text, body[data-template="list"] main .text, body[data-template="agenda"] main .text, body[data-template="ateliers"] main .text, body[data-template="accueils"] main .text {
     margin-top: 2rem;
     position: relative; }
-    body[data-template="actu"] main .text .prog, body[data-template="default"] main .text .prog, body[data-template="list"] main .text .prog, body[data-template="agenda"] main .text .prog, body[data-template="ateliers"] main .text .prog {
+    body[data-template="actu"] main .text .prog, body[data-template="default"] main .text .prog, body[data-template="list"] main .text .prog, body[data-template="agenda"] main .text .prog, body[data-template="ateliers"] main .text .prog, body[data-template="accueils"] main .text .prog {
       margin-bottom: 3rem; }
-      body[data-template="actu"] main .text .prog:hover h3, body[data-template="default"] main .text .prog:hover h3, body[data-template="list"] main .text .prog:hover h3, body[data-template="agenda"] main .text .prog:hover h3, body[data-template="ateliers"] main .text .prog:hover h3 {
+      body[data-template="actu"] main .text .prog:hover h3, body[data-template="default"] main .text .prog:hover h3, body[data-template="list"] main .text .prog:hover h3, body[data-template="agenda"] main .text .prog:hover h3, body[data-template="ateliers"] main .text .prog:hover h3, body[data-template="accueils"] main .text .prog:hover h3 {
         color: #fa4bc8; }
-      body[data-template="actu"] main .text .prog h3, body[data-template="actu"] main .text .prog h4, body[data-template="default"] main .text .prog h3, body[data-template="default"] main .text .prog h4, body[data-template="list"] main .text .prog h3, body[data-template="list"] main .text .prog h4, body[data-template="agenda"] main .text .prog h3, body[data-template="agenda"] main .text .prog h4, body[data-template="ateliers"] main .text .prog h3, body[data-template="ateliers"] main .text .prog h4 {
+      body[data-template="actu"] main .text .prog h3, body[data-template="actu"] main .text .prog h4, body[data-template="default"] main .text .prog h3, body[data-template="default"] main .text .prog h4, body[data-template="list"] main .text .prog h3, body[data-template="list"] main .text .prog h4, body[data-template="agenda"] main .text .prog h3, body[data-template="agenda"] main .text .prog h4, body[data-template="ateliers"] main .text .prog h3, body[data-template="ateliers"] main .text .prog h4, body[data-template="accueils"] main .text .prog h3, body[data-template="accueils"] main .text .prog h4 {
         cursor: pointer; }
-      body[data-template="actu"] main .text .prog p, body[data-template="default"] main .text .prog p, body[data-template="list"] main .text .prog p, body[data-template="agenda"] main .text .prog p, body[data-template="ateliers"] main .text .prog p {
+      body[data-template="actu"] main .text .prog p, body[data-template="default"] main .text .prog p, body[data-template="list"] main .text .prog p, body[data-template="agenda"] main .text .prog p, body[data-template="ateliers"] main .text .prog p, body[data-template="accueils"] main .text .prog p {
         display: none; }
-  body[data-template="actu"] main .icone, body[data-template="default"] main .icone, body[data-template="list"] main .icone, body[data-template="agenda"] main .icone, body[data-template="ateliers"] main .icone {
+  body[data-template="actu"] main .icone, body[data-template="default"] main .icone, body[data-template="list"] main .icone, body[data-template="agenda"] main .icone, body[data-template="ateliers"] main .icone, body[data-template="accueils"] main .icone {
     width: 300px;
     position: absolute;
     z-index: -1;
     top: 6rem;
     left: -15%; }
-  body[data-template="actu"] main i, body[data-template="default"] main i, body[data-template="list"] main i, body[data-template="agenda"] main i, body[data-template="ateliers"] main i {
+  body[data-template="actu"] main i, body[data-template="default"] main i, body[data-template="list"] main i, body[data-template="agenda"] main i, body[data-template="ateliers"] main i, body[data-template="accueils"] main i {
     -ms-transform: skewX(-25deg);
     transform: skewX(-25deg); }
-  body[data-template="actu"] main h1, body[data-template="default"] main h1, body[data-template="list"] main h1, body[data-template="agenda"] main h1, body[data-template="ateliers"] main h1 {
+  body[data-template="actu"] main h1, body[data-template="default"] main h1, body[data-template="list"] main h1, body[data-template="agenda"] main h1, body[data-template="ateliers"] main h1, body[data-template="accueils"] main h1 {
     font-size: 4.5rem;
     width: 400px;
     line-height: 0.8;
     margin-bottom: 1.5rem; }
-  body[data-template="actu"] main h2, body[data-template="default"] main h2, body[data-template="list"] main h2, body[data-template="agenda"] main h2, body[data-template="ateliers"] main h2 {
+  body[data-template="actu"] main h2, body[data-template="default"] main h2, body[data-template="list"] main h2, body[data-template="agenda"] main h2, body[data-template="ateliers"] main h2, body[data-template="accueils"] main h2 {
     font-size: 2rem;
     line-height: 2rem;
     margin-top: 3rem;
     margin-left: -15%; }
-  body[data-template="actu"] main h3, body[data-template="default"] main h3, body[data-template="list"] main h3, body[data-template="agenda"] main h3, body[data-template="ateliers"] main h3 {
+  body[data-template="actu"] main h3, body[data-template="default"] main h3, body[data-template="list"] main h3, body[data-template="agenda"] main h3, body[data-template="ateliers"] main h3, body[data-template="accueils"] main h3 {
     font-size: 2rem;
     line-height: 2rem; }
-  body[data-template="actu"] main h4, body[data-template="default"] main h4, body[data-template="list"] main h4, body[data-template="agenda"] main h4, body[data-template="ateliers"] main h4 {
+  body[data-template="actu"] main h4, body[data-template="default"] main h4, body[data-template="list"] main h4, body[data-template="agenda"] main h4, body[data-template="ateliers"] main h4, body[data-template="accueils"] main h4 {
     font-size: 2rem;
     line-height: 2rem;
     color: #fa4bc8;
     margin-bottom: 1rem; }
-  body[data-template="actu"] main p, body[data-template="actu"] main li, body[data-template="default"] main p, body[data-template="default"] main li, body[data-template="list"] main p, body[data-template="list"] main li, body[data-template="agenda"] main p, body[data-template="agenda"] main li, body[data-template="ateliers"] main p, body[data-template="ateliers"] main li {
+  body[data-template="actu"] main p, body[data-template="actu"] main li, body[data-template="default"] main p, body[data-template="default"] main li, body[data-template="list"] main p, body[data-template="list"] main li, body[data-template="agenda"] main p, body[data-template="agenda"] main li, body[data-template="ateliers"] main p, body[data-template="ateliers"] main li, body[data-template="accueils"] main p, body[data-template="accueils"] main li {
     line-height: 1.7rem;
     font-size: 1.5rem; }
-  body[data-template="actu"] main .text li, body[data-template="default"] main .text li, body[data-template="list"] main .text li, body[data-template="agenda"] main .text li, body[data-template="ateliers"] main .text li {
+  body[data-template="actu"] main .text li, body[data-template="default"] main .text li, body[data-template="list"] main .text li, body[data-template="agenda"] main .text li, body[data-template="ateliers"] main .text li, body[data-template="accueils"] main .text li {
     display: inline; }
-    body[data-template="actu"] main .text li:after, body[data-template="default"] main .text li:after, body[data-template="list"] main .text li:after, body[data-template="agenda"] main .text li:after, body[data-template="ateliers"] main .text li:after {
+    body[data-template="actu"] main .text li:after, body[data-template="default"] main .text li:after, body[data-template="list"] main .text li:after, body[data-template="agenda"] main .text li:after, body[data-template="ateliers"] main .text li:after, body[data-template="accueils"] main .text li:after {
       content: "#";
       font-family: "orleans";
       padding-left: 1rem;
@@ -9307,6 +9318,60 @@ body[data-template="list"] .liste-element {
     padding-left: 0;
     margin-top: 0;
     font-size: 2.5rem; }
+
+body[data-template="ateliers"] {
+  background: yellow; }
+  body[data-template="ateliers"] .breadcrumb {
+    background: yellow; }
+  body[data-template="ateliers"] nav.menu-page > ul > li {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+    body[data-template="ateliers"] nav.menu-page > ul > li:last-child:after {
+      content: ""; }
+    body[data-template="ateliers"] nav.menu-page > ul > li:after {
+      content: "#";
+      font-family: "orleans";
+      padding-left: 0.5rem;
+      padding-right: 0.8rem; }
+    body[data-template="ateliers"] nav.menu-page > ul > li a {
+      font-size: 2.5rem;
+      text-transform: none; }
+      body[data-template="ateliers"] nav.menu-page > ul > li a:hover {
+        color: #fa4bc8; }
+
+body[data-template="accueils"] main .text li::after {
+  content: ""; }
+
+body[data-template="accueils"] .accueils-module .accueils-element {
+  cursor: pointer; }
+  body[data-template="accueils"] .accueils-module .accueils-element:hover h3, body[data-template="accueils"] .accueils-module .accueils-element:hover h2 {
+    color: #fa4bc8; }
+
+body[data-template="accueils"] .accueils-module h2 {
+  font-family: "orleans", sans-serif;
+  font-size: 4rem;
+  line-height: 0.8; }
+
+body[data-template="accueils"] .accueils-module h3 {
+  font-size: 3rem;
+  margin-left: -15%;
+  margin-bottom: 2rem; }
+
+body[data-template="accueils"] .accueils-module .events ul {
+  margin: 0; }
+  body[data-template="accueils"] .accueils-module .events ul .accueils-date {
+    margin-bottom: 1.5rem; }
+    body[data-template="accueils"] .accueils-module .events ul .accueils-date .date-event {
+      color: #fa4bc8;
+      font-size: 2.5rem;
+      line-height: 0.8; }
+
+body[data-template="accueils"] .accueils-module .biography p, body[data-template="accueils"] .accueils-module .biography li {
+  font-size: 1rem;
+  line-height: 1; }
+
+body[data-template="accueils"] .accueils-module .accueils-text {
+  display: none; }
 
 .error-page {
   position: absolute;
