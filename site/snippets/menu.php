@@ -3,7 +3,7 @@
 	<nav class="module--menu--mainNav">
 		<ul id="menu-top-list">
 	    <?php foreach($pages->visible() as $p): ?>
-	    	<?php if($p->hasChildren()):?>
+	    	<?php if($p->hasVisibleChildren()):?>
 		    	<li class="<?= r($p->isOpen(), 'active') ?>" data-position="<?php echo $p->num() ?>">
 		        	<?php echo $p->title()->html() ?>
 		      	<ul class="module--menu--submenu">

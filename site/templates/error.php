@@ -9,6 +9,7 @@
 	  <source src="<?php echo $page->audio()->first()->url()?>" type="<?php echo $page->audio()->first()->mime() ?>">
 	  Your browser does not support the audio element.
 	</audio>
+	<?php snippet('icones') ?>
 	
 </main>
 

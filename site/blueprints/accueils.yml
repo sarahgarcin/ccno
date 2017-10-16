@@ -1,6 +1,6 @@
 title: Accueils studio
 
-pages: true
+pages: accueil
 files: true
 
 fields:
@@ -13,4 +13,4 @@ fields:
     mode: single
   text: 
     label: Texte
-    typoe: markdown
+    type: markdown

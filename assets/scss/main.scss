@@ -2,12 +2,11 @@
 @import "_foundation.scss";
 @import "_font-awesome.scss";
 @import "_variables.scss";
-// 250, 75, 200
+// rose rgb250, 75, 200
 
 * {
   box-sizing: border-box;
 }
-
 
 body {
 	font-size: 12px;
@@ -21,23 +20,14 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.2;
 }
 
-p{
-	line-height:1;
-	font-size: 1.3rem;
-	color: #000;
-	//letter-spacing: 0.04em;
-}
-
-a{
-	font-family: $font-family;
-	line-height: 1;
-	color: #000;
-	&:hover{
-		color: #000;
-		text-decoration: none;
-	}
-}
-
+// -------- STYLE GENERAL ------------
+i{transform: skewX(-25deg);}
+h1{@include H1;}
+h2{@include H2;}
+h3{@include H3;}
+h4{@include H4;}
+p, li{ @include textCourant; }
+a{@include liens}
 ul{
 	margin:0;
 	li{
@@ -61,6 +51,9 @@ figure{
 	&:hover{
 		filter: blur(0);
 	}
+	&[data-flou="non"]{
+		filter: none;
+	}
 }
 
 .FigureImage-lazy {
@@ -71,140 +64,31 @@ figure{
 	font-family: $orleans-font;
 }
 
-header{
-	background: #FFF;
-	position: fixed;
-	width: 100%;
-	z-index: 20;
-	top: 28px;
-	padding: 0.5rem 0.9375rem 0.9375rem 0.9375rem;
-	display:none;
-	filter: blur(5px);
-	transition: filter 0.5s; 	
-	&.active{
-		filter: blur(0);
-	}
-	h1{
-		font-size: rem-calc(30);
-		cursor: pointer;
-		&:hover{
-			filter: blur(2px);
-			color: #000;
-		}
-	}
-}
-	nav > ul {
-		margin: 0;
-		display: flex;
-    width: 100%;
-		> li {
-			font-size: rem-calc(20); 
-			text-transform: uppercase;
-			line-height: 1.2;
-			flex: 1 1 auto;
-			> ul {
-				margin: 0;
-				display:block;
-				> li{
-					text-transform: none;
-					font-size: rem-calc(20); 
-					line-height: 1.2;
-					a:hover{
-						color: $rose;
-					}
-				}
-			}
-		}
-	}
-
-.breadcrumb{
-	background: #FFF;
-	width: 100%;
-	position:fixed;
-	z-index: 3;
-	top:29px;
-	padding: 3px 10px 0.5rem 5px;
-	li{
-		flex: 0 1 auto;
-		&:first-child{
-			pointer-events: none;
-		}
-		&:last-child{
-			&:after{
-				content:"";
-			}
-		}
-		&:after{
-			content: ">";
-			padding-right:0.8em;
-			padding-left:0.8em;
-		}
-	}
-}
-
-.picto-wrapper{
-	width: 12%;
-	min-width: 100px;
-	max-width: 150px;
+// notes de côté de page
+.note{
 	position: absolute;
-	z-index:-1;
-}
-
-.left-col{
-	height:95vh;
-	position: fixed; 
-	top: 30px;
-	h1, a{
-		font-size: 3rem;
-		line-height: 2.4rem;
-	}
-	.menu-btn{
-		font-size: rem-calc(30);
-		color: $rose;
-		text-transform: uppercase;
-		cursor: pointer;
-		margin-bottom: 0.7rem;
-		&:hover{
-			filter: blur(2px);
+	right: -200px;
+	color: $rose;
+	font-size: rem-calc(18);
+	width: 30%;
+	min-width: 100px;
+	&.date{
+		font-size: 2rem;
+		line-height: 1;
+		.note-title{
+			font-size: rem-calc(18);
+			line-height: 1.2;
 			color: #000;
-		}
-	}
-	.carre-rose{
-		width: 150px;
-		height:150px;
-		background:  $rose;
-		margin-top: 1.5rem;
-	}
-
-	.pdf{
-		margin-top: 2rem;
-		li{
-			margin-bottom: 1rem;
-			a{
-				font-size: 1.1rem ;
-				line-height:0.8;
-				color: rgb(250, 75, 200);
-				&:hover{
-					color: #000;
-				}
-			}
+			display:block;
 		}
 	}
 }
 
-.address{
-	p, a, ul{
-		font-size: 1rem;
-	}
-	a:hover{
-		color:  rgb(250, 75, 200);
-	}
-	bottom: 0;
-	position:absolute;
-}
+// -------- FIN STYLE GENERAL ------------
+
+// -------- SITE EN CONSTRUCTION ---------
 
 .site-en-construction{
-	// background:rgb(250, 75, 200);
 	background:#DFDFDF;
 	padding: 5px 0px 8px 0px;
 	text-align: center;
@@ -221,17 +105,160 @@ header{
 	}
 }
 
+// -------- MENU — HEADER ------------
 
-.picto-deco{
+header{
+	background: #FFF;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+	top: $constructionTop; // à enlever avec site en construction
+	padding: 0.5rem $columnPadding $columnPadding $columnPadding;
+	display:none;
+	filter: blur(5px);
+	transition: filter 0.5s; 	
+	&.active{
+		filter: blur(0);
+	}
+	h1{
+		font-size: rem-calc(30);
+		cursor: pointer;
+		&:hover{
+			filter: blur(2px);
+			color: #000;
+		}
+	}
+}
+
+// -------- FIN MENU — HEADER ------------
+
+nav > ul {
+	margin: 0;
+	display: flex;
+  width: 100%;
+  a:hover{
+		color: $rose;
+	}
+	> li {
+		font-size: rem-calc(20); 
+		text-transform: uppercase;
+		line-height: 1.2;
+		flex: 1 1 auto;
+		> ul {
+			margin: 0;
+			display:block;
+			> li{
+				text-transform: none;
+				font-size: rem-calc(20); 
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+.breadcrumb{
+	background: #FFF;
+	width: 100%;
 	position:fixed;
-	z-index: -1;
+	z-index: 3;
+	top:$constructionTop; // à enlever quand site en construction
+	padding: 3px 10px 0.5rem 5px;
+	li{
+		flex: 0 1 auto;
+		a:hover{
+			color: $rose;
+		}
+		&:last-child{
+			&:after{
+				content:"";
+			}
+		}
+		&:after{
+			content: ">";
+			padding-right:$columnPadding;
+			padding-left:$columnPadding;
+		}
+	}
+}
+
+
+// Wrapper des pictos qui se baladent dans la page
+.picto-wrapper{
+	width: 12%;
+	min-width: 100px;
+	max-width: 150px;
+	position: absolute;
+	z-index:-1;
+}
+
+.left-col{
+	height:95vh;
+	position: fixed; 
+	top: 30px;
+	h1, h1 a{
+		font-size: 1.8rem;
+		line-height: 1.45rem;
+	}
+	.menu-btn{
+		font-size: 1.5rem;
+		padding-top: 2px;
+		color: $rose;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-bottom: 0.7rem;
+		&:hover{
+			filter: blur(2px);
+			color: #000;
+		}
+	}
+
+	.pdf{
+		margin-top: 2rem;
+		li{
+			margin-bottom: $marginSmall;
+			line-height:0.8;
+			a{
+				font-size: 1rem ;
+				line-height:0.8;
+				color: rgb(250, 75, 200);
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+	.address{
+		bottom: 0;
+		position:absolute;
+		p, a, ul{
+			font-size: 1rem;
+		}
+		a:hover{
+			color:  rgb(250, 75, 200);
+		}
+	}
+}
+
+main{
+	padding-top: 6rem;
 }
 
 
 body[data-rubrique="home"]{
+	.left-col{
+		.menu-btn{
+			font-size: rem-calc(30);
+			padding-top: 0;
+		}	
+		h1, h1 a{
+			font-size: 3rem;
+			line-height: 2.4rem;
+		}
+	}
 	main{
 		padding-right: 4rem;
 		padding-top: 2.5rem;
+		margin-bottom: 0;
 		.image-icono{
 			position:absolute;
 			z-index:-1;
@@ -244,13 +271,11 @@ body[data-rubrique="home"]{
 				position: absolute;
 			}
 		}
-
 	}
 	.actu{
 		p, a{
 			font-size: 8.2vw;
 			line-height:0.8;
-
 		}
 		.actu-title {
 			margin-bottom: 14vh;
@@ -271,19 +296,54 @@ body[data-rubrique="home"]{
 	}
 }
 
-.note{
-	position: absolute;
-	right: -150px;
-		color: $rose;
-		font-size: rem-calc(15) !important;
-}
-
-
-body[data-template="default"], body[data-template="list"], body[data-template="ateliers"], body[data-template="accueils"]{
+body[data-template="menu"]{
 	main{
-		padding-top: 6rem;
+		padding-top: 3.8rem;
+		h1{
+			width: auto;
+			text-transform: uppercase;
+		}
+		li{
+			@include H1;
+			a:hover{
+				color: $rose;
+			}
+		}
 	}
 }
+
+body[data-template="agenda"]{
+	main{
+		padding-top: 3.8rem;
+		h2{
+			margin-left: 0;
+		}
+		table {
+	    border-collapse: collapse;
+	    width: 90%;
+	    margin:0;
+	    border:none;
+
+	    tr{
+	    	&:hover a{
+					color: $rose;
+				}
+	    }
+		  td, th {
+		    text-align: left;
+		    padding: 2px;
+		    cursor:pointer;
+		    font-size: 1rem;
+		    vertical-align: top;
+			}
+			&:nth-child(even) {
+			  background-color: #dddddd;
+			}
+		}
+	}
+}
+
+
 
 body[data-template="actu"]{
 	main{
@@ -291,98 +351,54 @@ body[data-template="actu"]{
 	}
 }
 
-body[data-template="actu"], body[data-template="default"], body[data-template="list"],  body[data-template="agenda"], body[data-template="ateliers"], body[data-template="accueils"]{
-	.left-col{
-		h1, h1 a{
-			font-size: 1.8rem;
-			line-height: 1.45rem;
-		}
-		.menu-btn{
-			font-size: 1.5rem;
-			padding-top: 2px;
-		}
-		.carre-rose{
-			width: 100px;
-			height:100px;
-			background: rgb(250, 75, 200);
-			margin-top: 0.8rem;
+main{
+	margin-bottom: 10rem;
+	position:relative;
+	.text{
+		margin-top: $marginNormal;
+		position:relative;
+		// quand le programme split
+		.prog{
+			margin-bottom: $marginBig;
+			&:hover{
+				h3{color: rgb(250, 75, 200);}
+			}
+			h3,h4{
+				cursor: pointer;
+			}
+			p{
+				display: none;
+			}
 		}
 	}
-	main{
-		margin-bottom: 10rem;
-		position:relative;
-		.text{
-			margin-top: 2rem;
-			position:relative;
-
-			.prog{
-				margin-bottom: 3rem;
-				//display:none;
-				&:hover{
-					h3{color: rgb(250, 75, 200);}
-				}
-				h3,h4{
-					cursor: pointer;
-				}
-				p{
-					display: none;
-				}
-			}
+	// icone derriere le titre
+	.icone{
+		width: 300px;
+		position:absolute;
+		z-index: -1;
+		top: 6rem;
+		left: -15%;
+	}
+	
+	.text li{
+		display:inline;
+		&:last-child::after{
+			content:"";
 		}
-		.icone{
-			width: 300px;
-			position:absolute;
-			z-index: -1;
-			top: 6rem;
-			left: -15%;
-		}
-		i{
-      transform: skewX(-25deg);
-		}
-		h1{
-			font-size: 4.5rem;
-			width: 400px;
-			line-height: 0.8;
-			margin-bottom: 1.5rem;
-		}
-		h2{
-			font-size: 2rem;
-			line-height: 2rem;
-			margin-top: 3rem;
-			margin-left: -15%;
-		}
-
-		h3{
-			font-size: 2rem;
-			line-height: 2rem;
-		}
-
-		h4{
-			font-size: 2rem;
-			line-height: 2rem;
-			color: rgb(250, 75, 200);
-			margin-bottom: 1rem;
-		}
-		p, li{
-			line-height: 1.7rem;
-			font-size: 1.5rem;
-		}
-		.text li{
-			display:inline;
-			&:after{
-				content:"#";
-				font-family: "orleans";
-				padding-left: 1rem;
-				padding-right: 0.8rem;
-			}
+		&:after{
+			content:"#";
+			font-family: "orleans";
+			padding-left: 1rem;
+			padding-right: 0.8rem;
 		}
 	}
 }
 
+
 body[data-template="list"]{
 	.liste-module{
 		li{
-			margin-top: 3rem;
+			margin-top: $marginBig;
 		}
 		h2{
 			font-size: 1.7rem;
@@ -407,10 +423,17 @@ body[data-template="list"]{
 	}
 }
 
-body[data-template="ateliers"]{
-	background: yellow;
+body[data-parent-template="ateliers"]{
+	background: $jaune;
 	.breadcrumb{
-		background: yellow;
+		background: $jaune;
+	}
+}
+
+body[data-template="ateliers"]{
+	background: $jaune;
+	.breadcrumb{
+		background: $jaune;
 	}
 	nav.menu-page > ul > li {
 		flex: 0 1 auto;
@@ -448,20 +471,20 @@ body[data-template="accueils"]{
 			}
 		}
 		h2{
-			font-family: "orleans", sans-serif;
+			//font-family: "orleans", sans-serif;
 			font-size: 4rem;
 			line-height: 0.8;
 		}
 		h3{
 			font-size: 3rem;
-			margin-left: -15%;
-			margin-bottom: 2rem;
+			margin-left: $margin-decale;
+			margin-bottom: $marginNormal;
 		}
 		.events{
 			ul{
 				margin: 0;
 				.accueils-date{
-					margin-bottom: 1.5rem;
+					margin-bottom: $marginNormal;
 					.date-event{
 						color: $rose;
 						font-size: 2.5rem;
@@ -483,97 +506,13 @@ body[data-template="accueils"]{
 
 }
 
-// .icone-wrapper{
-// 	position: fixed; 
-// 	width: 100px;
-// 	z-index: 2;
-// }
 
+// Page erreur — Depeche mode
 .error-page{
 	position:absolute;
 	z-index: 99;
 	margin-top: 30px;
 }
 
-@media #{$small-only}{
-	.left-col{
-		position: relative; 
-		height:auto;
-		h1, a{
-			font-size: 1.5rem;
-			line-height: 0.85;
-		}
-
-	}
-	.address{
-		position:relative;		
-		p, a, ul{
-			font-size: 0.7rem;
-		}
-		padding-left:0.9375rem;
-	}
-
-	.site-en-construction{
-		p, a{
-			font-size: 0.7rem;
-		}
-	}
-
-	body[data-rubrique="home"]{
-		main{
-			padding-right: 0.9375rem;
-			float: left;
-			.actu{
-				p, a{
-					font-size: 12.5vw;
-				}
-			}
-			.image-icono{
-				width: 80vw;
-				top: 2rem;
-			}
-			.icone-new{
-				left:65%;
-				top: 8vh;
-			}
-		}
-	}
-
-	body[data-template="default"]{
-		main{
-			margin-bottom: 3rem;
-			float: left;
-			figure{
-				margin-left: -13%;
-				width: 75%;
-			}
-			h2{
-				margin-left: -10%;
-			}
-
-		}
-	}
-}
-
-@media #{$medium-only}{
-	.left-col{
-		h1, a{
-			font-size: 2rem;
-			line-height: 0.85;
-		}
-
-	}
-	.address{	
-		p, a, ul{
-			font-size: 0.9rem;
-		}
-	}
-
-
-}
-
-
-
-
-
+@import "responsive.scss";
 

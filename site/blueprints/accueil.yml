@@ -1,6 +1,6 @@
 title: Accueil studio
 
-pages: true
+pages: false
 files: true
 
 fields:
@@ -17,7 +17,7 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — {{moment}} — {{hours}}
+      {{title}} — {{moment}} — {{hours}} — {{place}}
     fields:
       title:
         label: Titre
@@ -27,6 +27,9 @@ fields:
         type: date
       hours: 
         label: Heures
+        type: text
+      place: 
+        label: Lieu
         type: text
   bio: 
     label: Biographie 

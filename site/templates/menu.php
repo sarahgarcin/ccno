@@ -9,25 +9,17 @@
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<?php if($page->icone()->isNotEmpty()):?>
-			<div class="icone">
-				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
-			</div>
-		<?php endif ?>
-		<nav class="menu-page">
+		<div class="icones-wrapper-text">
+			<?php snippet('icones') ?>
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>
 					<li>
 						<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
-							<?php echo $child->title()->html()?>
+						<?php echo $child->title()?>
 						</a>
 					</li>
 				<?php endforeach ?>
 			</ul>
-		</nav>
-		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2">
-			<?php echo $page->text()->kirbytext() ?>
-			<?php snippet('icones') ?>
 		</div>
 	</main>
 	

@@ -1,9 +1,72 @@
 @import "../fonts/stylesheet.css";
 
-
+// fonts
 $font-family: "directrice", serif; 
 $orleans-font: "orleans", sans-serif;
+
+// color
 $rose: rgb(250, 75, 200);
+$jaune: yellow;
+
+// margins
+$marginSmall:1.5rem / 2;
+$marginNormal:1.5rem;
+$marginBig:1.5rem * 2;
+$columnPadding: 0.9375rem;
+
+$margin-decale: -15%;
+
+$constructionTop : 28px;
+
+$h1: 	3.5rem;
+$h2: 	1.8rem;
+$h3:	1.8rem;
+$h4:	1.8rem;
+$p: 1.25rem;
+
+// font-size
+@mixin H1{
+	font-size: $h1;
+	width: 400px;
+	line-height: 1;
+	margin-bottom: $marginNormal;
+}
+
+@mixin H2{
+	font-size: $h2;
+	line-height: 1.1;
+	margin-top: $marginBig;
+	margin-left: $margin-decale;
+}
+
+@mixin H3{
+	font-size: $h3;
+	line-height: 1.1;
+	margin-bottom: $marginNormal;
+}
+
+@mixin H4{
+	font-size: $h4;
+	line-height: 1.1;
+	color: rgb(250, 75, 200);
+	margin-bottom: $marginNormal;
+}
+
+@mixin textCourant{
+	font-family: $font-family;
+	line-height: 1.1;
+	font-size: $p;
+}
+
+@mixin liens{
+	font-family: $font-family;
+	line-height: 1;
+	color: #000;
+	&:hover{
+		color: #000;
+		text-decoration: none;
+	}
+}
 
 
 @mixin monochrome($couleur){

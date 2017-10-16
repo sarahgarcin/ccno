@@ -58,7 +58,7 @@
    data-login="<?php e($site->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
    data-intended-template="<?php echo $page->intendedTemplate() ?>"
-    
+    data-parent-template="<?php echo $page->parent()->template() ?>"
     <?php
       //if(!$page->isHomePage()):
         $section = getRubriqueFromUri($page->uri());

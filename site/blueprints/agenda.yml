@@ -1,6 +1,9 @@
 title: Agenda
 
-pages: false
+pages: 
+  template: event
+  sortable: true
+  num: date
 files: true
 
 fields:
@@ -11,37 +14,3 @@ fields:
     label: Icônes 
     type: selector
     mode: single
-  text:
-    label: Texte
-    type:  markdown
-
-  builder:
-      label: Sections
-      type: builder
-      fieldsets:
-        mois:
-          label: Mois
-          snippet: builder/mois
-          fields:
-            text:
-              label: Nom du mois
-              type: text 
-        event:
-          label: Évènement
-          snippet: builder/event
-          fields:
-            dateEv:
-              label: Date de l'évènement
-              type: text
-            hour:
-              label: Heure de l'évènement
-              type: text
-            place:
-              label: Lieu de l'évènement
-              type: text
-            title:
-              label: Titre de l'évènement
-              type: text
-            text:
-              label: Texte
-              type: markdown 

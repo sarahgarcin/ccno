@@ -1,6 +1,9 @@
 title: Ateliers
 
-pages: true
+pages: 
+  template:
+    - list
+    - default
 files: true
 
 fields:
