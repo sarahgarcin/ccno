@@ -41,7 +41,6 @@
 	endforeach;
 
 	usort($array, function($a, $b) {
-		//print_r($a);
 	  return $a['date'] - $b['date'];
 	});
 
@@ -50,7 +49,7 @@
 <div class ="row">
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
-		<?php snippet('breadcrumb') ?>
+		<?php //snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<?php $previousMonth = null;
 			foreach($array as $date):?>

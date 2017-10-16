@@ -20,10 +20,10 @@ function init(){
 		//random position of icons on home page 
 		if($("body").attr("data-template")=="home"){
 			var mainH = $('main').height() - 150;
-			var windowW = $('main').width() - 200;
+			var windowW = $('main').width() - 100;
 			$(".icone-wrapper").each(function(){
-				var randomX = Math.random() * (windowW - 200);
-				var randomY = Math.random() * (mainH - 200);
+				var randomX = Math.random() * (windowW - 100);
+				var randomY = Math.random() * (mainH - 100);
 				console.log(randomX, randomY);
 				$(this).css({
 					"top": randomY,
@@ -109,6 +109,13 @@ function init(){
 			$(this).next('.accueils-text').slideToggle(400);
 		});
 	}
+
+	$('.creations li a').mouseenter(function() {
+		$(this).parent('li').find('.thumb-wrapper').show();
+	});
+	$('.creations li a').mouseleave(function() {
+		$(this).parent('li').find('.thumb-wrapper').hide();
+	});
 
 }
 

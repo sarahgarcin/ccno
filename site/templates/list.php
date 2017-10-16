@@ -1,7 +1,9 @@
 <?php snippet('header') ?>
 <?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
-
+<?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+  $day = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+?>
 
 <div class ="row">
 
@@ -14,25 +16,80 @@
 				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
 			</div>
 		<?php endif ?>
-		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2">
+		<div class="text icones-wrapper-text small-16 medium-16 large-16">
 			<?php echo $page->text()->kirbytext() ?>
-			<?php snippet('icones') ?>
 				<ul class="liste-module">
 					<?php foreach($page->children()->visible() as $child):?>
-						<li>
-							<div class="liste-element row">
-								<h2 class="small-6 columns"><?php echo $child->title()->html()?></h2>
-								<div class="summary-liste small-14 columns">
-									<?php echo $child->summary()->kirbytext()?>
+						<?php if($page->children()->visible()->count() == 1):?>
+							<li class="active">
+								<div class="liste-element row">
+									<h2 class="small-4 columns"><?php echo $child->title()->html()?></h2>
+									<div class="summary-liste small-10 columns end">
+										<?php echo $child->summary()->kirbytext()?>
+									</div>
 								</div>
-							</div>
-							<div class="liste-text">
-									<?php echo $child->text()->kirbytext() ?>
-							</div>
-						</li>
+								<div class="liste-text">
+									<div class="small-13 small-push-2 columns end">
+										<?php echo $child->text()->kirbytext() ?>
+									</div>
+									<?php if($child->dates()->isNotEmpty()):?>
+										<div class="notes-dates small-5 small-push-1  columns end">
+											<ul>
+												<?php foreach($child->dates()->toStructure() as $dates):?>
+													<li>
+														<h4>
+															<?php echo $day[date("N", strtotime($dates->moment()))];?>
+															<?php echo date("d", strtotime($dates->moment()));?>
+															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
+															<br>
+															<?php echo $dates->hours()->html() ?>
+														</h4>
+														<h5><?php echo $dates->title()->html() ?></h5>
+
+													</li>
+												<?php endforeach ?>
+											</ul>
+										</div>
+									<?php endif ?>
+								</div>
+							</li>
+						<?php else: ?>
+							<li>
+								<div class="liste-element row">
+									<h2 class="small-4 columns end"><?php echo $child->title()->html()?></h2>
+									<div class="summary-liste small-10 columns end">
+										<?php echo $child->summary()->kirbytext()?>
+									</div>
+								</div>
+								<div class="liste-text row">
+									<div class="small-13 small-push-2 columns end">
+										<?php echo $child->text()->kirbytext() ?>
+									</div>
+									<?php if($child->dates()->isNotEmpty()):?>
+										<div class="notes-dates small-5 small-push-1 columns end">
+											<ul>
+												<?php foreach($child->dates()->toStructure() as $dates):?>
+													<li>
+														<h4>
+															<?php echo $day[date("N", strtotime($dates->moment()))];?>
+															<?php echo date("d", strtotime($dates->moment()));?>
+															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
+															<br>
+															<?php echo $dates->hours()->html() ?>
+														</h4>
+														<h5><?php echo $dates->title()->html() ?></h5>
+
+													</li>
+												<?php endforeach ?>
+											</ul>
+										</div>
+									<?php endif ?>
+								</div>
+							</li>
+						<?php endif?>
 					<?php endforeach?>
 				</ul>
-
+				<?php snippet('icones') ?>
 		</div>
 	</main>
 	

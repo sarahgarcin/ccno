@@ -27,6 +27,24 @@
 				snippet('dates');
 			endif?>
 		</div>
+		<div class="creations large-14 large-push-2">
+			<h1>Créations</h1>
+			<ul>
+				<?php foreach($page->children()->visible() as $child):?>
+					<li>
+						<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
+						<?php echo $child->title()->html()?>
+						</a>
+						<?php if($child->hasImages()):?>
+							<div class="thumb-wrapper">
+								<img src="<?php echo $child->images()->first()->url()?>" alt="<?php echo $child->title()?>">
+							</div>
+						<?php endif ?>
+					</li>
+				<?php endforeach ?>
+			</div>
+			
+		</div>
 	</main>
 	
 </div>

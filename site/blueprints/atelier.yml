@@ -31,5 +31,12 @@ fields:
       place: 
         label: Lieu
         type: text
+      actus:
+        label: Afficher cette page comme une actu sur la page d'accueil ?
+        type: radio
+        default: non
+        options:
+          oui: oui
+          non: non
   	help: Informations à afficher dans l'agenda
 

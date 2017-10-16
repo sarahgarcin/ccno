@@ -17,7 +17,8 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — {{moment}} — {{hours}} — {{place}}
+      {{title}} — {{moment}} — {{hours}} — {{place}} </br>
+      Page d'accueil: {{actus}}
     fields:
       title:
         label: Titre
@@ -31,6 +32,13 @@ fields:
       place: 
         label: Lieu
         type: text
+      actus:
+        label: Afficher cette page comme une actu sur la page d'accueil ?
+        type: radio
+        default: non
+        options:
+          oui: oui
+          non: non
   bio: 
     label: Biographie 
     type: markdown

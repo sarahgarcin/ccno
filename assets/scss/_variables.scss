@@ -68,6 +68,14 @@ $p: 1.25rem;
 	}
 }
 
+@mixin listSepartor($size){
+	content:"#";
+	font-family: "orleans";
+	font-size: $size;
+	padding-left: 1rem;
+	padding-right: 0.8rem;
+}
+
 
 @mixin monochrome($couleur){
 	background: $couleur;
