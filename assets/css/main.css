@@ -9103,6 +9103,11 @@ figure {
   font-size: 1.125rem;
   width: 30%;
   min-width: 100px; }
+  .note a {
+    color: #fa4bc8;
+    text-decoration: none !important; }
+    .note a:hover {
+      color: #000; }
   .note.date {
     font-size: 2rem;
     line-height: 1; }
@@ -9441,6 +9446,12 @@ main {
     margin-top: 1.5rem; }
     main .notes-dates li {
       margin-bottom: 1.5rem; }
+      main .notes-dates li a {
+        text-decoration: none !important; }
+        main .notes-dates li a:hover h4 {
+          color: #000; }
+        main .notes-dates li a:hover h5, main .notes-dates li a:hover h6 {
+          color: #fa4bc8; }
     main .notes-dates h5, main .notes-dates h6 {
       margin: 0; }
     main .notes-dates h4 {

@@ -17,51 +17,72 @@
 			foreach($project->dates()->toStructure() as $dates):
 				if($dates->agenda() != 'non'):
 					$i++;
-					$dateFormat = date("d-m-Y", strtotime($dates->moment()));
-					$Day =  date("j", strtotime($dateFormat));
-					$Month = $mois[date("n", strtotime($dateFormat)) - 1];
-					$Year = date("Y", strtotime($dateFormat));
+					$from = $dates->from();
+					$to = $dates->to();
+					$newDateFrom = date("d-m-Y", strtotime($from));
+					$newDateTo = date("d-m-Y", strtotime($to));
+					$fromDay =  date("j", strtotime($from));
+					$fromMonth = $mois[date("n", strtotime($from)) - 1];
+					$fromYear = date("Y", strtotime($from));
+					$toDay = date("j", strtotime($to));
+					$toMonth = $mois[date("n", strtotime($to)) - 1];
+					$toYear = date("Y", strtotime($to));
 
-					$array[$i]['date'] = date("Ymd", strtotime($dates->moment()));
-					$array[$i]['jour'] = $Day;
-					$array[$i]['mois'] = $Month;
-					$array[$i]['an'] = $Year;
+					$array[$i]['datestart'] = date("Ymd", strtotime($from));
+    			$array[$i]['dateend'] = date("Ymd", strtotime($to));
+
+					$array[$i]['fromDay'] = $fromDay;
+			    $array[$i]['fromMonth'] = $fromMonth;
+			    $array[$i]['fromYear'] = $fromYear;
+			    $array[$i]['toDay'] = $toDay;
+			    $array[$i]['toMonth'] = $toMonth;
+			    $array[$i]['toYear'] = $toYear;
 					$array[$i]['titre'] = $dates->title();
 					$array[$i]['type'] = $dates->type();
 					$array[$i]['heures'] = $dates->hours();
 					$array[$i]['lieu'] = $dates->place();
 			    $array[$i]['url'] = $url;
 			    
-			    $projectTime = date("Ymd", strtotime($dateFormat));
 			    
-			    $arrayPast[$i]['date'] = date("Ymd", strtotime($dates->moment()));
-					$arrayPast[$i]['jour'] = $Day;
-					$arrayPast[$i]['mois'] = $Month;
-					$arrayPast[$i]['an'] = $Year;
+			    
+			    $arrayPast[$i]['datestart'] = date("Ymd", strtotime($from));
+    			$arrayPast[$i]['dateend'] = date("Ymd", strtotime($to));
+
+					$arrayPast[$i]['fromDay'] = $fromDay;
+			    $arrayPast[$i]['fromMonth'] = $fromMonth;
+			    $arrayPast[$i]['fromYear'] = $fromYear;
+			    $arrayPast[$i]['toDay'] = $toDay;
+			    $arrayPast[$i]['toMonth'] = $toMonth;
+			    $arrayPast[$i]['toYear'] = $toYear;
 					$arrayPast[$i]['titre'] = $dates->title();
 					$arrayPast[$i]['type'] = $dates->type();
 					$arrayPast[$i]['heures'] = $dates->hours();
 					$arrayPast[$i]['lieu'] = $dates->place();
 			    $arrayPast[$i]['url'] = $url;
-			    
-			    if($currentTime < $projectTime){
-						unset($arrayPast[$i]);
-					}
 
-					if($currentTime > $projectTime){
+			    $projectTime = date("Ymd", strtotime($from));
+	    		$projectTimeEnd = date("Ymd", strtotime($to));
+					
+					if($currentTime > $projectTime && $currentTime > $projectTimeEnd){
 						unset($array[$i]);
 					}
+
+					if($currentTime < $projectTime && $currentTime > $projectTimeEnd){
+						unset($arrayPast[$i]);;
+					}
+			    
+			 
 				endif;
 			endforeach;
 		endif;
 	endforeach;
 
 	usort($array, function($a, $b) {
-	  return $a['date'] - $b['date'];
+	  return $a['datestart'] - $b['datestart'];
 	});
 
 	usort($arrayPast, function($a, $b) {
-	  return $a['date'] - $b['date'];
+	  return $a['datestart'] - $b['datestart'];
 	});
 
 ?>
@@ -76,10 +97,10 @@
 				<?php $previousMonthPast = null;
 					foreach($arrayPast as $date):?>
 					<?php 
-						if($previousMonthPast != $date['mois']):?>
-					 		<h2><?php echo $date['mois'];?> <?php echo $date['an'];?></h2>
+						if($previousMonthPast != $date['fromMonth']):?>
+					 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
 					 	<?php endif;
-						$previousMonthPast = $date['mois'];
+						$previousMonthPast = $date['fromMonth'];
 					?>
 					<table>
 					<colgroup>
@@ -95,7 +116,11 @@
 				    	</a>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['jour']." ".$date['mois'].", ".$date['heures']?>
+				    		<?php if($date["datestart"] == $date["dateend"]):?>
+				    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
+				    		<?php else:?>
+				    			<?php echo 'Du '.$date['fromDay']." ".$date['fromMonth'].' Au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+				    		<?php endif;?>
 				    	</a>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
@@ -117,10 +142,10 @@
 		<?php $previousMonth = null;
 			foreach($array as $date):?>
 			<?php 
-				if($previousMonth != $date['mois']):?>
-			 		<h2><?php echo $date['mois'];?> <?php echo $date['an'];?></h2>
+				if($previousMonth != $date['fromMonth']):?>
+			 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
 			 	<?php endif;
-				$previousMonth = $date['mois'];
+				$previousMonth = $date['fromMonth'];
 			?>
 			<table>
 					<colgroup>
@@ -136,7 +161,12 @@
 				    	</a>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['jour']." ".$date['mois'].", ".$date['heures']?>
+				    		<?php if($date["datestart"] == $date["dateend"]):?>
+				    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
+				    		<?php else:?>
+				    			<?php echo 'prout'?>
+				    			<?php echo 'Du '.$date['fromDay']." ".$date['fromMonth'].' Au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
+				    		<?php endif;?>
 				    	</a>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">

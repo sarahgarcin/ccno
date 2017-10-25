@@ -25,7 +25,8 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — {{moment}} — {{hours}} — {{place}}
+      {{title}} — Du {{from}} au {{to}} — {{hours}} — {{place}}
+      <br>{{link}} 
     fields:
       title:
         label: Titre
@@ -33,14 +34,22 @@ fields:
       type:
         label: Type
         type: text
-      moment: 
-        label: Date
+      from:
+        label: Du
         type: date
+        format: DD-MM-YYYY
+      to: 
+        label: Au
+        type: date
+        format: DD-MM-YYYY
       hours: 
         label: Heures
         type: text
       place: 
         label: Lieu
+        type: text
+      link: 
+        label: Lien
         type: text
       agenda: 
         label: Afficher cette page dans l'agenda ?

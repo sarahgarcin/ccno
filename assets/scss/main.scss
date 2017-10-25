@@ -73,7 +73,13 @@ figure{
 	font-size: rem-calc(18);
 	width: 30%;
 	min-width: 100px;
-
+	a{
+		color: $rose;
+		text-decoration:none !important;
+		&:hover{
+			color:#000;
+		}
+	}
 	&.date{
 		font-size: 2rem;
 		line-height: 1;
@@ -523,6 +529,17 @@ main{
 		margin-top: $marginNormal;
 		li{
 			margin-bottom: $marginNormal;
+			a{
+				text-decoration: none !important;
+				&:hover{
+					h4{
+						color: #000;
+					}
+					h5, h6{
+						color:$rose;
+					}
+				}
+			}
 		}
 		h5, h6{
 			margin:0;

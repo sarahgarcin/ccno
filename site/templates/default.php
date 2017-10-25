@@ -27,9 +27,11 @@
 				<?php endif?>
 				<?php snippet('icones') ?>
 			</div>
-			<?php if($page->dates()->isNotEmpty()):
-				snippet('dates');
-			endif?>
+			<?php if($page->parent()->template() != "list"):?>
+				<?php if($page->dates()->isNotEmpty()):
+					snippet('dates');
+				endif?>
+			<?php endif?>
 		</div>
 	</main>
 	
