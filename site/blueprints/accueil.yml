@@ -17,7 +17,7 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — Du {{from}} au {{to}} — {{hours}} — {{place}} </br>
+      {{title}} — {{moment}} — Du {{from}} au {{to}} — {{hours}} — {{place}} </br>
       {{link}} <br>
       Page d'accueil: {{actus}}
     fields:
@@ -27,6 +27,10 @@ fields:
       type:
         label: Type
         type: text
+      moment:
+        label: Date
+        type: date
+        format: DD-MM-YYYY
       from:
         label: Du
         type: date

@@ -18,7 +18,7 @@
 				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
 			</div>
 		<?php endif ?>
-		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-16 large-push-2 columns">
+		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-16 large-push-2 columns">
 			<div class="large-13">
 				<?php echo $page->text()->kirbytext() ?>
 			</div>
@@ -31,15 +31,15 @@
 								<h3><?php echo $child->personne()->html()?></h3>
 							</div>
 							<div class="row accueils-text">
-								<div class="large-13 columns">
+								<div class="small-18 large-13 columns">
 										<?php echo $child->text()->kirbytext() ?>
 			
-										<div class="biography small-8">
+										<div class="biography small-12 medium-8">
 											<?php echo $child->bio()->kirbytext()?>
 										</div>
 								</div>
 								<?php if($child->dates()->isNotEmpty()):?>
-									<div class="notes-dates small-16 medium-16 large-5 columns">
+									<div class="notes-dates small-16 medium-16 large-5 columns end">
 										<ul>
 											<?php foreach($child->dates()->toStructure() as $dates):?>
 												<li>
@@ -64,6 +64,7 @@
 														</h4>
 														<h5><?php echo $dates->title()->html() ?></h5>
 														<h6><?php echo $dates->type()->html() ?></h6>
+														<h6><?php echo $dates->place()->html() ?></h6>
 													<?php if($dates->link()->isNotEmpty()):?>
 														</a>
 													<?php endif; ?>

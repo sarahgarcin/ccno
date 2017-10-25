@@ -18,7 +18,7 @@
 			</div>
 		<?php endif ?>
 		<div class="row">
-			<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2 columns">
+			<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 columns">
 				<?php echo $page->text()->kirbytext() ?>
 				<?php if($page->bio()->isNotEmpty()):?>
 					<div class="biography small-8">

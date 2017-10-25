@@ -1,5 +1,6 @@
 <header class="module--menu menu-top">
-	<h1 class="siteName">
+	<p class="close-menu-button orleans show-for-small-only">X</p>
+	<h1 class="siteName hide-for-small-only">
 		<a href="<?php echo $site->url()?>" title="<?php echo $site->name()?>">
 			<?php echo $site->shortcut()->html()?>
 		</a>

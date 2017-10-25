@@ -1,45 +1,111 @@
 // ---------- MOBILE VERSION -----------
 @media #{$small-only}{
+	h1{
+		font-size: 2.7rem;
+		word-wrap:  break-word;
+		width:auto;
+	}
+	p, li{
+		font-size:1.1rem;
+	}
+
+
 	.left-col{
 		position: relative; 
 		height:auto;
 		h1, a{
-			font-size: 1.5rem;
+			font-size: 1rem;
 			line-height: 0.85;
+			margin-bottom: $marginSmall;
+		}
+		.menu-mobile-btn{
+			text-transform: uppercase;
+			color: $rose;
+			font-size: 1rem;
+			margin-bottom: 0;
+			background: #FFF;
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			z-index:10;
+			padding-top:10px;
+			padding-left: $columnPadding;
+		}
+		.pdf{
+			margin-top: $marginSmall;
+			display:none;
 		}
 
 	}
 	.address{
-		position:relative;		
+		position:relative;	
+		margin-top: $marginNormal;	
 		p, a, ul{
 			font-size: 0.7rem;
 		}
+		ul{margin-bottom:$marginSmall/2;}
+		li{line-height:0;}
 		padding-left:0.9375rem;
 	}
 
-	.site-en-construction{
-		p, a{
-			font-size: 0.7rem;
+	header{
+		//display:block;
+		filter:none;
+		
+		.close-menu-button{
+			margin-bottom: $marginSmall;
+		}
+		nav > ul{
+			display:block;
+			>li{
+				 margin-bottom: $marginSmall;
+			}
 		}
 	}
 
+	.module--navigation-in-page{
+		top: 1.3em;
+		left:0;
+		padding-top: 2em;
+		padding-left: $columnPadding;
+		width:150%;
+	}
+
+	main{
+		padding-top:$marginBig;
+	}
+
 	body[data-rubrique="home"]{
+		.left-col{
+			h1, h1 a{
+				font-size: 1.5rem;
+				line-height: 0.85;
+			}
+			.pdf{
+				display:block;
+			}
+		}
 		main{
 			padding-right: 0.9375rem;
 			float: left;
 			.actu{
-				p, a{
+				h1, p, a{
 					font-size: 12.5vw;
+				}
+				h3{
+					font-size: 7vw;
 				}
 			}
 			.image-icono{
 				.icone-wrapper{
-					width: 80px;
+					width: 60px;
 					min-width: 50px;
 				}
 			}
 		}
 	}
+
 
 	body[data-template="default"]{
 		main{
@@ -50,11 +116,38 @@
 				width: 75%;
 			}
 			h2{
-				margin-left: -10%;
+				margin-left: 0;
 			}
 
 		}
 	}
+
+	body[data-template="agenda"] {
+		main {
+			table{
+				width:100%;
+			}
+		}
+	}
+
+	body[data-template="accueils"] {
+		.accueils-module {
+			h2{
+				font-size: 2.5rem;
+				margin-top:1.5rem;
+				margin-left:0;
+			}
+			h3{
+				font-size: 2rem;
+				margin-bottom: 0;
+				margin-left:0;
+			}
+			.accueils-text{
+				margin-top: $marginSmall;
+			}
+		}
+	}
+
 }
 
 

@@ -29,7 +29,7 @@
 								</div>
 								<div class="liste-text">
 									<div class="small-13 small-push-2 columns end">
-										<?php if($child->dates()->isNotEmpty()):?>
+										<?php if($child->dates()->isNotEmpty() && $child->display() != "text"):?>
 											<ul>
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
@@ -43,6 +43,8 @@
 													</li>
 												<?php endforeach ?>
 											</ul>
+										<?php else: ?>
+											<?php echo $child->text()->kt()?>
 										<?php endif ?>
 									</div>
 								</div>
@@ -57,7 +59,7 @@
 								</div>
 								<div class="liste-text row">
 									<div class="small-13 small-push-2 columns end">
-										<?php if($child->dates()->isNotEmpty()):?>
+										<?php if($child->dates()->isNotEmpty() && $child->display() != "text"):?>
 											<ul>
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
@@ -71,6 +73,8 @@
 													</li>
 												<?php endforeach ?>
 											</ul>
+										<?php else: ?>
+											<?php echo $child->text()->kt()?>
 										<?php endif ?>
 									</div>
 			

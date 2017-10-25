@@ -34,6 +34,7 @@ fields:
       moment:
         label: Date
         type: date
+        format: DD-MM-YYYY
       from:
         label: Du
         type: date

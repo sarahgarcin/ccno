@@ -26,6 +26,7 @@
 						<?php echo $dates->hours()->html() ?>
 					</h4>
 					<h5><?php echo $dates->title()->html() ?></h5>
+					<h6><?php echo $dates->place()->html() ?></h6>
 					<h6><?php echo $dates->type()->html() ?></h6>
 				<?php if($dates->link()->isNotEmpty()):?>
 					</a>

@@ -28,6 +28,7 @@ h3{@include H3;}
 h4{@include H4;}
 p, li{ @include textCourant; }
 a{@include liens}
+a:visited{color: #000;}
 a.active{color: $rose;}
 ul{
 	margin:0;
@@ -423,31 +424,23 @@ body[data-template="agenda"]{
 		h2{
 			margin-left: 0;
 		}
+
+		.title--next-events, .click---past-events{
+			font-size: 1.2rem;
+	    margin-bottom: $marginSmall/2;
+	    padding-right: $marginSmall;
+	    cursor:pointer;
+	    display:inline-block;
+			&:hover, &.active{
+		    color: $rose;
+		  }
+	  }
 		.pastEvents{
 			.pastEvents-wrapper{
 				display:none;
 				&.active {
 					display:block;
 				}
-			}
-			.title--next-events{
-				//display:none;
-				font-size: 1.4rem;
-		    margin-bottom: 0;
-		    color: $rose;
-		    margin-top: $marginBig;
-		    //margin-left: -5%;
-
-			}
-			.click---past-events{
-				cursor:pointer;
-		    font-size: 1.4rem;
-		    margin-bottom: 0;
-		    margin-top: $marginBig;
-		    //margin-left: -5%;
-		    &:hover, &.active{
-		    	color: $rose;
-		    }
 			}
 		}
 		table {
@@ -537,16 +530,19 @@ main{
 					}
 					h5, h6{
 						color:$rose;
+
 					}
 				}
 			}
 		}
 		h5, h6{
 			margin:0;
+			font-size: $p;
 		}
 		h4{
 			line-height: 1;
 			margin: 0;
+			font-size: $p;
 		}
 	}
 }

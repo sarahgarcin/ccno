@@ -67,7 +67,7 @@
 						unset($array[$i]);
 					}
 
-					if($currentTime < $projectTime && $currentTime > $projectTimeEnd){
+					if($currentTime < $projectTime && $currentTime < $projectTimeEnd){
 						unset($arrayPast[$i]);;
 					}
 			    
@@ -91,8 +91,9 @@
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-14 columns">
 		<h1><?= $page->title()->html() ?></h1>
+		<h3 class="click---past-events">ce qui est passé</h3>
+		<h3 class="title--next-events active">ce qui est à venir</h3>
 		<div class="pastEvents">
-			<h3 class="click---past-events">Évènements passés</h3>
 			<div class="pastEvents-wrapper">
 				<?php $previousMonthPast = null;
 					foreach($arrayPast as $date):?>
@@ -114,6 +115,7 @@
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 				    		<?php echo $date['type']?>
 				    	</a>
+				    </td>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 				    		<?php if($date["datestart"] == $date["dateend"]):?>
@@ -122,6 +124,7 @@
 				    			<?php echo 'Du '.$date['fromDay']." ".$date['fromMonth'].' Au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
 				    		<?php endif;?>
 				    	</a>
+				    </td>
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 				    		<?php echo $date['lieu']?>
@@ -131,56 +134,57 @@
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 				    		<?php echo $date['titre']?>
 				    	</a>
-				    <td>
+				    </td>
 				  </tr>
 			</table>
 				<?php endforeach ?>
 			</div>
-			<h3 class="title--next-events">Évènements à venir</h3>
 		</div>
-
-		<?php $previousMonth = null;
-			foreach($array as $date):?>
-			<?php 
-				if($previousMonth != $date['fromMonth']):?>
-			 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
-			 	<?php endif;
-				$previousMonth = $date['fromMonth'];
-			?>
-			<table>
-					<colgroup>
-						<col span="1" style="width: 20%;">
-			      <col span="1" style="width: 25%;">
-			      <col span="1" style="width: 15%;">
-			      <col span="1" style="width: 40%;">
-			    </colgroup>
-				  <tr>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['type']?>
-				    	</a>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php if($date["datestart"] == $date["dateend"]):?>
-				    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
-				    		<?php else:?>
-				    			<?php echo 'prout'?>
-				    			<?php echo 'Du '.$date['fromDay']." ".$date['fromMonth'].' Au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
-				    		<?php endif;?>
-				    	</a>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['lieu']?>
-				    	</a>
-				    </td>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['titre']?>
-				    	</a>
-				    <td>
-				  </tr>
-			</table>
-		<?php endforeach ?>
+		<div class="nextEvents">
+			<?php $previousMonth = null;
+				foreach($array as $date):?>
+				<?php 
+					if($previousMonth != $date['fromMonth']):?>
+				 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
+				 	<?php endif;
+					$previousMonth = $date['fromMonth'];
+				?>
+				<table>
+						<colgroup>
+							<col span="1" style="width: 20%;">
+				      <col span="1" style="width: 25%;">
+				      <col span="1" style="width: 15%;">
+				      <col span="1" style="width: 40%;">
+				    </colgroup>
+					  <tr>
+					    <td>
+					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+					    		<?php echo $date['type']?>
+					    	</a>
+					    </td>
+					    <td>
+					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+					    		<?php if($date["datestart"] == $date["dateend"]):?>
+					    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
+					    		<?php else:?>
+					    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
+					    		<?php endif;?>
+					    	</a>
+					    </td>
+					    <td>
+					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+					    		<?php echo $date['lieu']?>
+					    	</a>
+					    </td>
+					    <td>
+					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+					    		<?php echo $date['titre']?>
+					    	</a>
+					    </td>
+					  </tr>
+				</table>
+			<?php endforeach ?>
+		</div>
 	</main>
 	
 </div>

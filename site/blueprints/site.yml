@@ -41,7 +41,25 @@ fields:
         label: Choisir le Pdf
         type: select
         options: documents
-
+  ogimage:
+    label: Site Thumbnail
+    type:  url
+    help:  URL de l'image qui va représenter votre site sur les réseaux sociaux
+  socialnetworks:
+    label: Vos Réseaux Sociaux
+    type:  structure
+    entry: >
+      {{title}} — {{link}}
+    fields:
+      title:
+        label: Titre
+        type:  text
+        width: 1/2
+      link:
+        label: Lien
+        type:  text
+        width: 1/2
+        icon:  link
   address: 
     label : Coordonnées
     type: markdown
