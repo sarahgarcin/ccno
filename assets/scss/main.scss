@@ -73,6 +73,7 @@ figure{
 	font-size: rem-calc(18);
 	width: 30%;
 	min-width: 100px;
+
 	&.date{
 		font-size: 2rem;
 		line-height: 1;
@@ -121,7 +122,7 @@ header{
 	&.active{
 		filter: blur(0);
 	}
-	h1{
+	h1, h1 a{
 		font-size: rem-calc(30);
 		cursor: pointer;
 		&:hover{
@@ -163,7 +164,7 @@ nav > ul {
 	position:fixed;
 	z-index: 3;
 	top:$constructionTop; // à enlever quand site en construction
-	padding: 5px 10px 10px 5px;
+	padding: 8px 10px 10px 5px;
 }
 
 .breadcrumb{
@@ -219,12 +220,16 @@ nav > ul {
 }
 
 .left-col{
-	height:95vh;
+	height:100vh;
 	position: fixed; 
-	top: 30px;
+	top: 0px;
+	padding-top: $marginSmall/2;
 	h1, h1 a{
 		font-size: 1.8rem;
 		line-height: 1.45rem;
+		&:hover{
+			color: #000;
+		}
 	}
 	.menu-btn{
 		font-size: 1.5rem;
@@ -267,7 +272,10 @@ nav > ul {
 }
 
 main{
-	padding-top: 7.5rem;
+	padding-top: $marginBig *2 ;
+	.text a{
+		text-decoration: underline;
+	}
 }
 
 
@@ -284,7 +292,7 @@ body[data-rubrique="home"]{
 	}
 	main{
 		padding-right: 4rem;
-		padding-top: 2.5rem;
+		padding-top: $marginSmall/2;
 		margin-bottom: 0;
 		.image-icono{
 			position:absolute;
@@ -306,20 +314,32 @@ body[data-rubrique="home"]{
 			margin:0;
 			margin-top: $marginSmall;
 			margin-bottom: $marginSmall;
+			&:hover{
+				color: #000;
+			}
 		}
 		h2{
 			font-size: 5vw;
 			line-height:0.8;
 			margin:0;
+			&:hover{
+				color: #000;
+			}
 		}
 		h3{
 			font-size: 5vw;
 			line-height:0.8;
 			margin:0;
+			&:hover{
+				color: #000;
+			}
 		}
 		p, a{
 			font-size: 8.2vw;
 			line-height:0.8;
+			&:hover{
+				color: #000;
+			}
 		}
 		.actu-title {
 			margin-bottom: 10vh;
@@ -327,6 +347,11 @@ body[data-rubrique="home"]{
 
 		.actu-date{
 			text-align: right;
+		}
+		p{
+			&:hover{
+				color: #000;
+			}
 		}
 		p.link{
 			text-align: right;
@@ -342,7 +367,7 @@ body[data-rubrique="home"]{
 
 body[data-template="menu"]{
 	main{
-		padding-top: 3.8rem;
+		padding-top: $marginSmall;
 		h1{
 			width: auto;
 			text-transform: uppercase;
@@ -388,9 +413,36 @@ body[data-template="maud"]{
 
 body[data-template="agenda"]{
 	main{
-		padding-top: 3.8rem;
+		padding-top: $marginSmall/2;
 		h2{
 			margin-left: 0;
+		}
+		.pastEvents{
+			.pastEvents-wrapper{
+				display:none;
+				&.active {
+					display:block;
+				}
+			}
+			.title--next-events{
+				//display:none;
+				font-size: 1.4rem;
+		    margin-bottom: 0;
+		    color: $rose;
+		    margin-top: $marginBig;
+		    //margin-left: -5%;
+
+			}
+			.click---past-events{
+				cursor:pointer;
+		    font-size: 1.4rem;
+		    margin-bottom: 0;
+		    margin-top: $marginBig;
+		    //margin-left: -5%;
+		    &:hover, &.active{
+		    	color: $rose;
+		    }
+			}
 		}
 		table {
 	    border-collapse: collapse;
@@ -406,6 +458,7 @@ body[data-template="agenda"]{
 		  td, th {
 		    text-align: left;
 		    padding: 2px;
+		    padding-right:$marginSmall/2;
 		    cursor:pointer;
 		    font-size: 1rem;
 		    vertical-align: top;
@@ -467,6 +520,13 @@ main{
 		}
 	}
 	.notes-dates{
+		margin-top: $marginNormal;
+		li{
+			margin-bottom: $marginNormal;
+		}
+		h5, h6{
+			margin:0;
+		}
 		h4{
 			line-height: 1;
 			margin: 0;
@@ -496,9 +556,15 @@ body[data-template="list"]{
 		}
 		li.active{
 			.liste-element{
-				pointer-events:none;
+				//pointer-events:none;
+				cursor:default;
 				&:hover{
-					color: #000;
+					h1,h2,p,li,h3,h4,h5,h6,a{
+						color: #000;
+					}
+				}
+				a:hover{
+					color: $rose;
 				}
 			}
 			.liste-text{
@@ -507,6 +573,10 @@ body[data-template="list"]{
 		}
 		.liste-text{
 			display:none;
+			h2{
+				line-height: 1;
+				margin-left:-22%;
+			}
 		}
 	}
 	.liste-element{
@@ -559,6 +629,12 @@ body[data-template="ateliers"]{
 	}
 }
 
+.biography{
+	p, li{
+		font-size: 1rem;
+		line-height: 1;
+	}
+}
 
 body[data-template="accueils"]{
 	main .text li::after{
@@ -594,12 +670,7 @@ body[data-template="accueils"]{
 				}
 			}
 		}
-		.biography{
-			p, li{
-				font-size: 1rem;
-				line-height: 1;
-			}
-		}
+		
 		.accueils-text{
 			display:none;
 		}
@@ -613,6 +684,59 @@ body[data-template="accueils"]{
 	position:absolute;
 	z-index: 99;
 	margin-top: 30px;
+}
+
+.slider{
+  margin-bottom: $marginSmall;
+  overflow:hidden;
+  margin-left: 0;
+  margin-top: $marginNormal;
+  .slider-image{
+  	&:after{
+    	content:"";
+    }
+  }
+  img {
+    margin:auto;
+    max-width:none;
+  }
+  button{
+    background: transparent;
+    padding: 0;
+    color: #FFF;
+    font-size: 2em;
+    font-weight: normal;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 999;
+    outline:none;
+    &.slick-prev{
+      left:10px;
+    }
+    &.slick-next{
+      right:10px;
+    }
+  }
+  .slick-dots{
+    margin-left:0;
+    li{
+      width: 10px;
+      height:10px;
+      background: grey;
+      border-radius: 100%;
+      display:inline-block;
+      margin-right: 0.5em;
+      cursor: pointer;
+      &:after{
+      	content:"";
+      }
+      &.slick-active{
+        background: $rose;
+      }
+    }
+    button{display:none;}
+  }
 }
 
 @import "responsive.scss";

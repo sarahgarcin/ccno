@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];?>
 <?php 
@@ -49,7 +48,7 @@
 								<div class="actu-date">
 					<?php foreach($actuToDisplay->dates()->toStructure() as $dates):?>
 						<?php if($dates->actus() == "oui"):?>
-								<p><?php echo date("d", strtotime($dates->moment()));?> 
+								<p><?php echo date("j", strtotime($dates->moment()));?> 
 								<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
 								<br>
 								<?php echo $dates->hours()->html() ?>

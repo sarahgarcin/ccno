@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
   $day = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
@@ -30,27 +29,22 @@
 								</div>
 								<div class="liste-text">
 									<div class="small-13 small-push-2 columns end">
-										<?php echo $child->text()->kirbytext() ?>
-									</div>
-									<?php if($child->dates()->isNotEmpty()):?>
-										<div class="notes-dates small-5 small-push-1  columns end">
+										<?php if($child->dates()->isNotEmpty()):?>
 											<ul>
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
-														<h4>
+														<h2>
 															<?php echo $day[date("N", strtotime($dates->moment()))];?>
-															<?php echo date("d", strtotime($dates->moment()));?>
+															<?php echo date("j", strtotime($dates->moment()));?>
 															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
-															<br>
-															<?php echo $dates->hours()->html() ?>
-														</h4>
-														<h5><?php echo $dates->title()->html() ?></h5>
-
+															<?php echo $dates->title()->html() ?>
+														</h2>
+														<?php echo $dates->text()->kt() ?>
 													</li>
 												<?php endforeach ?>
 											</ul>
-										</div>
-									<?php endif ?>
+										<?php endif ?>
+									</div>
 								</div>
 							</li>
 						<?php else: ?>
@@ -63,27 +57,23 @@
 								</div>
 								<div class="liste-text row">
 									<div class="small-13 small-push-2 columns end">
-										<?php echo $child->text()->kirbytext() ?>
-									</div>
-									<?php if($child->dates()->isNotEmpty()):?>
-										<div class="notes-dates small-5 small-push-1 columns end">
+										<?php if($child->dates()->isNotEmpty()):?>
 											<ul>
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
-														<h4>
+														<h2>
 															<?php echo $day[date("N", strtotime($dates->moment()))];?>
-															<?php echo date("d", strtotime($dates->moment()));?>
+															<?php echo date("j", strtotime($dates->moment()));?>
 															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
-															<br>
-															<?php echo $dates->hours()->html() ?>
-														</h4>
-														<h5><?php echo $dates->title()->html() ?></h5>
-
+															<?php echo $dates->title()->html() ?>
+														</h2>
+														<?php echo $dates->text()->kt() ?>
 													</li>
 												<?php endforeach ?>
 											</ul>
-										</div>
-									<?php endif ?>
+										<?php endif ?>
+									</div>
+			
 								</div>
 							</li>
 						<?php endif?>

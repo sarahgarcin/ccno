@@ -22,6 +22,9 @@ fields:
       title:
         label: Titre
         type: text
+      type:
+        label: Type
+        type: text
       moment: 
         label: Date
         type: date
@@ -31,6 +34,16 @@ fields:
       place: 
         label: Lieu
         type: text
+      text:
+        label: Texte
+        type:  markdown
+      agenda: 
+        label: Afficher cette page dans l'agenda ?
+        type: radio
+        default: oui
+        options:
+          oui: oui
+          non: non
       actus:
         label: Afficher cette page comme une actu sur la page d'accueil ?
         type: radio

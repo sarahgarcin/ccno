@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
 
 

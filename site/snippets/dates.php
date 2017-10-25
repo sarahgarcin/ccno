@@ -8,12 +8,13 @@
 			<li>
 				<h4>
 					<?php echo $day[date("N", strtotime($dates->moment()))];?>
-					<?php echo date("d", strtotime($dates->moment()));?>
+					<?php echo date("j", strtotime($dates->moment()));?>
 					<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
 					<br>
 					<?php echo $dates->hours()->html() ?>
 				</h4>
 				<h5><?php echo $dates->title()->html() ?></h5>
+				<h6><?php echo $dates->type()->html() ?></h6>
 
 			</li>
 		<?php endforeach ?>

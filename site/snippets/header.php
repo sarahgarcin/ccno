@@ -10,6 +10,7 @@
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
+  <?php echo css('bower_components/slick-carousel/slick/slick.css') ?>
   <?php if ( c::get('environment') == 'local' ) : ?>
 
   <?php echo css('assets/css/main.css') ?>

@@ -1,4 +1,5 @@
 <?php snippet('header') ?>
+<?php snippet('menu') ?>
 
 <main class="error-page small-6 small-push-6">
 	<div class="image-wrapper small-18">

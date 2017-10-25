@@ -37,15 +37,15 @@ function init(){
 
 	// ----
 	// show / hide menu on click 
-	$('.menu-btn').on('click', function(){
+	$('.menu-btn').on('mouseenter', function(){
 		$('header').fadeIn(400);
 		setTimeout(function(){
 			$('header').addClass('active');
 		}, 400);
 	});
 
-	$('.siteName').on('click', function(){
-		
+	//$('.siteName').on('click', function(){
+	$('header').on('mouseleave', function(){
 		$('header').removeClass('active');
 		setTimeout(function(){
 			$('header').fadeOut(400);
@@ -85,6 +85,9 @@ function init(){
 	// Random position of picto sur toutes les pages qui ne sont pas la home
 	if($("body").attr("data-template")!="home"){
 		var mainH = $('main').height();
+		if(mainH < $(window).height()){
+			mainH = $(window).height();
+		}
 		var windowW = $('.icones-wrapper-text').width();
 		$(".picto-wrapper").each(function(){
 			var randomX = Math.random() * (windowW - 100);
@@ -115,6 +118,23 @@ function init(){
 	});
 	$('.creations li a').mouseleave(function() {
 		$(this).parent('li').find('.thumb-wrapper').hide();
+	});
+
+	//AGENDA
+	$('.click---past-events').on('click', function(){
+		$(this).next('.pastEvents-wrapper').slideToggle(400);
+		$(this).toggleClass('active');
+		// $(this).next('.pastEvents-wrapper').next('.title--next-events').slideToggle(400);
+	});
+
+	//init slider
+	$('.slider').slick({  
+		dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  prevArrow: '<button type="button" class="slick-prev"><</button>',
+	  nextArrow: '<button type="button" class="slick-next">></button>'
 	});
 
 }

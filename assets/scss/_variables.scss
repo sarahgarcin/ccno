@@ -16,7 +16,7 @@ $columnPadding: 0.9375rem;
 
 $margin-decale: -15%;
 
-$constructionTop : 28px;
+$constructionTop : 0px;
 
 $h1: 	3.5rem;
 $h2: 	1.8rem;
@@ -30,6 +30,7 @@ $p: 1.25rem;
 	width: 400px;
 	line-height: 1;
 	margin-bottom: $marginNormal;
+	padding-left:0 !important;
 }
 
 @mixin H2{
@@ -63,7 +64,7 @@ $p: 1.25rem;
 	line-height: 1;
 	color: #000;
 	&:hover{
-		color: #000;
+		color: $rose;
 		text-decoration: none;
 	}
 }

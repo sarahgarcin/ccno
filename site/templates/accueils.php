@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
 
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
@@ -34,22 +33,7 @@
 							<div class="row accueils-text">
 								<div class="large-13 columns">
 										<?php echo $child->text()->kirbytext() ?>
-										<div class="events">
-											<ul>
-												<?php foreach($child->dates()->toStructure() as $date):?>
-													<div class="accueils-date">
-														<span class="date-event"> 
-															<?php echo $day[date("N", strtotime($date->moment()))]?>
-															<?php echo date("d", strtotime($date->moment()))?>
-															<?php echo $mois[date("m", strtotime($date->moment()))  - 1]?>
-															<?php echo date("Y", strtotime($date->moment()))?><br>
-															<?php echo $date->hours()->html()?>
-														</span>
-														<span class="titre-event"><?php echo $date->title()->html()?></span>
-													</div>
-												<?php endforeach ?>
-											</ul>
-										</div>
+			
 										<div class="biography small-8">
 											<?php echo $child->bio()->kirbytext()?>
 										</div>
@@ -61,7 +45,7 @@
 												<li>
 													<h4>
 														<?php echo $day[date("N", strtotime($dates->moment()))];?>
-														<?php echo date("d", strtotime($dates->moment()));?>
+														<?php echo date("j", strtotime($dates->moment()));?>
 														<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
 														<br>
 														<?php echo $dates->hours()->html() ?>

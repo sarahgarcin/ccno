@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('en-cours') ?>
 <?php snippet('menu') ?>
 
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];

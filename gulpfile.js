@@ -22,6 +22,7 @@ var pluginsScripts = [
   'bower_components/jquery/dist/jquery.js',
   'bower_components/foundation/js/foundation.js',
   'bower_components/lazysizes/lazysizes.min.js',
+  'bower_components/slick-carousel/slick/slick.min.js'
 ];
 var userScripts = [
   'assets/js/main.js'

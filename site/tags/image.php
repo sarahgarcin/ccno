@@ -15,7 +15,7 @@ kirbytext::$tags['image'] = array(
     'target',
     'popup',
     'rel', 
-    'flou'
+    'flou',
   ),
   'html' => function($tag) {
 

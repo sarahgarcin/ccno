@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "lazysizes": "^3.0.0",
-    "jquery-pjax": "^2.0.1"
+    "jquery-pjax": "^2.0.1",
+    "slick": "*",
+    "slick-carousel": "^1.8.1"
   }
 }
