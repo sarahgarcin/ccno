@@ -22,8 +22,8 @@
 						<?php if($page->children()->visible()->count() == 1):?>
 							<li class="active">
 								<div class="liste-element row">
-									<h2 class="small-18 medium-4 xlarge-6 columns end"><?php echo $child->title()->html()?></h2>
-									<div class="summary-liste small-18 medium-10 xlarge-12 columns end">
+									<h2 class="small-18 medium-6 xlarge-7 columns end"><?php echo $child->title()->html()?></h2>
+									<div class="summary-liste small-18 medium-12 large-10 xlarge-11 columns end">
 										<?php echo $child->summary()->kirbytext()?>
 									</div>
 								</div>
@@ -52,13 +52,13 @@
 						<?php else: ?>
 							<li>
 								<div class="liste-element row">
-									<h2 class="small-18 medium-4 xlarge-6 columns end"><?php echo $child->title()->html()?></h2>
-									<div class="summary-liste small-18 medium-10 xlarge-12 columns end">
+									<h2 class="small-18 medium-6 xlarge-7 columns end"><?php echo $child->title()->html()?></h2>
+									<div class="summary-liste small-18 medium-12 large-10 xlarge-11 columns end">
 										<?php echo $child->summary()->kirbytext()?>
 									</div>
 								</div>
 								<div class="liste-text row">
-									<div class="small-18 medium-13 medium-push-2 xlarge-12 columns end">
+									<div class="small-18 medium-18 medium-push-2 large-13 large-push-2 xlarge-12 columns end">
 										<?php if($child->dates()->isNotEmpty() && $child->display() != "text"):?>
 											<ul>
 												<?php foreach($child->dates()->toStructure() as $dates):?>

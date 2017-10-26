@@ -2,7 +2,7 @@
 <?php snippet('menu') ?>
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];?>
 <?php 
-	$projets = $site->index()->filterBy('template', 'default');
+	$projets = $site->index()->filterBy('template', 'in', ['default', 'atelier']);
 	$actuToDisplay="";
 	foreach($projets as $projet):
 		$project = $site->page($projet);

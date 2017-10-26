@@ -89,7 +89,7 @@
 
 <div class ="row">
 	<?php snippet('left-col') ?>
-	<main class="small-18 medium-14 columns">
+	<main class="small-18 medium-13 large-14 columns">
 		<h1><?= $page->title()->html() ?></h1>
 		<h3 class="click---past-events">ce qui est passé</h3>
 		<h3 class="title--next-events active">ce qui est à venir</h3>
@@ -184,6 +184,7 @@
 					  </tr>
 				</table>
 			<?php endforeach ?>
+			<?php echo $page->text()->kt()?>
 		</div>
 	</main>
 	

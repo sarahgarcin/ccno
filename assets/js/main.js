@@ -17,6 +17,18 @@ function init(){
 	    $(".hide-on-scoll").css("opacity", 1 - $(window).scrollTop() / 250);
 	  });
 
+		//calcule le padding du main
+		$(window).on('load', function(){
+			if($("body").attr("data-template")!="home"){
+			  var breadH = $('.breadcrumb').outerHeight();
+				var subH = $('.submenu').outerHeight();
+				$('main').css({
+					'padding-top': breadH+subH+30+'px'
+				})
+			}
+		});
+
+
 		//random position of icons on home page 
 		if($("body").attr("data-template")=="home"){
 			var mainH = $('main').height() - 150;
@@ -177,12 +189,14 @@ function initMobile(){
 		});
 	}
 	// ----
-	var headerH = $('.header-mobile').outerHeight();
-	var navH = $('.module--navigation-in-page').outerHeight();
-	//console.log(headerH + navH);
-	$('main').css({
-		'padding-top': headerH+navH+'px'
-	})
+	$(window).on('load', function(){
+		var headerH = $('.header-mobile').outerHeight();
+		var navH = $('.module--navigation-in-page').outerHeight();
+		//console.log(headerH + navH);
+		$('main').css({
+			'padding-top': headerH+navH+'px'
+		})
+	});
 
 
 }

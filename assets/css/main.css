@@ -9502,7 +9502,14 @@ figure {
   padding: 0 !important; }
 
 .orleans {
-  font-family: "orleans", sans-serif; }
+  font-family: "orleans", sans-serif;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
 
 .note {
   position: absolute;
@@ -9700,7 +9707,8 @@ body[data-rubrique="home"] main {
 body[data-rubrique="home"] .actu h1 {
   font-size: 7.8vw;
   line-height: 0.7;
-  margin: 0; }
+  margin: 0;
+  width: auto; }
   body[data-rubrique="home"] .actu h1:hover {
     color: #000; }
 
@@ -10034,6 +10042,7 @@ body[data-template="accueils"] .accueils-module .accueils-text {
       box-shadow: none;
       padding: 0;
       height: 20px;
+      background: transparent;
       font-family: "directrice", serif;
       line-height: 1.1;
       font-size: 1.25rem;
@@ -10143,6 +10152,11 @@ body[data-template="accueils"] .accueils-module .accueils-text {
       transform: translateX(-50%); }
   .left-col .hide-on-scoll {
     display: none; }
+  .note {
+    position: relative;
+    width: auto;
+    min-width: auto;
+    right: 0; }
   body[data-rubrique="home"] .left-col h1, body[data-rubrique="home"] .left-col h1 a {
     font-size: 1.5rem;
     line-height: 0.85; }
@@ -10201,4 +10215,12 @@ body[data-template="accueils"] .accueils-module .accueils-text {
     font-size: 2rem;
     line-height: 0.85; }
   .address p, .address a, .address ul {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  body[data-template="home"] .left-col h1, body[data-template="home"] .left-col h1 a {
+    font-size: 1.8rem;
+    line-height: 0.85; }
+  .note {
+    position: relative;
+    width: auto;
+    min-width: auto;
+    right: 0; } }

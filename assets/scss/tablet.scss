@@ -1,0 +1,34 @@
+// ---------- TABLETTE VERSION -----------
+@media #{$medium-only}{
+	.left-col{
+		h1, a{
+			font-size: 2rem;
+			line-height: 0.85;
+		}
+
+	}
+	.address{	
+		p, a, ul{
+			font-size: 0.9rem;
+		}
+	}
+
+	body[data-template="home"]{
+		.left-col{
+			h1, h1 a{
+				font-size: 1.8rem;
+				line-height: 0.85;
+			}
+		}
+	}
+
+	.note{
+		position: relative;
+		width:auto;
+		min-width:auto;
+		right:0;
+		//display:block;
+
+	}
+
+}

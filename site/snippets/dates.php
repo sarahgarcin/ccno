@@ -2,7 +2,7 @@
   $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
-<div class="notes-dates small-16 medium-16 large-5 columns">
+<div class="notes-dates small-16 medium-16 large-5 large-push-2 xlarge-3 xlarge-push-2 end columns">
 	<ul>
 		<?php foreach($page->dates()->toStructure() as $dates):?>
 			<li>
