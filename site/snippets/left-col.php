@@ -1,6 +1,14 @@
 <div class="left-col small-16 medium-5 columns">
 	<p class="menu-btn hide-for-small-only">Menu</p>
-	<p class="menu-mobile-btn show-for-small-only">Menu</p>
+	<div class="header-mobile small-18 show-for-small-only">
+		<p class="menu-mobile-btn">Menu</p>
+		<h1 class="mobile-title">
+			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
+				<?php echo $site->shortcut()->html() ?>
+			</a>
+		</h1>
+	</div>
+
 	<div class="hide-on-scoll">
 		<h1>
 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
@@ -20,6 +28,10 @@
 				</ul>
 			</div>
 		<?php endif ?>
+		<div class="newsletter">
+			<h5>Inscription newsletter</h5>
+			<?php snippet('subscribe')?>
+		</div>
 	<!-- 	<a href="<?php //echo $pages->find('nouvelle-direction')->url()?>" title="<?php //echo $site->title()?>">
 			<div class="carre-rose hide-for-small-only">		
 			</div>

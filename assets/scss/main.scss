@@ -245,6 +245,7 @@ nav > ul {
 		text-transform: uppercase;
 		cursor: pointer;
 		margin-bottom: 0.7rem;
+		width: 120px;
 		&:hover{
 			filter: blur(2px);
 			color: #000;
@@ -383,6 +384,11 @@ body[data-template="menu"]{
 		}
 		li{
 			@include H1;
+			display:block;
+			margin-bottom:$marginSmall;
+			&::after{
+				content:"";
+			}
 			a:hover{
 				color: $rose;
 			}
@@ -756,6 +762,44 @@ body[data-template="accueils"]{
     button{display:none;}
   }
 }
+
+// champ d'inscription newsletter (home)
+.newsletter{
+	margin-top: $marginNormal;
+	@include textCourant;
+  form{
+    padding:0;
+    vertical-align: top;
+    input{display:inline-block; float:left}
+    input{
+      border: none;
+      border-bottom: 1px solid #000;
+      box-shadow:none;
+      padding: 0;
+      height: 20px;
+      @include textCourant;
+      font-size:1rem;
+      &:focus{background: transparent;}
+    }
+    button[type='submit']{
+      padding: 0;
+      background-color: transparent;
+      padding-left: 1.5em;
+      //display:inline-block; 
+      //float:left;
+      @include textCourant;
+      font-size:1rem;
+      color: $rose;
+      outline:none;
+      &:hover{
+      	color: #000;
+      }
+    }
+  }
+
+}
+
+
 
 @import "responsive.scss";
 

@@ -177,5 +177,12 @@ function initMobile(){
 		});
 	}
 	// ----
+	var headerH = $('.header-mobile').outerHeight();
+	var navH = $('.module--navigation-in-page').outerHeight();
+	//console.log(headerH + navH);
+	$('main').css({
+		'padding-top': headerH+navH+'px'
+	})
+
 
 }

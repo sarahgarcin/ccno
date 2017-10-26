@@ -8,7 +8,7 @@
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<div class="icones-wrapper-text">
+		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8">
 			<?php snippet('icones') ?>
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>

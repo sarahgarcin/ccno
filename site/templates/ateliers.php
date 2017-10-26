@@ -24,7 +24,7 @@
 				<?php endforeach ?>
 			</ul>
 		</nav>
-		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2 xlarge-8">
+		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8">
 			<?php echo $page->text()->kirbytext() ?>
 			<?php snippet('icones') ?>
 		</div>

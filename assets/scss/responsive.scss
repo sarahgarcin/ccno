@@ -4,40 +4,72 @@
 		font-size: 2.7rem;
 		word-wrap:  break-word;
 		width:auto;
+		margin-bottom: $marginSmall;
 	}
 	p, li{
 		font-size:1.1rem;
+	}
+
+	figure{
+		filter:none;
+		width:100%;
 	}
 
 
 	.left-col{
 		position: relative; 
 		height:auto;
+		h1{
+			padding-top: $marginNormal;
+		}
 		h1, a{
 			font-size: 1rem;
 			line-height: 0.85;
 			margin-bottom: $marginSmall;
 		}
-		.menu-mobile-btn{
-			text-transform: uppercase;
-			color: $rose;
-			font-size: 1rem;
+		.header-mobile{
 			margin-bottom: 0;
 			background: #FFF;
 			position:fixed;
 			top:0;
 			left:0;
-			width:100%;
+			//width:100%;
 			z-index:10;
 			padding-top:10px;
 			padding-left: $columnPadding;
+			padding-right: $columnPadding;
+			h1{
+				margin:0;
+				padding:0;
+				float:right;
+				a{font-size:1rem;}
+			}
+			.menu-mobile-btn{
+				text-transform: uppercase;
+				color: $rose;
+				font-size: 1rem;
+				margin-bottom:0;
+				float:left;
+				
+			}
 		}
+
 		.pdf{
 			margin-top: $marginSmall;
 			display:none;
 		}
 
 	}
+	.breadcrumb{
+		> ul >li{
+			font-size: 1rem;
+			&:after{
+				padding-left: $columnPadding/2;
+				padding-right: $columnPadding/2;
+			}
+		}
+	}
+
 	.address{
 		position:relative;	
 		margin-top: $marginNormal;	
@@ -52,7 +84,8 @@
 	header{
 		//display:block;
 		filter:none;
-		
+		overflow:scroll;
+		height:100vh;
 		.close-menu-button{
 			margin-bottom: $marginSmall;
 		}
@@ -69,11 +102,28 @@
 		left:0;
 		padding-top: 2em;
 		padding-left: $columnPadding;
-		width:150%;
+		padding-bottom: 0;
+		//width:150%;
 	}
 
+
 	main{
-		padding-top:$marginBig;
+		padding-top:$marginNormal * 1.5;
+		.text{
+			margin-top: $marginSmall;
+		}
+		.icone{
+			width:150px;
+			top:3rem;
+			left:50%;
+			transform:translateX(-50%);
+		}
+	}
+
+	.left-col{
+		.hide-on-scoll{
+			display:none;
+		}
 	}
 
 	body[data-rubrique="home"]{
@@ -82,8 +132,13 @@
 				font-size: 1.5rem;
 				line-height: 0.85;
 			}
-			.pdf{
+			.hide-on-scoll, .pdf{
 				display:block;
+			}
+			.header-mobile{
+				h1{
+					display:none;
+				}
 			}
 		}
 		main{
@@ -130,6 +185,27 @@
 		}
 	}
 
+	body[data-template="maud"] {
+		main{
+			.creations{
+				h1{
+					margin-left:0;
+				}
+			}
+		}
+	}
+
+	body[data-template="menu"] {
+		main {
+			h1{
+				font-size: 2rem;
+			}
+			li{
+				font-size: 2rem;
+			}
+		}
+	}
+
 	body[data-template="accueils"] {
 		.accueils-module {
 			h2{
@@ -144,6 +220,34 @@
 			}
 			.accueils-text{
 				margin-top: $marginSmall;
+			}
+		}
+	}
+
+	body[data-parent-template="ateliers"], body[data-rubrique="voulez-vous-danser"]{
+		.header-mobile{
+			background-color: $jaune;
+		}
+	}
+
+	body[data-template="ateliers"]{
+		nav.menu-page{
+			>ul > li a{
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	body[data-template="list"] {
+		.liste-module {
+			.liste-text {
+				ul{
+					margin:0;
+				}
+				h2{
+					margin-top: $marginSmall;
+					margin-left:0;
+				}
 			}
 		}
 	}
