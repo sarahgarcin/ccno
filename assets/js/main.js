@@ -27,6 +27,22 @@ function init(){
 				})
 			}
 		});
+			// show / hide menu on click 
+			$('.menu-btn').on('mouseenter', function(){
+				$('header').fadeIn(100);
+				setTimeout(function(){
+					$('header').addClass('active');
+				}, 100);
+			});
+
+			//$('.siteName').on('click', function(){
+			$('header').on('mouseleave', function(){
+				$('header').removeClass('active');
+				setTimeout(function(){
+					$('header').fadeOut(100);
+				}, 100);
+			});
+			// ----
 
 
 		//random position of icons on home page 
@@ -48,22 +64,7 @@ function init(){
 	}
 
 	// ----
-	// show / hide menu on click 
-	$('.menu-btn').on('mouseenter', function(){
-		$('header').fadeIn(100);
-		setTimeout(function(){
-			$('header').addClass('active');
-		}, 100);
-	});
 
-	//$('.siteName').on('click', function(){
-	$('header').on('mouseleave', function(){
-		$('header').removeClass('active');
-		setTimeout(function(){
-			$('header').fadeOut(100);
-		}, 100);
-	});
-	// ----
 
 	// color of background
 	if($('main').data('color')){
@@ -174,6 +175,21 @@ function initMobile(){
 			$('header').removeClass('active');
 		}, 100);
 	});
+
+	$('.menu-btn').on('click', function(){
+		$('header').fadeIn(100);
+		setTimeout(function(){
+			$('header').addClass('active');
+		}, 100);
+	});
+
+	$('.tablet-close-menu-button').on('click', function(){
+		$('header').fadeOut(100);
+		setTimeout(function(){
+			$('header').removeClass('active');
+		}, 100);
+	});
+
 	//random position of icons on home page 
 	if($("body").attr("data-template")=="home"){
 		var mainH = $('main').height()-50;

@@ -10223,4 +10223,8 @@ body[data-template="accueils"] .accueils-module .accueils-text {
     position: relative;
     width: auto;
     min-width: auto;
-    right: 0; } }
+    right: 0; }
+  .tablet-close-menu-button {
+    float: right;
+    padding-top: 0.375rem;
+    padding-right: 0.9375rem; } }
