@@ -1,5 +1,5 @@
 <div class="module--navigation-in-page">
-	<nav class="breadcrumb" role="navigation">
+	<nav class="breadcrumb small-18 xlarge-12" role="navigation">
 	  <ul>
 	    <?php foreach($page->parents()->flip() as $p): ?>
 	    <li>

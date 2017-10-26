@@ -13,7 +13,7 @@
 				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
 			</div>
 		<?php endif ?>
-		<nav class="menu-page">
+		<nav class="menu-page xlarge-11">
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>
 					<li>
@@ -24,7 +24,7 @@
 				<?php endforeach ?>
 			</ul>
 		</nav>
-		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2">
+		<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2 xlarge-8">
 			<?php echo $page->text()->kirbytext() ?>
 			<?php snippet('icones') ?>
 		</div>

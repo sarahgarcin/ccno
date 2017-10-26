@@ -1,4 +1,4 @@
-<nav class="submenu">
+<nav class="submenu small-18 medium-11 xlarge-8">
 	<ul>	
 		<?php foreach($page->parent()->children()->visible() as $sub):?>
 			<?php if($sub->template() != "menu" && $sub->template() != "agenda"):?>

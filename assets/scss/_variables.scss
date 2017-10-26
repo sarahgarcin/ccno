@@ -87,3 +87,15 @@ $p: 1.25rem;
 	  opacity: 1;
 	}
 }
+
+@media #{$xlarge-up} {
+  @include grid-html-classes($size:xlarge);
+  @for $i from 0 through $total-columns - 1 {
+    .push-#{$i} {
+      @include grid-column($push:$i, $collapse:null, $float:false);
+    }
+    .pull-#{$i} {
+      @include grid-column($pull:$i, $collapse:null, $float:false);
+    }
+  }
+}

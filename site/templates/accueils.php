@@ -18,7 +18,7 @@
 				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
 			</div>
 		<?php endif ?>
-		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-16 large-push-2 columns">
+		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-16 large-push-2 xlarge-10 columns">
 			<div class="large-13">
 				<?php echo $page->text()->kirbytext() ?>
 			</div>

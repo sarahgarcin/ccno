@@ -18,7 +18,7 @@
 			</div>
 		<?php endif ?>
 		<div class="row">
-			<div class="text icones-wrapper-text small-16 small-push-2 medium-16 medium-push-2 large-11 large-push-2 columns">
+			<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8 columns">
 				<?php echo $page->text()->kirbytext() ?>
 				<?php snippet('icones') ?>
 			</div>
@@ -26,7 +26,7 @@
 				snippet('dates');
 			endif?>
 		</div>
-		<div class="creations large-14 large-push-2">
+		<div class="creations small-18 large-14 large-push-2 xlarge-8">
 			<h1>Créations</h1>
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>

@@ -24,7 +24,7 @@
 
 	<?php snippet('left-col') ?>
 
-	<main class="small-18 medium-13 columns">
+	<main class="small-18 medium-13 medium-push-5 xlarge-push-4 xlarge-13 end columns">
 		<div class="image-icono">
 			<?php foreach($site->images()->shuffle()->limit(20) as $icone): ?>
 				<div class="icone-wrapper">
