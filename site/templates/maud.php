@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
-<?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
-  $day = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
 
@@ -12,11 +12,7 @@
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<?php if($page->icone()->isNotEmpty()):?>
-			<div class="icone">
-				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
-			</div>
-		<?php endif ?>
+		<?php snippet('icone-page')?>
 		<div class="row">
 			<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8 columns">
 				<?php echo $page->text()->kirbytext() ?>

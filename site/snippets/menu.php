@@ -25,10 +25,24 @@
 		      	</ul>
 		      </li>
 		    <?php else: ?>
-		    	<li class="<?= r($p->isOpen(), 'active') ?>" data-position="<?php echo $p->num() ?>">
+		    	<li class="<?= r($p->isOpen(), 'active') ?>">
 		       	<a href="<?php echo $p->url()?>" title="<?php echo $p->title()?>">
 		       		<?php echo $p->title()->html() ?>
 		       	</a>
+		       	<?php if($p->template() == 'agenda'):?>
+		      		<ul class="module--menu--submenu">
+		      			<li>
+					      	<a class="agenda-past" href="<?php echo $p->url().'?events=past' ?>">
+					        	Ce qui est passé
+					      	</a>
+				      	</li>
+				      	<li>
+					      	<a class="agenda-next" href="<?php echo $p->url().'?events=next' ?>">
+					        	Ce qui est à venir
+					      	</a>
+				      	</li>
+		      		</ul>
+		      	<?php endif; ?>
 		      </li>
 		    <?php endif ?>
 			<?php endforeach ?>

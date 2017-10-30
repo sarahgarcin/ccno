@@ -12,11 +12,7 @@
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<?php if($page->icone()->isNotEmpty()):?>
-			<div class="icone">
-				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
-			</div>
-		<?php endif ?>
+		<?php snippet('icone-page')?>
 		<div class="row">
 			<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8 columns">
 				<div class="summary-liste small-18 medium-18 xlarge-18 columns end">
@@ -26,7 +22,7 @@
 					<?php foreach($page->dates()->toStructure() as $dates):?>
 						<li>
 							<h2>
-								<?php echo $day[date("N", strtotime($dates->moment()))];?>
+								<?php echo $day[date("N", strtotime($dates->moment())) - 1];?>
 								<?php echo date("j", strtotime($dates->moment()));?>
 								<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
 								<?php echo $dates->title()->html() ?>

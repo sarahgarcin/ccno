@@ -20,7 +20,7 @@
 		position: relative; 
 		height:auto;
 		h1{
-			padding-top: $marginNormal;
+			padding-top: $marginNormal + 0.3;
 		}
 		h1, a{
 			font-size: 1rem;
@@ -29,7 +29,7 @@
 		}
 		.header-mobile{
 			margin-bottom: 0;
-			background: #FFF;
+			background:$roseClair;
 			position:fixed;
 			top:0;
 			left:0;
@@ -46,16 +46,26 @@
 			}
 			.menu-mobile-btn{
 				text-transform: uppercase;
-				color: $rose;
+				color: #000;
 				font-size: 1rem;
 				margin-bottom:0;
 				float:left;
-				
+				span{
+					display:inline-block;
+				}
+				&::before{
+					content:"";
+					display:inline-block;
+					background:$rose;
+					width: 10px;
+					height:10px;
+					margin-right: $marginSmall/2;
+				}
 			}
 		}
 
 		.pdf{
-			margin-top: $marginSmall;
+			margin-top: $marginNormal;
 			display:none;
 		}
 
@@ -145,6 +155,7 @@
 				display:block;
 			}
 			.header-mobile{
+				
 				h1{
 					display:none;
 				}

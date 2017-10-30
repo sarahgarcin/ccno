@@ -8,11 +8,7 @@
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<?php if($page->icone()->isNotEmpty()):?>
-			<div class="icone">
-				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
-			</div>
-		<?php endif ?>
+		<?php snippet('icone-page')?>
 		<nav class="menu-page xlarge-11">
 			<ul>
 				<?php foreach($page->children()->visible() as $child):?>

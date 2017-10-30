@@ -11,14 +11,14 @@
 				<?php endif; ?>
 					<h4>
 						<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
-							<?php echo $day[date("N", strtotime($dates->from()))];?>
+							<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
 							<?php echo date("j", strtotime($dates->from()));?>
 							<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
 						<?php else:?>
-							<?php echo "du ".$day[date("N", strtotime($dates->from()))];?>
+							<?php echo "du ".$day[date("N", strtotime($dates->from())) - 1];?>
 							<?php echo date("j", strtotime($dates->from()));?>
 							<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
-							<?php echo "au ".$day[date("N", strtotime($dates->to()))];?>
+							<?php echo "au ".$day[date("N", strtotime($dates->to())) - 1];?>
 							<?php echo date("j", strtotime($dates->to()));?>
 							<?php echo $mois[date("n", strtotime($dates->to())) - 1];?>
 						<?php endif;?>

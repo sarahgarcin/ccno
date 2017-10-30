@@ -1,7 +1,7 @@
-<div class="left-col small-16 medium-5 columns">
-	<p class="menu-btn hide-for-small-only">Menu</p>
+<div class="left-col small-18 medium-5 columns">
+	<div class="menu-btn hide-for-small-only"><span>Menu</span></div>
 	<div class="header-mobile small-18 show-for-small-only">
-		<p class="menu-mobile-btn">Menu</p>
+		<div class="menu-mobile-btn"><span>Menu</span></div>
 		<h1 class="mobile-title">
 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
 				<?php echo $site->shortcut()->html() ?>

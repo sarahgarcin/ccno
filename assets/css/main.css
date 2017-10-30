@@ -9416,7 +9416,7 @@ th.hide-for-touch {
 body {
   font-size: 12px;
   font-family: "directrice", serif;
-  background: #FFF; }
+  background: #fde0ea; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "directrice", serif;
@@ -9430,7 +9430,7 @@ i {
 h1 {
   font-size: 3.5rem;
   width: 400px;
-  line-height: 1;
+  line-height: 0.8;
   margin-bottom: 1.5rem;
   padding-left: 0 !important;
   padding-left: 0.4rem; }
@@ -9485,7 +9485,7 @@ img {
 
 figure {
   margin: 30px 0;
-  width: 60%;
+  width: 80%;
   -webkit-filter: blur(5px);
   filter: blur(5px);
   transition: -webkit-filter 0.5s;
@@ -9562,6 +9562,9 @@ header {
   header.active {
     -webkit-filter: blur(0);
     filter: blur(0); }
+  header h1 {
+    margin-bottom: 0.75rem;
+    padding-top: 0.75rem; }
   header h1, header h1 a {
     font-size: 1.875rem;
     cursor: pointer; }
@@ -9594,12 +9597,12 @@ nav > ul {
         line-height: 1.2; }
 
 .module--navigation-in-page {
-  background: #FFF;
+  background: #fde0ea;
   width: 100%;
   position: fixed;
   z-index: 3;
   top: 0px;
-  padding: 8px 10px 10px 5px; }
+  padding: 0.95rem 10px 0px 5px; }
 
 .breadcrumb li {
   -ms-flex: 0 1 auto;
@@ -9619,11 +9622,15 @@ nav > ul {
   flex: 0 1 auto;
   line-height: 0.6;
   text-transform: none; }
+  .submenu li .orleans {
+    font-family: "directrice", serif; }
+  .submenu li br {
+    display: none; }
   .submenu li:last-child:after {
     content: ""; }
   .submenu li:after {
     content: "#";
-    font-family: "orleans";
+    font-family: "orleans", sans-serif;
     font-size: 1rem;
     padding-left: 0.6rem;
     padding-right: 0.9rem; }
@@ -9648,15 +9655,24 @@ nav > ul {
   .left-col .menu-btn {
     font-size: 1.5rem;
     padding-top: 2px;
-    color: #fa4bc8;
+    color: #000;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.2rem;
     width: 120px; }
     .left-col .menu-btn:hover {
       -webkit-filter: blur(2px);
       filter: blur(2px);
       color: #000; }
+    .left-col .menu-btn span {
+      display: inline-block; }
+    .left-col .menu-btn::before {
+      content: "";
+      display: inline-block;
+      background: #fa4bc8;
+      width: 17px;
+      height: 17px;
+      margin-right: 0.375rem; }
   .left-col .pdf {
     margin-top: 2rem; }
     .left-col .pdf li {
@@ -9684,6 +9700,9 @@ main {
 body[data-rubrique="home"] .left-col .menu-btn {
   font-size: 1.875rem;
   padding-top: 0; }
+  body[data-rubrique="home"] .left-col .menu-btn::before {
+    width: 20px;
+    height: 20px; }
 
 body[data-rubrique="home"] .left-col h1, body[data-rubrique="home"] .left-col h1 a {
   font-size: 3rem;
@@ -9706,9 +9725,10 @@ body[data-rubrique="home"] main {
 
 body[data-rubrique="home"] .actu h1 {
   font-size: 7.8vw;
-  line-height: 0.7;
+  line-height: 0.8;
   margin: 0;
-  width: auto; }
+  width: auto;
+  margin-top: 0.75rem; }
   body[data-rubrique="home"] .actu h1:hover {
     color: #000; }
 
@@ -9752,14 +9772,15 @@ body[data-rubrique="home"] .actu p.link {
       color: #000; }
 
 body[data-template="menu"] main {
-  padding-top: 0.75rem; }
+  padding-top: 1.05rem; }
   body[data-template="menu"] main h1 {
     width: auto;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 0; }
   body[data-template="menu"] main li {
     font-size: 3.5rem;
     width: 400px;
-    line-height: 1;
+    line-height: 0.8;
     margin-bottom: 1.5rem;
     padding-left: 0 !important;
     display: block;
@@ -9769,29 +9790,30 @@ body[data-template="menu"] main {
     body[data-template="menu"] main li a:hover {
       color: #fa4bc8; }
 
-body[data-template="maud"] main .creations h1 {
-  margin-left: -15%; }
-
-body[data-template="maud"] main .creations li {
-  font-size: 1.8rem;
-  text-transform: none;
-  display: inline-block;
-  position: relative; }
-  body[data-template="maud"] main .creations li a:hover {
-    color: #fa4bc8; }
-  body[data-template="maud"] main .creations li:after {
-    content: "#";
-    font-family: "orleans";
+body[data-template="maud"] main .creations {
+  margin-top: 3rem; }
+  body[data-template="maud"] main .creations h1 {
+    margin-left: -15%; }
+  body[data-template="maud"] main .creations li {
     font-size: 1.8rem;
-    padding-left: 1rem;
-    padding-right: 0.8rem; }
-  body[data-template="maud"] main .creations li .thumb-wrapper {
-    position: absolute;
-    width: 350px;
-    left: 70%;
-    top: -100px;
-    z-index: 100;
-    display: none; }
+    text-transform: none;
+    display: inline-block;
+    position: relative; }
+    body[data-template="maud"] main .creations li a:hover {
+      color: #fa4bc8; }
+    body[data-template="maud"] main .creations li:after {
+      content: "#";
+      font-family: "orleans";
+      font-size: 1.8rem;
+      padding-left: 1rem;
+      padding-right: 0.8rem; }
+    body[data-template="maud"] main .creations li .thumb-wrapper {
+      position: absolute;
+      width: 350px;
+      left: 70%;
+      top: -100px;
+      z-index: 100;
+      display: none; }
 
 body[data-template="agenda"] main {
   padding-top: 0.375rem; }
@@ -9805,6 +9827,8 @@ body[data-template="agenda"] main {
     display: inline-block; }
     body[data-template="agenda"] main .title--next-events:hover, body[data-template="agenda"] main .title--next-events.active, body[data-template="agenda"] main .click---past-events:hover, body[data-template="agenda"] main .click---past-events.active {
       color: #fa4bc8; }
+    body[data-template="agenda"] main .title--next-events.active, body[data-template="agenda"] main .click---past-events.active {
+      cursor: default; }
   body[data-template="agenda"] main .pastEvents .pastEvents-wrapper {
     display: none; }
     body[data-template="agenda"] main .pastEvents .pastEvents-wrapper.active {
@@ -9824,7 +9848,9 @@ body[data-template="agenda"] main {
       font-size: 1rem;
       vertical-align: top; }
     body[data-template="agenda"] main table:nth-child(even) {
-      background-color: #dddddd; }
+      background-color: #FFF; }
+    body[data-template="agenda"] main table:nth-child(odd) {
+      background-color: #fde0ea; }
 
 body[data-template="actu"] main {
   padding-top: 4.3rem; }
@@ -9849,6 +9875,10 @@ main {
     z-index: -1;
     top: 6rem;
     left: -15%; }
+    main .icone.portrait {
+      width: 170px;
+      left: -10%;
+      top: 4.2rem; }
   main .text li {
     display: inline; }
     main .text li:last-child::after {
@@ -9922,6 +9952,9 @@ body[data-parent-template="ateliers"], body[data-rubrique="voulez-vous-danser"] 
   body[data-parent-template="ateliers"] .module--navigation-in-page, body[data-rubrique="voulez-vous-danser"] .module--navigation-in-page {
     background: yellow; }
 
+body[data-template="atelier"] main .text li:after {
+  content: ""; }
+
 body[data-template="ateliers"] {
   background: yellow; }
   body[data-template="ateliers"] .module--navigation-in-page {
@@ -9977,10 +10010,9 @@ body[data-template="accueils"] .accueils-module .accueils-text {
   body[data-template="accueils"] .accueils-module .accueils-text .notes-dates {
     margin-top: 0; }
 
-.error-page {
-  position: absolute;
-  z-index: 99;
-  margin-top: 30px; }
+.error-page h2 {
+  margin-top: 0;
+  margin-left: 0; }
 
 .slider {
   margin-bottom: 0.75rem;
@@ -10078,14 +10110,14 @@ body[data-template="accueils"] .accueils-module .accueils-text {
     position: relative;
     height: auto; }
     .left-col h1 {
-      padding-top: 1.5rem; }
+      padding-top: 1.8rem; }
     .left-col h1, .left-col a {
       font-size: 1rem;
       line-height: 0.85;
       margin-bottom: 0.75rem; }
     .left-col .header-mobile {
       margin-bottom: 0;
-      background: #FFF;
+      background: #fde0ea;
       position: fixed;
       top: 0;
       left: 0;
@@ -10101,12 +10133,21 @@ body[data-template="accueils"] .accueils-module .accueils-text {
           font-size: 1rem; }
       .left-col .header-mobile .menu-mobile-btn {
         text-transform: uppercase;
-        color: #fa4bc8;
+        color: #000;
         font-size: 1rem;
         margin-bottom: 0;
         float: left; }
+        .left-col .header-mobile .menu-mobile-btn span {
+          display: inline-block; }
+        .left-col .header-mobile .menu-mobile-btn::before {
+          content: "";
+          display: inline-block;
+          background: #fa4bc8;
+          width: 10px;
+          height: 10px;
+          margin-right: 0.375rem; }
     .left-col .pdf {
-      margin-top: 0.75rem;
+      margin-top: 1.5rem;
       display: none; }
   .breadcrumb > ul > li {
     font-size: 1rem; }

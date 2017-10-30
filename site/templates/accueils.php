@@ -5,19 +5,13 @@
   $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
-
-
 <div class ="row">
 
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
 		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
-		<?php if($page->icone()->isNotEmpty()):?>
-			<div class="icone">
-				<img src="<?php echo $page->icone()->toFile()->url() ?>" alt="">
-			</div>
-		<?php endif ?>
+		<?php snippet('icone-page')?>
 		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-16 large-push-2 xlarge-10 columns">
 			<div class="large-13">
 				<?php echo $page->text()->kirbytext() ?>
@@ -48,14 +42,14 @@
 													<?php endif; ?>
 														<h4>
 															<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
-																<?php echo $day[date("N", strtotime($dates->from()))];?>
+																<?php echo $day[date("N", strtotime($dates->from()))- 1];?>
 																<?php echo date("j", strtotime($dates->from()));?>
 																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
 															<?php else:?>
-																<?php echo "du ".$day[date("N", strtotime($dates->from()))];?>
+																<?php echo "du ".$day[date("N", strtotime($dates->from()))- 1];?>
 																<?php echo date("j", strtotime($dates->from()));?>
 																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
-																<?php echo "au ".$day[date("N", strtotime($dates->to()))];?>
+																<?php echo "au ".$day[date("N", strtotime($dates->to())) - 1];?>
 																<?php echo date("j", strtotime($dates->to()));?>
 																<?php echo $mois[date("n", strtotime($dates->to())) - 1];?>
 															<?php endif;?>

@@ -1,10 +1,10 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
-<?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];?>
+<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];?>
 
 <?php 
-	$projets = $site->index()->filterBy('template', 'default');
+	$projets = $site->index()->filterBy('template',  'in', ['default', 'atelier']);
 
 	$i = 0;
 	$currentTime = date('Ymd');
@@ -184,7 +184,9 @@
 					  </tr>
 				</table>
 			<?php endforeach ?>
-			<?php echo $page->text()->kt()?>
+			<div class="small-18 medium-16">
+				<?php echo $page->text()->kt()?>
+			</div>
 		</div>
 	</main>
 	

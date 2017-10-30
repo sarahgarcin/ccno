@@ -47,7 +47,7 @@ img {
 
 figure{
 	margin:30px 0;
-	width: 60%;
+	width: 80%;
 	filter: blur(5px);
 	transition: filter 0.5s; 
 	&:hover{
@@ -139,6 +139,10 @@ header{
 	&.active{
 		filter: blur(0);
 	}
+	h1{
+		margin-bottom: $marginSmall;
+		padding-top: $marginSmall;
+	}
 	h1, h1 a{
 		font-size: rem-calc(30);
 		cursor: pointer;
@@ -176,12 +180,12 @@ nav > ul {
 	}
 }
 .module--navigation-in-page{
-	background: #FFF;
+	background: $roseClair;
 	width: 100%;
 	position:fixed;
 	z-index: 3;
 	top:$constructionTop; // à enlever quand site en construction
-	padding: 8px 10px 10px 5px;
+	padding: $marginSmall + 0.2 10px 0px 5px;
 }
 
 .breadcrumb{
@@ -208,9 +212,14 @@ nav > ul {
 	//width: 70%;
 	li{
 		flex: 0 1 auto;
-
 		line-height: 0.6;
 		text-transform: none;
+		.orleans{
+			font-family: $font-family;
+		}
+		br{
+			display:none;
+		}
 		&:last-child{
 			&:after{
 				content:"";
@@ -218,7 +227,7 @@ nav > ul {
 		}
 		&:after{
 			content:"#";
-			font-family: "orleans";
+			font-family: $orleans-font;
 			font-size: 1rem;
 			padding-left: 0.6rem;
 			padding-right: 0.9rem;
@@ -251,14 +260,25 @@ nav > ul {
 	.menu-btn{
 		font-size: 1.5rem;
 		padding-top: 2px;
-		color: $rose;
+		color: #000;
 		text-transform: uppercase;
 		cursor: pointer;
-		margin-bottom: 0.7rem;
+		margin-bottom: 0.2rem;
 		width: 120px;
 		&:hover{
 			filter: blur(2px);
 			color: #000;
+		}
+		span{
+			display:inline-block;
+		}
+		&::before{
+			content:"";
+			display:inline-block;
+			background:$rose;
+			width: 17px;
+			height:17px;
+			margin-right: $marginSmall/2;
 		}
 	}
 
@@ -298,10 +318,15 @@ main{
 
 
 body[data-rubrique="home"]{
+	//background:$roseClair;
 	.left-col{
 		.menu-btn{
 			font-size: rem-calc(30);
 			padding-top: 0;
+			&::before{
+				width: 20px;
+				height:20px;
+			}
 		}	
 		h1, h1 a{
 			font-size: 3rem;
@@ -328,10 +353,10 @@ body[data-rubrique="home"]{
 	.actu{
 		h1{
 			font-size: 7.8vw;
-			line-height:0.7;
+			line-height:0.8;
 			margin:0;
 			width:auto;
-			//margin-top: $marginSmall;
+			margin-top: $marginSmall;
 			//margin-bottom: $marginSmall;
 			&:hover{
 				color: #000;
@@ -388,10 +413,11 @@ body[data-rubrique="home"]{
 
 body[data-template="menu"]{
 	main{
-		padding-top: $marginSmall;
+		padding-top: $marginSmall + 0.3;
 		h1{
 			width: auto;
 			text-transform: uppercase;
+			margin-top: 0;
 		}
 		li{
 			@include H1;
@@ -410,6 +436,7 @@ body[data-template="menu"]{
 body[data-template="maud"]{
 	main{
 		.creations{
+			margin-top: $marginBig;
 			h1{
 				margin-left: -15%;
 			}
@@ -453,6 +480,9 @@ body[data-template="agenda"]{
 			&:hover, &.active{
 		    color: $rose;
 		  }
+		  &.active{
+		  	cursor: default;
+		  }
 	  }
 		.pastEvents{
 			.pastEvents-wrapper{
@@ -482,7 +512,10 @@ body[data-template="agenda"]{
 		    vertical-align: top;
 			}
 			&:nth-child(even) {
-			  background-color: #dddddd;
+			  background-color: #FFF;
+			}
+			&:nth-child(odd) {
+			  background-color: $roseClair;
 			}
 		}
 	}
@@ -523,6 +556,11 @@ main{
 		z-index: -1;
 		top: 6rem;
 		left: -15%;
+		&.portrait{
+			width: 170px;
+			left:-10%;
+			top:4.2rem;
+		}
 	}
 	
 	.text li{
@@ -633,6 +671,12 @@ body[data-parent-template="ateliers"], body[data-rubrique="voulez-vous-danser"]{
 	}
 }
 
+body[data-template="atelier"]{
+	main .text li:after{
+		content:"";
+	}
+}
+
 body[data-template="ateliers"]{
 	background: $jaune;
 	.module--navigation-in-page{
@@ -716,9 +760,10 @@ body[data-template="accueils"]{
 
 // Page erreur — Depeche mode
 .error-page{
-	position:absolute;
-	z-index: 99;
-	margin-top: 30px;
+	h2{
+		margin-top: 0;
+		margin-left:0;
+	}
 }
 
 .slider{

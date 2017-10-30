@@ -6,6 +6,7 @@ $orleans-font: "orleans", sans-serif;
 
 // color
 $rose: rgb(250, 75, 200);
+$roseClair: rgb(253, 224, 234);
 $jaune: yellow;
 
 // margins
@@ -28,7 +29,7 @@ $p: 1.25rem;
 @mixin H1{
 	font-size: $h1;
 	width: 400px;
-	line-height: 1;
+	line-height: 0.8;
 	margin-bottom: $marginNormal;
 	padding-left:0 !important;
 }

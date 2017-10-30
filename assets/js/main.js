@@ -7,6 +7,35 @@ $(document).ready(function(){
 
 function init(){
 
+	//mobile menu functions
+	$('.menu-mobile-btn').on('click', function(){
+		$('header').fadeIn(100);
+		setTimeout(function(){
+			$('header').addClass('active');
+		}, 100);
+	});
+
+	$('.close-menu-button').on('click', function(){
+		$('header').fadeOut(100);
+		setTimeout(function(){
+			$('header').removeClass('active');
+		}, 100);
+	});
+
+	$('.menu-btn').on('click', function(){
+		$('header').fadeIn(100);
+		setTimeout(function(){
+			$('header').addClass('active');
+		}, 100);
+	});
+
+	$('.tablet-close-menu-button').on('click', function(){
+		$('header').fadeOut(100);
+		setTimeout(function(){
+			$('header').removeClass('active');
+		}, 100);
+	});
+
 	if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		initMobile();
 	}
@@ -19,7 +48,7 @@ function init(){
 
 		//calcule le padding du main
 		$(window).on('load', function(){
-			if($("body").attr("data-template")!="home"){
+			if($("body").attr("data-template")!="home" && $("body").attr("data-template")!="menu"){
 			  var breadH = $('.breadcrumb').outerHeight();
 				var subH = $('.submenu').outerHeight();
 				$('main').css({
@@ -135,18 +164,39 @@ function init(){
 
 	//AGENDA
 	$('.click---past-events').on('click', function(){
-		$('.pastEvents-wrapper').slideToggle(400);
-		$('.nextEvents').slideToggle(400);
-		$(this).toggleClass('active');
-		$('.title--next-events').toggleClass('active');
+		if(!$(this).hasClass('active')){
+			insertParam('events', 'past');
+		}
 	});
 
 	$('.title--next-events').on('click', function(){
-		$('.pastEvents-wrapper').slideToggle(400);
-		$('.nextEvents').slideToggle(400);
-		$(this).toggleClass('active');
-		$('.click---past-events').toggleClass('active');
+		if(!$(this).hasClass('active')){
+			insertParam('events', 'next')
+		}
 	});
+
+	if($("body").attr("data-template")=="agenda"){
+		if(window.location.search.indexOf('events=next') > -1){
+			console.log($('.agenda-next'));
+			$('.agenda-next').addClass('active');
+			if(!$('.title--next-events').hasClass('active')){
+				$('.pastEvents-wrapper').slideToggle(400);
+				$('.nextEvents').slideToggle(400);
+				$('.title--next-events').addClass('active');
+				$('.click---past-events').removeClass('active');
+			}
+		}
+		if(window.location.search.indexOf('events=past') > -1){
+			$('.agenda-past').addClass('active');
+			if(!$('.click---past-events').hasClass('active')){
+				$('.pastEvents-wrapper').slideToggle(400);
+				$('.nextEvents').slideToggle(400);
+				$('.click---past-events').addClass('active');
+				$('.title--next-events').removeClass('active');
+			}
+		}
+	}
+
 
 	//init slider
 	$('.slider').slick({  
@@ -161,34 +211,6 @@ function init(){
 }
 
 function initMobile(){
-
-	$('.menu-mobile-btn').on('click', function(){
-		$('header').fadeIn(100);
-		setTimeout(function(){
-			$('header').addClass('active');
-		}, 100);
-	});
-
-	$('.close-menu-button').on('click', function(){
-		$('header').fadeOut(100);
-		setTimeout(function(){
-			$('header').removeClass('active');
-		}, 100);
-	});
-
-	$('.menu-btn').on('click', function(){
-		$('header').fadeIn(100);
-		setTimeout(function(){
-			$('header').addClass('active');
-		}, 100);
-	});
-
-	$('.tablet-close-menu-button').on('click', function(){
-		$('header').fadeOut(100);
-		setTimeout(function(){
-			$('header').removeClass('active');
-		}, 100);
-	});
 
 	//random position of icons on home page 
 	if($("body").attr("data-template")=="home"){
@@ -215,4 +237,21 @@ function initMobile(){
 	});
 
 
+}
+
+function insertParam(key, value){
+  key = encodeURI(key); value = encodeURI(value);
+  var kvp = document.location.search.substr(1).split('&');
+  var i=kvp.length; var x; while(i--) {
+    x = kvp[i].split('=');
+
+    if (x[0]==key){
+      x[1] = value;
+      kvp[i] = x.join('=');
+      break;
+    }
+  }
+  if(i<0) {kvp[kvp.length] = [key,value].join('=');}
+  //this will reload the page, it's likely better to store this until finished
+  document.location.search = kvp.join('&'); 
 }
