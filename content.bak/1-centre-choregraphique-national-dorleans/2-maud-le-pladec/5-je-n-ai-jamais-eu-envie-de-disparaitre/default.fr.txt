@@ -1,0 +1,54 @@
+Title: <i>Je n'ai jamais eu envie de disparaître</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+Création 2017
+Durée 30min 
+Dans le cadre de Concordanse #11
+
+###### Maud Le Pladec, chorégraphe et Pierre Ducrozet, écrivain <br/> Maud Le Pladec et Pierre Ducrozet proposent une autobiographie littéraire, chorégraphique et musicale des corps contemporains, brossée avec humour et élégance. 
+
+Maud Le Pladec créé en 2017 une forme courte dans le cadre d’une commande du festival Concordan(s)e en collaboration avec l’auteur Pierre Ducrozet. L’auteur et la chorégraphe vont découvrir leurs expériences respectives, cheminer ensemble pour nous dévoiler le fruit de leurs échanges, de ces croisements entre le geste et le mot. La chorégraphe et l’écrivain interprètent ensuite face au public une chorégraphie et un texte inédits. Cette rencontre offrira une forme inattendue, une création inédite qui donnera à cette expérience toute sa richesse, son originalité. L’intention de cette rencontre sera de découvrir, sur un même espace, la chorégraphe et l’auteur dans cet acte artistique commun. 
+*Je n’ai jamais eu envie de disparaître*, suit les trajectoires de deux corps, l’un empoté, malhabile, décalé, l’autre rigoureux, adroit, tendant vers une plus grande maîtrise des choses. Ces deux manières d’être au monde s’opposent, se croisent, se rejoignent, dans une lutte entre la tentation du chaos et le désir de l’ordonner. On observe ces deux silhouettes sur scène, qui se cherchent, se battent, se trouvent, qui dansent, piétinent, tombent et se relèvent dans un furieux et délicat corps à corps. 
+Sous la forme de deux autoportraits éclatés, les deux protagonistes (qui n’en forment peut-être qu’un) racontent leurs parcours intimes et sociaux, portés tous deux par le désir d’être enfin en phase avec le temps et le monde, ce qui passera sans doute par une réappropriation de la sauvagerie en eux. 
+
+###### Production Concordanse, association Léda, Centre Chorégraphique National d’Orléans <span class='orleans'>#</span>  Avec le soutien du Triangle et du Musée de la Danse à Rennes
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: "<i>Je n'ai jamais eu envie de disparaître</i>"
+  type: Tournée
+  moment: 2017-11-21
+  from: 2017-11-21
+  to: 2017-11-21
+  hours: ""
+  place: >
+    Médiathèque de l’Institut Français
+    de Vienne
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: "<i>Je n'ai jamais eu envie de disparaître</i>"
+  type: Tournée
+  moment: 2018-03-16
+  from: 2018-03-16
+  to: 2018-03-16
+  hours: ""
+  place: Carreau du Temple à Paris
+  link: ""
+  agenda: non
+  actus: non

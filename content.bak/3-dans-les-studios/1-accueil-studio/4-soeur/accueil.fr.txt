@@ -1,0 +1,63 @@
+Title: <span class='orleans'>SoEUR</span>
+
+----
+
+Personne: Olga Dukhovnaya
+
+----
+
+Text: 
+
+###### Conception, chorégraphie, interprétation et son Olga Dukhovnaya Interprétation et dramaturgie Robert Steijn <br/> Lumière et scénographie Erik Houllier  <br/> Costumes Alexandra Bertaut
+###### Production Louma <span class='orleans'>#</span> Coproduction Musée de la danse — Centre chorégraphique national de Rennes, Centre chorégraphique national d’Orléans <span class='orleans'>#</span> Avec le soutien du Ministère de la Culture — DRAC Bretagne, la Région Bretagne et la Ville de Rennes.
+
+Pour *Sœur*, Olga Dukhovnaya, danseuse et chorégraphe, mène une recherche avec le performer et théoricien Robert Steijn sur le rapport entre deux régimes de présence : d’un côté, le corps d’une jeune femme produisant une suite ininterrompue de mouvements ; de l’autre la présence immobile d’un homme plus âgé — avec toutes les images que mobilisent leurs  gures. Entre eux, une circulation ambiguë d’images et de fantasmes, visant la création d’un troisième terme : une image fantôme, construite dans le battement de leurs physicalités troublées.
+
+*Sœur* sera créé au CCNO le 26 janvier 2018.
+
+----
+
+Dates: 
+
+- 
+  title: 'Avec Olga Dukhovnaya / <i>Sœur</i>'
+  moment: 2017-12-11
+  hours: 19h à 21h
+  place: ""
+  actus: non
+  type: Lundi after work
+  from: 2017-12-11
+  to: 2017-12-11
+  link: ""
+  agenda: non
+- 
+  title: '<i>Sœur</i>'
+  moment: 2017-12-21
+  hours: 19h
+  type: Ouverture publique
+  from: 2017-12-21
+  to: 2017-12-21
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Sœur</i>, Olga Dukhovnaya'
+  type: Spectacle
+  moment: 2018-01-26
+  from: 2018-01-26
+  to: 2018-01-26
+  hours: ""
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+
+----
+
+Bio: 
+
+Olga Dukhovnaya
+est une interprète et chorégraphe ukrainienne basée à Rennes. Elle commence sa formation en danse à l’âge de quatre ans. Formée à P.A.R.T.S. à Bruxelles, elle obtient par la suite un master danse, performance au CNDC Angers sous la direction d’Emmanuelle Huynh en 2013.
+En 2006 elle s’installe à Moscou et débute son propre travail au croisement de la danse, vidéo, animation en collaboration avec l’artiste vidéo Konstantin Lipatov. En 2009, Olga est boursière du programme international de workshops DanceWeb à Vienne où elle rencontre Boris Charmatz. Depuis elle est interprète dans ses projets : *Levée des conflits*, *Enfant*, *Flip book*, *Aatt enne tionon*, *Manger* et *Danse de nuit*. Elle collabore également avec Maud Le Pladec dans *Democracy* et *Concrete*. Elle enseigne régulièrement à l’école du Théâtre national de Bretagne et au Musée de la danse.
+Sa création *Korowod*, conçue pendant sa formation au CNDC Angers, a reçu le troisième prix du concours Danse élargie organisé par le Théâtre de la ville et le Musée de la danse en 2012.

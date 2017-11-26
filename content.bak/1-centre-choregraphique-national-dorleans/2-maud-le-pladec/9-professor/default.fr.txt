@@ -1,0 +1,54 @@
+Title: <i>Professor</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+Création 2009/2010
+
+###### Conception et chorégraphie Maud Le Pladec <br/> Musique Fausto Romitelli (*Professor Bad Trip*) <br/> Interprétation Julien Gallée Ferré, Felix Ott, Tom Pauwels <br/> Création lumières Sylvie Mélis <br/> Création costumes Alexandra Bertaut <br/> Régie générale Fabrice Le Fur <br/> Régie lumières Nicolas Marc <br/> Régie son Ève-Anne Joalland <br/> Remerciements Herman Diephuis (conseil artistique), Olivier Renouf (son), Caroline Ablain (photos), Julie Pareau (captation vidéo), Mathieu Montanier, Jérémy Malmasson, Nicolas Couturier et les membres de l’association Léda 
+
+Le projet *Professor* s’ancre dans la découverte d’une musique : celle de Fausto Romitelli, compositeur italien dont l’œuvre explore les croisements entre composition savante, énergie rock et montées d’acide électroniques. Le triptyque *Professor Bad Trip *– divisé en trois leçons – convoque un spectre d’émotions et de mouvements intérieurs qui saisissent le corps, invitant naturellement à la dérive, aux parcours accidentés, à la fabrique d’images et de réalités parallèles. 
+Avec l’idée de « traduire physiquement TOUT ce que l’on entend », Maud Le Pladec propose un trajet chorégraphique à l’intérieur de l’édifice sonore : l’incarner pour en intensifier l’écoute, lui ouvrir d’autres territoires imaginaires. 
+Tels des guides dans le labyrinthe de cette architecture instable, deux danseurs et un musicien dialoguent avec les fictions du son, les manipulent, échangent leurs rôles jusqu’à brouiller les pistes. Sont-ils chefs d’orchestre, interprètes, instruments de ce qu’on entend ? Sont-ils les pantins de cette marée tumultueuse ou leur émanation méphistophélique ? Leurs gestes, précis comme des scalpels, suivent chaque tempo, glissent sur les cordes discordantes, vibrent avec les distorsions. Se faufilant entre rythmes et images, ils s’approchent d’états hallucinatoires : apparitions,disparitions, dédoublements, métamorphoses, cavalcades dans les méandres de « l’espace du dedans ». 
+Leur maîtrise est celle d’apprentis sorciers, en proie à une force incontrôlable : de leçon en leçon, le trouble succède à l’étrangeté. Qui est cet inquiétant professeur dont la présence plane sur la scène ? Peut-être l’ombre d’Henri Michaux, dont les voyages mescaliniens ont inspiré Fausto Romitelli. « Le déplacement des activités créatrices est un des plus étranges voyages en soi qu’on puisse faire », écrivait-il. Suivant la leçon de cet expérimentateur de l’esprit, Maud Le Pladec fait dérailler l’écoute, grincer les fictions : la perception « change de gare de triage ». Entre concert mouvementé et chorégraphie auditive, elle nous propose un «bad trip » où l’angoisse le dispute au mystère. 
+Gilles Amalvi pour les Rencontres chorégraphiques internationales de Seine-Saint-Denis 2010 
+
+En Juin 2010, le jury « danse » du Syndicat professionnel de la Critique de Théâtre, Musique et Danse, a décerné le « Prix de la révélation chorégraphique » à Maud Le Pladec pour *Professor*. En octobre 2010, le jury du Prix Jardin d’Europe a décerné une mention spéciale à *Professor*, lors du festival Idans à Istanbul.
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Professor</i>'
+  moment: 2017-12-02
+  hours: ""
+  place: >
+    Teatro de la Ribeira, Buenos Aires
+    (Argentine)
+  actus: non
+  type: Tournée
+  from: 2017-12-02
+  to: 2017-12-02
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Professor</i>'
+  moment: 2017-12-16
+  hours: ""
+  place: Festival de danse de Cannes
+  actus: non
+  type: Tournée
+  from: 2017-12-16
+  to: 2017-12-16
+  link: ""
+  agenda: oui

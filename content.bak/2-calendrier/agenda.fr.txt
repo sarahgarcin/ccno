@@ -1,0 +1,58 @@
+Title: À l'agenda
+
+----
+
+Text: ## La programmation complète du deuxième semestre (février 2018 – juillet 2018) sera disponible à partir de janvier 2018.
+
+----
+
+Icone: 
+
+----
+
+Picto: 
+
+----
+
+Builder: 
+
+- 
+  text: septembre 2017
+  _fieldset: mois
+- 
+  dateev: 15 Septembre
+  hour: 23h30
+  place: CCNO
+  title: >
+    Concert de Bajram Bili avec la danseuse
+    Mufasa
+  text: 'Tarif unique : 12€ Festival Hop Pop Hop'
+  _fieldset: event
+- 
+  dateev: 16 septembre
+  hour: 14h30
+  place: Place du Martroi
+  title: >
+    Performance, We can be heroes,
+    Groupenfonction, Festival Hop Pop Hop
+  text: ""
+  _fieldset: event
+- 
+  dateev: 16 septembre
+  hour: 18h30
+  place: Parvis de la Cathédrale
+  title: >
+    Performance, We can be heroes,
+    Groupenfonction, Festival Hop Pop Hop
+  text: ""
+  _fieldset: event
+- 
+  text: octobre 2017
+  _fieldset: mois
+- 
+  dateev: 4 octobre
+  hour: 14h – 16h15
+  place: CCNO
+  title: '<span class="orleans"> Dancing kids</span>'
+  text: ""
+  _fieldset: event

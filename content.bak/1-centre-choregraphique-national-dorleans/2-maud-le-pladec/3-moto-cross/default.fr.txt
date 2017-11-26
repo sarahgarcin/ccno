@@ -1,0 +1,64 @@
+Title: <i>Moto-Cross</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+Création 2017 
+Durée 50 min
+
+###### Conception, chorégraphie, interprétation  	Maud Le Pladec <br/> Texte 						Maud Le Pladec en collaboration avec Vincent Thomasset <br/> Scénographie et création lumières 		Eric Soyer  <br/> Création costumes 				Alexandra Bertaut <br/> DJing et discographie				 Julien Tiné <br/> Conception dispositif musical 			Pete Harden <br/> Documentation 					Youness Anzane <br/> Répétition voix 					Dalila Khatir <br/> Chorégraphie locking, waacking 		Alice Liss Funk <br/> Regard extérieur 				Julien Gallée Ferré
+
+« Enfant, je danse sur les musiques pop de la disco-mobile de mon père, je suis peinte en tutu rose sur la portière de sa camionnette, je cours de galas en compétitions de moto-cross. Mon père aime la danseuse qu’il a fait peindre sur sa camionnette et j’aime que mon père l’aime. Je ne deviendrai jamais la danseuse en tutu rose peinte sur le C35 et pourtant, c’est bien grâce à elle que je danse tel que je danse aujourd’hui ». Maud Le Pladec
+
+Le projet *Moto-Cross *trouve sa source dans cette parabole - cette danseuse en tutu que la chorégraphe n’est jamais devenue – pour mieux interroger des questions liées à la transmission, l’héritage et la construction sociale. Maud Le Pladec interprète un solo partant de son propre récit de vie et de danseuse. Cette autofiction traite ainsi de la question de la mémoire, de la disparition et de l’émancipation sociale et intellectuelle. Mais aussi de la «culture pop» (ou «pop culture») terme désignant un courant contestataire de la fin des années 50 dans l’art et dans la musique.
+
+###### Production Association Léda, Centre chorégraphique national d’Orléans <span class='orleans'>#</span>  Coproduction  La Briqueterie CDC du Val-de-Marne, Théâtre National de Chaillot, Les Subsistances, Pole Culturel d’Alfortville <span class='orleans'>#</span>  Avec le soutien du	Ministère de la Culture et de la communication – DRAC Bretagne, Région Bretagne, Ville de Rennes, Conseil départemental du Val-de-Marne
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Moto-Cross</i>'
+  moment: 2018-02-06
+  hours: ""
+  place: Théâtre d’Orléans
+  actus: non
+  type: Spectacle
+  from: 2018-02-06
+  to: 2018-02-08
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Moto-Cross</i>'
+  moment: 2018-03-26
+  hours: ""
+  place: >
+    La Passerelle, scène nationale de
+    Saint-Brieuc
+  actus: non
+  type: Tournée
+  from: 2018-03-26
+  to: 2018-03-26
+  link: ""
+  agenda: non
+- 
+  title: '<i>Moto-Cross</i>'
+  moment: 2018-05-23
+  hours: ""
+  place: Pôle culturel d’Alfortville
+  actus: non
+  type: Tournée
+  from: 2018-05-23
+  to: 2018-05-23
+  link: ""
+  agenda: non

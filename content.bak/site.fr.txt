@@ -1,0 +1,62 @@
+Title: Centre Chorégraphique National d'Orléans
+
+----
+
+Author: 
+
+----
+
+Description: 
+
+----
+
+Copyright: 
+
+----
+
+Logo: Centre  <br>Chorégraphique <br>National  <br>¾
+
+----
+
+Address: 
+
+37 rue du Bourdon Blanc 
+CS 42348
+45023 Orléans Cedex 1
+Tél. : 02 38 62 41 00
+<a href="mailto:reservation@ccn-orleans.com">reservation@ccn-orleans.com</a> 
+Du lundi au vendredi
+de 9h — 12h30
+et de 14h — 17h30
+
+----
+
+Shortcut: CCN¹
+
+----
+
+Pdf: 
+
+- 
+  title: 'Télécharger le programme <br> septembre 2017 - janvier 2018'
+  link: >
+    ccno-programme-septembre2017-janvier2018_bd.pdf
+- 
+  title: 'Télécharger le programme <br> des ateliers et des cours'
+  link: >
+    ccno-ateliers-cours-creations-formations_septembre2017-janvier2018_bd.pdf
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 
+
+- 
+  title: Page Facebook
+  link: https://www.facebook.com/CCNOrleans/
+- 
+  title: Vidéos
+  link: https://vimeo.com/maudlepladec

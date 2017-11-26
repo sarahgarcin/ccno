@@ -30,9 +30,18 @@
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
 														<h2>
-															<?php echo $day[date("N", strtotime($dates->moment())) - 1];?>
-															<?php echo date("j", strtotime($dates->moment()));?>
-															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
+															<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
+																<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
+																<?php echo date("j", strtotime($dates->from()));?>
+																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+															<?php else:?>
+																<?php echo "du ".$day[date("N", strtotime($dates->from())) - 1];?>
+																<?php echo date("j", strtotime($dates->from()));?>
+																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+																<?php echo "au ".$day[date("N", strtotime($dates->to())) - 1];?>
+																<?php echo date("j", strtotime($dates->to()));?>
+																<?php echo $mois[date("n", strtotime($dates->to())) - 1];?>
+															<?php endif;?>
 															<?php echo $dates->title()->html() ?>
 														</h2>
 														<?php echo $dates->text()->kt() ?>

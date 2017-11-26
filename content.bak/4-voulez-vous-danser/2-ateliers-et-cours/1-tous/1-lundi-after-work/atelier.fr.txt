@@ -1,0 +1,128 @@
+Title: Lundi <br><span class='orleans'>after worK</span>
+
+----
+
+Text: 
+
+----
+
+Picto: 
+
+----
+
+Summary: 
+
+Plongez dans l’univers d’un chorégraphe invité au CCNO ou dans le cadre de la programmation danse de la Scène nationale. Ce moment de partage et de pratique est l’occasion d’expérimenter les processus d’écriture d’une pièce ou tout simplement de rencontrer la démarche d’un artiste.
+
+De 19h à 21h
+Tarif à l’unité : 10 € les 2h d’atelier.
+
+----
+
+Dates: 
+
+- 
+  title: 'avec Corinne Garcia, assistante à la chorégraphie de <i>Borderline</i> de Guy Cassiers et Maud Le Pladec'
+  moment: 2017-10-02
+  hours: 19h-21h
+  place: CCNO
+  actus: non
+  type: Lundi after work
+  text: |
+    Autour de (link: centre-choregraphique-national-dorleans/maud-le-pladec/borderline text: *Borderline*) de Guy Cassiers et Maud Le Pladec. (note:*Borderline* de Guy Cassiers et Maud Le Pladec
+    5, 6 octobre 2017, 20h30, 7 octobre, 19h, Théâtre d’Orléans)
+    Corinne Garcia interprète-pédagogue a collaboré avec de nombreux chorégraphes dont Mathilde Monnier, Emmanuelle Huynh, Fabrice Lambert... Elle est assistante de Maud Le Pladec dans la recréation française de Borderline au Théâtre d’Orléans avec le Jeune Ballet du CNSMD de Lyon. L’atelier aborde les matériaux chorégraphiques de Borderline.
+  agenda: oui
+  from: 2017-10-02
+  to: 2017-10-02
+  link: ""
+- 
+  title: >
+    avec Ondine Cloez, chorégraphe /
+    Vacances vacance
+  moment: 2017-10-16
+  hours: 19h-21h
+  place: CCNO
+  actus: non
+  type: Lundi after work
+  text: |
+    Autour de *(link: dans-les-studios/accueil-studio/vacances-vacance text: Vacances, vacance)* d'Ondine Cloez. (note:*Vacances, vacance *d'Ondine Cloez
+    19 octobre 2017, 19h, CCNO)
+    En lien avec le travail de recherche de son projet Vacances, vacance, Ondine Cloez propose de vous amener à un état de grâce en dansant.
+  agenda: oui
+  from: 2017-10-16
+  to: 2017-10-16
+  link: >
+    http://www.ccn-orleans.com/dans-les-studios/accueil-studio/vacances-vacance
+- 
+  title: 'avec David Drouard, chorégraphe de <i>(S)ACRE</i>'
+  moment: 2017-11-06
+  hours: 19h-21h
+  place: CCNO
+  actus: oui
+  type: Lundi after work
+  text: |
+    Autour du *(S)ACRE* de David Drouard (note:*(SACRE* de David Drouard
+    9 novembre 2017, 20h30, Théâtre d’Orléans)
+    Le *(S)ACRE* de David Drouard fait dialoguer sur scène danseuses et musiciennes. Reprenant la forme scandée de la musique de Stravinski, David Drouard vous invite à explorer le mythe du Sacre du printemps, qu’il a créé autour de la figure féminine.
+  agenda: oui
+  from: 2017-11-06
+  to: 2017-11-06
+  link: ""
+- 
+  title: >
+    avec Olga Dukhovnaya, chorégraphe et
+    interprète / Soeur
+  moment: 2017-12-11
+  hours: 19h-21h
+  place: CCNO
+  actus: non
+  type: Lundi after work
+  text: |
+    Autour de *(link: dans-les-studios/accueil-studio/soeur text: Sœur)* d'Olga Dukhovnaya. (note:*Sœur* d'Olga Dukhovnaya
+    21 décembre 2017, 19h, CCNO)
+    Est-il possible de regarder un seul geste infiniment ? Olga Dukhovnaya vous invite à partager avec elle ses questions sur le geste et les images.
+  agenda: oui
+  from: 2017-12-11
+  to: 2017-12-11
+  link: ""
+- 
+  title: >
+    avec Daniel Larrieu, chorégraphe /
+    Littéral
+  moment: 2017-12-18
+  hours: 19h-21h
+  place: CCNO
+  actus: non
+  type: Lundi after work
+  text: |
+    Autour de *Littéral* de Daniel Larrieu. (note:*Littéral* de Daniel Larrieu
+    21 décembre 2017, 20h30, Théâtre d’Orléans)
+    En trente-cinq ans de travail dans le champ chorégraphique, Daniel Larrieu revient sur ce qui construit un geste, un mouvement et vous propose de plonger avec lui dans sa vive mémoire de chorégraphe.
+  agenda: oui
+  from: 2017-12-18
+  to: 2017-12-18
+  link: ""
+- 
+  title: >
+    avec Bruno Benne, chorégraphe et
+    interprète de la Cie Beaux-Champs,
+    danse baroque / Le Roi danse !,
+    Marie-Geneviève Massé
+  moment: 2018-01-08
+  hours: 19h-21h
+  place: CCNO
+  actus: non
+  type: Lundi after work
+  text: |
+    Autour de *Le Roi danse !* de Marie-Geneviève Massé. (note:*Le Roi danse !* de Marie-Geneviève Massé
+    12 janvier 2018, 20h30, Théâtre d’Orléans)
+    L’atelier de Bruno Benne va puiser sur une découverte des concepts de la danse baroque : espace, musicalité, conception du corps baroque dans sa verticalité avec ses volumes et ses spirales. Une approche contemporaine de ce style vous sera proposée : la danse baroque peut se ré-inventer aujourd’hui !
+  agenda: oui
+  from: 2018-01-08
+  to: 2018-01-08
+  link: ""
+
+----
+
+Display: dates

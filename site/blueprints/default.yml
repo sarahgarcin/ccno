@@ -31,10 +31,6 @@ fields:
       type:
         label: Type
         type: text
-      moment:
-        label: Date
-        type: date
-        format: DD-MM-YYYY
       from:
         label: Du
         type: date
