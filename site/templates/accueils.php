@@ -9,7 +9,6 @@
 
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
-		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<?php snippet('icone-page')?>
 		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-16 large-push-2 xlarge-10 columns">

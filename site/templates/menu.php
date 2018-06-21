@@ -6,7 +6,6 @@
 
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
-		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8">
 			<?php snippet('icones') ?>

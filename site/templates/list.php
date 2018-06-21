@@ -1,14 +1,13 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
-<?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
-  $day = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche'];
+<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
 <div class ="row">
 
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
-		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<?php snippet('icone-page')?>
 		<div class="text icones-wrapper-text small-18 medium-16 large-16 xlarge-10">
@@ -31,6 +30,7 @@
 													<li>
 														<h2>
 															<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
+
 																<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
 																<?php echo date("j", strtotime($dates->from()));?>
 																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
@@ -69,9 +69,19 @@
 												<?php foreach($child->dates()->toStructure() as $dates):?>
 													<li>
 														<h2>
-															<?php echo $day[date("N", strtotime($dates->moment())) - 1];?>
-															<?php echo date("j", strtotime($dates->moment()));?>
-															<?php echo $mois[date("n", strtotime($dates->moment())) - 1];?>
+															<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
+
+																<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
+																<?php echo date("j", strtotime($dates->from()));?>
+																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+															<?php else:?>
+																<?php echo "du ".$day[date("N", strtotime($dates->from())) - 1];?>
+																<?php echo date("j", strtotime($dates->from()));?>
+																<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+																<?php echo "au ".$day[date("N", strtotime($dates->to())) - 1];?>
+																<?php echo date("j", strtotime($dates->to()));?>
+																<?php echo $mois[date("n", strtotime($dates->to())) - 1];?>
+															<?php endif;?>
 															<?php echo $dates->title()->html() ?>
 														</h2>
 														<?php echo $dates->text()->kt() ?>

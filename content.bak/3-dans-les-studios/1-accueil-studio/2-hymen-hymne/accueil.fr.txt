@@ -1,4 +1,4 @@
-Title: <span class='orleans'>hYMEN Hymne</span>
+Title: <i>Hymen Hymne</i>
 
 ----
 
@@ -24,7 +24,9 @@ Nina Santes
 Dates: 
 
 - 
-  title: 'Rencontre avec Nina Santes, Camille Ducellier et Maud Le Pladec / <i> Hymen hymne </i>'
+  title: >
+    Rencontre avec Nina Santes, Camille
+    Ducellier et Maud Le Pladec
   moment: 2017-11-13
   hours: 19h
   place: CCNO
@@ -32,18 +34,8 @@ Dates:
   type: Rencontre
   from: 2017-11-13
   to: 2017-11-13
-  link: ""
-  agenda: oui
-- 
-  title: '<i> Hymen hymne </i>'
-  moment: 2017-11-13
-  hours: 9h-12h30 et 14h-17h30
-  place: CCNO
-  actus: non
-  type: Exposition
-  from: 2017-11-13
-  to: 2017-12-15
-  link: ""
+  link: >
+    http://www.ccn-orleans.com/actualites/exposition-hymen-hymne
   agenda: oui
 - 
   title: '<i>Hymen hymne</i>'
@@ -64,8 +56,21 @@ Dates:
   to: 2017-12-02
   hours: 14h30-17h30
   place: CCNO
-  link: ""
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-de-creations
   agenda: non
+  actus: non
+- 
+  title: '<i>Hymen Hymne</i>'
+  type: Exposition
+  moment: 2017-11-13
+  from: 2017-11-13
+  to: 2017-12-15
+  hours: 9h-12h30 et 14h-17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/actualites/exposition-hymen-hymne
+  agenda: oui
   actus: non
 
 ----

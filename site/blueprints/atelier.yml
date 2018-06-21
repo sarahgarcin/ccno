@@ -24,7 +24,7 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — {{moment}} — Du {{from}} au {{to}} — {{hours}} — {{place}}
+      {{title}} — Du {{from}} au {{to}} — {{hours}} — {{place}}
       <br>{{link}} 
     fields:
       title:

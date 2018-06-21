@@ -1,0 +1,78 @@
+Title: <span class='orleans'>wITCH TRANS</span>-<span class='orleans'><br>MISSION</span> #<span class='orleans'>1</span>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+*Witch Transmission *est un fil rouge articulé autour de la représentation de la figure féminine. 
+*Witch Transmission *est protéiforme : exposition, conférence, projection, atelier, spectacle, performance... 
+*Witch Transmission* profite d’une conjoncture, des forces féminines en présence. 
+En novembre, *Hunted* de Maud Le Pladec et *Hymen Hymne* de Nina Santes nous offrent l’occasion d’un trait d’union entre Orléans et Londres.
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Hymen Hymne</i>'
+  type: Exposition
+  moment: 2017-11-13
+  from: 2017-11-13
+  to: 2017-12-15
+  hours: 9h-12h30 et 14h-17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/actualites/exposition-hymen-hymne
+  agenda: non
+  actus: non
+- 
+  title: '<i>Hunted</i> de Okwui Okpokwasili et Maud Le Pladec'
+  type: Tournée
+  moment: 2017-11-16
+  from: 2017-11-16
+  to: 2017-11-17
+  hours: ""
+  place: "Sadler's Wells, Londres"
+  link: ""
+  agenda: non
+  actus: non
+- 
+  title: 'Avec Jean-Baptiste Veyret-Logerias, consultant travail vocal de <i>Hymen hymne</i>'
+  type: Samedi brunch
+  moment: 2017-11-25
+  from: 2017-11-25
+  to: 2017-11-25
+  hours: 11h à 13h
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-et-cours/tous/samedi-brunch
+  agenda: non
+  actus: non
+- 
+  title: '<i>Hymen Hymne</i>'
+  type: Ouverture publique
+  moment: 2017-11-30
+  from: 2017-11-30
+  to: 2017-11-30
+  hours: 19h
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/dans-les-studios/accueil-studio/hymen-hymne
+  agenda: non
+  actus: non
+- 
+  title: 'Atelier <i>Conjurer</i> avec Camille Ducellier et Nina Santes'
+  type: Atelier pour amateurs
+  moment: 2017-12-02
+  from: 2017-12-02
+  to: 2017-12-02
+  hours: 14h30 à 17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-de-creations
+  agenda: non
+  actus: non

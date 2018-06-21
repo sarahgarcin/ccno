@@ -5,6 +5,7 @@ Title: Accès
 Text: 
 
 (note:Le Centre chorégraphique national d'Orléans est accessible aux personnes en situation de handicap)
+ 
  (image: plan.jpg flou:non link:/content/5-mode-d-emploi/2-acces/plan.jpg)
 
 Centre chorégraphique national d’Orléans

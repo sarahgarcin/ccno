@@ -45,6 +45,10 @@ Pdf:
   title: 'Télécharger le programme <br> des ateliers et des cours'
   link: >
     ccno-ateliers-cours-creations-formations_septembre2017-janvier2018_bd.pdf
+- 
+  title: "Télécharger l'offre d'emploi : Administratrice - administrateur / responsable des productions"
+  link: >
+    centre-choregraphique-national-d-orleans_annonce-administrateur-5.11.17.pdf
 
 ----
 

@@ -4,8 +4,7 @@ Title: Équipement
 
 Text: 
 
-(link: http://site.sarahgarcin.com/ccno/content/5-mode-d-emploi/1-equipement/ccno_fiche-technique_05-17_a3.pdf?1509020008 text: Fiche technique du CCNO) (note: + d'infos : 
-contacter la direction technique stevenlecorre@ccn-orleans.com)
+(link: http://site.sarahgarcin.com/ccno/content/5-mode-d-emploi/1-equipement/ccno_fiche-technique_05-17_a3.pdf?1509020008 text: Fiche technique du CCNO) 
 ## 4 studios
 Un studio de création avec une capacité d’accueil de 170 places et un plateau de 21 m x 18 m avec une hauteur de 7 m sous plafond. Ce studio est généralement dédié aux résidences.
 (link: http://site.sarahgarcin.com/ccno/content/5-mode-d-emploi/1-equipement/ccno_studio-babilee_plan-masse_10-17_a3.pdf?1509019999 text: Plan masse)
@@ -29,6 +28,8 @@ Une régie lumières
 Un local vidéo-son et une régie son
 
 Un atelier de réalisation de costumes
+
+## + d'infos : (email: technique@ccn-orleans.com text: contacter la direction technique)
 
 ----
 

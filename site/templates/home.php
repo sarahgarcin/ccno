@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
+
 <?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
@@ -27,6 +27,7 @@
 	<?php snippet('left-col') ?>
 
 	<main class="small-18 medium-13 medium-push-5 xlarge-push-4 xlarge-13 end columns">
+		<?php snippet('menu') ?>
 		<div class="image-icono">
 			<?php foreach($site->images()->shuffle()->limit(20) as $icone): ?>
 			<!-- 	<div class="icone-wrapper">

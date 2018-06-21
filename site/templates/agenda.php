@@ -9,6 +9,7 @@
 	$i = 0;
 	$currentTime = date('Ymd');
 
+
 	foreach($projets as $projet):
 		$project = $site->page($projet);
 		$url = $project->url();
@@ -27,6 +28,24 @@
 					$toDay = date("j", strtotime($to));
 					$toMonth = $mois[date("n", strtotime($to)) - 1];
 					$toYear = date("Y", strtotime($to));
+					// GET TAGS
+					// spectacles, à orléans, tournée Maud Le Pladec, cours/ateliers/stages
+					$tags = array();
+					if($dates->type() == 'Spectacle'){
+						$tags[] ='spectacle';
+					}
+					if($dates->place() == "CCNO" || $dates->place() == "Théâtre d'Orléans"){
+						$tags[] ='inorleans';
+					}
+
+					if($dates->type() == 'Tournée' || $project->parent()->template() == "maud"){
+						$tags[] ='maud';
+					}
+
+					if($project->parent()->template() == "ateliers"){
+						$tags[] ='cours';
+					}
+
 
 					$array[$i]['datestart'] = date("Ymd", strtotime($from));
     			$array[$i]['dateend'] = date("Ymd", strtotime($to));
@@ -42,6 +61,7 @@
 					$array[$i]['heures'] = $dates->hours();
 					$array[$i]['lieu'] = $dates->place();
 			    $array[$i]['url'] = $url;
+			    $array[$i]['tags'] = $tags;
 			    
 			    
 			    
@@ -59,6 +79,7 @@
 					$arrayPast[$i]['heures'] = $dates->hours();
 					$arrayPast[$i]['lieu'] = $dates->place();
 			    $arrayPast[$i]['url'] = $url;
+			    $arrayPast[$i]['tags'] = $tags;
 
 			    $projectTime = date("Ymd", strtotime($from));
 	    		$projectTimeEnd = date("Ymd", strtotime($to));
@@ -87,12 +108,25 @@
 
 ?>
 
+
+
 <div class ="row">
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 large-14 columns">
 		<h1><?= $page->title()->html() ?></h1>
-		<h3 class="click---past-events">ce qui est passé</h3>
+		
 		<h3 class="title--next-events active">ce qui est à venir</h3>
+		<h3 class="click---past-events">ce qui est passé</h3>
+		<div class="tags">
+			<span>Trier par:</span>
+			<ul>
+				<li class="all active">tout</li>
+				<li class="spectacle">spectacles</li>
+				<li class="inorleans">à orléans</li>
+				<li class="maud">tournée Maud Le Pladec</li>
+				<li class="cours">cours/ateliers/stages</li>
+			</ul>
+		</div>
 		<div class="pastEvents">
 			<div class="pastEvents-wrapper">
 				<?php $previousMonthPast = null;
@@ -103,7 +137,10 @@
 					 	<?php endif;
 						$previousMonthPast = $date['fromMonth'];
 					?>
-					<table>
+					<table class="<?php 
+					foreach($date['tags'] as $tag){
+						echo $tag. " ";
+					}?>">
 					<colgroup>
 						<col span="1" style="width: 20%;">
 			      <col span="1" style="width: 25%;">
@@ -149,7 +186,10 @@
 				 	<?php endif;
 					$previousMonth = $date['fromMonth'];
 				?>
-				<table>
+				<table class="<?php 
+					foreach($date['tags'] as $tag){
+						echo $tag. " ";
+					}?>">
 						<colgroup>
 							<col span="1" style="width: 20%;">
 				      <col span="1" style="width: 25%;">

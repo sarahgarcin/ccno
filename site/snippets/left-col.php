@@ -1,5 +1,5 @@
 <div class="left-col small-18 medium-4 columns">
-	<div class="menu-btn hide-for-small-only"><span>Menu</span></div>
+	<!-- <div class="menu-btn hide-for-small-only"><span>Menu</span></div> -->
 	<div class="header-mobile small-18 show-for-small-only">
 		<div class="menu-mobile-btn"><span>Menu</span></div>
 		<h1 class="mobile-title">

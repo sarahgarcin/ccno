@@ -127,18 +127,18 @@ figure{
 // -------- MENU — HEADER ------------
 
 header{
-	background: #FFF;
-	position: fixed;
-	width: 100%;
-	z-index: 20;
-	top: $constructionTop; // à enlever avec site en construction
-	padding: 0.5rem $columnPadding $columnPadding $columnPadding;
-	display:none;
-	filter: blur(5px);
-	transition: filter 0.5s; 	
-	&.active{
-		filter: blur(0);
-	}
+	// background: #FFF;
+	// position: fixed;
+	// width: 100%;
+	// z-index: 20;
+	// top: $constructionTop; // à enlever avec site en construction
+	// padding: 0.5rem $columnPadding $columnPadding $columnPadding;
+	// display:none;
+	// filter: blur(5px);
+	// transition: filter 0.5s; 	
+	// &.active{
+	// 	filter: blur(0);
+	// }
 	h1{
 		margin-bottom: $marginSmall;
 		padding-top: $marginSmall;
@@ -157,8 +157,9 @@ header{
 
 nav > ul {
 	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
+	column-count: 2;
   width: 100%;
   a:hover{
 		color: $rose;
@@ -167,10 +168,10 @@ nav > ul {
 		font-size: rem-calc(20); 
 		text-transform: uppercase;
 		line-height: 1.2;
-		flex: 1 1 auto;
+		//flex: 1 1 auto;
 		> ul {
 			margin: 0;
-			display:block;
+			display:none;
 			> li{
 				text-transform: none;
 				font-size: rem-calc(20); 
@@ -185,7 +186,7 @@ nav > ul {
 	position:fixed;
 	z-index: 3;
 	top:$constructionTop; // à enlever quand site en construction
-	padding: $marginSmall + 0.2 10px 0px 5px;
+	padding: $marginSmall + 0.2 10px 0px 0px;
 }
 
 .breadcrumb{
@@ -249,6 +250,7 @@ nav > ul {
 	height:100vh;
 	position: fixed; 
 	top: 0px;
+	display:none;
 	padding-top: $marginSmall/2;
 	h1, h1 a{
 		font-size: 1.8rem;
@@ -311,6 +313,7 @@ nav > ul {
 
 main{
 	padding-top: $marginBig *2 ;
+	display:none;
 	.text a{
 		text-decoration: underline;
 	}
@@ -429,8 +432,9 @@ body[data-template="maud"]{
 	main{
 		.creations{
 			margin-top: $marginBig;
+			margin-bottom: $marginBig;
 			h1{
-				margin-left: -15%;
+				//margin-left: -15%;
 			}
 			li{
 				font-size: $h2;
@@ -453,6 +457,9 @@ body[data-template="maud"]{
 				}
 			}
 		}
+		.text{
+			padding-left:0;
+		}
 	}
 }
 
@@ -461,6 +468,9 @@ body[data-template="agenda"]{
 		padding-top: $marginSmall/2;
 		h2{
 			margin-left: 0;
+			&:first-child{
+				margin-top: 0.5em;
+			}
 		}
 
 		.title--next-events, .click---past-events{
@@ -484,6 +494,41 @@ body[data-template="agenda"]{
 				}
 			}
 		}
+		.tags{
+			margin-top:1rem;
+			span{
+				font-size: 1rem;
+				text-decoration:underline;
+			}
+			li{
+				cursor:pointer;
+				display:inline-block;
+				padding-right: 3em;
+				position:relative;
+				font-size: 1rem;
+				&:first-child{
+					margin-left: 1em;
+				}
+				&:before{
+					content:"";
+					width: 10px; 
+					height:10px; 
+					border:1px solid #000;
+					display:block;
+					position:absolute;
+					top:2px;
+					left:-15px;
+				}
+				&:hover, &.active{
+					color: $rose;
+						&:before{
+						border:none;
+						background:$rose;
+					}
+				}
+			}
+		}
+
 		table {
 	    border-collapse: collapse;
 	    width: 90%;
@@ -852,7 +897,43 @@ body[data-template="accueils"]{
 
 }
 
+.uniform__potty {
+    position: absolute;
+    left: -9999px;
+}
 
+.form-success{
+	color: $rose;
+  border: 1px solid $rose;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 40px;
+}
+
+.form-error{
+	color: red;
+  border: 3px solid red;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 40px;
+}
+
+body[data-template="form"]{
+	h2{
+		margin-bottom:30px;
+	}
+	form {
+		input[type="submit"]{
+			border: 1px solid #000;
+	    font-size: 15px;
+	    background: none;
+	    padding: 10px;
+	    margin-top: 15px;
+	    &:hover{
+	    	background: #000;
+	    	color: #FFF;
+	    }
+		}
+	}
+}
 
 @import "responsive.scss";
 @import "tablet.scss";

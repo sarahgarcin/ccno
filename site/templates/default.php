@@ -10,7 +10,6 @@
 
 	<?php snippet('left-col') ?>
 	<main class="small-18 medium-13 columns">
-		<?php snippet('breadcrumb') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<?php snippet('icone-page')?>
 		<div class="row">

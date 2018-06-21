@@ -9454,7 +9454,7 @@ h4 {
 
 p, li {
   font-family: "directrice", serif;
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: 1.25rem; }
 
 a {
@@ -9546,51 +9546,32 @@ figure {
     .site-en-construction p a:hover, .site-en-construction a a:hover {
       color: #000; }
 
-header {
-  background: #FFF;
-  position: fixed;
-  width: 100%;
-  z-index: 20;
-  top: 0px;
-  padding: 0.5rem 0.9375rem 0.9375rem 0.9375rem;
-  display: none;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  transition: -webkit-filter 0.5s;
-  transition: filter 0.5s;
-  transition: filter 0.5s, -webkit-filter 0.5s; }
-  header.active {
-    -webkit-filter: blur(0);
-    filter: blur(0); }
-  header h1 {
-    margin-bottom: 0.75rem;
-    padding-top: 0.75rem; }
-  header h1, header h1 a {
-    font-size: 1.875rem;
-    cursor: pointer; }
-    header h1:hover, header h1 a:hover {
-      -webkit-filter: blur(2px);
-      filter: blur(2px);
-      color: #000; }
+header h1 {
+  margin-bottom: 0.75rem;
+  padding-top: 0.75rem; }
+
+header h1, header h1 a {
+  font-size: 1.875rem;
+  cursor: pointer; }
+  header h1:hover, header h1 a:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    color: #000; }
 
 nav > ul {
   margin: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -moz-column-count: 2;
+  column-count: 2;
   width: 100%; }
   nav > ul a:hover {
     color: #fa4bc8; }
   nav > ul > li {
     font-size: 1.25rem;
     text-transform: uppercase;
-    line-height: 1.2;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    line-height: 1.2; }
     nav > ul > li > ul {
       margin: 0;
-      display: block; }
+      display: none; }
       nav > ul > li > ul > li {
         text-transform: none;
         font-size: 1.25rem;
@@ -9602,7 +9583,7 @@ nav > ul {
   position: fixed;
   z-index: 3;
   top: 0px;
-  padding: 0.95rem 10px 0px 5px; }
+  padding: 0.95rem 10px 0px 0px; }
 
 .breadcrumb li {
   -ms-flex: 0 1 auto;
@@ -9646,6 +9627,7 @@ nav > ul {
   height: 100vh;
   position: fixed;
   top: 0px;
+  display: none;
   padding-top: 0.375rem; }
   .left-col h1, .left-col h1 a {
     font-size: 1.8rem;
@@ -9693,7 +9675,8 @@ nav > ul {
       color: #fa4bc8; }
 
 main {
-  padding-top: 6rem; }
+  padding-top: 6rem;
+  display: none; }
   main .text a {
     text-decoration: underline; }
 
@@ -9773,9 +9756,8 @@ body[data-template="menu"] main {
       color: #fa4bc8; }
 
 body[data-template="maud"] main .creations {
-  margin-top: 3rem; }
-  body[data-template="maud"] main .creations h1 {
-    margin-left: -15%; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
   body[data-template="maud"] main .creations li {
     font-size: 1.8rem;
     text-transform: none;
@@ -9797,10 +9779,15 @@ body[data-template="maud"] main .creations {
       z-index: 100;
       display: none; }
 
+body[data-template="maud"] main .text {
+  padding-left: 0; }
+
 body[data-template="agenda"] main {
   padding-top: 0.375rem; }
   body[data-template="agenda"] main h2 {
     margin-left: 0; }
+    body[data-template="agenda"] main h2:first-child {
+      margin-top: 0.5em; }
   body[data-template="agenda"] main .title--next-events, body[data-template="agenda"] main .click---past-events {
     font-size: 1.2rem;
     margin-bottom: 0.375rem;
@@ -9815,6 +9802,33 @@ body[data-template="agenda"] main {
     display: none; }
     body[data-template="agenda"] main .pastEvents .pastEvents-wrapper.active {
       display: block; }
+  body[data-template="agenda"] main .tags {
+    margin-top: 1rem; }
+    body[data-template="agenda"] main .tags span {
+      font-size: 1rem;
+      text-decoration: underline; }
+    body[data-template="agenda"] main .tags li {
+      cursor: pointer;
+      display: inline-block;
+      padding-right: 3em;
+      position: relative;
+      font-size: 1rem; }
+      body[data-template="agenda"] main .tags li:first-child {
+        margin-left: 1em; }
+      body[data-template="agenda"] main .tags li:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: -15px; }
+      body[data-template="agenda"] main .tags li:hover, body[data-template="agenda"] main .tags li.active {
+        color: #fa4bc8; }
+        body[data-template="agenda"] main .tags li:hover:before, body[data-template="agenda"] main .tags li.active:before {
+          border: none;
+          background: #fa4bc8; }
   body[data-template="agenda"] main table {
     border-collapse: collapse;
     width: 90%;
@@ -10042,7 +10056,7 @@ body[data-template="accueils"] .accueils-module .accueils-text {
 .newsletter {
   margin-top: 1.5rem;
   font-family: "directrice", serif;
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: 1.25rem; }
   .newsletter h5 {
     font-size: 0.9rem;
@@ -10061,7 +10075,7 @@ body[data-template="accueils"] .accueils-module .accueils-text {
       height: 20px;
       background: transparent;
       font-family: "directrice", serif;
-      line-height: 1.1;
+      line-height: 1.2;
       font-size: 1.25rem;
       font-size: 0.9rem; }
       .newsletter form input:focus {
@@ -10071,13 +10085,42 @@ body[data-template="accueils"] .accueils-module .accueils-text {
       background-color: transparent;
       padding-left: 1.5em;
       font-family: "directrice", serif;
-      line-height: 1.1;
+      line-height: 1.2;
       font-size: 1.25rem;
       font-size: 0.9rem;
       color: #fa4bc8;
       outline: none; }
       .newsletter form button[type='submit']:hover {
         color: #000; }
+
+.uniform__potty {
+  position: absolute;
+  left: -9999px; }
+
+.form-success {
+  color: #fa4bc8;
+  border: 1px solid #fa4bc8;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 40px; }
+
+.form-error {
+  color: red;
+  border: 3px solid red;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 40px; }
+
+body[data-template="form"] h2 {
+  margin-bottom: 30px; }
+
+body[data-template="form"] form input[type="submit"] {
+  border: 1px solid #000;
+  font-size: 15px;
+  background: none;
+  padding: 10px;
+  margin-top: 15px; }
+  body[data-template="form"] form input[type="submit"]:hover {
+    background: #000;
+    color: #FFF; }
 
 @media only screen and (max-width: 40em) {
   h1 {
