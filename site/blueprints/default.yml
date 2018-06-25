@@ -48,19 +48,4 @@ fields:
       link: 
         label: Lien
         type: text
-      agenda: 
-        label: Afficher cette page dans l'agenda ?
-        type: radio
-        default: oui
-        options:
-          oui: oui
-          non: non
-      actus:
-        label: Afficher cette page comme une actu sur la page d'accueil ?
-        type: radio
-        default: non
-        options:
-          oui: oui
-          non: non
-    help: Informations à afficher dans l'agenda
 

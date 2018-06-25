@@ -7,11 +7,32 @@ fields:
   title:
     label: Titre
     type:  text
-  icone:
-    label: Icônes 
+  homeImage:
+    label: Image pour la page d'accueil qui disparait au bout de quelques secondes
     type: selector
     mode: single
-  back:
-    label: Image 
-    type: selector
-    mode: single
+    required: true
+  col1:
+    label: Contenu de la colonne 1
+    type: select
+    options: query
+    query: 
+      page: /
+      fetch: index
+      value: '{{uid}}'
+  col2:
+    label: Contenu de la colonne 2
+    type: select
+    options: query
+    query: 
+      page: /
+      fetch: index
+      value: '{{uid}}'
+  col3:
+    label: Contenu de la colonne 3
+    type: select
+    options: query
+    query: 
+      page: /
+      fetch: index
+      value: '{{uid}}'

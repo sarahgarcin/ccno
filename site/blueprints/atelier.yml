@@ -60,12 +60,4 @@ fields:
         options:
           oui: oui
           non: non
-      actus:
-        label: Afficher cette page comme une actu sur la page d'accueil ?
-        type: radio
-        default: non
-        options:
-          oui: oui
-          non: non
-  	help: Informations à afficher dans l'agenda
 

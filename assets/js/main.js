@@ -13,6 +13,9 @@ function init(){
 	});
 
 
+	
+
+
 	//mobile menu functions
 	$('.menu-mobile-btn').on('click', function(){
 		$('header').fadeIn(100);
@@ -34,6 +37,18 @@ function init(){
 	// 		$('header').addClass('active');
 	// 	}, 100);
 	// });
+	$('.module--menu--mainNav .menu-top-list > li').on('click', function(e){
+		console.log($(this));
+		if($(this).hasClass('active') &&$ (this).find('ul').hasClass('active')){
+			$(this).removeClass('active').find('ul').slideUp(400);
+			$(this).find('ul').removeClass('active');
+		}else{
+			$('.module--menu--mainNav > ul > li').removeClass('active').find('ul').slideUp(400);
+			$(this).addClass('active').find('ul').slideDown(400);
+			$(this).find('ul').addClass('active');
+		}
+		
+	});
 
 	$('.tablet-close-menu-button').on('click', function(){
 		$('header').fadeOut(100);
@@ -53,15 +68,15 @@ function init(){
 	 //  });
 
 		//calcule le padding du main
-		$(window).on('load', function(){
-			if($("body").attr("data-template")!="home" && $("body").attr("data-template")!="menu"){
-			  var breadH = $('.breadcrumb').outerHeight();
-				var subH = $('.submenu').outerHeight();
-				$('main').css({
-					'padding-top': breadH+subH+30+'px'
-				})
-			}
-		});
+		// $(window).on('load', function(){
+		// 	if($("body").attr("data-template")!="home" && $("body").attr("data-template")!="menu"){
+		// 	  var breadH = $('.breadcrumb').outerHeight();
+		// 		var subH = $('.submenu').outerHeight();
+		// 		$('main').css({
+		// 			'padding-top': breadH+subH+30+'px'
+		// 		})
+		// 	}
+		// });
 			// show / hide menu on click 
 			// $('.menu-btn').on('mouseenter', function(){
 			// 	$('header').fadeIn(100);
@@ -82,17 +97,10 @@ function init(){
 
 		//random position of icons on home page 
 		if($("body").attr("data-template")=="home"){
-			var mainH = $('main').height() - 150;
-			var windowW = $('main').width() - 100;
-			$(".icone-wrapper").each(function(){
-				var randomX = Math.random() * (windowW - 100);
-				var randomY = Math.random() * (mainH - 100);
-				console.log(randomX, randomY);
-				$(this).css({
-					"top": randomY,
-					"left": randomX
-				});
-			});
+			setTimeout(function(){
+				$('.big-image-wrapper').fadeOut(600);
+				$('.col-wrapper').fadeIn(1000);
+			}, 2000);
 		}
 		// ----
 

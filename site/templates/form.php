@@ -5,7 +5,7 @@
 <div class ="row">
 
 	<?php snippet('left-col') ?>
-	<main class="small-18 medium-13 columns">
+	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
 		<h1><?= $page->title()->html() ?></h1>
 		<?php snippet('icone-page')?>
 		<div class="row">

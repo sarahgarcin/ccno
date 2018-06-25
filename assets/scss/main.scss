@@ -11,7 +11,7 @@
 body {
 	font-size: 12px;
 	font-family: $font-family;
-	background: $background-color;
+	background: $roseClair;
 } 
 
 h1,h2,h3,h4,h5,h6{
@@ -30,6 +30,9 @@ p, li{ @include textCourant; }
 a{@include liens}
 a:visited{color: #000;}
 a.active{color: $rose;}
+a:hover h5{
+	color: $rose;
+}
 ul{
 	margin:0;
 	li{
@@ -103,42 +106,38 @@ figure{
 	}
 }
 
+.main-content{
+	padding-top: 150px;
+}
+
+h3 + h1, h1 + h3{
+	margin: 10px 0;
+}
+
+.title-wrapper{
+	h1{
+		i{
+			font-style: normal;
+			transform:none;
+		}
+	}
+	h3{
+		margin: 10px 0;
+	}
+	margin-bottom:30px;
+}
+.text-wrapper{
+	p{font-size: rem-calc(15);text-align:justify;}
+}
+
 // -------- FIN STYLE GENERAL ------------
 
 // -------- SITE EN CONSTRUCTION ---------
 
-.site-en-construction{
-	background:#DFDFDF;
-	padding: 5px 0px 8px 0px;
-	text-align: center;
-	position:fixed;
-	width: 100%;
-	z-index:20;
-	p, a{
-		margin: 0;
-		color: #6D6D6D;
-		font-size: 1rem;
-		a:hover{
-			color: #000;
-		}
-	}
-}
 
 // -------- MENU — HEADER ------------
 
 header{
-	// background: #FFF;
-	// position: fixed;
-	// width: 100%;
-	// z-index: 20;
-	// top: $constructionTop; // à enlever avec site en construction
-	// padding: 0.5rem $columnPadding $columnPadding $columnPadding;
-	// display:none;
-	// filter: blur(5px);
-	// transition: filter 0.5s; 	
-	// &.active{
-	// 	filter: blur(0);
-	// }
 	h1{
 		margin-bottom: $marginSmall;
 		padding-top: $marginSmall;
@@ -155,27 +154,40 @@ header{
 
 // -------- FIN MENU — HEADER ------------
 
-nav > ul {
+.module--menu--mainNav{
+	position:fixed;
+	top:0;
+	padding: 6px 20px 20px 20px;
+	margin-left: -20px;
+	background: $roseClair;
+	z-index: 999;
+ //	box-shadow: 0px 10px 10px -10px rgba(0,0,0,.2);
+}
+nav .menu-top-list {
 	margin: 0;
-	// display: flex;
-	// flex-wrap: wrap;
-	column-count: 2;
-  width: 100%;
-  a:hover{
-		color: $rose;
-	}
 	> li {
-		font-size: rem-calc(20); 
-		text-transform: uppercase;
+		font-size: rem-calc(25); 
 		line-height: 1.2;
 		//flex: 1 1 auto;
+			&:hover, a:hover{
+				color: $rose;
+				cursor: pointer;
+			}
+			&.active{
+				color: $rose;
+			}
 		> ul {
 			margin: 0;
+			padding-left: 20px;
+			margin-bottom: 10px;
 			display:none;
 			> li{
 				text-transform: none;
-				font-size: rem-calc(20); 
+				font-size: rem-calc(25); 
 				line-height: 1.2;
+				a:hover{
+					color: $rose;
+				}
 			}
 		}
 	}
@@ -312,7 +324,6 @@ nav > ul {
 }
 
 main{
-	padding-top: $marginBig *2 ;
 	display:none;
 	.text a{
 		text-decoration: underline;
@@ -320,88 +331,18 @@ main{
 }
 
 
+
 body[data-rubrique="home"]{
-	//background:$roseClair;
-	.left-col{
-		.menu-btn{
-			// font-size: rem-calc(30);
-			// padding-top: 0;
-			// &::before{
-			// 	width: 20px;
-			// 	height:20px;
-			// }
-		}	
-		h1, h1 a{
-			// font-size: 3rem;
-			// line-height: 2.4rem;
-		}
+	.big-image-wrapper{
+		position:absolute;
+		width: 80%;
+		z-index: 999;
+		top:130px;
 	}
-	main{
-		padding-right: 4rem;
-		padding-top: $marginNormal;
-		margin-bottom: 0;
-		.image-icono{
-			position:absolute;
-			z-index:-1;
-			width: 50vw;
-			top: 2rem;
-			opacity: 0.8;
-			.icone-wrapper{
-				width: 28%;
-				min-width: 150px;
-				position: absolute;
-			}
-		}
-	}
-	.actu{
-		h1{
-			font-size: 10vw;
-			line-height:0.9;
-			width:auto;
-			font-family: $orleans-font, sans-serif;
-			margin-bottom: 0;
-			&:hover{
-				color: #000;
-			}
-		}
-		h2{
-			font-size: 5vw;
-			line-height:0.8;
-			margin:0;
-			margin-bottom: $marginNormal * 1.8;
-			&:hover{
-				color: #000;
-			}
-		}
-		p{
-			margin-bottom:0;
-			line-height:1;
-			color: #000;
-			&:hover{
-				color: #000;
-			}
-		}
-		.actu-date {
-			margin-top: $marginNormal;
-			// padding-left: 15%;
-			p{
-				font-size: 5vw;
-				color: $rose;
-				&:hover{
-					color: #000;
-				}
-			}
-		}
-		p.link{
-			text-align: right;
-			font-size: 5vw;
-			margin-top: 5rem;
-			a{
-				color: rgb(250, 75, 200);
-				&:hover{
-					color: #000;
-				}
-			}
+	.col-wrapper{
+		display:none;
+		a:hover h1, a:hover h3{
+			color: $rose;
 		}
 	}
 }
@@ -428,39 +369,45 @@ body[data-template="menu"]{
 	}
 }
 
+.creations{
+	margin-top: $marginBig;
+	margin-bottom: $marginBig;
+	h1{
+		//margin-left: -15%;
+	}
+	li{
+		font-size: $h2;
+		text-transform: none;
+		display: inline-block;
+		position:relative;
+		a:hover{
+			color: $rose;
+		}
+		&:after{
+			@include listSepartor($h2)
+		}
+		.thumb-wrapper{
+			position:absolute;
+			width: 350px;
+			left: 70%;
+			top: -100px;
+			z-index: 100;
+			display:none;
+		}
+	}
+}
+
 body[data-template="maud"]{
 	main{
-		.creations{
-			margin-top: $marginBig;
-			margin-bottom: $marginBig;
-			h1{
-				//margin-left: -15%;
-			}
-			li{
-				font-size: $h2;
-				text-transform: none;
-				display: inline-block;
-				position:relative;
-				a:hover{
-					color: $rose;
-				}
-				&:after{
-					@include listSepartor($h2)
-				}
-				.thumb-wrapper{
-					position:absolute;
-					width: 350px;
-					left: 70%;
-					top: -100px;
-					z-index: 100;
-					display:none;
-				}
-			}
-		}
 		.text{
 			padding-left:0;
 		}
 	}
+}
+
+body[data-rubrique="creations-et-tournees"]{
+
+
 }
 
 body[data-template="agenda"]{
@@ -701,12 +648,6 @@ body[data-template="list"]{
 	}
 }
 
-body[data-parent-template="ateliers"], body[data-rubrique="voulez-vous-danser"]{
-	background: $jaune;
-	.module--navigation-in-page{
-		background: $jaune;
-	}
-}
 
 body[data-template="atelier"]{
 	main .text li:after{
@@ -715,10 +656,6 @@ body[data-template="atelier"]{
 }
 
 body[data-template="ateliers"]{
-	background: $jaune;
-	.module--navigation-in-page{
-		background: $jaune;
-	}
 	nav.menu-page > ul > li {
 		flex: 0 1 auto;
 		&:last-child{

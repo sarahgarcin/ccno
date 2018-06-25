@@ -59,12 +59,17 @@
    data-login="<?php e($site->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
    data-intended-template="<?php echo $page->intendedTemplate() ?>"
-    data-parent-template="<?php echo $page->parent()->template() ?>"
-    <?php
+  data-parent-template="<?php echo $page->parent()->template() ?>"
+  <?php
       //if(!$page->isHomePage()):
         $section = getRubriqueFromUri($page->uri());
       //?>
         data-rubrique="<?= $section ?>"
+    
         data-count = "<?= $pages->visible()->count()?>"
+  
+  <?php if($section == 'voulez-vous-danser'):?>
+    style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>"
+  <?php endif;?>
   >
 

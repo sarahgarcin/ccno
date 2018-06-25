@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
 
 <?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
   $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
@@ -9,7 +8,8 @@
 <div class ="row">
 
 	<?php snippet('left-col') ?>
-	<main class="small-18 medium-13 columns">
+	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
+		<?php snippet('menu') ?>
 		<h1><?= $page->title()->html() ?></h1>
 		<?php snippet('icone-page')?>
 		<div class="row">
@@ -28,6 +28,7 @@
 							<?php endif ?>
 						</li>
 					<?php endforeach ?>
+				</ul>
 			</div>
 			
 		</div>

@@ -6,7 +6,8 @@ $orleans-font: "orleans", sans-serif;
 
 // color
 $rose: rgb(250, 75, 200);
-$roseClair: rgb(253, 224, 234);
+//$roseClair: rgb(253, 224, 234);
+$roseClair: #F5F5F5;
 $jaune: yellow;
 
 // margins
@@ -19,19 +20,20 @@ $margin-decale: -15%;
 
 $constructionTop : 0px;
 
-$h1: 	3.5rem;
+$h1: 	rem-calc(36);
 $h2: 	1.8rem;
-$h3:	1.8rem;
+$h3:	rem-calc(36);
 $h4:	1.8rem;
 $p: 1.25rem;
 
 // font-size
 @mixin H1{
 	font-size: $h1;
-	width: 400px;
-	line-height: 0.8;
+	line-height: 1;
 	margin-bottom: $marginNormal;
 	padding-left:0 !important;
+	font-family: $orleans-font;
+	letter-spacing: 0.01em;
 }
 
 @mixin H2{
