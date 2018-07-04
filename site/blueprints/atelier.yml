@@ -33,6 +33,9 @@ fields:
       type:
         label: Type
         type: text
+      personne:
+        label: Personne(s)
+        type: text
       from:
         label: Du
         type: date
@@ -60,4 +63,12 @@ fields:
         options:
           oui: oui
           non: non
+      home: 
+        label: Afficher cette page sur dans une colonne de la page d'accueil ? 
+        type: checkboxes
+        require: false
+        options:
+          col1: Colonne 1
+          col2: Colonne 2
+          col3: Colonne 3
 

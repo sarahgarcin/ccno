@@ -25,11 +25,15 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — Du {{from}} au {{to}} — {{hours}} — {{place}}
-      <br>{{link}} 
+      {{title}} <br> {{personne}} <br> Du {{from}} au {{to}} <br> {{hours}} <br> {{place}}<br>
+      {{link}} <br>
+      Afficher cette page dans la {{home}} de la page d'accueil
     fields:
       title:
         label: Titre
+        type: text
+      personne:
+        label: Personne(s)
         type: text
       type:
         label: Type
@@ -51,5 +55,12 @@ fields:
       link: 
         label: Lien
         type: text
-    help: Informations à afficher dans l'agenda
+      home: 
+        label: Afficher cette page sur dans une colonne de la page d'accueil ? 
+        type: checkboxes
+        require: false
+        options:
+          col1: Colonne 1
+          col2: Colonne 2
+          col3: Colonne 3
 

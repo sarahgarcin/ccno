@@ -100,7 +100,12 @@ function init(){
 			setTimeout(function(){
 				$('.big-image-wrapper').fadeOut(600);
 				$('.col-wrapper').fadeIn(1000);
-			}, 2000);
+			}, 5000);
+			$('.big-image-wrapper').on('click', function(){
+				$('.big-image-wrapper').fadeOut(600);
+				$('.col-wrapper').fadeIn(1000);
+			});
+			
 		}
 		// ----
 

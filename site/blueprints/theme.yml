@@ -54,3 +54,11 @@ fields:
       link: 
         label: Lien
         type: text
+            home: 
+      label: Afficher cette page sur dans une colonne de la page d'accueil ? 
+        type: radio
+        default: false
+        options:
+          col1: Colonne 1
+          col2: Colonne 2
+          col3: Colonne 3

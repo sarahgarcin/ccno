@@ -4,20 +4,31 @@
 	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 <?php 
-	// $projets = $site->index()->filterBy('template', 'in', ['default', 'atelier']);
-	// $actuToDisplay="";
-	// foreach($projets as $projet):
-	// 	$project = $site->page($projet);
-	// 	$url = $project->url();
-
-	// 	if($project->dates()->isNotEmpty()):
-	// 		foreach($project->dates()->toStructure() as $dates):
-	// 			if($dates->actus() == "oui"):
-	// 				$actuToDisplay = $project;
-	// 			endif;
-	// 		endforeach;
-	// 	endif;
-	// endforeach;
+	$projets = $site->index()->filterBy('template', 'in', ['default', 'atelier', 'accueil', 'maud']);
+	$col1 = "";
+	$col2 = "";
+	$col3 = "";
+	$url1;
+	$url2;
+	$url3;
+	foreach($projets as $projet):
+		$project = $site->page($projet);
+		$url = $project->url();
+		foreach($project->dates()->toStructure() as $date):
+			if($date->home()->isNotEmpty()):
+				if($date->home() == "col1"):
+					$col1 = $date;
+					$url1 = $url;
+				elseif($date->home() == "col2"):
+					$col2 = $date;
+					$url2 = $url;
+				else:
+					$col3 = $date;
+					$url3 = $url;
+				endif;
+				endif;
+		endforeach;
+	endforeach;
 
 ?>
 
@@ -33,47 +44,82 @@
 		</div>	
 		<div class='row col-wrapper main-content'>
 			<div class='col-1 large-6 columns'>
-				<?php 
-				$col1page = $page->col1();
-				$col1uid = $site->index()->filterBy('uid', $col1page);?>
-				<a href="<?php echo $pages->find($col1uid)->url()?>" title="<?php echo $pages->find($col1uid)->title()?>">
+				<h2><?php echo $page->namecol1()->html()?></h2>
+				<a href="<?php echo $url1 ?>" title="<?php echo $col1->title()?>">
 					<div class="title-wrapper">
-						<h3><?php echo $pages->find($col1uid)->parent()->title()->html();?></h3>
-						<h1><?php echo $pages->find($col1uid)->title()->html(); ?></h1>
-						<h3><?php echo $pages->find($col1uid)->personne()->html();?> </h3>
+						<h3><?php echo $col1->type()->html();?></h3>
+						<h1><?php echo $col1->title()->html(); ?></h1>
+						<?php if($col1->personne()->isNotEmpty()):?>
+							<h3><?php echo $col1->personne()->html();?></h3>
+						<?php endif; ?>
 					</div>
-					<div class="text-wrapper">
-						 <?php echo str::excerpt($pages->find($col1uid)->text()->kirbytext(), 500, false); ?>
+					<div class="dates-info-wrapper">
+						<p><?php 
+							if($col1->from() == $col1->to()):
+								echo $day[date("N", strtotime($col1->from())) - 1]. " " . date("d", strtotime($col1->from())) . " " . $mois[date("n", strtotime($col1->from())) - 1] . " " . date("Y", strtotime($col1->from()));
+							else: 
+								echo 'du '.$day[date("N", strtotime($col1->from())) - 1]. " " . date("d", strtotime($col1->from())) . " " . $mois[date("n", strtotime($col1->from())) - 1] . "</br>au " . $day[date("N", strtotime($col1->to())) - 1]. " " . date("d", strtotime($col1->to())) . " " . $mois[date("n", strtotime($col1->to())) - 1]. " " . date("Y", strtotime($col1->to()));
+							endif;?>
+							</br>
+							 
+							<?php if($col1->hours()->isNotEmpty()):?>
+								<?php echo $col1->hours()->html()?></br>
+							<?php endif ?>
+							<?php echo $col1->place()->html()?>
+						</p>
 					</div>
 				</a>
 			</div>
 			<div class='col-2 large-6 columns'>
-			<?php 
-				$col2page = $page->col2();
-				$col2uid = $site->index()->filterBy('uid', $col2page);?>
-				<a href="<?php echo $pages->find($col2uid)->url()?>" title="<?php echo $pages->find($col1uid)->title()?>">
+				<h2><?php echo $page->namecol2()->html()?></h2>
+				<a href="<?php echo $url2 ?>" title="<?php echo $col2->title()?>">
 					<div class="title-wrapper">
-						<h3><?php echo $pages->find($col2uid)->parent()->title()->html();?></h3>
-						<h1><?php echo $pages->find($col2uid)->title()->html(); ?></h1>
-						<h3><?php echo $pages->find($col2uid)->personne()->html();?> </h3>
+						<h3><?php echo $col2->type()->html();?></h3>
+						<h1><?php echo $col2->title()->html(); ?></h1>
+						<?php if($col2->personne()->isNotEmpty()):?>
+							<h3><?php echo $col2->personne()->html();?></h3>
+						<?php endif; ?>
 					</div>
-					<div class="text-wrapper">
-						 <?php echo str::excerpt($pages->find($col2uid)->text()->kirbytext(), 500, false); ?>
+					<div class="dates-info-wrapper">
+						<p><?php 
+							if($col2->from() == $col2->to()):
+								echo $day[date("N", strtotime($col2->from())) - 1]. " " . date("d", strtotime($col2->from())) . " " . $mois[date("n", strtotime($col2->from())) - 1] . " " . date("Y", strtotime($col2->from()));
+							else: 
+								echo 'du '.$day[date("N", strtotime($col2->from())) - 1]. " " . date("d", strtotime($col2->from())) . " " . $mois[date("n", strtotime($col2->from())) - 1] . "</br>au " . $day[date("N", strtotime($col2->to())) - 1]. " " . date("d", strtotime($col2->to())) . " " . $mois[date("n", strtotime($col2->to())) - 1]. " " . date("Y", strtotime($col2->to()));
+							endif;?>
+							</br>
+							<?php if($col2->hours()->isNotEmpty()):?>
+								<?php echo $col2->hours()->html()?></br>
+							<?php endif ?>
+							<?php echo $col2->place()->html()?>
+						</p>
 					</div>
 				</a>
 			</div>
 			<div class='col-3 large-6 columns end'>
-			<?php 
-				$col3page = $page->col3();
-				$col3uid = $site->index()->filterBy('uid', $col3page);?>
-				<a href="<?php echo $pages->find($col2uid)->url()?>" title="<?php echo $pages->find($col1uid)->title()?>">
+				<h2><?php echo $page->namecol3()->html()?></h2>
+				<a href="<?php echo $url1 ?>" title="<?php echo $col1->title()?>">
 					<div class="title-wrapper">
-						<h3><?php echo $pages->find($col3uid)->parent()->title()->html();?></h3>
-						<h1><?php echo $pages->find($col3uid)->title()->html(); ?></h1>
-						<h3><?php echo $pages->find($col3uid)->personne()->html();?> </h3>
+						<h3><?php echo $col3->type()->html();?></h3>
+						<h1><?php echo $col3->title()->html(); ?></h1>
+						<?php if($col3->personne()->isNotEmpty()):?>
+							<h3><?php echo $col3->personne()->html();?></h3>
+						<?php endif; ?>
 					</div>
-					<div class="text-wrapper">
-						 <?php echo str::excerpt($pages->find($col3uid)->text()->kirbytext(), 500, false); ?>
+					<div class="dates-info-wrapper">
+						<p><?php 
+							if($col3->from() == $col3->to()):
+								echo $day[date("N", strtotime($col3->from())) - 1]. " " . date("d", strtotime($col3->from())) . " " . $mois[date("n", strtotime($col3->from())) - 1] . " " . date("Y", strtotime($col3->from()));
+							else: 
+								echo 'du '.$day[date("N", strtotime($col3->from())) - 1]. " " . date("d", strtotime($col3->from())) . " " . $mois[date("n", strtotime($col3->from())) - 1] . "</br>au " . $day[date("N", strtotime($col3->to())) - 1]. " " . date("d", strtotime($col3->to())) . " " . $mois[date("n", strtotime($col3->to())) - 1]. " " . date("Y", strtotime($col3->to()));
+							endif;?>
+							</br>
+							 
+							<?php if($col3->hours()->isNotEmpty()):?>
+								<?php echo $col3->hours()->html()?></br>
+							<?php endif ?>
+							<?php echo $col3->place()->html()?>
+						</p>
 					</div>
 				</a>
 			</div>
@@ -85,4 +131,5 @@
 
 
 <?php snippet('footer') ?>
+
 
