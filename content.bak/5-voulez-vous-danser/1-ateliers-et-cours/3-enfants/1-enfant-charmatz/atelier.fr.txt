@@ -1,0 +1,71 @@
+Title: Auditions/ateliers pour le spectacle <span class='orleans'> EnfaNt</span>  de Boris Charmatz
+
+----
+
+Summary: 
+
+De 9 à 11 ans
+Gratuit
+
+Week-end d'auditions : samedi 7 et dimanche 8 avril 2018, 14h-18h, au CCNO 
+
+Transmission du spectacle : du lundi 22 au vendredi 26 octobre 2018 (congés de la Toussaint), au CCNO et le samedi 3 et dimanche 4 novembre 2018, à Berlin (Allemagne)
+
+Répétition générale et spectacle : entre le 14 et le 16 novembre 2018, au Théâtre d'Orléans
+
+----
+
+Text: 
+
+Artiste associé de l’édition 2011 du Festival d’Avignon, Boris Charmatz créé *Enfant* dans la Cour d’honneur du Palais des Papes. La pièce est interprétée par neuf danseurs professionnels, dont Maud Le Pladec, 26 enfants de Rennes et le joueur de cornemuse Erwan Keravec. 
+
+Pour la saison 2018 / 2019, *Enfant* sera présenté au Théâtre d’Orléans, recréé avec un groupe d’enfants berlinois et sept enfants orléanais de 9 à 11 ans.
+
+Pour rencontrer ces enfants orléanais, Boris Charmatz, chorégraphe et directeur du Musée de la danse à Rennes, invite les enfants curieux de danse à un week-end d’auditions avec des interprètes de la pièce.  
+
+À l’issue de ces auditions, un groupe de sept enfants sera constitué pour rejoindre l'équipe du spectacle donné au Théâtre d’Orléans. La transmission, menée par Matthieu Burner, Maud Le Pladec et Thierry Micouin, interprètes d'Enfant, est prévue à Orléans puis avec toute l'équipe à Berlin.
+
+Une proposition du Musée de la danse – CCN de Rennes en collaboration avec la Scène nationale d’Orléans et le CCNO
+
+----
+
+Display: text
+
+----
+
+Dates: 
+
+- 
+  title: 'Pour la pièce <i>Enfant</i> de Boris Charmatz'
+  type: Ateliers/auditions pour enfants
+  from: 2018-04-07
+  to: 2018-04-08
+  hours: 14h-18h
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: Transmission du spectacle
+  type: '<i>Enfant</i> de Boris Charmatz'
+  from: 2018-10-22
+  to: 2018-10-26
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  actus: non
+  home: col2
+- 
+  title: '<i>Enfant</i> de Boris Charmatz'
+  type: Transmission du spectacle aux enfants
+  from: 2018-11-03
+  to: 2018-11-04
+  hours: ""
+  place: Berlin (Allemagne)
+  text: ""
+  link: ""
+  agenda: non
+  actus: non

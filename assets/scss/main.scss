@@ -165,6 +165,7 @@ header{
 }
 nav .menu-top-list {
 	margin: 0;
+	position: relative;
 	> li {
 		font-size: rem-calc(25); 
 		line-height: 1.2;
@@ -175,21 +176,42 @@ nav .menu-top-list {
 			}
 			&.active{
 				color: $rose;
+				a{
+					color: $rose;
+				}
 			}
 		> ul {
 			margin: 0;
-			padding-left: 20px;
-			margin-bottom: 10px;
+			padding: 10px 15px 30px 15px;
 			display:none;
+			position: absolute; 
+			left: 0; 
+			top: 6rem; 
+			right:0;
+			background: $roseClair;
+			z-index: 1000;
 			> li{
 				text-transform: none;
 				font-size: rem-calc(25); 
 				line-height: 1.2;
 				a:hover{
-					color: $rose;
+					color: #000;
 				}
 			}
 		}
+
+		.module--menu--submenu.active:after{
+			content:"";
+			width: 100%;
+			background: $roseClair;
+			position: absolute;
+			top: 0; 
+			bottom: 0;
+			right: -100%;
+		}
+	}
+	&.menu-col-right .module--menu--submenu.active:after{
+			left: -100%;
 	}
 }
 .module--navigation-in-page{
@@ -420,8 +442,8 @@ body[data-template="agenda"]{
 			}
 		}
 
-		.title--next-events, .click---past-events{
-			font-size: 1.2rem;
+		.title--next-events, .click---past-events:not(.active){
+			font-size: 1rem;
 	    margin-bottom: $marginSmall/2;
 	    padding-right: $marginSmall;
 	    cursor:pointer;
@@ -429,10 +451,14 @@ body[data-template="agenda"]{
 			&:hover, &.active{
 		    color: $rose;
 		  }
-		  &.active{
-		  	cursor: default;
-		  }
 	  }
+		.title--next-events{
+			display:none;
+		}
+
+	  .click---past-events.active{
+		  	cursor: default;
+		 }
 		.pastEvents{
 			.pastEvents-wrapper{
 				display:none;

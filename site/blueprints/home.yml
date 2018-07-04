@@ -15,33 +15,9 @@ fields:
   namecol1: 
     label: Nom de la colonne 1
     type: text
-  col1:
-    label: Contenu de la colonne 1
-    type: select
-    options: query
-    query: 
-      page: /
-      fetch: index
-      value: '{{uid}}'
   namecol2: 
     label: Nom de la colonne 2
     type: text
-  col2:
-    label: Contenu de la colonne 2
-    type: select
-    options: query
-    query: 
-      page: /
-      fetch: index
-      value: '{{uid}}'
   namecol3: 
     label: Nom de la colonne 3
     type: text
-  col3:
-    label: Contenu de la colonne 3
-    type: select
-    options: query
-    query: 
-      page: /
-      fetch: index
-      value: '{{uid}}'

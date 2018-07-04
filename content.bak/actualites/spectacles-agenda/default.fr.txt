@@ -1,4 +1,4 @@
-Title: Spectacles agenda
+Title: Spectacles au Théâtre d'Orléans
 
 ----
 
@@ -6,7 +6,7 @@ Icone:
 
 ----
 
-Text: 
+Text: ### Informations et réservations auprès de la (link: http://www.scenenationaledorleans.fr text: Scène nationale d'Orléans).
 
 ----
 
@@ -75,6 +75,66 @@ Dates:
   to: 2017-10-26
   hours: ""
   place: Dutch National Opera (Amsterdam)
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Another look at memory</i>, Thomas Lebrun, CCN de Tours'
+  type: Spectacle
+  from: 2018-03-13
+  to: 2018-03-14
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  link: http://www.theatredorleans.fr
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Le syndrome ian</i>, Christian Rizzo'
+  type: Spectacle
+  from: 2018-02-22
+  to: 2018-02-22
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Pacifikmeltingpot</i>, Régine Chopinot'
+  type: Spectacle
+  from: 2018-03-27
+  to: 2018-03-27
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>La recherche</i>, de et avec Yves-Noël Genod, dans le cadre de l’événement Les soli du CDNO'
+  type: Spectacle
+  from: 2018-05-17
+  to: 2018-05-17
+  hours: 19h30
+  place: "Théâtre d'Orléans"
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Les Os Noirs</i>, Phia Ménard'
+  type: Spectacle
+  from: 2018-05-24
+  to: 2018-05-24
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: "<i>Monde à l'envers</i>, Cécile Loyer"
+  type: Spectacle
+  from: 2018-06-02
+  to: 2018-06-02
+  hours: 20h30
+  place: "Théâtre d'Orléans"
   link: ""
   agenda: oui
   actus: non

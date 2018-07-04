@@ -1,0 +1,37 @@
+Title: <i>Parcours danse et jardins</i> avec Paula Pi et Noé Soulier
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+## Dans les jardins d'Orléans : 
+# *ECCE(H)OMO *<br> de Paula Pi 
+#### 15h <br> au Jardin de l'Évêché <br> (40min)
+
+# *Removing* <br> de Noé Soulier 
+#### 16h30 <br>au Jardin de la Charpenterie<br>  (30min)
+
+Entrée libre 
+
+Le Centre chorégraphique national d’Orléans accueille une vingtaine de professionnels internationaux venus du monde entier sur l’invitation de l’ (link: http://www.institutfrancais.com/fr text: Institut français) et de son réseau à l’étranger, pour leur permettre de découvrir de nouvelles créations chorégraphiques dans le cadre du (link: http://www.institutfrancais.com/fr/actualites/parcours-danse-musique text: Parcours danse et jardins).
+
+Ce Focus du 7 au 10 juin, est réalisé en partenariat avec le Centre chorégraphique national de Tours et le Centre des monuments nationaux en lien avec sa programmation Monuments en mouvement. Il fait étape à Tours au festival Tours d’Horizons, au château de Bouges et à Orléans où seront présentés deux spectacles dans l'espace public.
+
+----
+
+Dates: 
+
+- 
+  title: '<i>ECCE(H)OMO</i>, Paula Pi et <i>Removing</i>, Noé Soulier'
+  type: Spectacles
+  from: 2018-06-10
+  to: 2018-06-10
+  hours: ""
+  place: "dans les jardins d'Orléans"
+  link: ""
+  agenda: oui
+  actus: non

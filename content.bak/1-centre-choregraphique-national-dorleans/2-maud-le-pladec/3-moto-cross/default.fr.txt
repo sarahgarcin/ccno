@@ -50,7 +50,7 @@ Dates:
   from: 2018-03-26
   to: 2018-03-26
   link: ""
-  agenda: non
+  agenda: oui
 - 
   title: '<i>Moto-Cross</i>'
   moment: 2018-05-23
@@ -61,4 +61,4 @@ Dates:
   from: 2018-05-23
   to: 2018-05-23
   link: ""
-  agenda: non
+  agenda: oui

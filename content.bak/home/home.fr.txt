@@ -7,3 +7,31 @@ Icone: new-direction.png
 ----
 
 Back: image-site-v0.png
+
+----
+
+Homeimage: konstantin.lipatov-concrete-8.jpg
+
+----
+
+Col1: the-white-piece
+
+----
+
+Col2: borderline
+
+----
+
+Col3: dancing-kids-niveau-eveil
+
+----
+
+Namecol1: En tournée
+
+----
+
+Namecol2: Au CCNO
+
+----
+
+Namecol3: Au CCNO

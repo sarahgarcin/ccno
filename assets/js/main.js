@@ -38,14 +38,14 @@ function init(){
 	// 	}, 100);
 	// });
 	$('.module--menu--mainNav .menu-top-list > li').on('click', function(e){
-		console.log($(this));
-		if($(this).hasClass('active') &&$ (this).find('ul').hasClass('active')){
+		if($(this).hasClass('active') && $(this).find('ul').hasClass('active')){
+			console.log('test youhou');
 			$(this).removeClass('active').find('ul').slideUp(400);
 			$(this).find('ul').removeClass('active');
 		}else{
-			$('.module--menu--mainNav > ul > li').removeClass('active').find('ul').slideUp(400);
-			$(this).addClass('active').find('ul').slideDown(400);
-			$(this).find('ul').addClass('active');
+			console.log('test');
+			$('.module--menu--mainNav .menu-top-list > li').removeClass('active').find('ul').slideUp(400);
+			$(this).addClass('active').find('ul').slideDown(400).addClass('active');
 		}
 		
 	});
@@ -190,7 +190,7 @@ function init(){
 
 	$('.title--next-events').on('click', function(){
 		if(!$(this).hasClass('active')){
-			insertParam('events', 'next')
+			insertParam('events', 'next');
 		}
 	});
 
@@ -203,6 +203,7 @@ function init(){
 				$('.nextEvents').slideToggle(400);
 				$('.title--next-events').addClass('active');
 				$('.click---past-events').removeClass('active');
+				$('.title--next-events').hide();
 			}
 		}
 		if(window.location.search.indexOf('events=past') > -1){
@@ -212,6 +213,8 @@ function init(){
 				$('.nextEvents').slideToggle(400);
 				$('.click---past-events').addClass('active');
 				$('.title--next-events').removeClass('active');
+				$('.click---past-events').html('Rendez-vous passés');
+				$('.title--next-events').show();
 			}
 		}
 		// Trier par tags
@@ -276,7 +279,7 @@ function initMobile(){
 		//console.log(headerH + navH);
 		$('main').css({
 			'padding-top': headerH+navH+'px'
-		})
+		});
 	});
 
 

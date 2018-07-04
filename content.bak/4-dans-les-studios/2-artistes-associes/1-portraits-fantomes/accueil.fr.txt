@@ -1,0 +1,35 @@
+Title: <i>Portraits fantômes</i>
+
+----
+
+Personne: 
+
+----
+
+Text: 
+
+Il y a quinze ans, Mickaël Phelippeau a habité chez Marine pendant une semaine. Il ne connaissait rien d’elle. Il ne savait même pas, quand il est arrivé, qu’il vivait chez une femme. Mais grâce aux photographies accrochées au mur au dessus du buffet, aux CDs de Céline Dion, aux livres et aux revues laissés çà et là, il a composé et performé un portrait de cette femme dont il a approché une certaine intimité. La rencontre a posteriori avec Marine a confirmé une étrange proximité avec sa vie et une distance qui lui a donné la sensation d’être totalement protégée. Le rapport entre réalité et fiction décuple un éventail impressionnant de possibles. C’est avec le souvenir de cette expérience que l’artiste propose de réitérer l'aventure à Orléans.
+
+Parcours en appartements - départ du CCNO - durée 2h
+Tarif unique : 10 €
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Portraits fantômes</i>, Mickaël Phelippeau'
+  type: Performances
+  moment: 2017-11-24
+  from: 2017-11-24
+  to: 2017-11-25
+  hours: vendredi à 20h, samedi à 15h et 19h
+  place: 'Parcours en appartements - départ du CCNO - durée 2h'
+  link: >
+    http://www.ccn-orleans.com/dans-les-studios/artistes-associes/portraits-fantomes
+  agenda: oui
+  actus: non
+
+----
+
+Bio: 

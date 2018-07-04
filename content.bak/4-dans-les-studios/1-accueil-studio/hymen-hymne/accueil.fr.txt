@@ -1,0 +1,81 @@
+Title: <i>Hymen Hymne</i>
+
+----
+
+Personne: Nina Santes
+
+----
+
+Text: 
+
+###### Conception Nina Santes <br/> Réalisation Soa de Muse, Nanyadji Ka-Gara, Nina Santes, Betty Tchomanga, Lise Vermot
+
+###### Production La Fronde <span class='orleans'>#</span> Coproduction Le Phare — Centre chorégraphique national du Havre Haute Normandie, Musée de la Danse — Centre chorégraphique national de Rennes, CDCN Atelier de Paris — Carolyn Carlson, Le Quartz — Scène nationale de Brest, Centre chorégraphique national d’Orléans. En partenariat avec le Théâtre des Brigittines, Bruxelles
+
+« *Hymen Hymne* est un projet chorégraphique et musical pour cinq interprètes. Le projet s’intéresse à une nouvelle figure de l’altérité, celle de la sorcière. J’invoque cette figure comme construction sociale, celle qui est qualifiée ou autoproclamée sorcière, qui est rejetée ou qui choisit délibérément d’occuper la marge.
+*Hymen Hymne *sera une forme de concert parlé, dansé et chanté, œuvrant au croisement du travail documentaire et du rituel magique. A la suite d’un temps de collecte de témoignages et d’incorporation de ces récits, chaque interprète intégrera un document sonore et deviendra l’archive vivante de ce document. Le spectacle rassemblera au plateau cinq individus, dotées de ‘pouvoirs’ : une réappropriation de ce qui est intérieur à soi et de ce qui fait notre puissance d’agir.
+L’un des pouvoirs majeurs que j’attribue aux interprètes est de posséder un médium, un corps. Un corps qui puisse être vecteur, traversé, ventriloqué par les ‘choses’. Les interprètes seront les témoins et vaisseaux de celles qui ne peuvent pas être là, ainsi que des forces invisibles en présence, des ‘rumeurs du monde’. »
+Nina Santes
+
+*Hymen Hymne* sera créé le 24 janvier 2018 au festival Pharenheit du Centre chorégraphique national du Havre Haute Normandie, puis en tournée au festival Antigel (Genève) du 6 au 10 février 2018.
+
+----
+
+Dates: 
+
+- 
+  title: >
+    Rencontre avec Nina Santes, Camille
+    Ducellier et Maud Le Pladec
+  moment: 2017-11-13
+  hours: 19h
+  place: CCNO
+  actus: non
+  type: Rencontre
+  from: 2017-11-13
+  to: 2017-11-13
+  link: >
+    http://www.ccn-orleans.com/actualites/exposition-hymen-hymne
+  agenda: oui
+- 
+  title: '<i>Hymen hymne</i>'
+  moment: 2017-11-30
+  hours: 19h
+  place: CCNO
+  actus: non
+  type: Ouverture publique
+  from: 2017-11-30
+  to: 2017-11-30
+  link: ""
+  agenda: oui
+- 
+  title: 'Atelier <i>Conjurer</i>'
+  type: Atelier de création pour les amateurs
+  moment: 2017-12-02
+  from: 2017-12-02
+  to: 2017-12-02
+  hours: 14h30-17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-de-creations
+  agenda: non
+  actus: non
+- 
+  title: '<i>Hymen Hymne</i>'
+  type: Exposition
+  moment: 2017-11-13
+  from: 2017-11-13
+  to: 2017-12-15
+  hours: 9h-12h30 et 14h-17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/actualites/exposition-hymen-hymne
+  agenda: oui
+  actus: non
+
+----
+
+Bio: 
+
+Nina Santes
+fait ses débuts sur scène en tant que marionnettiste. Depuis 2008 elle a collaboré en tant qu’interprète avec Mylène Benoît, Myriam Gourfink, Catherine Contour, Pascal Rambert, Kevin Jean, Olivier Normand, Laurence Pagès, Hélène Cathala, Perrine Valli, Éléonore Didier, Philippe Grandrieux, Herman Diephuis. Elle est l’auteure de pièces chorégraphiques et musicales, dont *Désastre* (2012), en collaboration avec le compositeur Kasper Toeplitz, *Transmorphonema*, un duo avec le chorégraphe Daniel Linehan (Vif du Sujet SACD 2014), et *Self made man* (2015). En mars 2016, elle co-signe un duo en collaboration avec Célia Gondol : *A leaf, far and ever*. Sensible au croisement des pratiques et à l’art de la performance, elle développe régulièrement des collaborations avec le monde des arts visuels et plastiques, de la musique, et de la mode.

@@ -1,0 +1,42 @@
+Title: Stage musique chant
+
+----
+
+Summary: 
+
+Avec Paula Pi
+Samedi 24 mars, de 11h à 13h et de 14h à 17h 
+Tarif unique : 30 €
+Pour amateur-trice-s et professionnel-le-s
+
+Paula Pi est en résidence accueil-studio au CCNO pour sa pièce en création *(link: http://www.ccn-orleans.com/dans-les-studios/accueil-studio/alexandre text: Alexandre)*.
+
+----
+
+Text: 
+
+« En 2012, je suis tombée sur l’enregistrement d'une voix s'exprimant dans une langue dont la signification des mots m'échappait entièrement. Un discours qui m’a attiré avant tout par sa rythmicité. Cette archive sonore constitue le point de départ pour ma nouvelle création, Alexandre, et elle le sera aussi pour cette journée de travail. Je souhaite approfondir avec vous un des aspects de cette création, le rapport musical à la parole, surtout dans son aspect rythmique. À partir de ce point de départ, nous passerons par des explorations du corps, de la voix, de vos instruments et aussi par la composition ».
+
+###### Paula Pi <br> brésilienne, a d'abord étudié la musique, le théâtre et le butoh avant de rencontrer la danse contemporaine. A partir de 2010, elle développe ses propres projets chorégraphiques et a travaillé en tant que musicienne professionnelle pendant plus de 10 ans avant de s’installer en France pour suivre le master chorégraphique ex.e.r.ce à Montpellier, de 2013 à 2015. Elle a été interprète pour Eszter Salamon, Latifa Laabissi/Nadia Lauro, Pauline Simon, Aude Lachaise entre autres. En 2015, Paula a intégré l'équipe de « Scènes du Geste » et en mars 2017, elle présente sa première création en France, ECCE (H)OMO, en écho au cycle de danses « Afectos Humanos » de Dore Hoyer, au Centre National de la Danse (puis à Uzès Danse, Festival NEXT, Festival du TNB, Vivat la Danse, PACT Zollverein et Charleroi Danse).
+
+----
+
+Display: text
+
+----
+
+Dates: 
+
+- 
+  title: >
+    Avec Paula Pi. Pour professionnels et
+    amateurs.
+  type: Stage musique chant
+  from: 2018-03-24
+  to: 2018-03-24
+  hours: 11h-17h
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non

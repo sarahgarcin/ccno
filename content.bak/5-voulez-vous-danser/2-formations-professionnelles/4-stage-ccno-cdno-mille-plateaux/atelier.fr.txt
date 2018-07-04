@@ -1,0 +1,58 @@
+Title: Formation professionnelle avec Yves-Noël  Genod et Laurent  Chétouane
+
+----
+
+Summary: 
+
+Du 4 au 15 juin, au CDNO et au CCNO 
+Stage pour les professionnels (danseurs, musiciens, comédiens, acrobates)
+Tarif Afdas : 1630 €. 
+Sans l’aide de l’Afdas, nous contacter.
+Nombre de participants : 15 
+Pour participer : CV, photos ou/et vidéos, lettre de motivation à (email: stage@ccn-orleans.com text: stage@ccn-orleans.com)
+Date limite d’envoi : 21 avril 2018
+
+----
+
+Text: 
+
+Stage *Coeur contre coeur *
+
+Le CCNO et le CDNO proposent un temps de formation plurisdisciplinaire pour les artistes. Dans la continuité des projets artistiques de Maud Le Pladec et Séverine Chavrier, directrice du CDNO, il s'agira d'expérimenter cette convergence qui nourrit les pratiques des uns et des autres. Ce stage est mené par un binôme d’artistes chorégraphique et de théâtre.
+
+« Je crois qu’on ne peut pas imaginer de différence plus grande qu’entre les spectacles de Laurent Chétouane et les miens. Pourtant nous sommes amis. Il y a un passage. Nous sommes amis parce que je fais l’expérience de ses pièces (qui sont des pièces d’amitié). J’aime le travail de Laurent Chétouane parce qu’il est vrai. Il a découvert ça : que la danse pouvait se danser en vrai — pas en illusion, mais en vrai. Et c’est ce que j’essaye aussi de proposer : quelque chose, on peut dire, de naturel, de non spectaculaire, de mineur. On est dans un monde d’absolu mensonge donc c’est à la fois difficile et facile de proposer quelque chose de vrai. Souvent on entend un interprète dire dans mes spectacles qu’il n’y a pas de spectacle (c’est une phrase qui revient). Non, au fond, il n’y a pas de spectacle. Il n’y a pas ce dehors spectaculaire qu’on nous propose. « Le rose qu’on nous propose », comme le chante Alain Souchon dans *Foule sentimentale*. Ce dehors de carton-pâte. Mais, dans ce décor, il y a le réel. Il y a ce que les gnostiques appellent la divinité intérieure (j’avais appelé un spectacle — je crois que ça venait de Shakespeare — *Le Parc intérieur*), c’est-à-dire un endroit à l’air libre, vrai, mais qui est à l’intérieur, réel. Laurent Chétouane réussit à mettre le « inward » « outward » — comment le dire en français ? le « vers l’intérieur » « vers l’extérieur ». Il s’agit d’un stage absolument expérimental. Avec Laurent, c’est très facile, il est tout le temps dans l’« experiment » et, moi aussi, j’essaye d’inventer chaque fois une première fois. Tout se passe avant la mort. Alors. Être Dieu (j’ai donné plusieurs stages sous ce titre : *Jouer Dieu*), c’est avant la mort. To be or not to be. Mais la divinité — la liberté —, elle est à délivrer, prisonnière. Faible, fragile, vivante. Vous êtes des animaux avec des vêtements posés sur vous en vrac, des singes habillés, des chiens habillés. C’est aussi bête que ça. Les spectacles de Laurent Chétouane, pourtant très beaux, ont peut-être peu à voir avec la beauté (la symétrie) — question centrale chez Pina Bausch, par exemple, et sans doute chez William Forsythe — ou la laideur. Je n’ai jamais rencontré cela nulle part ailleurs. »  — Yves-Noël Genod
+
+###### Yves-Noël Genod <br> ne se présente lui-même que comme un « distributeur » de spectacle, de poésie et de lumière, il n’invente rien qui n’existe déjà, il fait passer le furet, « passé par ici, il repassera par là », il révèle. En effet, pense-t-il, c’est ici et là qu’est la « révolution » : dans la redistribution des richesses accaparées. Son art a été qualifié de « théâtre chorégraphié » et est accueilli du côté de la danse. Ce comédien vit très modestement à Paris ; célibataire, il prétend s’effacer derrière son œuvre qu’il désirerait n’être que trace infime, dérisoire, inutile, mais dans l’optique pascalienne qui dit que : « Nul ne meurt si pauvre qu’il ne laisse quelque chose »…
+
+###### Laurent Chétouane <br> est metteur en scène et chorégraphe. Ingénieur chimiste d'abord, il a ensuite bifurqué vers des études théâtrales à la Sorbonne, puis de mise en scène à l'Université de musique et d'arts de la scène de Francfort. Depuis 2000 il a réalisé de nombreuses mises en scène dans les plus grands théâtres allemands. En 2006 il commence à monter en parallèle des projets de danse, les *Tanzstücke* (1 à 4).  Depuis *Sacré Sacre du printemps* (2012) il se consacre à une recherche chorégraphique qui questionne le rôle du regard en danse. Il a été professeur invité à l’Université de Giessen et a donné des conférences à Oslo, Bern, Francfort, Hambourg, Leipzig et Bochum. 
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Coeur contre coeur</i> avec Yves-Noël  Genod et Laurent  Chétouane'
+  type: Stage professionnel
+  from: 2018-06-04
+  to: 2018-06-15
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: 'Stage professionnel : <i>Coeur contre coeur</i> avec Yves-Noël  Genod et Laurent  Chétouane'
+  type: Date limite de candidature
+  from: 2018-05-13
+  to: 2018-05-13
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+
+----
+
+Display: text

@@ -28,50 +28,13 @@ Dates:
 
 - 
   title: '<i>Borderline</i>'
-  moment: 2017-10-05
-  hours: 20h30
-  place: "Théâtre d'Orléans"
-  actus: non
-  type: Spectacle
-  from: 2017-10-05
-  to: 2017-10-07
-  link: ""
-  agenda: oui
-- 
-  title: '<i>Borderline</i>'
-  moment: 2017-09-20
+  moment: 2017-11-17
   hours: ""
-  place: Stadsschouwburg Amsterdam (Pays-Bas)
+  place: Festival Temporada Alta, Salt (Espagne)
   actus: non
   type: Tournée
-  from: 2017-09-20
-  to: 2017-09-20
-  link: ""
-  agenda: oui
-- 
-  title: '<i>Borderline</i>'
-  moment: 2017-10-12
-  hours: ""
-  place: >
-    Phénix, scène nationale de
-    Valenciennes
-  actus: non
-  type: Tournée
-  from: 2017-10-12
-  to: 2017-10-12
-  link: ""
-  agenda: oui
-- 
-  title: '<i>Borderline</i>'
-  moment: 2017-10-18
-  hours: ""
-  place: >
-    La Filature, scène nationale de
-    Mulhouse
-  actus: non
-  type: Tournée
-  from: 2017-10-18
-  to: 2017-10-18
+  from: 2017-11-17
+  to: 2017-11-18
   link: ""
   agenda: oui
 - 
@@ -87,15 +50,62 @@ Dates:
   agenda: oui
 - 
   title: '<i>Borderline</i>'
-  moment: 2017-11-17
+  moment: 2017-10-18
   hours: ""
-  place: Festival Temporada Alta, Salt (Espagne)
+  place: >
+    La Filature, scène nationale de
+    Mulhouse
   actus: non
   type: Tournée
-  from: 2017-11-17
-  to: 2017-11-17
+  from: 2017-10-18
+  to: 2017-10-19
   link: ""
   agenda: oui
+- 
+  title: '<i>Borderline</i>'
+  moment: 2017-10-12
+  hours: ""
+  place: >
+    Phénix, scène nationale de
+    Valenciennes
+  actus: non
+  type: Tournée
+  from: 2017-10-12
+  to: 2017-10-13
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Borderline</i>'
+  moment: 2017-10-05
+  hours: ""
+  place: "Théâtre d'Orléans"
+  actus: non
+  type: Spectacle
+  from: 2017-10-05
+  to: 2017-10-07
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Borderline</i>'
+  moment: 2017-09-20
+  hours: ""
+  place: Stadsschouwburg Amsterdam (Pays-Bas)
+  actus: non
+  type: Tournée
+  from: 2017-09-20
+  to: 2017-09-21
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Borderline</i>'
+  type: Tournée
+  from: 2017-07-18
+  to: 2017-07-24
+  hours: ""
+  place: "Festival d'Avignon"
+  link: ""
+  agenda: non
+  actus: non
 
 ----
 

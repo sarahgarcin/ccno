@@ -1,0 +1,74 @@
+Title: <i>Alexandre</i>
+
+----
+
+Personne: Paula Pi
+
+----
+
+Text: 
+
+« ll y a quelques années j’ai rencontré un enregistrement de la voix d’un indien de l’ethnie Xavante (état de Mato Grosso, Brésil). La musicalité de cette parole et l’énigme qui l’entourait m’ont captivée. Je n’en comprenais cependant qu’un seul mot : Alexandre… 
+Partant de l’archive sonore de cette voix, il sera question de jouer avec la notion de traduction comme zone de passage, comme espace entre deux langues, deux lèvres, deux rives, deux altérités et, donc, deux corps. Deux aussi comme les deux minutes que dure cet enregistrement, deux comme dans les mythes fondateurs autour des jumeaux dans plusieurs cultures de tradition orale, deux comme dans un duo, et surtout, deux pour chercher l’entre-deux. » 
+
+Conception et chorégraphie Paula Pi
+Création et interprétation Sorour Darabi et Paula Pi
+Dramaturgie Gilles Amalvi
+Espace et lumières Florian Leduc
+Costumes Rachel Garcia
+Son Neo Huelcker
+Regard extérieur Pauline Le Boulba
+Accompagnement en pratiques somatiques Violeta Salvatierra
+Administration et production BureauProduire
+
+Remerciements Alexandre Lemos, José Valmir Ruzeré Imãmã, Viviane Ronhidzari’õ Inã, Paulo Cézar Tsitõti et toute la communauté de Aldeia Belém, Mathilde Gautry, Prabhu Edouard, Maïwenn Rebours et Nathalie Becquet, Lisa Biscaro Balle, Coline Bulloz et Gwendal Raymond.
+
+Production NO DRAMA
+Coproductions Rencontres chorégraphiques internationales de Seine-Saint-Denis, CND Centre national de la danse, Festival Montpellier Danse 2018, Centre chorégraphique national de Caen en Normandie direction Alban RICHARD dans le cadre de "l'Accueil-Studio, CCNO Centre chorégraphique national d’Orléans dans le cadre de l’accueil studio 2018, La Maison CDCN - Uzès Gard Occitanie, La Place de la Danse - CDCN Toulouse-Occitanie, Le Vivat Armentières, Charleroi danse
+Avec le soutien d’Arcadi, PACT Zollverein, Montévidéo, les Laboratoires d’Aubervilliers, ICI — centre chorégraphique national de Montpellier - Occitanie — Direction Christian Rizzo, Montpellier Danse 2018, résidence de création à l’Agora, cité internationale de la danse, avec le soutien de la Fondation BNP Paribas
+
+*Alexandre* sera créé le 22 mai 2018 au Centre National de la Danse dans le cadre des Rencontres chorégraphiques de Seine-Saint-Denis.
+
+----
+
+Dates: 
+
+- 
+  title: Avec Paula Pi
+  type: >
+    Stage pour musicien-ne-s et
+    chanteur-euse-s
+  from: 2018-03-24
+  to: 2018-03-24
+  hours: 11h-17h
+  place: CCNO
+  link: ""
+  agenda: non
+  actus: non
+- 
+  title: 'avec Sorour Darabi et Paula Pi / <i>Alexandre</i>'
+  type: Atelier after work
+  from: 2018-03-26
+  to: 2018-03-26
+  hours: 19h-21h
+  place: CCNO
+  link: ""
+  agenda: non
+  actus: non
+- 
+  title: '<i>Alexandre</i>, Paula Pi'
+  type: Ouverture publique
+  from: 2018-03-29
+  to: 2018-03-29
+  hours: 19h
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+
+----
+
+Bio: 
+
+Paula Pi
+(link: https://bureauproduire.com/artiste/paula-pi/ text: bureauproduire.com/artiste/paula-pi)

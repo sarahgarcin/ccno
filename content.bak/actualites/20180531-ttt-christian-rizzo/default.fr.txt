@@ -1,0 +1,52 @@
+Title: <i>TTT</i> Christian Rizzo
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+L’exigence du travail visuel de Christian Rizzo,  chorégraphe et directeur de l'ICI-CCN de Montpellier, l’amène à développer ces dernières années un nouveau rapport à l’image virtuelle. De son tropisme pour Taïwan est né *TTT : tourcoing-taipei-tokyo* qui fait partie des nombreux projets qu’il tisse avec la communauté artistique taiwannaise.
+
+Combinaison de trois films réalisés en collaboration avec l’artiste 3D taïwanais Iuan-Hau Chiang, le CCNO présente deux œuvres de *TTT : tourcoing-taipei-tokyo, IL *et *Paysage*. Ces films sont traversés par la question de l’apparition et la disparition du corps, sujets récurrents de ses chorégraphies.
+
+Entrée libre
+
+----
+
+Dates: 
+
+- 
+  title: '<i>TTT</i>, Christian Rizzo'
+  type: 'Installation  vidéo'
+  from: 2018-02-06
+  to: 2018-03-24
+  hours: ""
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: 'avec Antoine Roux-Briffaud, interprète du <i>syndrome ian</i>'
+  type: >
+    Atelier lundi after work
+    « clubbing »
+  from: 2018-02-19
+  to: 2018-02-19
+  hours: 19h-21h
+  place: Astrolabe (exceptionnellement)
+  link: ""
+  agenda: non
+  actus: non
+- 
+  title: '<i>Le syndrome ian</i>, Christian Rizzo'
+  type: Spectacle
+  from: 2018-02-22
+  to: 2018-02-22
+  hours: 20h30
+  place: Théâtre d’Orléans
+  link: ""
+  agenda: non
+  actus: non

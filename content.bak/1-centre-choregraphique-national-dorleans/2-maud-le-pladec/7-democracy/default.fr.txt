@@ -30,3 +30,14 @@ Actus: non
 ----
 
 Dates: 
+
+- 
+  title: '<i>Democracy</i>'
+  type: Spectacle
+  from: 2018-04-06
+  to: 2018-04-06
+  hours: 20h
+  place: Le Bateau feu, Dunkerque
+  link: ""
+  agenda: oui
+  actus: non
