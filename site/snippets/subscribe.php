@@ -20,7 +20,7 @@
     float: left;"> 
 				<div class="mandatory-email"> 
 				<div class="lbl-tinyltr" style="display:none; clear: both; float: none; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;"><br></div> 
-					<input type="email" name="email" id="email" value="" placeholder="Email"> 
+					<input type="email" name="email" id="email" value="" placeholder="S'inscrire à la newsletter"> 
 					<div style="clear:both;"></div> 
 <!-- 					<div class="hidden-btns"> 
 						<a class="btn move" href="#">

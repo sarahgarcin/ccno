@@ -44,13 +44,13 @@
 		</div>	
 		<div class='row col-wrapper main-content'>
 			<div class='col-1 large-6 columns'>
-				<h2><?php echo $page->namecol1()->html()?></h2>
-				<a href="<?php echo $url1 ?>" title="<?php echo $col1->title()?>">
+				<h4><?php echo $page->namecol1()->html()?></h4>
+				<a href="<?php echo $url1 ?>" title="">
 					<div class="title-wrapper">
 						<h3><?php echo $col1->type()->html();?></h3>
 						<h1><?php echo $col1->title()->html(); ?></h1>
 						<?php if($col1->personne()->isNotEmpty()):?>
-							<h3><?php echo $col1->personne()->html();?></h3>
+							<h2><?php echo $col1->personne()->html();?></h2>
 						<?php endif; ?>
 					</div>
 					<div class="dates-info-wrapper">
@@ -71,13 +71,13 @@
 				</a>
 			</div>
 			<div class='col-2 large-6 columns'>
-				<h2><?php echo $page->namecol2()->html()?></h2>
-				<a href="<?php echo $url2 ?>" title="<?php echo $col2->title()?>">
+				<h4><?php echo $page->namecol2()->html()?></h4>
+				<a href="<?php echo $url2 ?>" title="">
 					<div class="title-wrapper">
 						<h3><?php echo $col2->type()->html();?></h3>
 						<h1><?php echo $col2->title()->html(); ?></h1>
 						<?php if($col2->personne()->isNotEmpty()):?>
-							<h3><?php echo $col2->personne()->html();?></h3>
+							<h2><?php echo $col2->personne()->html();?></h2>
 						<?php endif; ?>
 					</div>
 					<div class="dates-info-wrapper">
@@ -97,13 +97,13 @@
 				</a>
 			</div>
 			<div class='col-3 large-6 columns end'>
-				<h2><?php echo $page->namecol3()->html()?></h2>
-				<a href="<?php echo $url1 ?>" title="<?php echo $col1->title()?>">
+				<h4><?php echo $page->namecol3()->html()?></h4>
+				<a href="<?php echo $url3 ?>" title="">
 					<div class="title-wrapper">
 						<h3><?php echo $col3->type()->html();?></h3>
 						<h1><?php echo $col3->title()->html(); ?></h1>
 						<?php if($col3->personne()->isNotEmpty()):?>
-							<h3><?php echo $col3->personne()->html();?></h3>
+							<h2><?php echo $col3->personne()->html();?></h2>
 						<?php endif; ?>
 					</div>
 					<div class="dates-info-wrapper">

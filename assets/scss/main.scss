@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
 
 // -------- STYLE GENERAL ------------
 i{transform: skewX(-25deg);}
-h1{@include H1;padding-left:0.4rem;}
+h1{@include H1;}
 h2{@include H2;}
 h3{@include H3;}
 h4{@include H4;}
@@ -33,6 +33,14 @@ a.active{color: $rose;}
 a:hover h5{
 	color: $rose;
 }
+h1 + ul{
+	margin-top: 20px;
+}
+
+.text h4, .notes-dates h4{
+	color: $rose;
+}
+
 ul{
 	margin:0;
 	li{
@@ -67,16 +75,16 @@ figure{
 
 .orleans{
 	font-family: $orleans-font;
-	-ms-word-break: break-all;
-	word-break: break-all;
+	// -ms-word-break: break-all;
+	// word-break: break-all;
 
-	/* Non standard for webkit */
-	word-break: break-word;
+	// /* Non standard for webkit */
+	// word-break: break-word;
 
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	  hyphens: auto;
+	// -webkit-hyphens: auto;
+	// -moz-hyphens: auto;
+	// -ms-hyphens: auto;
+	//   hyphens: auto;
 }
 
 // notes de côté de page
@@ -107,28 +115,10 @@ figure{
 }
 
 .main-content{
-	padding-top: 150px;
+	padding-top: 130px;
 }
 
-h3 + h1, h1 + h3{
-	margin: 10px 0;
-}
 
-.title-wrapper{
-	h1{
-		i{
-			font-style: normal;
-			transform:none;
-		}
-	}
-	h3{
-		margin: 10px 0;
-	}
-	margin-bottom:30px;
-}
-.text-wrapper{
-	p{font-size: rem-calc(15);text-align:justify;}
-}
 
 // -------- FIN STYLE GENERAL ------------
 
@@ -157,19 +147,34 @@ header{
 .module--menu--mainNav{
 	position:fixed;
 	top:0;
-	padding: 6px 20px 20px 20px;
+	padding: $marginSmall 20px 20px 20px;
 	margin-left: -20px;
 	background: $roseClair;
 	z-index: 999;
- //	box-shadow: 0px 10px 10px -10px rgba(0,0,0,.2);
+	border-bottom: 2px solid rgba(0,0,0,.02);
+ 	//box-shadow: 0px 10px 10px -10px rgba(0,0,0,.2);
 }
+
+.socialnetwork {
+	ul{
+		display:flex; 
+		li{
+			font-size: 0.9rem; 
+			line-height: 1.6;
+			margin-right: 15px;
+		}
+	}
+	i{
+		transform: none;
+	}
+}
+
 nav .menu-top-list {
 	margin: 0;
 	position: relative;
 	> li {
-		font-size: rem-calc(25); 
+		font-size: 1.25rem; 
 		line-height: 1.2;
-		//flex: 1 1 auto;
 			&:hover, a:hover{
 				color: $rose;
 				cursor: pointer;
@@ -186,13 +191,13 @@ nav .menu-top-list {
 			display:none;
 			position: absolute; 
 			left: 0; 
-			top: 6rem; 
+			top: 5rem; 
 			right:0;
 			background: $roseClair;
 			z-index: 1000;
 			> li{
 				text-transform: none;
-				font-size: rem-calc(25); 
+				// font-size: rem-calc(25); 
 				line-height: 1.2;
 				a:hover{
 					color: #000;
@@ -200,18 +205,22 @@ nav .menu-top-list {
 			}
 		}
 
-		.module--menu--submenu.active:after{
+		.module--menu--submenu.active:after, .module--menu--submenu.active:before{
 			content:"";
-			width: 100%;
+			width: 200%;
 			background: $roseClair;
 			position: absolute;
 			top: 0; 
 			bottom: 0;
-			right: -100%;
+			right: -200%;
 		}
 	}
 	&.menu-col-right .module--menu--submenu.active:after{
-			left: -100%;
+			left: 100%;
+	}
+	&.menu-col-right .module--menu--submenu.active:before{
+			right: 100%;
+			width: 100%;
 	}
 }
 .module--navigation-in-page{
@@ -285,10 +294,10 @@ nav .menu-top-list {
 	position: fixed; 
 	top: 0px;
 	display:none;
-	padding-top: $marginSmall/2;
+	padding-top: $marginSmall;
 	h1, h1 a{
-		font-size: 1.8rem;
-		line-height: 1.45rem;
+		font-size: 36px;
+		line-height: 0.9;
 		&:hover{
 			color: #000;
 		}
@@ -338,15 +347,17 @@ nav .menu-top-list {
 		position:absolute;
 		p, a, ul{
 			font-size: 0.9rem;
+			line-height: 1.1;
 		}
 		a:hover{
-			color:  rgb(250, 75, 200);
+			color: $rose;
 		}
 	}
 }
 
 main{
 	display:none;
+
 	.text a{
 		text-decoration: underline;
 	}
@@ -355,6 +366,9 @@ main{
 
 
 body[data-rubrique="home"]{
+	.main-content{
+		padding-top: 170px;
+	}
 	.big-image-wrapper{
 		position:absolute;
 		width: 80%;
@@ -363,9 +377,13 @@ body[data-rubrique="home"]{
 	}
 	.col-wrapper{
 		display:none;
-		a:hover h1, a:hover h3{
+		a:hover h1, a:hover h2, a:hover h3{
 			color: $rose;
 		}
+	}
+	.dates-info-wrapper{
+		color: $rose;
+		margin-top: 20px;
 	}
 }
 
@@ -437,6 +455,8 @@ body[data-template="agenda"]{
 		padding-top: $marginSmall/2;
 		h2{
 			margin-left: 0;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
 			&:first-child{
 				margin-top: 0.5em;
 			}
@@ -543,7 +563,7 @@ main{
 	margin-bottom: 10rem;
 	position:relative;
 	.text{
-		margin-top: $marginNormal;
+		margin-top: $marginNormal * 2;
 		position:relative;
 		// quand le programme split
 		.prog{
@@ -561,11 +581,11 @@ main{
 	}
 	// icone derriere le titre
 	.icone{
-		width: 300px;
+		width: 250px;
 		position:absolute;
 		z-index: -1;
-		top: 6rem;
-		left: -15%;
+		top: 8rem;
+		left: -5%;
 		&.portrait{
 			width: 170px;
 			left:-10%;
@@ -630,8 +650,8 @@ body[data-template="list"]{
 			}
 		}
 		h2{
-			font-size: 1.7rem;
-			line-height: 0.8;
+			// font-size: 1.7rem;
+			// line-height: 0.8;
 			margin-left:0;
 		}
 		li.active{
@@ -669,7 +689,7 @@ body[data-template="list"]{
 		h2.columns{
 			padding-left:0;
 			margin-top: 0;
-			font-size: rem-calc(40);
+			//font-size: rem-calc(40);
 		}
 	}
 }
@@ -715,6 +735,7 @@ body[data-template="ateliers"]{
 body[data-template="accueils"]{
 	main .text li::after{
 		content:"";
+		padding: 0;
 	}
 	.accueils-module{
 		.accueils-element{
@@ -725,13 +746,15 @@ body[data-template="accueils"]{
 		}
 		h2{
 			//font-family: "orleans", sans-serif;
-			font-size: 4rem;
-			line-height: 0.8;
+			// font-size: 4rem;
+			// line-height: 0.8;
+			margin-top: $marginNormal *2 ;
 		}
 		h3{
-			font-size: 3rem;
-			margin-left: $margin-decale;
-			margin-bottom: $marginNormal;
+			// font-size: 3rem;
+			// margin-left: $margin-decale;
+			margin-bottom: 0;
+			
 		}
 		.events{
 			ul{
@@ -821,7 +844,7 @@ body[data-template="accueils"]{
 
 // champ d'inscription newsletter (home)
 .newsletter{
-	margin-top: $marginNormal;
+	margin-top: 15px;
 	@include textCourant;
 	h5{
 		font-size:0.9rem;
@@ -836,8 +859,9 @@ body[data-template="accueils"]{
       border-bottom: 1px solid #000;
       box-shadow:none;
       padding: 0;
-      height: 20px;
+      height: 26px;
       background:transparent;
+      margin-bottom: 10px;
       @include textCourant;
       font-size:0.9rem;
       &:focus{background: transparent;}
@@ -848,6 +872,7 @@ body[data-template="accueils"]{
       padding-left: 1.5em;
       //display:inline-block; 
       //float:left;
+      margin:0; 
       @include textCourant;
       font-size:0.9rem;
       color: $rose;

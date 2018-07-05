@@ -24,8 +24,9 @@ fields:
     label: Dates
     type: structure
     entry: >
-      {{title}} — Du {{from}} au {{to}} — {{hours}} — {{place}}
-      <br>{{link}} 
+      {{title}} <br> {{personne}} <br> Du {{from}} au {{to}} <br> {{hours}} <br> {{place}}<br>
+      {{link}} <br>
+      Afficher cette page dans la {{home}} de la page d'accueil
     fields:
       title:
         label: Titre

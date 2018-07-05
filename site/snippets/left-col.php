@@ -28,25 +28,8 @@
 				</ul>
 			</div>
 		<?php endif ?>
-		<div class="newsletter">
-			<h5>Inscription newsletter</h5>
-			<?php snippet('subscribe')?>
-		</div>
-	<!-- 	<a href="<?php //echo $pages->find('nouvelle-direction')->url()?>" title="<?php //echo $site->title()?>">
-			<div class="carre-rose hide-for-small-only">		
-			</div>
-		</a> -->
+
 		<div class="address hide-for-small-only">
-			<ul>
-				<?php foreach($site->socialnetworks()->toStructure() as $social): ?>
-					<li>
-						<a href="<?php echo $social->link() ?>" title="<?php echo $social->title() ?>" target="_blank">
-							<?php echo $social->title()->html() ?>
-						</a>
-					</li>
-				<?php endforeach ?>
-			</ul>
-			<br>
 			<?php echo $site->address()->kirbytext() ?>
 		</div>
 	</div>

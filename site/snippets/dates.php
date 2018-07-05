@@ -14,13 +14,15 @@
 							<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
 							<?php echo date("j", strtotime($dates->from()));?>
 							<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+							<?php echo date("Y", strtotime($dates->from()));?>
 						<?php else:?>
 							<?php echo "du ".$day[date("N", strtotime($dates->from())) - 1];?>
 							<?php echo date("j", strtotime($dates->from()));?>
-							<?php echo $mois[date("n", strtotime($dates->from())) - 1];?>
+							<?php echo $mois[date("n", strtotime($dates->from())) - 1];?><br>
 							<?php echo "au ".$day[date("N", strtotime($dates->to())) - 1];?>
 							<?php echo date("j", strtotime($dates->to()));?>
 							<?php echo $mois[date("n", strtotime($dates->to())) - 1];?>
+							<?php echo date("Y", strtotime($dates->from()));?>
 						<?php endif;?>
 						<br>
 						<?php echo $dates->hours()->html() ?>
