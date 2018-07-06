@@ -205,23 +205,29 @@ nav .menu-top-list {
 			}
 		}
 
-		.module--menu--submenu.active:after, .module--menu--submenu.active:before{
-			content:"";
-			width: 200%;
-			background: $roseClair;
-			position: absolute;
-			top: 0; 
-			bottom: 0;
-			right: -200%;
-		}
+		// .module--menu--submenu.active:after, .module--menu--submenu.active:before{
+		// 	content:"";
+		// 	width: 200%;
+		// 	background: $roseClair;
+		// 	position: absolute;
+		// 	top: 0; 
+		// 	bottom: 0;
+		// 	right: -200%;
+		// }
 	}
-	&.menu-col-right .module--menu--submenu.active:after{
-			left: 100%;
-	}
-	&.menu-col-right .module--menu--submenu.active:before{
-			right: 100%;
-			width: 100%;
-	}
+	// &.menu-col-right .module--menu--submenu{
+	// 		width: 100%;
+	// }
+	// &.menu-col-right .module--menu--submenu{
+	// 		width: 350%;
+	// }
+	// &.menu-col-right .module--menu--submenu.active:after{
+	// 		left: 100%;
+	// }
+	// &.menu-col-right .module--menu--submenu.active:before{
+	// 		right: 100%;
+	// 		width: 100%;
+	// }
 }
 .module--navigation-in-page{
 	background: $roseClair;

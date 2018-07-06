@@ -12,7 +12,6 @@ function init(){
 		$('.left-col').fadeIn(600);
 	});
 
-
 	
 
 

@@ -16,7 +16,7 @@
 			        		<?php echo $p->title()->html() ?>
 			        	</a>
 			        <?php endif;?>
-			        <ul class="module--menu--submenu" <?php if(getRubriqueFromUri($page->uri()) == 'voulez-vous-danser'):?> style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>" <?php endif;?>>
+			        <ul class="module--menu--submenu" <?php if(getRubriqueFromUri($page->uri()) == 'voulez-vous-danser'):?> style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>" <?php endif;?> data-color="<?php echo $site->index()->find('voulez-vous-danser')->color()?>">
 								<?php foreach($p->children()->visible() as $child): ?>
 							  	<li>
 							    	<a class="<?= r($child->isOpen(), 'active') ?>" href="<?php echo $child->url() ?>">
@@ -32,7 +32,7 @@
 		    <?php foreach($pages->visible()->slice($halfPagesLength,$pagesLength) as $p): ?>
 			    	<li class="<?= r($p->isOpen(), 'active') ?>">
 			        <?php echo $p->title()->html() ?>
-			        <ul class="module--menu--submenu">
+			        <ul class="module--menu--submenu" <?php if(getRubriqueFromUri($page->uri()) == 'voulez-vous-danser'):?> style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>" <?php endif;?> data-color="<?php echo $site->index()->find('voulez-vous-danser')->color()?>">
 								<?php foreach($p->children()->visible() as $child): ?>
 							  	<li>
 							    	<a class="<?= r($child->isOpen(), 'active') ?>" href="<?php echo $child->url() ?>">

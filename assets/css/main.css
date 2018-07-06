@@ -9603,19 +9603,6 @@ nav .menu-top-list {
         line-height: 1.2; }
         nav .menu-top-list > li > ul > li a:hover {
           color: #000; }
-    nav .menu-top-list > li .module--menu--submenu.active:after, nav .menu-top-list > li .module--menu--submenu.active:before {
-      content: "";
-      width: 200%;
-      background: #F5F5F5;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -200%; }
-  nav .menu-top-list.menu-col-right .module--menu--submenu.active:after {
-    left: 100%; }
-  nav .menu-top-list.menu-col-right .module--menu--submenu.active:before {
-    right: 100%;
-    width: 100%; }
 
 .module--navigation-in-page {
   background: #F5F5F5;
