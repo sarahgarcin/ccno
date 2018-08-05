@@ -4,7 +4,6 @@
 
 <?php 
 	$projets = $site->index()->filterBy('template',  'in', ['default', 'atelier', 'accueil']);
-	$projetsMaud = $site->index()->find('centre-choregraphique-national-dorleans/maud-le-pladec')->children()->visible();
 
 	$i = 0;
 	$currentTime = date('Ymd');
@@ -13,7 +12,7 @@
 	foreach($projets as $projet):
 		$project = $site->page($projet);
 		$url = $project->url();
-		if($project->dates()->isNotEmpty() && $project->parent()->uri() != "centre-choregraphique-national-dorleans/maud-le-pladec"):
+		if($project->dates()->isNotEmpty()):
 			foreach($project->dates()->toStructure() as $dates):
 				if($dates->agenda() != 'non'):
 					$i++;
@@ -27,6 +26,12 @@
 					$toDay = date("j", strtotime($to));
 					$toMonth = $mois[date("n", strtotime($to)) - 1];
 					$toYear = date("Y", strtotime($to));
+					if($fromDay == '1'){
+						$fromDay = '1<sup>er</sup>';
+					}
+					if($toDay == '1'){
+						$toDay = '1<sup>er</sup>';
+					}
 					// GET TAGS
 					// spectacles, à orléans, tournée Maud Le Pladec, cours/ateliers/stages
 					$tags = array();
@@ -95,45 +100,6 @@
 		endif;
 	endforeach;
 
-	foreach($projetsMaud as $projet):
-		$project = $site->page($projet);
-		$url = $project->url();
-
-		if($project->dates()->isNotEmpty()):
-			foreach($project->dates()->toStructure() as $dates):
-				if($dates->agenda() != 'non'):
-					$i++;
-					$from = $dates->from();
-					$to = $dates->to();
-					$newDateFrom = date("d-m-Y", strtotime($from));
-					$newDateTo = date("d-m-Y", strtotime($to));
-					$fromDay =  date("j", strtotime($from));
-					$fromMonth = $mois[date("n", strtotime($from)) - 1];
-					$fromYear = date("Y", strtotime($from));
-					$toDay = date("j", strtotime($to));
-					$toMonth = $mois[date("n", strtotime($to)) - 1];
-					$toYear = date("Y", strtotime($to));
-
-
-					$arrayMaud[$i]['datestart'] = date("Ymd", strtotime($from));
-    			$arrayMaud[$i]['dateend'] = date("Ymd", strtotime($to));
-
-					$arrayMaud[$i]['fromDay'] = $fromDay;
-			    $arrayMaud[$i]['fromMonth'] = $fromMonth;
-			    $arrayMaud[$i]['fromYear'] = $fromYear;
-			    $arrayMaud[$i]['toDay'] = $toDay;
-			    $arrayMaud[$i]['toMonth'] = $toMonth;
-			    $arrayMaud[$i]['toYear'] = $toYear;
-					$arrayMaud[$i]['titre'] = $dates->title();
-					$arrayMaud[$i]['type'] = $dates->type();
-					$arrayMaud[$i]['heures'] = $dates->hours();
-					$arrayMaud[$i]['lieu'] = $dates->place();
-			    $arrayMaud[$i]['url'] = $url;
-			    $arrayMaud[$i]['tags'] = $tags;
-				endif;
-			endforeach;
-		endif;
-	endforeach;
 
 	usort($array, function($a, $b) {
 	  return $a['datestart'] - $b['datestart'];
@@ -143,24 +109,19 @@
 	  return $b['datestart'] - $a['datestart'];
 	});
 
-	usort($arrayMaud, function($a, $b) {
-	  return  $b['datestart']-$a['datestart'];
-	});
 
 ?>
 
 
 
 <div class ="row">
+
 	<?php snippet('left-col') ?>
+	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<?php snippet('menu') ?>
+		
 		<div class="main-content">
-			<?php if($page->uri() == "creations-et-tournees"):?>
-				<h1>Créations</h1>
-			<?php else: ?>
-				<h1><?= $page->title()->html() ?></h1>
-			<?php endif;?>
+			<h1 class="orleans"><?= $page->title()->html() ?></h1>
 
 			<?php if($page->uri() == "calendrier"):?>	
 				<div class="themes row">
@@ -175,31 +136,12 @@
 					<?php endforeach ?>
 				</div>
 			<?php endif; ?>
-			<?php if($page->uri() == "creations-et-tournees"):?>
-				<div class="creations small-18 medium-16 large-14 xlarge-8">
-					<ul>
-						<?php foreach($site->index()->find('centre-choregraphique-national-dorleans/maud-le-pladec')->children()->visible() as $child):?>
-							<li>
-								<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
-								<?php echo $child->title()->html()?>
-								</a>
-								<?php if($child->hasImages()):?>
-									<div class="thumb-wrapper">
-										<img src="<?php echo $child->images()->first()->url()?>" alt="<?php echo $child->title()?>">
-									</div>
-								<?php endif ?>
-							</li>
-						<?php endforeach ?>
-					</ul>
-				</div>
-			<?php endif?>
 
 			<hr>
 
 			<?php if($page->uri() == "calendrier"):?>
-					<h2 class="click---past-events">→ Voir les rendez-vous passés</h2>	
-					<!-- <h2 class="click---past-events">-> Rendez-vous passés</h2> -->
-					<h3 class="title--next-events">← Retour aux rendez-vous futurs </h3>
+				<h2 class="click---past-events">→ Voir les rendez-vous passés</h2>	
+				<h3 class="title--next-events">← Retour aux rendez-vous futurs </h3>
 					
 
 				
@@ -209,12 +151,11 @@
 						<li class="all active">tout</li>
 						<li class="spectacle">spectacles</li>
 						<li class="inorleans">à orléans</li>
-						<!-- <li class="maud">tournée Maud Le Pladec</li> -->
 						<li class="cours">cours/ateliers/stages</li>
 					</ul>
 				</div>
 			<?php else:?>
-				<h1>Calendrier de tournée</h1>
+				<h1 class="orleans">Calendrier de tournée</h1>
 				<?php $previousMonth = null;
 					foreach($arrayMaud as $date):?>
 					<?php 
@@ -239,9 +180,9 @@
 				    <td>
 				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 				    		<?php if($date["datestart"] == $date["dateend"]):?>
-				    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
+				    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
 				    		<?php else:?>
-				    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
+				    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
 				    		<?php endif;?>
 				    	</a>
 				    </td>
@@ -269,7 +210,6 @@
 						 	<?php endif;
 							$previousMonthPast = $date['fromMonth'];
 						?>
-						<?php //if($page->uri() == "creations-et-tournees" && str::slug($date['type']) == 'tournee'):?>
 						
 						<table class="<?php 
 						foreach($date['tags'] as $tag){
@@ -312,57 +252,56 @@
 					<?php endforeach ?>
 				</div>
 			</div>
-			<div class="nextEvents">
-				<?php $previousMonth = null;
-					foreach($array as $date):?>
-					<?php 
-						if($previousMonth != $date['fromMonth']):?>
-					 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
-					 	<?php endif;
-						$previousMonth = $date['fromMonth'];
-					?>
-					<table class="<?php 
-						foreach($date['tags'] as $tag){
-							echo $tag. " ";
-						}?>">
-							<colgroup>
-								<col span="1" style="width: 20%;">
-					      <col span="1" style="width: 25%;">
-					      <col span="1" style="width: 15%;">
-					      <col span="1" style="width: 40%;">
-					    </colgroup>
-						  <tr>
-						    <td>
-						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-						    		<?php echo $date['type']?>
-						    	</a>
-						    </td>
-						    <td>
-						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-						    		<?php if($date["datestart"] == $date["dateend"]):?>
-						    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
-						    		<?php else:?>
-						    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
-						    		<?php endif;?>
-						    	</a>
-						    </td>
-						    <td>
-						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-						    		<?php echo $date['lieu']?>
-						    	</a>
-						    </td>
-						    <td>
-						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-						    		<?php echo $date['titre']?>
-						    	</a>
-						    </td>
-						  </tr>
-					</table>
-				<?php endforeach ?>
-				<div class="small-18 medium-16">
-					<?php echo $page->text()->kt()?>
+			<?php if($page->uri() == "calendrier"):?>
+				<div class="nextEvents">
+					<?php $previousMonth = null;
+						foreach($array as $date):?>
+						<?php 
+							if($previousMonth != $date['fromMonth']):?>
+						 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
+						 	<?php endif;
+							$previousMonth = $date['fromMonth'];
+						?>
+						<table class="<?php 
+							foreach($date['tags'] as $tag){
+								echo $tag. " ";
+							}?>">
+								<colgroup>
+									<col span="1" style="width: 20%;">
+						      <col span="1" style="width: 25%;">
+						      <col span="1" style="width: 15%;">
+						      <col span="1" style="width: 40%;">
+						    </colgroup>
+							  <tr>
+							    <td>
+							    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+							    		<?php echo $date['type']?>
+							    	</a>
+							    </td>
+							    <td>
+							    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+							    		<?php if($date["datestart"] == $date["dateend"]):?>
+							    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
+							    		<?php else:?>
+							    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+							    		<?php endif;?>
+							    	</a>
+							    </td>
+							    <td>
+							    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+							    		<?php echo $date['lieu']?>
+							    	</a>
+							    </td>
+							    <td>
+							    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+							    		<?php echo $date['titre']?>
+							    	</a>
+							    </td>
+							  </tr>
+						</table>
+					<?php endforeach ?>
 				</div>
-			</div>
+			<?php endif;?>
 		</div>
 	</main>
 	

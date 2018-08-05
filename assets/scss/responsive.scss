@@ -1,13 +1,14 @@
 // ---------- MOBILE VERSION -----------
 @media #{$small-only}{
 	h1{
-		font-size: 2.7rem;
-		word-wrap:  break-word;
 		width:auto;
-		margin-bottom: $marginSmall;
+		&.orleans{
+			font-size: 40px;
+		}
 	}
+
 	p, li{
-		font-size:1.1rem;
+		//font-size:1.1rem;
 	}
 
 	figure{
@@ -15,72 +16,68 @@
 		width:100%;
 	}
 
+	.row .row{
+		margin: 0;
+	}
 
-	.left-col{
-		position: relative; 
-		height:auto;
+	.main-content{
+		padding-top: 50px;
+	}
+
+	.header-mobile{
+		margin-bottom: 0;
+		background:#FFF;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:10;
+		padding-top:10px;
+		padding-left: $columnPadding;
+		padding-right: $columnPadding;
 		h1{
-			padding-top: $marginNormal + 0.3;
+			margin:0;
+			padding:0;
+			padding-top: 7px;
+    	padding-bottom: 5px;
+			float:left;
+			a{font-size:30px;}
 		}
-		h1, a{
-			font-size: 1rem;
-			line-height: 0.85;
-			margin-bottom: $marginSmall;
+		.menu-mobile-btn{
+			text-transform: uppercase;
+			color: #000;
+			font-size: 25px;
+			margin-bottom:0;
+			float:right;
+			cursor: pointer;
+			span{
+				display:inline-block;
+			}
+			&::before{
+				content:"";
+				display:inline-block;
+				background:$rose;
+				width: 17px;
+				height:17px;
+				margin-right: $marginSmall/2;
+			}
 		}
-		.header-mobile{
-			margin-bottom: 0;
-			background:$roseClair;
-			position:fixed;
+	}
+
+	.module--menu--mainNav{
+		display:none;
+		top: 45px;
+		.module--menu--submenu{
+			position:relative;
 			top:0;
 			left:0;
-			//width:100%;
-			z-index:10;
-			padding-top:10px;
-			padding-left: $columnPadding;
-			padding-right: $columnPadding;
-			h1{
-				margin:0;
-				padding:0;
-				float:right;
-				a{font-size:1rem;}
-			}
-			.menu-mobile-btn{
-				text-transform: uppercase;
-				color: #000;
-				font-size: 1rem;
-				margin-bottom:0;
-				float:left;
-				span{
-					display:inline-block;
-				}
-				&::before{
-					content:"";
-					display:inline-block;
-					background:$rose;
-					width: 10px;
-					height:10px;
-					margin-right: $marginSmall/2;
-				}
-			}
-		}
-
-		.pdf{
-			margin-top: $marginNormal;
-			display:none;
-		}
-
-	}
-	.breadcrumb{
-		> ul >li{
-			font-size: 1rem;
-			&:after{
-				padding-left: $columnPadding/2;
-				padding-right: $columnPadding/2;
-			}
 		}
 	}
 
-	.address{
+	nav .menu-col-right{
+		margin-top:0;
+	}
+
+	.address.mobile-address{
 		position:relative;	
 		margin-top: $marginNormal;	
 		p, a, ul{
@@ -89,31 +86,6 @@
 		ul{margin-bottom:$marginSmall/2;}
 		li{line-height:0;}
 		padding-left:0.9375rem;
-	}
-
-	header{
-		//display:block;
-		filter:none;
-		overflow:scroll;
-		height:100vh;
-		.close-menu-button{
-			margin-bottom: $marginSmall;
-		}
-		nav > ul{
-			display:block;
-			>li{
-				 margin-bottom: $marginSmall;
-			}
-		}
-	}
-
-	.module--navigation-in-page{
-		top: 1.3em;
-		left:0;
-		padding-top: 2em;
-		padding-left: $columnPadding;
-		padding-bottom: 0;
-		//width:150%;
 	}
 
 
@@ -145,7 +117,25 @@
 
 	}
 
+	.arrow-back{
+		left:15px;
+		top:60px;
+	}
+	.arrow-back + h1{
+		padding-left: 30px; 
+	}
+
+	.list-with-images{
+		.thumb-wrapper{
+			display:none !important;
+		}
+	}
+
 	body[data-rubrique="home"]{
+		.big-image-wrapper{
+			top: 60px; 
+			width: 90%;
+		}
 		.left-col{
 			h1, h1 a{
 				font-size: 1.5rem;
@@ -154,42 +144,18 @@
 			.hide-on-scoll, .pdf{
 				display:block;
 			}
-			.header-mobile{
+			// .header-mobile{
 				
-				h1{
-					display:none;
-				}
-			}
-		}
-		main{
-			padding-right: 0.9375rem;
-			float: left;
-			.actu{
-				h1, p, a{
-					font-size: 12.5vw;
-				}
-				h3{
-					font-size: 7vw;
-				}
-			}
-			.image-icono{
-				.icone-wrapper{
-					width: 60px;
-					min-width: 50px;
-				}
-			}
+			// 	h1{
+			// 		display:none;
+			// 	}
+			// }
 		}
 	}
 
 
 	body[data-template="default"]{
-		main{
-			margin-bottom: 3rem;
-			float: left;
-			figure{
-				margin-left: -13%;
-				width: 75%;
-			}
+		main{	
 			h2{
 				margin-left: 0;
 			}
@@ -215,62 +181,29 @@
 		}
 	}
 
-	body[data-template="menu"] {
-		main {
-			h1{
-				font-size: 2rem;
-			}
-			li{
-				font-size: 2rem;
-			}
-		}
-	}
 
-	body[data-template="accueils"] {
-		.accueils-module {
-			h2{
-				font-size: 2.5rem;
-				margin-top:1.5rem;
-				margin-left:0;
-			}
-			h3{
-				font-size: 2rem;
-				margin-bottom: 0;
-				margin-left:0;
-			}
-			.accueils-text{
-				margin-top: $marginSmall;
-			}
-		}
-	}
 
-	body[data-parent-template="ateliers"], body[data-rubrique="voulez-vous-danser"]{
-		.header-mobile{
-			background-color: $jaune;
-		}
-	}
+	// body[data-template="ateliers"]{
+	// 	nav.menu-page{
+	// 		>ul > li a{
+	// 			font-size: 1.6rem;
+	// 		}
+	// 	}
+	// }
 
-	body[data-template="ateliers"]{
-		nav.menu-page{
-			>ul > li a{
-				font-size: 1.6rem;
-			}
-		}
-	}
-
-	body[data-template="list"] {
-		.liste-module {
-			.liste-text {
-				ul{
-					margin:0;
-				}
-				h2{
-					margin-top: $marginSmall;
-					margin-left:0;
-				}
-			}
-		}
-	}
+	// body[data-template="list"] {
+	// 	.liste-module {
+	// 		.liste-text {
+	// 			ul{
+	// 				margin:0;
+	// 			}
+	// 			h2{
+	// 				margin-top: $marginSmall;
+	// 				margin-left:0;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 }
 

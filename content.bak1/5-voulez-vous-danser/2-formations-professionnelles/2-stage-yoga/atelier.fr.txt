@@ -1,0 +1,46 @@
+Title: Stage <br> Yoga
+
+----
+
+Summary: 
+
+avec Ali Cramer du Laughing  Lotus Yoga Center de New York
+Samedi 19 mai, 14h à 16h30 : la pratique Shakti 
+Dimanche 20 mai, 14h à 16h30 : la pratique Shiva 
+Tarif unique : 50 €   
+Tous niveaux (amateurs et professionnels).<br> <br> Pour la première fois en France et à Orléans !
+
+----
+
+Text: 
+
+Samedi 19 mai, 14h à 16h30 : la pratique Shakti 
+Explorer les chakras inférieurs à travers le souffle et le mouvement. 
+Dans cet atelier, nous utiliserons le Yoga Asana, des exercices spécifiques de Pranayama (respiration) et des Mantras pour éveiller le Shakti, notre force de vie créatrice vitale. Cette pratique vous aidera à éliminer tous les blocages physiques, émotionnels ou énergétiques pour vivre votre vie la plus vibrante et colorée ! 
+
+Dimanche 20 mai, 14h à 16h30 : la pratique Shiva 
+Explorer les chakras supérieurs à travers le mouvement, la respiration et le son. Dans cet atelier, nous utiliserons le Yoga Asana, des exercices spécifiques de Pranayama (respiration), et le Mantra pour faire appel à notre nature Shiva, ou Pouvoir de l'Intuition. Cette pratique aidera à atténuer la confusion, la dépression ou l'anxiété qui nous empêche de faire des choix clairs depuis un endroit de sagesse tranquille. 
+
+###### Ali Cramer <br> est la directrice artistique du Laughing Lotus Yoga Center de New York et l'une des principales enseignantes de leur programme de formation pour enseignants de 200 heures. De plus, elle est directrice du programme Ayurveda et des formations avancées du programme Chakra et enseigne au Centre depuis quinze ans. Ali est instructrice invitée à l'Université de Columbia, enseignant le yoga et les chakras dans leur programme de Masters en Spiritualité en Psychologie. Ali Cramer dirige des retraites, des formations et des Master Class partout dans le monde. Elle a eu l'honneur de diriger la première formation de Yoga au Soudan et y retourne chaque année pour enseigner dans les écoles et les centres de réfugiés.
+
+----
+
+Display: text
+
+----
+
+Dates: 
+
+- 
+  title: 'avec Ali Cramer du Laughing  Lotus Yoga Center de New York'
+  type: '<span class="orleans">Stage Yoga</span>'
+  from: 2018-05-19
+  to: 2018-05-20
+  hours: 14h-16h30
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+  personne: ""
+  home: col2

@@ -1,0 +1,29 @@
+Title: Accès
+
+----
+
+Text: 
+
+(note:Le Centre chorégraphique national d'Orléans est accessible aux personnes en situation de handicap)
+ 
+ (image: plan.jpg flou:non link:/content/5-mode-d-emploi/2-acces/plan.jpg)
+
+Centre chorégraphique national d’Orléans
+37 rue du Bourdon Blanc
+CS 42348
+45023 Orléans cedex 1
+Tél. : +33 2 38 62 41 00
+Mail : (email: infos@ccn-orleans.com text: infos@ccn-orleans.com)
+(link: http://www.ccn-orleans.com text: www.ccn-orleans.com)
+
+----
+
+Actus: non
+
+----
+
+Icone: pictogrammes-12.png
+
+----
+
+Dates: 

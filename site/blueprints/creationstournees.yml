@@ -1,0 +1,19 @@
+title: Créations et Tournées
+
+pages: 
+  template: event
+  sortable: true
+  num: date
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  icone:
+    label: Icônes 
+    type: selector
+    mode: single
+  text: 
+    label: Texte
+    type: markdown

@@ -1,0 +1,40 @@
+Title: <i>Hunted</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+Création Aire de Jeu 2015, Les Subsistances, Lyon
+Spectacle en anglais surtitré en français 
+
+Pour sa troisième participation au festival Aire de Jeu, Maud Le Pladec a choisi de répondre à l’invitation des Subsistances en invitant à son tour la performeuse et chorégraphe Okwui Okpokwasili à coécrire un projet. 
+*Hunted* est un projet incantatoire, une mélopée dans laquelle la performeuse américaine Okwui Okpokwasili manie paroles, textes, chants, corps et la musique de Kalevi Aho. Invoquant ici les figures de sorcières, à la fois inspirée par les personnages mythiques de Médée, les sorcières de Mac Beth, Mary Wigman, Valeska Gert, Tatsumi Hijikata, ou encore les agitatrices telles que Nanny, les membres du collectif W.I.T.C.H (…). Hunted propose une forme hybride entre storytelling et rituel “neo-paganiste”. Okwui Okpokwasili incarne un vocabulaire puisant sa source dans le folklore et la parole politique. Une présence entre réel et superstition faisant corps avec la musique de Kalevi Aho. 
+*Hunted* a été inspiré par l’ouvrage intitulé *Sorcières pourchassées, assumées, puissantes, queer* d’Anna Colin, qui accompagne le projet “Plus ou moins sorcières“, cycle d’expositions, de projections, de performances et de conférences présenté en 2012 à la Maison Populaire de Montreuil. 
+
+##### Conception Maud Le Pladec, Okwui Okpokwasili <br/> Texte, chanson et interprétation Okwui Okpokwasili <br/> Lumières Nicolas Marc <br/> Costumes Alexandra Bertaut <br/> Répétition voix Dalila Khatir <br/> Musiciens live Jean-Etienne Sotty, Fanny Vicens <br/> Sur une musique de Kalevi Aho  <br/> *Accordion sonata n 2, black birds <br/> II birds of the night <br/> I birds of light <br/> V black birds <br/> IV birds of desolation* <br/> arrangée pour deux accordéons par Jean-Etienne Sotty et Fanny Vicens
+
+###### Production association Léda, Centre Chorégraphique national d’Orléans  <span class='orleans'>#</span>  Coproduction Les Subsistances, Lyon <span class='orleans'>#</span> Avec le soutien du Ministère de la Culture – DRAC Bretagne au titre des compagnies conventionnées, de la Région Bretagne, de la Ville de Rennes
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Hunted</i>'
+  moment: 2017-11-16
+  hours: ""
+  place: Sadler’s Wells, Londres
+  actus: non
+  type: Tournée
+  from: 2017-11-16
+  to: 2017-11-17
+  link: ""
+  agenda: oui

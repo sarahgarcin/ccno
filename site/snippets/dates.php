@@ -9,6 +9,7 @@
 				<?php if($dates->link()->isNotEmpty()):?>
 					<a href="<?php echo $dates->link()?>" title="<?php echo $dates->title()?>">
 				<?php endif; ?>
+					<h6><?php echo $dates->type()->html() ?></h6>
 					<h4>
 						<?php if(strtotime($dates->from()) == strtotime($dates->to())):?>
 							<?php echo $day[date("N", strtotime($dates->from())) - 1];?>
@@ -27,9 +28,10 @@
 						<br>
 						<?php echo $dates->hours()->html() ?>
 					</h4>
-					<h5><?php echo $dates->title()->html() ?></h5>
 					<h6><?php echo $dates->place()->html() ?></h6>
-					<h6><?php echo $dates->type()->html() ?></h6>
+					<h5><?php echo $dates->title()->html() ?></h5>
+					
+					
 				<?php if($dates->link()->isNotEmpty()):?>
 					</a>
 				<?php endif; ?>

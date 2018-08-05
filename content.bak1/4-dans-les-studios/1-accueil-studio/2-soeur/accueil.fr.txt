@@ -1,0 +1,62 @@
+Title: <i>Soeur</i>
+
+----
+
+Personne: Olga Dukhovnaya
+
+----
+
+Text: 
+
+###### Conception, chorégraphie, interprétation et son Olga Dukhovnaya Interprétation et dramaturgie Robert Steijn <br/> Lumière et scénographie Erik Houllier  <br/> Costumes Alexandra Bertaut <br/> Remerciements Mathieu Fisson, Alexis Hedouin, Julien Lemonnier, Wilson Le Personnic, Konstantin Lipatov, Alain Michard, Elise Simonet
+
+###### Production Louma <span class='orleans'>#</span> Coproduction Musée de la danse — Centre chorégraphique national de Rennes, Centre chorégraphique national d’Orléans <span class='orleans'>#</span> Avec le soutien du Ministère de la Culture — DRAC Bretagne, la Région Bretagne et la Ville de Rennes.
+
+Pour *Sœur*, Olga Dukhovnaya a mené une recherche avec le performer et théoricien Robert Steijn sur le rapport entre deux modes d’apparition, deux présences : l’une produit une suite ininterrompue de mouvements, saturant l’espace par son intensité physique ; l’autre mobilise par son immobilité l’énigme d’une silhouette en attente. Entre ces deux corps, un va-et-vient d’états, une circulation ambiguë de fantasmes et de projections, visant la création d’une troisième image : une image fantôme, construite dans le battement de leurs physicalités troublées.
+
+*Sœur* sera créé au CCNO le 26 janvier 2018.
+
+----
+
+Dates: 
+
+- 
+  title: 'Avec Olga Dukhovnaya / <i>Sœur</i>'
+  moment: 2017-12-11
+  hours: 19h à 21h
+  place: ""
+  actus: non
+  type: Lundi after work
+  from: 2017-12-21
+  to: 2017-12-21
+  link: ""
+  agenda: non
+- 
+  title: '<i>Sœur</i>'
+  moment: 2017-12-21
+  hours: 19h
+  type: Ouverture publique
+  from: 2017-12-21
+  to: 2017-12-21
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: '<i>Soeur</i>, Olga Dukhovnaya'
+  type: Spectacle
+  moment: 2018-01-26
+  from: 2018-01-26
+  to: 2018-01-26
+  hours: 19h
+  place: CCNO
+  link: ""
+  agenda: oui
+  actus: non
+
+----
+
+Bio: 
+
+Olga Dukhovnaya 
+(link: https://www.facebook.com/dukhovnaya text: facebook.com/dukhovnaya)

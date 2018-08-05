@@ -1,0 +1,34 @@
+Title: We Can Be Heroes
+
+----
+
+Summary: 
+
+L’Astrolabe, La Scène nationale d'Orléans, le CCNO et le CDNO s’associent pour proposer le projet We Can Be Heroes imaginé par la compagnie Groupenfonction. Cette performance collective liant danse, musiques actuelles et expression corporelle accompagne le festival Hop Pop Hop depuis sa création et revient cette année pour un dernier tour de piste. Pour réaliser cette performance nous recherchons 40 héros qui raviront festivaliers et passants le 15
+septembre prochain sur le parvis de la cathédrale d’Orléans. Pour participer, pas besoin d’être un pro de la danse ou du chant, il faut être disponible sur l’ensemble des temps de préparation, prendre connaissance des textes de la
+nouvelle playlist du projet,
+
+----
+
+Text: 
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: Ateliers de préparation
+  type: ""
+  personne: ""
+  from: 2018-09-08
+  to: 2018-07-11
+  hours: ""
+  place: au Théâtre d’Orléans
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""

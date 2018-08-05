@@ -1,0 +1,49 @@
+Title: <i>Concrete</i> avec l'Ensemble Ictus
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+2015 / durée 60 min / 5 danseurs et 9 musiciens
+
+Maud Le Pladec a choisi la musique post-minimaliste puissante et envoûtante de Michael Gordon, jouée en direct par l’Ensemble Ictus. La partition des lumières dialogue et se confronte avec celles de la musique, entre concert, chorégraphie et light show. Un opéra punk rock qui décoiffe !
+
+*Maud Le Pladec has choosen the powerful and haunting post-minimalist music of Michael Gordon, played live by Ictus Ensemble. The light score dialogues and confronts with those of dance and music, in between live concert, choreography and light show. A stunning punk rock opera! *
+
+##### Conception et chorégraphie  	Maud Le Pladec <br/> Musique 			*Trance* de Michael Gordon <br/> Scénographie lumières Sylvie Mélis, assistée de Nicolas Marc <br/> Interprétation chorégraphique Régis Badel, Olga Dukovnaya, Maria Ferreira Silva, Julien Gallée-Ferré, Corinne Garcia <br/>  Interprétation musicale 	Ensemble Ictus : Dirk Descheemaeker, clarinette, Carlos Galvez Taroncher, clarinette, Gerrit Nulens, percussions, clavier, Tom Pauwels, guitare électrique,	Caroline Peeters, flûte, Jean-Luc Plouvier ou Gwenaëlle Rouger, clavier, Herwig Scheck, basse électrique, Tomonori Takeda, clarinette, Ine Vanoeveren, flûte <br/> Arrangement et composition  	Pete Harden <br/> Assistant musical 	Tom Pauwels <br/> Répétition voix Dalila Khatir <br/> Créatrice costumes 		Alexandra Bertaut	 <br/> Scénographie 	 		Vincent Gadras <br/> Documentation 			Youness Anzane
+
+###### Production Association Léda, Centre chorégraphique national d’Orléans <span class='orleans'>#</span> Coproduction Théâtre National de Bretagne Rennes, CCN Ballet de Lorraine, CCN Grenoble, The Point Eastleigh, Fondation Royaumont – Asnières sur Oise <span class='orleans'>#</span> Avec l’aide du Ministère de la Culture et de la communication – DRAC Bretagne, Région Bretagne, Ville de Rennes, Adami, Spedidam, DanSCe Dialogues 2 <span class='orleans'>#</span> Avec le soutien du Musée de la danse CCNRB, la Raffinerie Bruxelles, Le Triangle, Cité de la danse et du CDCN Atelier de Paris-Carolyn Carlson
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Concrete</i>'
+  moment: 2018-02-08
+  hours: ""
+  place: "Théâtre d'Orléans"
+  actus: non
+  type: Spectacle
+  from: 2018-02-08
+  to: 2018-02-09
+  link: ""
+  agenda: oui
+- 
+  title: '<i>Concrete</i>'
+  type: Tournée
+  from: 2019-05-24
+  to: 2019-05-24
+  hours: "2019"
+  place: Théâtre de Saint-Quentin-en-Yvelines
+  link: ""
+  agenda: non
+  actus: non

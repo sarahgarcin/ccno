@@ -1,0 +1,25 @@
+Title: Accueil
+
+----
+
+Icone: new-direction.png
+
+----
+
+Back: image-site-v0.png
+
+----
+
+Homeimage: caroline.ablain-poetry-9.jpg
+
+----
+
+Namecol1: Tournée
+
+----
+
+Namecol2: Au CCNO
+
+----
+
+Namecol3: Au CCNO

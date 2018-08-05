@@ -1,20 +1,20 @@
-<div class="left-col small-18 medium-4 columns">
+<div class="left-col small-18 medium-4 columns hide-for-small-only">
 	<!-- <div class="menu-btn hide-for-small-only"><span>Menu</span></div> -->
-	<div class="header-mobile small-18 show-for-small-only">
+<!-- 	<div class="header-mobile small-18 show-for-small-only">
 		<div class="menu-mobile-btn"><span>Menu</span></div>
 		<h1 class="mobile-title">
 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
 				<?php echo $site->shortcut()->html() ?>
 			</a>
 		</h1>
-	</div>
+	</div> -->
 
-	<div class="hide-on-scoll">
-		<h1>
+<!-- 	<div class="hide-on-scoll"> -->
+<!-- 		<h1>
 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
 				<?php echo $site->logo()->html() ?>
 			</a>
-		</h1>
+		</h1> -->
 		<?php if($site->pdf()->isNotEmpty()):?>
 			<div class="pdf">
 				<ul>
@@ -32,5 +32,5 @@
 		<div class="address hide-for-small-only">
 			<?php echo $site->address()->kirbytext() ?>
 		</div>
-	</div>
+	<!-- </div> -->
 </div>

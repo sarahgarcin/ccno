@@ -1,0 +1,30 @@
+Title: 45 enfants
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: Performance
+  type: Gratuit sur réservation
+  personne: ""
+  from: 2018-11-15
+  to: 2018-11-15
+  hours: ""
+  place: "Au Théâtre d'Orléans"
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""

@@ -1,4 +1,5 @@
 <?php snippet('header') ?>
+<?php snippet('popupnewsletter') ?>
 
 <?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
@@ -36,9 +37,9 @@
 <div class ="row">
 
 	<?php snippet('left-col') ?>
-
+	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<?php snippet('menu') ?>
+		
 		<div class="big-image-wrapper image-wrapper">
 				<img src="<?php echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
 		</div>	

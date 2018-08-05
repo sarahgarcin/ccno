@@ -5,9 +5,13 @@
 		<div class="icone portrait">
 			<img src="<?php echo $icone->url() ?>" alt="">
 		</div>
-		<?php else:?>
-			<div class="icone landscape">
-				<img src="<?php echo $icone->url() ?>" alt="">
-			</div>
-		<?php endif; ?>
+	<?php elseif($icone->isSquare()):?>
+		<div class="icone square">
+			<img src="<?php echo $icone->url() ?>" alt="">
+		</div>
+	<?php else:?>
+		<div class="icone landscape">
+			<img src="<?php echo $icone->url() ?>" alt="">
+		</div>
+	<?php endif; ?>
 <?php endif ?>

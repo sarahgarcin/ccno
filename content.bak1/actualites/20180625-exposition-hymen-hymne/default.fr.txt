@@ -1,0 +1,62 @@
+Title: Exposition  <br> <span class='orleans'>hYMEN Hymne</span>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+#### du lundi 13 novembre au vendredi 22 décembre 
+Au printemps 2017, Nina Santes et Camille Ducellier sont parties à San Francisco à la recherche de Starhawk... Dans le hall du CCNO, venez découvrir les sources de travail du projet *Hymen Hymne *de Nina Santes, une œuvre vidéo de l’artiste Camille Ducellier en collaboration avec Nina Santes et d’autres documents en lien avec la culture « witch ». 
+La recherche de Nina Santes à partir de la figure de la sorcière vient rencontrer celle de Maud Le Pladec pour Hunted. Toutes deux sont allées puiser dans les ouvrages édités par Anna Colin.
+
+ <br> 
+### Vernissage et rencontre avec Nina Santes, Camille Ducellier et Maud Le Pladec
+#### lundi	 13 	novembre	 à 19h
+
+###### Camille Ducellier <br> est une artiste multimédia, formée à l’Ecole du Fresnoy. Son travail documentaire, sonore, et interactif rêve l’obscur et s’attache à dévoiler le corps tout en liant le spirituel et le politique.
+###### Nina Santes <br> fait ses débuts sur scène en tant que marionnettiste. Depuis 2008 elle a collaboré en tant qu’interprète avec Mylène Benoît, Myriam Gourfink, Catherine Contour, Pascal Rambert, Kevin Jean, Olivier Normand, Laurence Pagès, Hélène Cathala, Perrine Valli, Éléonore Didier, Philippe Grandrieux, Herman Diephuis. Elle est l’auteure de pièces chorégraphiques et musicales, dont Désastre (2012), en collaboration avec le compositeur Kasper Toeplitz, Transmorphonema, un duo avec le chorégraphe Daniel Linehan (Vif du Sujet SACD 2014), et Self made man (2015). En mars 2016, elle co-signe un duo en collaboration avec Célia Gondol : A leaf, far and ever. Sensible au croisement des pratiques et à l’art de la performance, elle développe régulièrement des collaborations avec le monde des arts visuels et plastiques, de la musique, et de la mode.
+###### (link: centre-choregraphique-national-dorleans/maud-le-pladec text: Maud Le Pladec)
+
+----
+
+Dates: 
+
+- 
+  title: 'Avec Jean-Baptiste Veyret-Logerias / Le corps-médium : voix, chant et souffle'
+  type: Samedi brunch
+  moment: 2017-11-25
+  from: 2017-11-25
+  to: 2017-11-25
+  hours: 11h-13h
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-et-cours/tous/samedi-brunch
+  agenda: non
+  actus: non
+- 
+  title: '<i> Hymen Hymen </i>'
+  type: Ouverture publique
+  moment: 2017-11-30
+  from: 2017-11-30
+  to: 2017-11-30
+  hours: 19h
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/dans-les-studios/accueil-studio/hymen-hymne
+  agenda: non
+  actus: non
+- 
+  title: 'Atelier <i> Conjurer </i> Avec Camille Ducellier et Nina Santes'
+  type: Atelier pour les amateurs
+  moment: 2017-12-02
+  from: 2017-12-02
+  to: 2017-12-02
+  hours: 14h30-17h30
+  place: CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/ateliers-de-creations
+  agenda: non
+  actus: non

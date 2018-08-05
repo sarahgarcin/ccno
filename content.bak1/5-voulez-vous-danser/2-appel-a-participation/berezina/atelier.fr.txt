@@ -1,0 +1,74 @@
+Title: Berezina (titre provisoire)
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: 'Rendez-vous :'
+  type: >
+    Gratuit, engagement sur tous les
+    rendez-vous
+  personne: ""
+  from: 2018-12-03
+  to: 2018-12-03
+  hours: 19h
+  place: CCNO
+  text: (dates et horaires sous réserves)
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: 'Rendez-vous :'
+  type: >
+    Gratuit, engagement sur tous les
+    rendez-vous
+  personne: ""
+  from: 2018-12-06
+  to: 2018-12-06
+  hours: 19h
+  place: CCNO
+  text: (dates et horaires sous réserves)
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: 'Rendez-vous :'
+  type: >
+    Gratuit, engagement sur tous les
+    rendez-vous
+  personne: ""
+  from: 2018-12-11
+  to: 2018-12-11
+  hours: 19h
+  place: CCNO
+  text: (dates et horaires sous réserves)
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: 'Rendez-vous :'
+  type: >
+    Gratuit, engagement sur tous les
+    rendez-vous
+  personne: ""
+  from: 2018-12-14
+  to: 2018-12-14
+  hours: 19h
+  place: CCNO
+  text: (dates et horaires sous réserves)
+  link: ""
+  agenda: oui
+  home: ""

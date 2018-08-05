@@ -1,0 +1,36 @@
+title: Date Atelier
+
+pages: false
+files: true
+
+fields:
+  title:
+    label: Titre
+    type: text
+  type:
+    label: Type
+    type: text
+  personne:
+    label: Personne(s)
+    type: text
+  from:
+    label: Du
+    type: date
+    format: DD-MM-YYYY
+  to: 
+    label: Au
+    type: date
+    format: DD-MM-YYYYe
+  hours: 
+    label: Heures
+    type: text
+  place: 
+    label: Lieu
+    type: text
+  text:
+    label: Texte
+    type:  markdown
+  link: 
+    label: Lien
+    type: text
+

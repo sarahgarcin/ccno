@@ -1,0 +1,344 @@
+Title: <span class='orleans'> DãnCÏNG  KÎďS </span> <br/> Niveau éveil <br/> 5-6 ans
+
+----
+
+Summary: 
+
+Par une approche ludique et créative, l’enfant découvre les fondamentaux de la danse : la relation à son propre corps, à l'espace, à la musique et aux autres. Au fil des séances, il s’approprie à son rythme ces bases et prend confiance. L’enfant acquiert attention, concentration et autonomie à travers une meilleure perception de lui-même, des autres et de l’espace qui l’entoure.
+### Mercredis 14h-15h
+
+----
+
+Text: 
+
+De septembre 2017 à juin 2018.
+
+Une fois par trimestre, le CCNO propose un cours inédit avec les enfants : assister à une répétition, regarder un film de danse, rencontrer les artistes au travail au CCNO...
+
+Inscription annuelle (27 cours) : 190 €
+<br>
+
+### Avec Anne Perbal
+###### Anne Perbal est chorégraphe-interprète de la compagnie Les yeux grands fermés à Orléans. Sa recherche porte sur des déclinaisons du corps féminin qu’elle met en scène sur trois axes de créations : chorégraphie, photographie et sculpture. Diplômée d’État, elle enseigne parallèlement la danse depuis 20 ans auprès des enfants, adolescents, adultes, et également en milieu scolaire.
+
+----
+
+Dates: 
+
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-02-14
+  to: 2018-02-14
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  moment: 2017-09-27
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-09-27
+  to: 2017-09-27
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-10-04
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-10-04
+  to: 2017-10-04
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-10-11
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-10-11
+  to: 2017-10-11
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-10-18
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-10-18
+  to: 2017-10-18
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-11-08
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-11-08
+  to: 2017-11-08
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-11-15
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-11-15
+  to: 2017-11-15
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-11-22
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-11-22
+  to: 2017-11-22
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-11-29
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-11-29
+  to: 2017-11-29
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-12-06
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-12-06
+  to: 2017-12-06
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-12-13
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-12-13
+  to: 2017-12-13
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2017-12-20
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2017-12-20
+  to: 2017-12-20
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2018-01-10
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2018-01-10
+  to: 2018-01-10
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2018-01-17
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2018-01-17
+  to: 2018-01-17
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2018-01-24
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2018-01-24
+  to: 2018-01-24
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  moment: 2018-01-31
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  actus: non
+  type: Dancing kids
+  from: 2018-01-31
+  to: 2018-01-31
+  text: ""
+  link: ""
+  agenda: oui
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-02-07
+  to: 2018-02-07
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-03-14
+  to: 2018-03-14
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-03-21
+  to: 2018-03-21
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-03-28
+  to: 2018-03-28
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-04-04
+  to: 2018-04-04
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-04-11
+  to: 2018-04-11
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-04-18
+  to: 2018-04-18
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Daning kids
+  from: 2018-05-16
+  to: 2018-05-16
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-05-23
+  to: 2018-05-23
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+- 
+  title: avec Anne Perbal
+  type: Dancing kids
+  from: 2018-05-30
+  to: 2018-05-30
+  hours: 14h-15h et 15h15-16h15
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  actus: non
+
+----
+
+Display: text
+
+----
+
+Type: 
+
+----
+
+Displaydates: non
+
+----
+
+Displaytitle: oui

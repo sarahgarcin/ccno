@@ -1,14 +1,4 @@
-	<div class="address show-for-small-only">
-    <ul>
-      <?php foreach($site->socialnetworks()->toStructure() as $social): ?>
-        <li>
-          <a href="<?php echo $social->link() ?>" title="<?php echo $social->title() ?>" target="_blank">
-            <?php echo $social->title()->html() ?>
-          </a>
-        </li>
-      <?php endforeach ?>
-    </ul>
-
+	<div class="address mobile-address">
 		<?php echo $site->address()->kirbytext() ?>
 	</div>
 

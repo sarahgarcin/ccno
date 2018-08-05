@@ -4,6 +4,7 @@ pages:
   template:
     - list
     - default
+    - atelier
 files: true
 
 fields:

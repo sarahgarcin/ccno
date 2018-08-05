@@ -6,10 +6,11 @@
 <div class ="row">
 
 	<?php snippet('left-col') ?>
+	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<?php snippet('menu') ?>
+		
 		<div class="main-content">
-				<h1><?= $page->title()->html() ?></h1>
+				<h1 class="small-9 medium-7 large-7 orleans"><?= $page->title()->html() ?></h1>
 				<?php snippet('icone-page')?>
 				<div class="text icones-wrapper-text small-18 medium-16 large-16 xlarge-10">
 					<?php echo $page->text()->kirbytext() ?>

@@ -1,0 +1,26 @@
+Title: Réservations et inscriptions
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+### Par téléphone <br> 02 38 62 41 00
+### Par mail <br>  (email: reservation@ccn-orleans.com text: reservation@ccn-orleans.com)
+### Sur place <br> aux horaires d’ouverture : du lundi au vendredi, 9h–12h30 et 14h–17h30, le samedi, 11h–13h
+Le Centre chorégraphique national d’Orléans est accessible aux personnes en situation de handicap
+
+###### Centre chorégraphique national d’Orléans <br> 37 rue du Bourdon Blanc <br> CS 42348 <br> 45023 Orléans cedex 1 <br> Tél. : +33 2 38 62 41 00 <br> Mail : (email: infos@ccn-orleans.com text: infos@ccn-orleans.com) <br> (link: http://www.ccn-orleans.com text: www.ccn-orleans.com)
+## Inscription à la newsletter 
+<iframe width="540" height="456" src="https://my.sendinblue.com/users/subscribe/js_id/2x7ls/id/1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+
+----
+
+Actus: non
+
+----
+
+Dates: 

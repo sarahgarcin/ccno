@@ -7,14 +7,14 @@
 
 <div class ="row">
 	<?php snippet('left-col') ?>
+	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<?php snippet('menu') ?>
 		<div class="main-content">
-			<h1 class="small-18 medium-16 medium-push-2 large-14 large-push-2 xlarge-8">
+			<h1 class="small-9 medium-7 large-7 orleans">
 				<?= $page->title()->html() ?></h1>
 			<?php snippet('icone-page')?>
 			<div class="row">
-				<div class="creations small-18 medium-16 medium-push-2 large-14 large-push-2 xlarge-8">
+				<div class="creations list-with-images small-18 medium-16 medium-push-2 large-14 large-push-2 xlarge-8">
 					<h1>Créations</h1>
 					<ul>
 						<?php foreach($page->children()->visible() as $child):?>

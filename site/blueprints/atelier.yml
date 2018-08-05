@@ -1,25 +1,43 @@
 title: Atelier
 
-pages: false
+pages: true
 files: true
 
 fields:
   title:
     label: Titre
     type:  text
-  summary: 
-    label: Résumé
-    type: markdown
+  type: 
+    label: Type
+    type: text
+  icone:
+    label: Icône 
+    type: selector
+    mode: single
   text:
     label: Texte
     type:  markdown
-  display:
-    label: Afficher le texte ou les dates ?
+  displayDates:
+    label: Afficher la liste des dates dans la page ?
     type: radio
-    default: dates
+    default: oui
     options:
-      text: Texte
-      dates: Dates
+      oui: Oui
+      non: Non
+  displayTitle:
+    label: Afficher le titre dans la liste des dates ?
+    type: radio
+    default: oui
+    options:
+      oui: Oui
+      non: Non
+  # display:
+  #   label: Afficher le texte ou les dates ?
+  #   type: radio
+  #   default: dates
+  #   options:
+  #     text: Texte
+  #     dates: Dates
   dates: 
     label: Dates
     type: structure
