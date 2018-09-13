@@ -59,6 +59,24 @@ img {
 	height: auto;
 }
 
+button.button{
+	font-family: $font-family;
+	color: #000;
+	background-color: #FFF;
+	border: 2px solid #000;
+	font-size: 17px;
+	text-transform:lowercase;
+	padding: 10px 20px;
+	letter-spacing: 0.1em;
+	outline:none;
+	&:hover, &:focus, &:active{
+		color: $rose;
+		border: 2px solid $rose;
+		background-color: #FFF;
+		outline:none;
+	}
+}
+
 .slider:hover{
 	.slider-image{
 		filter: blur(0);
@@ -163,14 +181,14 @@ figure{
 	background-color: rgba(0,0,0,0.4);
 	.modal-content{
 		background-color: #FEFEFE;
-		margin: 15% auto;
+		margin: 5% auto;
 		padding: 20px; 
 		border: 1px solid #888;
 		width: 50%;
 		.close-modal{
 			color: $rose;
 			float: right;
-			font-size: 28px;
+			font-size: 32px;
 			&:hover, &:focus{
 				color: #000;
 				text-decoration: none;
@@ -532,7 +550,7 @@ body[data-template="menu"]{
 		}
 		.thumb-wrapper{
 			position:absolute;
-			width: 350px;
+			width: 270px;
 			left: 70%;
 			top: -100px;
 			z-index: 100;
@@ -1041,6 +1059,41 @@ body[data-template="form"]{
 	    }
 		}
 	}
+}
+
+//newsletter form
+.lbl-tinyltr, div#sib_embed_signup h1.title{
+	font-family: $font-family !important; 
+}
+
+.lbl-tinyltr{
+	font-size: 1.25rem !important;
+}
+
+div#sib_embed_signup .sib-container .button{
+	font-family: $font-family !important; 
+	color: #000 !important;
+	background: #FFF !important;
+	border: 1px solid #000 !important;
+	border-radius: 0 !important;
+	&:hover{
+		color: $rose !important;
+		border: 1px solid $rose !important;
+	}
+}
+
+div#sib_embed_signup .sib-container .row{
+	padding-top: 0 !important;
+}
+
+div#sib_embed_signup input[type="text"]{
+	border-color: #000 !important;
+	border-radius: 0 !important; 
+	box-shadow:none;
+}
+
+input[type="checkbox"]{
+	margin-right: 10px;
 }
 
 @import "responsive.scss";

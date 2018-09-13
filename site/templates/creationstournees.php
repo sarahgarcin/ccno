@@ -109,9 +109,9 @@
 			    <td>
 			    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
 			    		<?php if($date["datestart"] == $date["dateend"]):?>
-			    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
+			    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
 			    		<?php else:?>
-			    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+			    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
 			    		<?php endif;?>
 			    	</a>
 			    </td>

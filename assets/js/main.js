@@ -12,6 +12,8 @@ function init(){
 		$('.left-col').fadeIn(600);
 	});
 
+	$('#gcaptcha').css('transform', 'scale(1)');
+
 	
 
 
@@ -61,7 +63,6 @@ function init(){
 		console.log('open newsletter');
 		$('.modal-newsletter').css('display', 'block').addClass('active');
 		$(window).on('click', function(e){
-			console.log(e.target);
 			if(e.target == $('.modal-newsletter')[0]){
 				$('.modal-newsletter').css('display', 'none').removeClass('active');
 				$('.module--menu--mainNav .menu-top-list > .open-newsletter-form').removeClass('active');

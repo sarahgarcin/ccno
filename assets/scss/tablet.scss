@@ -1,5 +1,11 @@
 // ---------- TABLETTE VERSION -----------
 @media #{$medium-only}{
+
+	.modal-newsletter{
+		.modal-content{
+			width: 80%;
+		}
+	}
 	.left-col{
 		h1, a{
 			font-size: 2rem;
@@ -31,7 +37,7 @@
 
 	}
 	.newsletter{
-		display:none;
+		//display:none;
 	}
 
 }

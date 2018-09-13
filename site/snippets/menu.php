@@ -21,7 +21,7 @@
 					</a>
 				</h1>
 			</div>
-			<ul class="menu-top-list menu-col-left small-18 medium-6 large-4 columns">
+			<ul class="menu-top-list menu-col-left small-18 medium-4 large-4 columns">
 		    <?php foreach($pages->visible()->slice(0,$halfPagesLength) as $p): ?>
 			    	<li class="<?= r($p->isOpen(), 'active') ?>">
 			    		<?php if($p->hasChildren()):?>
@@ -45,7 +45,7 @@
 			      </li>
 				<?php endforeach ?>
 			</ul>
-			<ul class="menu-top-list menu-col-right small-18 medium-6 large-5 columns">
+			<ul class="menu-top-list menu-col-right small-18 medium-5 large-5 columns">
 		    <?php foreach($pages->visible()->slice($halfPagesLength,$pagesLength) as $p): ?>
 			    	<li class="<?= r($p->isOpen(), 'active') ?>">
 			        <?php echo $p->title()->html() ?>
@@ -62,7 +62,7 @@
 			      </li>
 				<?php endforeach ?>
 			</ul>
-			<div class="newsletter small-18 medium-push-10 medium-6 large-push-1 large-4 columns end">
+			<div class="newsletter small-18 medium-4 large-push-1 large-4 columns end">
 <!-- 				<h5>Inscription newsletter</h5> -->
 			<ul class="menu-top-list archives">
 				<li>

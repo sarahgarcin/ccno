@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<?php snippet('popupnewsletter') ?>
+
 
 <?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];

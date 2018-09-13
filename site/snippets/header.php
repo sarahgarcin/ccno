@@ -73,3 +73,5 @@
   <?php endif;?>
   >
 
+  <?php snippet('popupnewsletter') ?>
+
