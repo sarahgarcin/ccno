@@ -107,6 +107,7 @@ return function ($site, $pages, $page)
     if (r::is('POST')) {
         $form->emailAction([
             'to' => 'amphaytran@ccn-orleans.com',
+            // 'to' => 'garcinsarah@gmail.com',
             'from' => 'amphaytran@ccn-orleans.com',
             'subject' => 'Nouvelle demande de prêt de studio et accueil studio',
             // Use a snippet for the email body (see below).

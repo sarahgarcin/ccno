@@ -1,3 +1,4 @@
+Date de soumission: <?php echo date("d/m/Y - h:i") ?>
 NOM du porteur de projet: <?php echo $data['name'] ?> 
 PRENOM du porteur de projet: <?php echo $data['firstname'] ?> 
 NOM de la structure / compagnie: <?php echo $data['structurename'] ?> 

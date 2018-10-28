@@ -52,6 +52,13 @@ fields:
       link: 
         label: Lien
         type: text
+      agenda: 
+        label: Afficher cette page dans l'agenda ?
+        type: radio
+        default: oui
+        options:
+          oui: oui
+          non: non
       home: 
         label: Afficher cette page sur dans une colonne de la page d'accueil ? 
         type: checkboxes

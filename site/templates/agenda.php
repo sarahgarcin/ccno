@@ -109,6 +109,8 @@
 	  return $b['datestart'] - $a['datestart'];
 	});
 
+	
+
 
 ?>
 
@@ -123,83 +125,35 @@
 		<div class="main-content">
 			<h1 class="orleans"><?= $page->title()->html() ?></h1>
 
-			<?php if($page->uri() == "calendrier"):?>	
-				<div class="themes row">
-					<?php foreach($site->index()->find('themes')->children()->visible() as $theme):?>
-						<div class="theme-module small-10 medium-6 large-4 columns end">
-							<?php $thumb = $theme->thumb()->toFile(); ?>
-							<a href="<?php echo $theme->url()?>" title="<?php echo $theme->title()?>">
-								<?php echo thumb($thumb, array('width' =>400, 'height' =>400, 'crop'=>true));?>
-								<h5><?php echo $theme->title()?></h5>
-							</a>
-						</div>
-					<?php endforeach ?>
-				</div>
-			<?php endif; ?>
+			<div class="themes row">
+				<?php foreach($site->index()->find('themes')->children()->visible() as $theme):?>
+					<div class="theme-module small-10 medium-6 large-4 columns end">
+						<?php $thumb = $theme->thumb()->toFile(); ?>
+						<a href="<?php echo $theme->url()?>" title="<?php echo $theme->title()?>">
+							<?php echo thumb($thumb, array('width' =>400, 'height' =>400, 'crop'=>true));?>
+							<h5><?php echo $theme->title()?></h5>
+						</a>
+					</div>
+				<?php endforeach ?>
+			</div>
 
 			<hr>
 
-			<?php if($page->uri() == "calendrier"):?>
-				<h2 class="click---past-events">→ Voir les rendez-vous passés</h2>	
-				<h3 class="title--next-events">← Retour aux rendez-vous futurs </h3>
-					
-
+			<h2 class="click---past-events">→ Voir les rendez-vous passés</h2>	
+			<h3 class="title--next-events">← Retour aux rendez-vous futurs </h3>
 				
-				<div class="tags">
-					<span>Trier par:</span>
-					<ul>
-						<li class="all active">tout</li>
-						<li class="spectacle">spectacles</li>
-						<li class="inorleans">à orléans</li>
-						<li class="cours">cours/ateliers/stages</li>
-					</ul>
-				</div>
-			<?php else:?>
-				<h1 class="orleans">Calendrier de tournée</h1>
-				<?php $previousMonth = null;
-					foreach($arrayMaud as $date):?>
-					<?php 
-						if($previousMonth != $date['fromMonth']):?>
-					 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
-					 	<?php endif;
-						$previousMonth = $date['fromMonth'];
-					?>
-					<table>
-					<colgroup>
-						<col span="1" style="width: 20%;">
-			      <col span="1" style="width: 25%;">
-			      <col span="1" style="width: 15%;">
-			      <col span="1" style="width: 40%;">
-			    </colgroup>
-					<tr>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['type']?>
-				    	</a>
-				    </td>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php if($date["datestart"] == $date["dateend"]):?>
-				    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
-				    		<?php else:?>
-				    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
-				    		<?php endif;?>
-				    	</a>
-				    </td>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['lieu']?>
-				    	</a>
-				    </td>
-				    <td>
-				    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-				    		<?php echo $date['titre']?>
-				    	</a>
-				    </td>
-					</tr>
-					</table>
-				<?php endforeach;?>
-			<?php endif?>
+
+			
+			<div class="tags">
+				<span>Trier par:</span>
+				<ul>
+					<li class="all active">tout</li>
+					<li class="spectacle">spectacles</li>
+					<li class="inorleans">à orléans</li>
+					<li class="cours">cours/ateliers/stages</li>
+				</ul>
+			</div>
+
 			<div class="pastEvents">
 				<div class="pastEvents-wrapper">
 					<?php $previousMonthPast = null;
@@ -252,11 +206,11 @@
 					<?php endforeach ?>
 				</div>
 			</div>
-			<?php if($page->uri() == "calendrier"):?>
+
 				<div class="nextEvents">
 					<?php $previousMonth = null;
 						foreach($array as $date):?>
-						<?php 
+						<?php
 							if($previousMonth != $date['fromMonth']):?>
 						 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
 						 	<?php endif;
@@ -301,7 +255,6 @@
 						</table>
 					<?php endforeach ?>
 				</div>
-			<?php endif;?>
 		</div>
 	</main>
 	

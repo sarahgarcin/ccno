@@ -175,8 +175,8 @@ function init(){
 			console.log($('.agenda-next'));
 			$('.agenda-next').addClass('active');
 			if(!$('.title--next-events').hasClass('active')){
-				$('.pastEvents-wrapper').slideToggle(400);
-				$('.nextEvents').slideToggle(400);
+				$('.pastEvents-wrapper').hide();
+				$('.nextEvents').show();
 				$('.title--next-events').addClass('active');
 				$('.click---past-events').removeClass('active');
 				$('.title--next-events').hide();
@@ -185,8 +185,8 @@ function init(){
 		if(window.location.search.indexOf('events=past') > -1){
 			$('.agenda-past').addClass('active');
 			if(!$('.click---past-events').hasClass('active')){
-				$('.pastEvents-wrapper').slideToggle(400);
-				$('.nextEvents').slideToggle(400);
+				$('.pastEvents-wrapper').show();
+				$('.nextEvents').hide();
 				$('.click---past-events').addClass('active');
 				$('.title--next-events').removeClass('active');
 				$('.click---past-events').html('Rendez-vous passés');

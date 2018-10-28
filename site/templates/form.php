@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-
+<?php date_default_timezone_set('Europe/Paris');?>
 
 <div class ="row">
 
@@ -26,7 +26,7 @@
 					  </div>
 					<?php endif; ?>
 					<?php echo $page->text()->kirbytext() ?>
-					<h2>Formulaire de demande</h2>
+					<!-- <h2>Formulaire de demande</h2> -->
 					<form enctype="multipart/form-data" action="<?php echo $page->url() ?>" method="POST">
 						<label for='name'>Nom du porteur de projet* <br> <i>Last name of the artist*</i></label>
 					  <input name="name" type="text" value="<?php echo $form->old('name'); ?>" required>

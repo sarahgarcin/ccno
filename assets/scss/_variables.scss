@@ -32,54 +32,42 @@ $p: 1.25rem;
 	line-height: 1;
 	margin: 0;
 	padding: 0;
+	color: #000;
 }
 
 @mixin H2{
 	font-size: 36px;
 	line-height: 1;
 	margin: 0;
+	color: #000;
 }
 
 @mixin H3{
-	font-size: 36px;
+	font-size: 28px;
 	line-height: 1;
 	margin: 0;
+	color: #000
 }
 
 @mixin H4{
-	font-size: 36px;
+	font-size: 28px;
 	line-height: 1;
 	color: #000;
 	margin: 0;
 }
 
-@mixin H1Text{
-	font-size: $h1;
+@mixin H5{
+	font-size: $p;
 	line-height: 1;
-	margin-bottom: $marginNormal;
-	padding-left:0 !important;
-	font-family: $orleans-font;
-	letter-spacing: 0.01em;
+	color: #000;
+	margin: 0;
 }
 
-@mixin H2Text{
-	font-size: $h2;
-	line-height: 1.1;
-	margin-top: $marginBig;
-	margin-left: $margin-decale;
-}
-
-@mixin H3Text{
-	font-size: $h3;
-	line-height: 1.1;
-	margin-bottom: $marginNormal;
-}
-
-@mixin H4Text{
-	font-size: $h4;
-	line-height: 1.1;
-	color: rgb(250, 75, 200);
-	margin-bottom: $marginNormal;
+@mixin H6{
+	font-size: $p;
+	line-height: 1;
+	color: #000;
+	margin: 0;
 }
 
 @mixin textCourant{

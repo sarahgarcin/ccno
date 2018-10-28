@@ -29,6 +29,8 @@ h1.orleans{
 h2{@include H2;}
 h3{@include H3;}
 h4{@include H4;}
+h5{@include H5;}
+h6{@include H6;}
 p, li{ @include textCourant; }
 a{@include liens}
 a:visited{color: #000;}
@@ -40,7 +42,7 @@ h1 + ul{
 	margin-top: 20px;
 }
 
-.text h4, .notes-dates h4{
+.text h4, .notes-dates h4, .text h6, .text h2{
 	color: $rose;
 }
 
@@ -425,7 +427,7 @@ nav .menu-top-list {
 	}
 
 	.pdf{
-		margin-top: 2rem;
+		// margin-top: 150px;
 		li{
 			margin-bottom: $marginSmall;
 			line-height:0.8;
@@ -484,6 +486,12 @@ body[data-rubrique="home"]{
 	.dates-info-wrapper{
 		color: $rose;
 		margin-top: 20px;
+	}
+	h4{
+		font-size:21px;
+	}
+	h3{
+		font-size: 36px;
 	}
 }
 

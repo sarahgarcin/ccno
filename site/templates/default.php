@@ -19,7 +19,7 @@
 					</a>
 				</div>
 			<?php endif ?>
-			<h1 class="small-9 medium-7 large-7 orleans">
+			<h1 class="small-9 medium-7 large-7">
 				<?= $page->title()->html() ?>	
 			</h1>
 			<?php snippet('icone-page')?>

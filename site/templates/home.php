@@ -56,7 +56,7 @@
 					</div>
 					<div class="dates-info-wrapper">
 						<p><?php 
-							if($col1->from() == $col1->to()):
+							if(strtotime($col1->from()) == strtotime($col1->to())):
 								echo $day[date("N", strtotime($col1->from())) - 1]. " " . date("d", strtotime($col1->from())) . " " . $mois[date("n", strtotime($col1->from())) - 1] . " " . date("Y", strtotime($col1->from()));
 							else: 
 								echo 'du '.$day[date("N", strtotime($col1->from())) - 1]. " " . date("d", strtotime($col1->from())) . " " . $mois[date("n", strtotime($col1->from())) - 1] . "</br>au " . $day[date("N", strtotime($col1->to())) - 1]. " " . date("d", strtotime($col1->to())) . " " . $mois[date("n", strtotime($col1->to())) - 1]. " " . date("Y", strtotime($col1->to()));
@@ -83,7 +83,7 @@
 					</div>
 					<div class="dates-info-wrapper">
 						<p><?php 
-							if($col2->from() == $col2->to()):
+							if(strtotime($col2->from()) == strtotime($col2->to())):
 								echo $day[date("N", strtotime($col2->from())) - 1]. " " . date("d", strtotime($col2->from())) . " " . $mois[date("n", strtotime($col2->from())) - 1] . " " . date("Y", strtotime($col2->from()));
 							else: 
 								echo 'du '.$day[date("N", strtotime($col2->from())) - 1]. " " . date("d", strtotime($col2->from())) . " " . $mois[date("n", strtotime($col2->from())) - 1] . "</br>au " . $day[date("N", strtotime($col2->to())) - 1]. " " . date("d", strtotime($col2->to())) . " " . $mois[date("n", strtotime($col2->to())) - 1]. " " . date("Y", strtotime($col2->to()));
@@ -109,7 +109,7 @@
 					</div>
 					<div class="dates-info-wrapper">
 						<p><?php 
-							if($col3->from() == $col3->to()):
+							if(strtotime($col3->from()) == strtotime($col3->to())):
 								echo $day[date("N", strtotime($col3->from())) - 1]. " " . date("d", strtotime($col3->from())) . " " . $mois[date("n", strtotime($col3->from())) - 1] . " " . date("Y", strtotime($col3->from()));
 							else: 
 								echo 'du '.$day[date("N", strtotime($col3->from())) - 1]. " " . date("d", strtotime($col3->from())) . " " . $mois[date("n", strtotime($col3->from())) - 1] . "</br>au " . $day[date("N", strtotime($col3->to())) - 1]. " " . date("d", strtotime($col3->to())) . " " . $mois[date("n", strtotime($col3->to())) - 1]. " " . date("Y", strtotime($col3->to()));
