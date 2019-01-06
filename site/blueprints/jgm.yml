@@ -1,0 +1,51 @@
+title: Jeunes Gens Mödernes
+
+pages: default
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  subtitle: 
+    label: Sous-Titre
+    type: text
+  infos: 
+    label: Infos
+    type: markdown
+  icone:
+    label: Icônes 
+    type: selector
+    mode: single
+    options: query
+    query:
+      page: /
+      fetch: images
+      value: '{{filename}}'
+      text: '{{filename}}'
+      flip: true
+  imagefond: 
+    label: Image de fond
+    type: selector
+    mode: single
+  colonne1:
+    label: À afficher dans la colonne 1 - Jeudi 31 janvier 
+    type: multiselect
+    search: true
+    options: children
+  colonne2:
+    label: À afficher dans la colonne 2 - Vendredi 1er février 
+    type: multiselect
+    search: true
+    options: children
+  colonne3:
+    label: À afficher dans la colonne 3 - Samedi 2 février 
+    type: multiselect
+    search: true
+    options: children
+  text:
+    label: Édito
+    type:  markdown
+
+
+

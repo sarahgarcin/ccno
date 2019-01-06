@@ -211,6 +211,17 @@
 	// 	}
 	// }
 
+	body[data-template='jgm']{
+		.main-content{
+			.background-image{
+				width: 100%;
+				top: 50px; 
+				left:15%;
+
+			}
+		}
+	}
+
 }
 
 

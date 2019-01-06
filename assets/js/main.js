@@ -14,7 +14,13 @@ function init(){
 
 	$('#gcaptcha').css('transform', 'scale(1)');
 
-	
+	var randomTop = Math.floor(Math.random()* (window.innerHeight-100));
+	var randomLeft = Math.floor(Math.random()* (window.innerWidth-100));
+	$('.encart-jgm').css({
+		'top': randomTop,
+		'left': randomLeft
+	})
+	.draggable();
 
 
 	//mobile menu functions

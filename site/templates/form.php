@@ -7,7 +7,6 @@
 	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
 		<div class="main-content">
-
 			<div class="arrow-back">
 				<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
 					<

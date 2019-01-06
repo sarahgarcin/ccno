@@ -11,3 +11,6 @@ fields:
   text:
     label: Texte
     type: markdown
+  mail:
+    label: Mail de confirmation d'inscription
+    type: markdown
