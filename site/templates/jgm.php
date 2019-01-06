@@ -17,6 +17,7 @@
 					<img src="<?php echo $imageback->url()?>" alt="<?php echo $page->title()?>">
 				</div>
 			<?php endif;?>
+			<?php snippet('player') ?>
 			<h1 class="small-9 medium-7 large-7">
 				<?= $page->title()->html() ?>	
 			</h1>
@@ -133,7 +134,7 @@
 
 </div>
 
-
+<?= js('assets/js/player.js') ?>
 <?php snippet('footer') ?>
 
 

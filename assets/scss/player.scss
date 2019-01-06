@@ -1,0 +1,248 @@
+//Clearfix mixin
+@mixin clearfix() {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  } 
+  &:after {
+    clear: both;
+    display: block; 
+    font-size: 0; 
+    height: 0;    
+    visibility: hidden; 
+  }      
+}
+
+//Media query mixin
+@mixin media($type) {
+  @if $type == tablet {/* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    } 
+  }
+  @else if $type == mediumDesktop {/* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1100px) {
+      @content;
+    }     
+  }
+  @else if $type == largeDesktop {/* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      @content;
+    }       
+  }
+}
+
+body[data-template='jgm'], [data-parent-template='jgm']{
+
+
+
+//General classes
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.disabled {
+  color: #666; 
+  cursor: default;
+}
+.show {
+  display: inline-block !important;
+}
+  
+  .player-container {
+    margin: 0 auto;
+    width: 300px;
+    position:absolute;
+    right: 0px;
+    top: 150px;
+    background: #FFF;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 2px solid #9C9C9C;
+    .player {
+      height: 60px;
+      margin: 0;
+      position: relative;
+      // width: 400px;                
+      .large-toggle-btn {
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+          float: left;
+          font-size: 1em;
+          margin: 0 10px 0 0;
+          overflow: hidden;
+          padding: 5px 0 0 0;
+          position: relative;
+          text-align: center;
+          vertical-align: bottom;
+          height: 35px; 
+          width: 30px;
+          .large-play-btn {
+            &:before {
+              content: "\f04b";
+              font: 1.5em/1.75 "FontAwesome";
+            }               
+            cursor: pointer; 
+            display: inline-block;
+            position: relative;
+            top: -14%;
+          }
+          .large-pause-btn {
+            &:before {
+              content: "\f04c";
+              font: 1.5em/1.75 "FontAwesome";
+            }   
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            top: -13%;            
+          }                   
+      }//end .play-box
+      .info-box {
+        bottom: 0px;
+        left: 40px;
+        position: absolute;
+        top: -5px;
+        .track-info-box {
+          float: left;
+          font-size: 14px;
+          margin: 0 0 6px 0;
+          visibility: hidden;
+          // width: 400px; 
+          .track-title-text {
+            display: inline-block;
+          }
+          .audio-time {
+            display: inline-block;
+            padding: 0 0 0 5px;
+            width: 100px;
+          }
+          @include clearfix();
+        }      
+      }
+      .progress-box {
+        float: left;
+        min-width: 240px;
+        position: relative;
+        .progress-cell {
+          height: 14px;
+          position: relative;
+          .progress {
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            height: 8px;
+            position: relative;
+            // width: auto;
+            width: 100%;
+            margin-bottom: 0;
+            .progress-buffer {
+              background: $rose;
+              height: 100%;
+              width: 0;
+            }
+            .progress-indicator {
+              background: #fff;
+              border: 1px solid #bebebe;
+              border-radius: 3px;
+              cursor: pointer;
+              height: 10px;
+              left: 0;
+              overflow: hidden;
+              position: absolute;
+              top: -2px;
+              width: 22px;
+            }
+          }
+        }
+      }//end .prgoress-box
+      .controls-box {
+        bottom: 10px;
+        left: 350px;
+        position: absolute; 
+        .previous-track-btn {
+          &:before {
+            content: "\f049";
+            font: 1em "FontAwesome";
+          }             
+          cursor: pointer;
+          display: inline-block;
+        }
+        .next-track-btn {
+            &:before {
+            content: "\f050";
+            font: 1em "FontAwesome";
+          }             
+          cursor: pointer;
+          display: inline-block;        
+        }           
+      }
+      @include clearfix();
+    }//end .player
+    
+    .play-list {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 100%;
+      .play-list-row {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        .track-title {
+          font-size: 14px;
+          .playlist-track {
+            &:hover {
+              text-decoration: underline;
+            }
+            color: #000;
+            text-decoration: none;
+          }
+        }
+        .small-toggle-btn {
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+          cursor: pointer;
+          display: inline-block;
+          height: 20px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: relative;
+          text-align: center;
+          vertical-align: middle;
+          width: 20px;
+          .small-play-btn {
+            &:before {
+              content: "\f04b";
+              font: 0.85em "FontAwesome";
+            }            
+            display: inline-block;
+          } 
+          .small-pause-btn {
+            &:before {
+              content: "\f04c";
+              font: 0.85em "FontAwesome";
+            }            
+            display: inline-block;
+          }         
+        }
+        .track-number {
+          display: inline-block;
+        }
+        .track-title {
+          display: inline-block;
+          .playlist-track {
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .track-title.active-track {
+          a{color: $rose ;}
+        }
+        @include clearfix();
+      }
+    }
+  }//end .container
+}

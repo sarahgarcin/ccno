@@ -35,7 +35,7 @@ p, li{ @include textCourant; }
 a{@include liens}
 a:visited{color: #000;}
 a.active{color: $rose;}
-a:hover h5{
+a:hover h5, p a:hover{
 	color: $rose;
 }
 h1 + ul{
@@ -1198,9 +1198,10 @@ body[data-template='jgm']{
 
 
 
-
+@import "player.scss";
 @import "responsive.scss";
 @import "tablet.scss";
+
 
 
 

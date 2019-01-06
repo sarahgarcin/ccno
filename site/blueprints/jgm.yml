@@ -30,17 +30,17 @@ fields:
     mode: single
   colonne1:
     label: À afficher dans la colonne 1 - Jeudi 31 janvier 
-    type: multiselect
+    type: relationship
     search: true
     options: children
   colonne2:
     label: À afficher dans la colonne 2 - Vendredi 1er février 
-    type: multiselect
+    type: relationship
     search: true
     options: children
   colonne3:
     label: À afficher dans la colonne 3 - Samedi 2 février 
-    type: multiselect
+    type: relationship
     search: true
     options: children
   text:
