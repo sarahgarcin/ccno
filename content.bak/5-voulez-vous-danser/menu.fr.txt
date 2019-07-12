@@ -1,5 +1,5 @@
-Title: Cours et Formations
+Title: Cours, ateliers, formations
 
 ----
 
-Color: #94e9d4
+Color: #C9ADD8

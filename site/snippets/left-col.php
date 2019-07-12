@@ -1,22 +1,14 @@
-<div class="left-col small-18 medium-4 columns hide-for-small-only">
-	<!-- <div class="menu-btn hide-for-small-only"><span>Menu</span></div> -->
-<!-- 	<div class="header-mobile small-18 show-for-small-only">
-		<div class="menu-mobile-btn"><span>Menu</span></div>
-		<h1 class="mobile-title">
-			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
-				<?php echo $site->shortcut()->html() ?>
-			</a>
-		</h1>
-	</div> -->
-
-<!-- 	<div class="hide-on-scoll"> -->
-<!-- 		<h1>
-			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
-				<?php echo $site->logo()->html() ?>
-			</a>
-		</h1> -->
-
+<div class="left-col small-18 medium-3 columns hide-for-small-only">
 		<div class="address hide-for-small-only">
+			<div class="newsletter small-18">
+				<ul class="menu-top-list archives">
+					<li class="open-newsletter-form">
+						Recevoir la newsletter
+						<!-- <a href="https://my.sendinblue.com/users/subscribe/js_id/2x7ls/id/5" title="" target="_blank">Recevoir la newsletter</a> -->
+					</li>
+				</ul>
+				<?php snippet('social');?>
+			</div>
 			<?php if($site->pdf()->isNotEmpty()):?>
 				<div class="pdf">
 					<ul>
@@ -32,6 +24,8 @@
 			<?php endif ?>
 
 			<?php echo $site->address()->kirbytext() ?>
+			
 		</div>
+
 	<!-- </div> -->
 </div>

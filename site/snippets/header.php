@@ -75,6 +75,6 @@
 
   <?php snippet('popupnewsletter') ?>
   <?php if($page->intendedTemplate() != 'jgm'):
-    snippet('lienjgm');
+    //snippet('lienjgm');
   endif; ?>
 

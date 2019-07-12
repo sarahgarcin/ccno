@@ -1,0 +1,38 @@
+Title: <i>DJ Battle</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+(slider: inauguration-du-ccno-2017)
+© Cynthia Lefevbre
+
+<i>DJ Battle</i> est une forme courte imaginée par Maud Le Pladec : un dialogue entre un DJ et un danseur à partir d’un objet commun, la musique. Avec ce dispositif «live» DJ / danseur, Maud Le Pladec propose de troubler ce rapport habituel d’une musique donnant l’impulse au mouvement, le danseur pouvant tout autant guider les « pas » du DJ . A partir de codes, de partitions cachées ou de signes plus ou moins explicites proposés par la chorégraphe Maud Le Pladec, <i>DJ Battle</i> met sur un pied d’égalité musique et danse et offre la possibilité d’un set musical et chorégraphique invitant à danser. Pour cette occasion, Maud Le Pladec propose à des danseurs et chorégraphes venus de tout horizon de se confronter au DJ Julien Tiné. Kevin Mischel (break), Alice Liss Funk (waacking), Régis Badel (contemporain), Maud Le Pladec ... ont été les premiers à participer à ce dispositif ludique et énergisant.
+
+DJ Battle <i>is a short form imagined by Maud Le Pladec: a dialogue between a DJ and a dancer with a common object, music. With this "live" device, DJ / dancer, Maud Le Pladec proposes to create a usual relationship with a music that gives impetus to the movement, in which it is possible to simply guide the "steps" of the DJ. From codes, hidden scores or more or less explicit signs proposed by the choreographer Maud Le Pladec,</i> DJ Battle<i> puts music and dance equal footing and offer the possibility of a musical and choreographic set inviting to dance. For this occasion, Maud Le Pladec invites dancers and choreographers to come and see DJ Julien Tiné. Kevin Mischel (break), Alice Liss Funk (waacking), Régis Badel (contemporary), Maud Le Pladec were the first to participate in this fun and energizing performance.</i>
+
+Conception et chorégraphie Maud Le Pladec
+DJ Julien Tiné
+Interprète Louis Nam Le Van Ho
+Technique Nicolas Marc
+#### Production Centre chorégraphique national d'Orléans
+
+----
+
+Dates: 
+
+- 
+  title: '<i>DJ Battle</i>, Maud Le Pladec'
+  type: Soirée performance
+  personne: ""
+  from: 2020-03-13
+  to: 2020-03-14
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  link: ""
+  agenda: non
+  home: ""

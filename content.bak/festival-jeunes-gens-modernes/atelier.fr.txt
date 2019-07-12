@@ -1,0 +1,47 @@
+Title: Festival Jeunes Gens Modernes
+
+----
+
+Text: 
+
+## (link: http://www.ccn-orleans.com/jeunes-gens-modernes text: Cliquez ici pour tout découvrir)
+
+(image: couverture-event.png flou:non)
+
+----
+
+Dates: 
+
+- 
+  title: 'Festival <i>Jeunes Gens Modernes </i>'
+  type: Festival
+  personne: ""
+  from: 2019-01-31
+  to: 2019-02-02
+  hours: ""
+  place: "au CCNO, à l'Astrolabe, au Théâtre d'Orléans"
+  text: ""
+  link: >
+    http://www.ccn-orleans.com/jeunes-gens-modernes
+  agenda: oui
+  home: ""
+
+----
+
+Type: 
+
+----
+
+Displaytitle: oui
+
+----
+
+Display: dates
+
+----
+
+Icone: 
+
+----
+
+Displaydates: non

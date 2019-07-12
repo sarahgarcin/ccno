@@ -38,6 +38,13 @@ Shortcut: CCN¹
 
 Pdf: 
 
+- 
+  title: 'Télécharger le programme événements<br>JANVIER - JUIN19'
+  link: programme-evenements-janv-juin19.pdf
+- 
+  title: 'Télécharger le programme ateliers cours <br> formations JANVIER - JUIN19'
+  link: programme-ateliers-cours-janv-juin19.pdf
+
 ----
 
 Ogimage: 
@@ -47,11 +54,11 @@ Ogimage:
 Socialnetworks: 
 
 - 
-  title: Page Facebook
+  title: fa-facebook
   link: https://www.facebook.com/CCNOrleans/
 - 
-  title: Compte Instagram
+  title: fa-instagram
   link: https://www.instagram.com/ccnorleans/
 - 
-  title: Vidéos
+  title: fa-vimeo
   link: https://vimeo.com/maudlepladec

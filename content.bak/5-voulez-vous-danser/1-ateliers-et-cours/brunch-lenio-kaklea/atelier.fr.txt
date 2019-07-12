@@ -1,0 +1,38 @@
+Title: Brunch Lenio Kaklea
+
+----
+
+Type: 
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Displaydates: non
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: Brunch Lenio Kaklea
+  type: Atelier de danse
+  personne: ""
+  from: 2019-11-02
+  to: 2019-11-02
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

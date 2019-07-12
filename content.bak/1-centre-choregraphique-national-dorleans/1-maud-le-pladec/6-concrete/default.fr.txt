@@ -1,0 +1,77 @@
+Title: <i>Concrete</i>
+
+----
+
+Icone: pictogrammes-31.png
+
+----
+
+Text: 
+
+# avec l'Ensemble Ictus
+Création 2015
+Durée 60 min 
+5 danseurs et 9 musiciens
+
+(slider: concrete-img)
+© Konstantin Lipatov
+
+Maud Le Pladec a choisi la musique post-minimaliste puissante et envoûtante de Michael Gordon, jouée en direct par l’Ensemble Ictus. La partition des lumières, créée par Sylvie Mélis, dialogue et se confronte avec celles de la musique, entre concert, chorégraphie et light show. Un opéra punk rock qui décoiffe !
+
+*Maud Le Pladec has choosen the powerful and haunting post-minimalist music of Michael Gordon, played live by Ictus Ensemble. The light score, created by Sylvie Mélis, dialogues and confronts with those of dance and music, in between live concert, choreography and light show. A stunning punk rock opera! *
+
+##### Conception et chorégraphie  	Maud Le Pladec <br/> Musique 			*Trance* de Michael Gordon <br/> Scénographie lumières Sylvie Mélis, assistée de Nicolas Marc <br/> Interprétation chorégraphique Régis Badel, Olga Dukovnaya, Maria Ferreira Silva, Julien Gallée-Ferré, Corinne Garcia <br/>  Interprétation musicale 	Ensemble Ictus : Dirk Descheemaeker, clarinette, Carlos Galvez Taroncher, clarinette, Gerrit Nulens, percussions, clavier, Tom Pauwels, guitare électrique,	Caroline Peeters, flûte, Jean-Luc Plouvier ou Gwenaëlle Rouger, clavier, Herwig Scheck, basse électrique, Tomonori Takeda, clarinette, Ine Vanoeveren, flûte <br/> Arrangement et composition  	Pete Harden <br/> Assistant musical 	Tom Pauwels <br/> Répétition voix Dalila Khatir <br/> Créatrice costumes 		Alexandra Bertaut	 <br/> Scénographie 	 		Vincent Gadras <br/> Documentation 			Youness Anzane 
+
+
+##### Sylvie Mélis propose une création originale en écrivant une partition lumière qui dialogue et se confronte avec celles de la danse et de la musique.
+
+###### Production Association Léda, Centre chorégraphique national d’Orléans <span class='orleans'>#</span> Coproduction Théâtre National de Bretagne Rennes, CCN Ballet de Lorraine, CCN Grenoble, The Point Eastleigh, Fondation Royaumont – Asnières sur Oise  <span class='orleans'>#</span> Avec le soutien du Musée de la danse CCNRB, la Raffinerie Bruxelles, Le Triangle, Cité de la danse et du CDCN Atelier de Paris-Carolyn Carlson
+
+
+<iframe src="https://player.vimeo.com/video/155504035" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+© Julie Pareau  <br> (link: https://vimeo.com/146961899 text: Captation complète disponible)
+
+----
+
+Actus: non
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Concrete</i>'
+  moment: 2018-02-08
+  hours: ""
+  place: "Théâtre d'Orléans"
+  actus: non
+  type: Spectacle
+  from: 2018-02-08
+  to: 2018-02-09
+  link: ""
+  agenda: non
+  personne: ""
+  home: ""
+- 
+  title: '<i>Concrete</I>, Maud Le Pladec'
+  type: En tournée
+  from: 2019-05-24
+  to: 2019-05-24
+  hours: 20h30
+  place: Théâtre de Saint-Quentin-en-Yvelines
+  link: ""
+  agenda: oui
+  actus: non
+  personne: ""
+  home: ""
+- 
+  title: 'Week-end danse avec Maud Le Pladec et les interprètes de <i>Concrete</i>'
+  type: Ateliers
+  personne: ""
+  from: 2019-05-10
+  to: 2019-05-11
+  hours: ""
+  place: Théâtre de Saint-Quentin-en-Yvelines
+  link: ""
+  agenda: oui
+  home: ""

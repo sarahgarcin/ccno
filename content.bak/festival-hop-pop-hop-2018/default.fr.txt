@@ -1,0 +1,30 @@
+Title: Festival Hop Pop Hop
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+Collaboration CCN¹ x L’Astrolabe
+Troisième année pour ce festival de musiques actuelles organisé par l’Astrolabe dans la ville d’Orléans. Cette année, le CCNO accueillera dans son studio transformé pour l’occasion en salle de concert One Sentence Supervisor, Malik Djoudi, Ctrl-Z, Bobun Fever, Dario Rossi, La Jungle et Not Waving.
+(link: https://www.hoppophop.fr/ text: hoppophop.fr)
+
+(slider:fichier)
+
+----
+
+Dates: 
+
+- 
+  title: Festival Hop Pop Hop
+  type: Concert
+  personne: ""
+  from: 2018-09-14
+  to: 2018-09-15
+  hours: ""
+  place: CCNO
+  link: ""
+  home: ""

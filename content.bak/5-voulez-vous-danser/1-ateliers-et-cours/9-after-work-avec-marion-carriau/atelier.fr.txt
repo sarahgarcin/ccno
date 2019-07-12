@@ -1,0 +1,45 @@
+Title: Lundi <span class='orleans'>After work</span class> <br>avec Marion Carriau
+
+----
+
+Type: Pour tous :
+
+----
+
+Text: 
+
+(image:marion-carriau.png.jpg)
+Pendant sa résidence au CCNO, la chorégraphe Marion Carriau partage avec vous la démarche artistique de son solo Je Suis Tous Les Dieux à partir de la musicalité de la danse indienne bharata natyam. Le parcours est complet : vous pouvez prendre cet atelier, voir l’ouverture publique du travail en cours et voir le spectacle au Théâtre d’Orléans.
+
+----
+
+Displaytitle: oui
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: 'Avec Marion Carriau interprète et chorégraphe de <i>Je Suis Tous les Dieux</i>'
+  type: Lundi after work
+  personne: ""
+  from: 2018-10-15
+  to: 2018-10-15
+  hours: 19h-21h
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Icone: 
+
+----
+
+Displaydates: oui

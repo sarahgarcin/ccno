@@ -1,0 +1,49 @@
+Title: <i>Protest</i>
+
+----
+
+Icone: 
+
+----
+
+Personne: Sandra Mavhima
+
+----
+
+Text: 
+
+# Sandra Mavhima
+
+(image:sandra-mavhima.jpg flou:non)
+© DR
+<br>
+<i>Protest</i> part du contexte socioculturel roumain et d'une collection de mouvements inspirés par les manifestations. Les manifestations sont une thérapie pour une société marquée par la ségrégation, où l'individu peut se sentir isolé au sein de sa communauté. Les protestations nous donnent l'impression qu'unis, nous pouvons changer le monde. La chorégraphe aborde l'inﬂuence de la rue, la naissance d'une nouvelle identité collective, les facteurs politiques traditionnels et inattendus, le système contre l'anti-système, les nouveaux médias comme vecteurs d'expression, d'action et d'interaction avec les partis politiques, l'humour et l'ironie comme des outils pour autonomiser la nouvelle génération roumaine. 
+<br>
+Accueil-studio organisé dans le cadre de la Saison France-Roumanie 2019 de l'Institut français et le projet croisé <i>Dans :: danse</i> du CCNO et de l’Asociatia Sectia de Coregraﬁe din România (Choreodep).
+(image:label_saison-frro2019_rvb-130718.png flou:non)
+(image:if-frro-bloc-instit_cmjn_fondclair.png flou:non) 
+
+<br>
+Sandra Mavhima
+Danseuse, chorégraphe et productrice, Sandra dirige la compagnie de 
+danse X and Dance Project et l’Asociat,ia Sect,ia de Coregrafie din România (Choreodep). Des organisations sous l'égide desquelles elle mène des projets tels que le concours national de chorégraphie ALT, les Journées de la danse contemporaine à la Bibliothèque nationale, DNA Online Review et le programme de conservation du Cartierului de Dans (Quartier de la Danse). Elle est diplômée du lycée de chorégraphie Floria Capsali et de la faculté d'histoire de l'art de l'Université nationale des arts. Elle est titulaire d'une maîtrise en arts de la scène du théâtre national I. L. Caragiale (Bucarest). Récemment, elle a obtenu un doctorat en cinéma et médias de l'UNATC, pour son travail de recherche "The Choreographic Language into the Experimental Film".
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Protest</i> de Sandra Mavhima'
+  type: Ouverture publique
+  personne: ""
+  from: 2019-04-11
+  to: 2019-04-11
+  hours: 19h
+  place: au CCNO
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Bio: 

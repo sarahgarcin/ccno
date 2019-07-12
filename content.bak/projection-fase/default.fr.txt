@@ -1,0 +1,25 @@
+Title: Projection : <i>Fase</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Fase</i>, Anne Teresa De Keersmaeker'
+  type: Projection
+  personne: ""
+  from: 2019-10-31
+  to: 2019-10-31
+  hours: 19h
+  place: CCNO
+  link: ""
+  agenda: non
+  home: ""

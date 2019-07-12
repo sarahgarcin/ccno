@@ -1,0 +1,52 @@
+Title: Samedi <span class='orleans'>brunch</span class> <br>avec Régis Badel et Noé Pellencin
+
+----
+
+Type: Pour tous :
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+# Avec Régis Badel et Noé Pellencin, interprètes de *Twenty-seven perspectives* de Maud Le Pladec
+## Samedi 12 janvier, 11h-13h
+# au CCNO
+— 10€ / 8€, sur réservation
+ 
+(slider:orleans)
+© Konstantin Lipatov
+
+
+
+#### Jeudi 10 et vendredi 11 janvier 2019, 20h30, au Théâtre d'Orléans
+Spectacle : (link: https://www.scenenationaledorleans.fr/spectacles/twenty-seven-perspectives-59.html?article=1876 text: *Twenty-seven perspectives*), Maud Le Pladec
+— Réservation auprès de la Scène nationale d'Orléans
+
+----
+
+Displaydates: oui
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: 'Avec Régis Badel et Noé Pellencin, interprètes de <i>Twenty-seven perspectives</i> de Maud Le Pladec'
+  type: Atelier samedi brunch
+  personne: ""
+  from: 2019-01-12
+  to: 2019-01-12
+  hours: de 11h à 13h
+  place: au CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""

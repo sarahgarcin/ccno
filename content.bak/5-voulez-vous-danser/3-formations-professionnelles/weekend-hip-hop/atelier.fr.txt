@@ -1,0 +1,38 @@
+Title: Weekend hip-hop
+
+----
+
+Type: 
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Displaydates: oui
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: Weekend Hip-Hop
+  type: Weekend ado
+  personne: ""
+  from: 2019-10-18
+  to: 2019-10-20
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

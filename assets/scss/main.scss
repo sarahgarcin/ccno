@@ -2,7 +2,6 @@
 @import "_foundation.scss";
 @import "_font-awesome.scss";
 @import "_variables.scss";
-// rose rgb250, 75, 200
 
 * {
   box-sizing: border-box;
@@ -38,11 +37,14 @@ a.active{color: $rose;}
 a:hover h5, p a:hover{
 	color: $rose;
 }
+a:focus{
+	color: $rose;
+}
 h1 + ul{
 	margin-top: 20px;
 }
 
-.text h4, .notes-dates h4, .text h6, .text h2{
+.text h4, .notes-dates h4, .text h2{
 	color: $rose;
 }
 
@@ -237,17 +239,23 @@ header{
  	//box-shadow: 0px 10px 10px -10px rgba(0,0,0,.2);
 }
 
-.socialnetwork {
-	ul{
-		display:flex; 
-		li{
-			font-size: 0.9rem; 
-			line-height: 1.6;
-			margin-right: 15px;
+.left-col{
+	.socialnetwork {
+		ul{
+			display:flex;
+			 justify-content: center;
+ 
+			li{
+				margin-right: 15px;
+				a{
+					font-size: 1rem; 
+					line-height: 1.6;
+				}
+			}
 		}
-	}
-	i{
-		transform: none;
+		i{
+			transform: none;
+		}
 	}
 }
 
@@ -277,6 +285,26 @@ nav .menu-top-list {
 			  margin-right: 8px;
 			  content: "+";
 			  font-family: "orleans", sans-serif;
+			}
+			&.jgm {
+				@include degaulle;
+					color: #FFF;
+					font-size: 18px;
+					&:hover{
+						color:$rose;
+					}
+				> a{
+					@include degaulle;
+					color: #FFF;
+					font-size: 18px;
+					&:hover{
+						color:$rose;
+					}
+				}
+				 &.active a{
+						color:$rose;
+				 }
+
 			}
 		> ul {
 			margin: 0;
@@ -394,6 +422,20 @@ nav .menu-top-list {
 	top: 0px;
 	display:none;
 	padding-top: $marginSmall;
+	.newsletter{
+		// margin-top: 6em;
+		margin-bottom: 15px;
+		li{font-size: 0.9rem ;}
+		a:hover{
+			color: $rose;
+		}
+		.open-newsletter-form{
+			cursor:pointer;
+			&:hover{
+				color: $rose;
+			}
+		}
+	}
 	h1, h1 a{
 		font-size: 36px;
 		line-height: 0.9;
@@ -428,13 +470,15 @@ nav .menu-top-list {
 
 	.pdf{
 		// margin-top: 150px;
+		margin-bottom: 15px;
 		li{
 			margin-bottom: $marginSmall;
 			line-height:0.8;
 			a{
 				font-size: 0.9rem ;
 				line-height:0.8;
-				color: rgb(250, 75, 200);
+				color: $rose;
+				
 				&:hover{
 					color: #000;
 				}
@@ -446,7 +490,7 @@ nav .menu-top-list {
 		position:absolute;
 		p, a, ul{
 			font-size: 0.9rem;
-			line-height: 1.1;
+			line-height: 1.2;
 		}
 		a:hover{
 			color: $rose;
@@ -468,9 +512,22 @@ main{
 	display:none;
 }
 
-
+body[data-template="home"]{
+	// icone derriere le titre
+	main .icone{
+		width: 100px;
+		top: 0;
+		&.portrait{
+			width: 70px;
+		}
+		&.square{
+			width: 70px;
+		}
+	}
+}
 
 body[data-rubrique="home"]{
+
 	.big-image-wrapper{
 		position:absolute;
 		width: 80%;
@@ -482,13 +539,27 @@ body[data-rubrique="home"]{
 		a:hover h1, a:hover h2, a:hover h3{
 			color: $rose;
 		}
+		@media #{$large-up}{
+			.col-1{
+				margin-left:4px;
+				padding-right: 30px;
+			}
+			.col-2{
+				padding-left: 0;
+				margin-left:-13px;
+			}
+			.col-3{
+				padding-left: 45px;
+			}
+		}
 	}
 	.dates-info-wrapper{
 		color: $rose;
 		margin-top: 20px;
 	}
 	h4{
-		font-size:21px;
+		font-size:21px !important;
+		color: #000;
 	}
 	h3{
 		font-size: 36px;
@@ -711,7 +782,7 @@ main{
 		.prog{
 			margin-bottom: $marginBig;
 			&:hover{
-				h3{color: rgb(250, 75, 200);}
+				h3{color: $rose;}
 			}
 			h3,h4{
 				cursor: pointer;
@@ -990,8 +1061,13 @@ body[data-template="accueils"]{
 
 // champ d'inscription newsletter (home)
 .newsletter{
-	margin-top: 15px;
 	@include textCourant;
+	.open-newsletter-form{
+		border: 1px solid $rose;
+		padding: 10px;
+		text-align:center;
+		margin-bottom: 5px;
+	}
 	h5{
 		font-size:0.9rem;
 		margin-bottom:0;
@@ -1107,15 +1183,34 @@ input[type="checkbox"]{
 
 
 // ------------ jeunes gens modernes -------
-// encart
+// encart actif
+// .encart-jgm{
+// 	position:fixed; 
+// 	z-index: 1000; 
+// 	width: 100px;
+// 	a{
+// 		font-size: 50px;
+// 		@include degaulle;
+// 		color: $rose;
+// 		// color: rgb(138,141,143);
+// 		&:hover{
+// 			// color: rgb(138,141,143);
+// 			color: $rose;
+// 		}
+// 	}
+// }
+
+// encart fixed
 .encart-jgm{
 	position:fixed; 
 	z-index: 1000; 
 	width: 100px;
+	left: 15px;
+	top: 150px;
 	a{
-		font-size: 50px;
+		font-size: 20px;
 		@include degaulle;
-		color: $rose;
+		color: #FFF;
 		// color: rgb(138,141,143);
 		&:hover{
 			// color: rgb(138,141,143);
@@ -1158,6 +1253,9 @@ body[data-template='jgm']{
 			font-family: $font-family;
 			text-transform: initial;
 		}
+		.actus, .archives-gallerie{
+			margin-top: 90px;
+		}
 		.col-wrapper{
 			justify-content: space-between;
 			flex-wrap: wrap;
@@ -1166,7 +1264,7 @@ body[data-template='jgm']{
 			margin-bottom: 60px;
 
 			& > div{
-				height: 400px;
+				// height: 400px;
 				background: #FFF; 
 				border: 2px solid $rose;
 				padding: 15px 10px; 
@@ -1191,7 +1289,30 @@ body[data-template='jgm']{
 			}
 		}
 	}
+	.arrow-back{
+		background-color: #FFF;
+		padding: 0 10px;
+		line-height: 0;
+		top:165px;
+		border: 1px solid #000;
+	}
 
+}
+
+nav .menu-top-list > li.flottant{
+	position:fixed; 
+	z-index: 1000; 
+	width: 100px;
+	&::before{
+		content:"";
+	}
+	a{
+		font-size: 50px;
+		color: $rose;
+		&:hover{
+			color: $rose;
+		}
+	}
 }
 
 

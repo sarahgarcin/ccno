@@ -1,0 +1,33 @@
+Title: test
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Dates: 
+
+----
+
+Type: 
+
+----
+
+Displaydates: oui
+
+----
+
+Displaytitle: oui
+
+----
+
+Personne: 
+
+----
+
+Bio: 

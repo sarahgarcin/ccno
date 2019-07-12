@@ -1,0 +1,38 @@
+Title: Brunch - <i>Pierre et le Loup</i>
+
+----
+
+Type: 
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Displaydates: non
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: 'Brunch - <i>Pierre et le Loup</i>'
+  type: Atelier de danse
+  personne: ""
+  from: 2019-12-14
+  to: 2019-12-14
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

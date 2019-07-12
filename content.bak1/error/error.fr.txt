@@ -1,9 +1,0 @@
-Title: Erreur
-
-----
-
-Intro: 
-
-----
-
-Text: Erreur, cette page n'existe pas. <br> Mais vous pouvez danser.

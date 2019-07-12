@@ -17,7 +17,14 @@
 					<img src="<?php echo $imageback->url()?>" alt="<?php echo $page->title()?>">
 				</div>
 			<?php endif;?>
-			<?php snippet('player') ?>
+			<?php //snippet('player') ?>
+			<?php if($page->parent()->intendedTemplate() == 'jgm'):?>
+				<div class="arrow-back">
+					<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
+						<
+					</a>
+				</div>
+			<?php endif; ?>
 			<h1 class="small-9 medium-7 large-7">
 				<?= $page->title()->html() ?>	
 			</h1>
@@ -25,8 +32,9 @@
 			<p><?= $page->infos()->kt() ?>	</p>
 			<?php snippet('icone-page')?>
 			<div class="row col-wrapper">
-				<div class='col-1 large-5 columns'>
-					<h4>jeudi 31 janvier</h4>
+				<?php if($page->col1()->isNotEmpty()):?>
+					<div class='col-1 large-5 columns'>
+					<h4><?php echo $page->colonne1titre()->html()?></h4>
 					<?php foreach($page->colonne1()->split(',') as $col1):?>
 						<?php $col1 =  $page->find($col1);?>
 						<?php if($col1->isVisible()):?>
@@ -56,9 +64,11 @@
 						</a>
 						<?php endif ?>
 					<?php endforeach ?>
-				</div>
-				<div class='col-2 large-5 columns'>
-					<h4>vendredi 1er février</h4>
+					</div>
+				<?php endif; ?>
+				<?php if($page->col2()->isNotEmpty()):?>
+					<div class='col-2 large-5 columns'>
+					<h4><?php echo $page->colonne2titre()->html()?></h4>
 					<?php foreach($page->colonne2()->split(',') as $col2):?>
 						<?php $col2 =  $page->find($col2);?>
 						<?php if($col2->isVisible()):?>
@@ -88,46 +98,86 @@
 						</a>
 						<?php endif ?>
 					<?php endforeach ?>
-				</div>
-				<div class='col-3 large-5 columns'>
-					<h4>samedi 2 février</h4>
-					<?php foreach($page->colonne3()->split(',') as $col3):?>
-						<?php $col3 =  $page->find($col3);?>
-						<?php if($col3->isVisible()):?>
-							<a href="<?php echo $col3->url()?>" title="">
-						<?php endif;?>
-							<?php foreach($col3->dates()->toStructure() as $date):?>
-								<p class="element">
-									<!-- heure -->
-									<span>
-										<?php if($date->hours()->isNotEmpty()):?>
-												<?php echo $date->hours()->html()?>
-										<?php endif ?>
-									</span>
-									<!-- lieu -->
-									<?php echo $date->place()->html()?>
-									<br>
-									<?php if($col3->isVisible()):?>
-										<!-- type -->
-										<?php echo $date->type()->html();?>
+					</div>
+				<?php endif; ?>
+				<?php if($page->col2()->isNotEmpty()):?>
+					<div class='col-3 large-5 columns'>
+						<h4><?php echo $page->colonne3titre()->html()?></h4>
+						<?php foreach($page->colonne3()->split(',') as $col3):?>
+							<?php $col3 =  $page->find($col3);?>
+							<?php if($col3->isVisible()):?>
+								<a href="<?php echo $col3->url()?>" title="">
+							<?php endif;?>
+								<?php foreach($col3->dates()->toStructure() as $date):?>
+									<p class="element">
+										<!-- heure -->
+										<span>
+											<?php if($date->hours()->isNotEmpty()):?>
+													<?php echo $date->hours()->html()?>
+											<?php endif ?>
+										</span>
+										<!-- lieu -->
+										<?php echo $date->place()->html()?>
 										<br>
-										<!-- titre -->
-										<?php echo $date->title()->html(); ?>
-									<?php endif ?>
-								</p>
-							<?php endforeach;?>
-						<?php if($col3->isVisible()):?>
-						</a>
-						<?php endif ?>
-					<?php endforeach ?>
-				</div>
+										<?php if($col3->isVisible()):?>
+											<!-- type -->
+											<?php echo $date->type()->html();?>
+											<br>
+											<!-- titre -->
+											<?php echo $date->title()->html(); ?>
+										<?php endif ?>
+									</p>
+								<?php endforeach;?>
+							<?php if($col3->isVisible()):?>
+							</a>
+							<?php endif ?>
+						<?php endforeach ?>
+					</div>
+				<?php endif; ?>
 			</div>
 			<?php if($page->text()->isNotEmpty()):?>
 				<div class='edito'>
-					<h2>Edito</h2>
+					<h1>Edito</h1>
+					<br>
 					<?php echo $page->text()->kt()?>
 				</div>
 			<?php endif ?>
+			<?php if($page->actus()->isNotEmpty()):?>
+				<div class='actus'>
+					<h1>Actualités</h1>
+					<br>
+					<?php echo $page->actus()->kt()?>
+				</div>
+			<?php endif ?>
+			<div class="archives-gallerie">
+				<?php 
+				function findJGMchildren($children){
+					foreach($children as $child):
+						if($child->intendedTemplate() == 'jgm'){
+							return true;
+						}
+					endforeach; 
+				}?>
+				<?php if (findJGMchildren($page->children())):?>
+					<h1>Anciennes éditions</h1>
+				
+					<ul class="row">
+					<?php foreach($page->children()->filterBy('intendedTemplate', 'jgm') as $child):?>
+						<li class="small-4">
+							<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
+								<figure>
+								<?php $affiche = $child->affiche()->toFile();?>
+									<img src="<?php echo $affiche->url()?>" alt="<?php echo $child->title()?>">
+									<figcaption><?php echo $child->title()->html()?></figcaption>
+									
+								</figure>
+							</a>
+						</li>	
+						
+					<?php endforeach ?>
+					</ul>
+					<?php endif; ?>
+			</div>
 		
 		</div>
 	</main>

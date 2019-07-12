@@ -11,9 +11,13 @@
 
 	foreach($projets as $projet):
 		$project = $site->page($projet);
-		$url = $project->url();
 		if($project->dates()->isNotEmpty()):
 			foreach($project->dates()->toStructure() as $dates):
+				if($dates->link()->isNotEmpty()):
+					$url = $dates->link();
+				else:
+					$url = $project->url();
+				endif;
 				if($dates->agenda() != 'non'):
 					$i++;
 					$from = $dates->from();

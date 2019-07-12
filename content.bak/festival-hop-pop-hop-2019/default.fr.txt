@@ -1,0 +1,47 @@
+Title: Festival Hop Pop Hop
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Dates: 
+
+- 
+  title: Hop Pop Hop
+  type: Festival
+  personne: ""
+  from: 2019-09-13
+  to: 2019-09-14
+  hours: ""
+  place: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: '<i>Red Line Crossers</i>'
+  type: Performance
+  personne: ""
+  from: 2019-09-14
+  to: 2019-09-14
+  hours: 15h et 17h30
+  place: Place du Martroi, Orléans
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: '<i>Collection Trombinoscope</i>'
+  type: Exposition
+  personne: ""
+  from: 2019-09-13
+  to: 2019-10-04
+  hours: ""
+  place: CCNO
+  link: ""
+  agenda: non
+  home: ""

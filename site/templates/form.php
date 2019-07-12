@@ -84,7 +84,7 @@
 				</div>
 			</div>
 			<?php //if no errors carry on
-		    if($form->success()){
+		    if($form->success()):
 		    	$jsonfile = kirby()->roots()->site().'/messages.log'; 
 		    	$csvfile = kirby()->roots()->site()."/demandes-accueil-studio.csv";
 
@@ -101,9 +101,9 @@
 					// }
 
 					// fclose($fp);	
-
-
-				}
+				else: 
+					snippet('uniform/errors', ['form' => $form]);
+				endif; 
 			?>
 		</div>
 	</main>

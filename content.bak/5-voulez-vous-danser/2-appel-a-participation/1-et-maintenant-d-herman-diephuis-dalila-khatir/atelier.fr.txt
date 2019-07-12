@@ -1,0 +1,80 @@
+Title: <span class='orleans'>Et maintenant quelque chose de complètement diﬀérent</span class> <br>d'Herman Diephuis & Dalila Khatir
+
+----
+
+Type: Pour les amateurs :
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+## Lundi 13 mai, 19h
+### Apéro de présentation par les artistes
+## Samedi 18, 14h - 19h, et dimanche 19 mai, 11h - 18h
+### Ateliers de recherche et de création
+## Jeudi 23 mai, 19h 
+### (link: http://www.ccn-orleans.com/dans-les-studios/accueil-studio/et-maintenant-quelque-chose-de-completement-different text:Ouverture publique) de <i>Et maintenant quelque chose de complètement diﬀérent</i> (répétition à prévoir pour les participants)
+<br>Ateliers pour 16 personnes, de tous âges, aucune pratique de la danse requise.
+Gratuit sur inscription
+(image:herman-diephuis-portrait-bd-marc-domage.jpg)
+© Marc Domage
+
+« Depuis le début de ma compagnie les projets avec des amateurs ont eu une place importante dans mon travail et ces moments de partage et de rencontre ont fortement marqués mon parcours artistique. Il est important pour moi que ma nouvelle création <i>Et maintenant quelque chose de complètement diﬀ érent</i>, qui est pensée comme une ﬁction autobiographique, puisse engendrer de nouvelles rencontres. Dans ce duo que j’interprète avec la chanteuse/performeuse Dalila Khatir nous parlons de l’âge, du corps vieillissant, de la culture, de la société, de nos histoires et de la ﬁn. Nous voudrions qu’un groupe d’amateurs intervienne à un moment précis du spectacle pour sortir le duo de son huis clos et pour ﬁnir la pièce en partageant la scène avec des personnes qui ont d’autres âges, d’autres corps, d’autres histoires que les nôtres, mais avec qui nous avons forcément le même destin en commun.
+Ce travail ne nécessite aucune technique de danse ni d’expérience de la scène, tout le monde peut y participer à sa façon avec son âge et son vécu. 
+Ensemble nous chanterons du Véronique Sanson, nous inventerons des duos endormis et nous danserons nos portraits à reculons…   » 
+— Herman Diephuis
+<br>
+Conception, chorégraphie et interprétation Dalila Khatir, Herman Diephuis <br>Création lumière Sylvie Mélis<br>Costumes Marion Moinet
+
+----
+
+Displaydates: non
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: 'Création avec des amateurs <i>Et maintenant quelque chose de...</i> Herman Diephuis & Dalila Khatir'
+  type: Apéro de présentation
+  personne: ""
+  from: 2019-05-13
+  to: 2019-05-13
+  hours: 19h
+  place: au CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: "Ateliers de recherche et de création avec les amateurs de <I>Et maintenant quelque chose de...</i> d'Herman Diephuis et Dalila Khatir"
+  type: Création avec amateurs
+  personne: ""
+  from: 2019-05-18
+  to: 2019-05-19
+  hours: '11h - 18h'
+  place: au CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: "<i> Et maintenant quelque chose de complètement différent</i> d'Herman Diephuis et Dalila Khatir"
+  type: Ouverture publique
+  personne: ""
+  from: 2019-05-23
+  to: 2019-05-23
+  hours: 19h
+  place: au CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

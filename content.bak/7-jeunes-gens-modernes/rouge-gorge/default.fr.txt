@@ -1,0 +1,36 @@
+Title: Rouge Gorge
+
+----
+
+Icone: francis-2.png
+
+----
+
+Text: 
+
+# Concert (synth pop, chanson)
+# Rouge Gorge 
+## Jeudi 31 janvier, 20h45
+# au CCNO
+
+(image:photo-robin-flou-copie.jpg)
+
+Avec un clavier et une boite à rythme, Rouge Gorge échafaude des ritournelles bancales qui rappellent autant la coldwave européenne du début des années 80, pour le spleen et les sonorités synthétiques, que l'indie pop française de Dominique A pour la liberté de ton et la justesse des textes. Un peu de soleil (zouk, rhumba) illumine sporadiquement ses chansons tour à tour dansantes, mélancoliques, drôles, coquines.
+
+Photo © Rouge Gorge
+
+----
+
+Dates: 
+
+- 
+  title: Rouge Gorge
+  type: Concert (synth pop, chanson)
+  personne: ""
+  from: 2019-01-31
+  to: 2019-01-31
+  hours: 20h45
+  place: au CCNO
+  link: ""
+  agenda: non
+  home: ""

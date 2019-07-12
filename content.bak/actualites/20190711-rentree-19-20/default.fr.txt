@@ -1,0 +1,105 @@
+Title: Rentrée 19-20
+
+----
+
+Icone: pictogrammes-04.png
+
+----
+
+Text: 
+
+(image:rdv-rentree-2019-v42.jpg flou:non)
+# Événements
+<br>
+### Festival Hop Pop Hop
+##### Vendredi 13 et samedi 14 septembre 2019
+ <br> 
+************** NOUVEAU **************
+### Performance Red Line Crossers
+##### Samedi 14 septembre 2019
+Appel à participation en cours : (link: http://hoppophop.fr/inscription-projet-participatif-2019 text: hoppophop.fr/inscription-projet-participatif-2019)
+ <br> 
+************** NOUVEAU **************
+### Journées européennes du patrimoine
+##### Samedi 21 et dimanche 22 septembre 2019, 14h à 18h
+ <br> 
+************** NOUVEAU **************
+### Événement de rentrée : La Bulle #2
+##### Samedi 5 octobre 2019, 14h à 20h, place du Martroi
+<br>
+### Ouvertures publiques
+##### Première ouverture publique : vendredi 8 novembre 2019
+<br>
+
+\--------------------------------------------------------------
+# Ateliers, cours, formations... <br> Tous niveaux
+ <br>
+# Pour les enfants et adolescents : 
+ <br>
+### Cours du mercredi après-midi Dancing kids
+Niveau éveil 5/6 ans : mercredis 14h-15h
+Niveau initiation 7/9 ans : mercredis 15h-16h
+Niveau ado 10/12 ans : mercredis 16h-17h
+##### Premier mercredi : 11 septembre 2019
+(cours d’essai 10 €) Inscription annuelle : 190 €
+<br> 
+************** NOUVEAU **************
+### Pour les ados : Week-end hip hop
+Week-end d'immersion autour des différentes danses hip hop pour les adolescents avec des danseurs professionnels.
+##### Du vendredi 18 au dimanche 20 octobre 2019
+<br> 
+************** NOUVEAU **************
+### Pour les ados : Auditions / ateliers
+Le CCNO recherche 12 adolescents ayant une très bonne pratique de la danse et âgés de 14 à 18 ans pour la transmission de Jours étranges, pièce de Dominique Bagouet sur la musique des Doors. Les ateliers auront lieu en 2020 pendant les congés scolaires pour une présentation publique au Théâtre d’Orléans en juin 2020.
+##### Samedi 16 et dimanche 17 novembre
+<br> 
+# Pour les adultes et adolescents : 
+<br> 
+### Ateliers lundi after work 
+de 19h à 21h 
+### Ateliers samedi brunch
+de 11h à 13h 
+
+Plongez dans l’univers d’un chorégraphe invité au CCNO ! Le rendez-vous du samedi est prolongé par un échange autour d’un brunch !
+Avec les équipes artistiques en résidence au CCNO ou programmées à la Scène nationale.
+Tarif : 10€ / abonné Scène nationale 8€
+##### Premier lundi : novembre 2019
+##### Premier samedi : 2 novembre 2019
+<br> 
+### Les cours du samedi matin 
+Tous les samedis, de 11h à 13h
+##### Premier samedi : 21 septembre 2019 
+(cours d'essai gratuit)
+Inscription semestrielle : 100 € (11 cours) 
+<br> 
+### Formation pour les enseignants
+Avec Marion Blondeau, danseuse et chorégraphe Cette formation a pour but d'initier les enseignants dans leur appréhension du champ chorégraphique (ateliers, spectacles).
+##### Inscription avant le 3 novembre 2019
+Formation payante
+
+----
+
+Dates: 
+
+- 
+  title: 'Rentrée 2019 - 2020 au CCNO'
+  type: Rentrée
+  personne: ""
+  from: 2019-08-26
+  to: 2019-08-26
+  hours: ""
+  place: ""
+  link: ""
+  agenda: oui
+  home: col1
+- 
+  title: Rentrée en fête
+  type: Événement
+  personne: ""
+  from: 2019-09-08
+  to: 2019-09-08
+  hours: 11h -19h
+  place: place du Martroi
+  link: ""
+  agenda: oui
+  home: ""

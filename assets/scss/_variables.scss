@@ -5,7 +5,7 @@ $font-family: "directrice", serif;
 $orleans-font: "orleans", sans-serif;
 
 // color
-$rose: rgb(250, 75, 200);
+$rose: rgb(255, 84, 153);
 //$roseClair: rgb(253, 224, 234);
 $roseClair: #F5F5F5;
 $jaune: yellow;
@@ -46,26 +46,26 @@ $p: 1.25rem;
 	font-size: 28px;
 	line-height: 1;
 	margin: 0;
-	color: #000
+	color: #000;
 }
 
 @mixin H4{
-	font-size: 28px;
+	font-size: 28px !important;
 	line-height: 1;
-	color: #000;
+	color: $rose;
 	margin: 0;
 }
 
 @mixin H5{
 	font-size: $p;
 	line-height: 1;
-	color: #000;
+	color: $rose;
 	margin: 0;
 }
 
 @mixin H6{
-	font-size: $p;
-	line-height: 1;
+	font-size: 1rem;
+	line-height: 1.2;
 	color: #000;
 	margin: 0;
 }

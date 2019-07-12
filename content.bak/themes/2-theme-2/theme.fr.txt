@@ -1,16 +1,32 @@
-Title: Thème 2
+Title: En résidence : <br> Marion Carriau <br> du 8 au 19 octobre
 
 ----
 
-Icone: 
+Icone: pictogrammes-75.png
 
 ----
 
-Thumb: 52-2f3630cb25.jpg
+Thumb: marion-carriau.png.jpg
 
 ----
 
 Text: 
+
+(image:marion-carriau.png.jpg)
+#### jeudi 11 octobre, 19h
+# Ouverture publique, Entrée libre au CCNO
+
+<br>
+
+#### lundi 15 octobre, 19h–21h
+# Atelier after work avec Marion Carriau
+# Tarif : 10€ / abonné SNO : 8€
+
+<br>
+
+#### vendredi 14 décembre, 20h30
+# Spectacle au Théâtre d'Orléans
+# Réservations auprès de la Scène nationale. Tarifs : 5€ à 10€
 
 ----
 

@@ -1,0 +1,80 @@
+Title: <i>Installation vidéo de Bettina Blanc Penther</i>
+
+----
+
+Icone: 
+
+----
+
+Personne: Bettina Blanc Penther
+
+----
+
+Text: 
+
+## du lundi 27 mai <br> au vendredi 28 juin
+## au CCNO
+<br> <i>Too much Tenderness </i>(2017)
+<i>I am a Believer </i> (2018)
+Entrée libre
+
+(slider:bettina)
+Photos extraites des œuvres vidéos <i>Too much Tenderness </i> et <i>I am a Believer </i>
+© Bettina Blanc Penther
+
+Bettina Blanc Penther est présente à Orléans en tant qu’interprète du projet <i>Footballeuses</i> de Mickaël Phelippeau et de <i>Quietos</i> de Marcela Santander Corvalán. Diplômée de l’École nationale supérieure des Arts Décoratifs de Paris et du Fresnoy – Studio national des arts contemporains, Bettina Blanc Penther présente deux œuvres vidéos de son travail personnel au CCNO : <i>I am a Believer </i> (2018) et <i>Too much Tenderness </i>(2017). Chacune est issue de poèmes qu’elle écrit et qui se substituent peu à peu par des images, les corps sont silencieux mais sont nourris des mots.
+
+----
+
+Dates: 
+
+- 
+  title: 'Installation vidéo de Bettina Blanc Penther, interprète de <i>Footballeuses</i> de Mickaël Phelippeau et <i>Quietos</i> de Marcela Santander Corvalan'
+  type: Exposition
+  personne: ""
+  from: 2019-05-27
+  to: 2019-06-28
+  hours: ""
+  place: au CCNO
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: 'Installation vidéo <i>Too much Tenderness </i> et <i>I am a Believer</i> par Bettina Blanc Penther'
+  type: Visite commentée
+  personne: ""
+  from: 2019-06-19
+  to: 2019-06-19
+  hours: 18h30
+  place: au CCNO
+  link: ""
+  agenda: oui
+  home: ""
+- 
+  title: 'Interprète dans <i>Footballeuses</i> de Mickaël Phelippeau'
+  type: Spectacle
+  personne: ""
+  from: 2019-06-15
+  to: 2019-06-15
+  hours: 20h30
+  place: "au Théâtre d'Orléans"
+  link: >
+    https://www.scenenationaledorleans.fr/spectacles/footballeuses-59.html?article=1918
+  agenda: non
+  home: ""
+- 
+  title: 'Interprète dans <i>Quietos</i> de Marcela Santander Corvalán'
+  type: Ouverture publique
+  personne: ""
+  from: 2019-06-27
+  to: 2019-06-27
+  hours: 19h
+  place: au CCNO
+  link: >
+    http://www.ccn-orleans.com/dans-les-studios/accueil-studio/quietos
+  agenda: non
+  home: ""
+
+----
+
+Bio: 

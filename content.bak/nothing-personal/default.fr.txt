@@ -1,0 +1,70 @@
+Title: Exposition : Lucinda Childs, Nothing personal (1963–1981)
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+## Exposition 
+## du mercredi 28 novembre au vendredi 21 décembre
+# au CCNO et au Théâtre d'Orléans
+<br>
+# Vernissage
+## mercredi 28 novembre, 18h30  
+# au CCNO 
+(suite du parcours possible au Théâtre d'Orléans) <br>
+Entrée libre
+
+(slider:lucinda-childs-nothing-personalmarcdomage_)
+Lucinda Childs, Nothing personal (1963-1979), CN D automne 2016 © Marc Domage
+
+Une exposition du CN D Centre national de la Danse
+Commissaire Lou Forster
+En collaboration avec la Scène nationale
+
+*Nothing personal* propose un parcours (film, exposition, conférence) autour de l’oeuvre de la chorégraphe américaine Lucinda Childs. Son nom est associé à deux moments décisifs dans l’émergence de la danse postmoderne, le Judson Dance Theater et le minimalisme. Dans les années 1960, la chorégraphe prend part aux expérimentations du Judson en développant un langage performatif qui associe avec ironie des objets du quotidien, des gestes précis et des récits ordinaires. À la fin des années 1960, elle propose un nouveau style de danse, souvent caractérisé de minimaliste ou de répétitif. En introduisant des changements imperceptibles dans les phrases dansées, Lucinda Childs questionne la perception du mouvement et du corps dans l’espace et propose, selon les termes de Susan Sontag, « un réveil des sens ».
+
+Horaires du CCNO : lundi au vendredi 9h – 12h30
+et 14h – 17h30, samedi 11h – 13h
+Horaires du Théâtre d'Orléans : mardi au vendredi
+9h – 19h, samedi 13h – 19h et les soirs de spectacle
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Lucinda Childs, Nothing personal (1963 – 1981)</i>'
+  type: Vernissage
+  personne: ""
+  from: 2018-11-28
+  to: 2018-11-28
+  hours: 18h30
+  place: CCNO puis Théâtre d’Orléans
+  link: ""
+  home: ""
+  agenda: oui
+- 
+  title: '<i>Lucinda Childs, Nothing personal (1963 – 1981)</i>'
+  type: Exposition
+  personne: ""
+  from: 2018-11-29
+  to: 2018-12-21
+  hours: ""
+  place: "CCNO et Théâtre d'Orléans"
+  link: ""
+  home: ""
+- 
+  title: "Conférence avec Lou Forster, commissaire de l'exposition <i>Lucinda Childs, Nothing personal (1963–1981)</i>"
+  type: Conférence
+  personne: ""
+  from: 2018-12-19
+  to: 2018-12-19
+  hours: 19h
+  place: FRAC Centre-Val de Loire
+  link: ""
+  agenda: oui
+  home: ""

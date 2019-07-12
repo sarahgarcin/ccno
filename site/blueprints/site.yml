@@ -7,26 +7,27 @@ fields:
   title:
     label: Title
     type:  text
-
   logo:
     label: Logo
     type:  text
-
   shortcut:
     label: Petit Logo
     type:  text
   author:
     label: Author
     type:  text
-
   description:
     label: Description
     type:  textarea
-    
   copyright:
     label: Copyright
     type:  textarea
-
+  flottant:
+    label: Activer ou non les éléments de menu flottant pour la Bulle et Jeunes Gens Modernes
+    type: checkboxes
+    options: 
+      bulle: La bulle
+      jgm: Jeunes Gens Modernes
   pdf:
     label: Pdfs à télécharger
     type: structure

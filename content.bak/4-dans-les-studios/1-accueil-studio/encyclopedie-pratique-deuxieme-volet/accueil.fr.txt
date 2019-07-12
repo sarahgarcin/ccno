@@ -1,0 +1,33 @@
+Title: <i>Encyclopédie pratique - Deuxième volet</i>
+
+----
+
+Icone: 
+
+----
+
+Personne: 
+
+----
+
+Text: 
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Encyclopédie pratique - Deuxième volet</i>, Lenio Kaklea'
+  type: Ouverture publique
+  personne: ""
+  from: 2019-11-08
+  to: 2019-11-08
+  hours: 19h
+  place: CCNO
+  link: ""
+  agenda: non
+  home: ""
+
+----
+
+Bio: 

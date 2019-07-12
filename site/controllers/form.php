@@ -104,6 +104,8 @@ return function ($site, $pages, $page)
 
     ]);
 
+    
+
     if (r::is('POST')) {
         $form->emailAction([
             'to' => 'amphaytran@ccn-orleans.com',

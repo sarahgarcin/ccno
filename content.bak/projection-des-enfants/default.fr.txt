@@ -1,0 +1,36 @@
+Title: Projection : <spanclass='orleans'>des enfants</spanclass>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+# de Sophie Laly, réalisatrice 
+#### mardi 13 novembre, 19h
+## au CCNO, en présence de la réalisatrice et artiste vidéaste
+Film documentaire (2013) Durée 60 min
+Gratuit sur réservation
+
+<iframe src="https://player.vimeo.com/video/108571913" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<br>Extrait de la pièce <i>enfant</i> de Boris Charmatz
+
+Sur le principe du montage cut, ou à l’image des énergies enfantines, ce film-documentaire propose un regard éclaté sur ce qu’est le travail des enfants danseurs de la pièce *enfant*, spectacle chorégraphique de Boris Charmatz. Tourné pendant les représentations à Lisbonne et à Paris en 2011, le film compose un portrait de ces enfants âgés de 6 à 12 ans, lors des temps d’échauffement, de répétition et de représentation.
+
+----
+
+Dates: 
+
+- 
+  title: '<i>des enfants</i>, Sophie Laly (film)'
+  type: Projection
+  personne: ""
+  from: 2018-11-13
+  to: 2018-11-13
+  hours: 19h
+  place: CCNO
+  link: ""
+  home: ""

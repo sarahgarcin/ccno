@@ -1,0 +1,49 @@
+Title: Atelier du spectateur <br>autour de <span class='orleans'>Berezina </span class> <br>création de David Wampach
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+Cet atelier du spectateur vous permet de découvrier, regarder et échanger avec une équipe artistique en résidence.
+
+Rendez-vous :
+#### Jeudi 6 décembre, 18h30, mardi 11 décembre, 18h30 et vendredi 14 décembre, 19h
+(dates et horaires sous réserve).
+Durée : 1h environ
+<br>
+En résidence de création pour son projet Bérézina (titre provisoire), David Wampach et son équipe souhaitent inviter un groupe de spectateurs sous forme de rendez-vous privilégiés et avant l’ouverture publique : en fin de journée de répétitions, ces participants sont les seuls regardeurs du travail et discutent, interrogent, critiquent, exercent leur regard dans un échange direct avec les artistes.
+<br> 
+Gratuit, engagement sur tous les rendez-vous
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: 'Autour de la création <i>Berezina</i> (titre provisoire) de David Wampach'
+  type: Atelier du spectateur
+  personne: ""
+  from: 2018-12-06
+  to: 2018-12-14
+  hours: 18h30
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Type: Pour les amateurs et les professionnels :
+
+----
+
+Displaytitle: oui

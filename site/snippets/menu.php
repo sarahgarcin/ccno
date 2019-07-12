@@ -11,7 +11,7 @@
 	</div>
 	<nav class="module--menu--mainNav medium-18">
 		<?php $pagesLength = $pages->visible()->count();
-		$halfPagesLength = intval($pagesLength/2);
+		$halfPagesLength = intval($pagesLength/2.5);
 		?>
 		<div class="row">
 			<div class="site-logo small-18 medium-5 large-4 columns hide-for-small-only">
@@ -45,11 +45,10 @@
 			      </li>
 				<?php endforeach ?>
 			</ul>
-			<ul class="menu-top-list menu-col-right small-18 medium-5 large-5 columns">
-		    <?php foreach($pages->visible()->slice($halfPagesLength,$pagesLength) as $p): ?>
+			<ul class="menu-top-list menu-col-middle small-18 medium-4 large-5 columns">
+		    <?php foreach($pages->visible()->slice($halfPagesLength,$halfPagesLength) as $p): ?>
 			    	<li class="<?= r($p->isOpen(), 'active') ?>">
 			        <?php echo $p->title()->html() ?>
-			        <!-- <ul class="module--menu--submenu" <?php if(getRubriqueFromUri($page->uri()) == 'voulez-vous-danser'):?> style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>" <?php endif;?> data-color="<?php echo $site->index()->find('voulez-vous-danser')->color()?>"> -->
 			        <ul class="module--menu--submenu">
 								<?php foreach($p->children()->visible() as $child): ?>
 							  	<li>
@@ -62,9 +61,29 @@
 			      </li>
 				<?php endforeach ?>
 			</ul>
-			<div class="newsletter small-18 medium-4 large-push-1 large-4 columns end">
-<!-- 				<h5>Inscription newsletter</h5> -->
-			<ul class="menu-top-list archives">
+			<ul class="menu-top-list menu-col-right small-18 medium-5 large-5 columns">
+		    <?php foreach($pages->visible()->slice($halfPagesLength+3,$halfPagesLength) as $p): ?>
+			    	<li class="<?php if($p->uri()=='jeunes-gens-modernes'):echo 'jgm'; if(flottant($site->flottant())=='jgm'): echo ' flottant';endif; endif;?> <?php if($p->uri()=='la-bulle'):echo 'bulle'; if(flottant($site->flottant())=='bulle'): echo ' flottant';endif; endif;?> <?= r($p->isOpen(), 'active') ?>">
+			        <?php if($p->hasVisibleChildren()):?>
+			        	<?php echo $p->title()->html() ?>
+			        <?php else: ?>
+			        	<a href="<?php echo $p->url()?>" title="<?php echo $p->title()?>">
+			        		<?php echo $p->title()->html() ?>
+			        	</a>
+			        <?php endif;?>
+			        <?php if($p->hasChildren()):?>
+				        <ul class="module--menu--submenu">
+									<?php foreach($p->children()->visible() as $child): ?>
+								  	<li>
+								    	<a class="<?= r($child->isOpen(), 'active') ?>" href="<?php echo $child->url() ?>">
+								      	<?php echo $child->title()->html() ?>
+								    	</a>
+								  	</li>
+								  <?php endforeach ?>
+								</ul>
+							<?php endif;?>
+			      </li>
+				<?php endforeach ?>
 				<li>
 					Archives
 					<ul class="module--menu--submenu">
@@ -73,16 +92,21 @@
 				      	2017-2018
 				    	</a>
 				  	</li>
+				  	<li>
+				  		<a href="http://www.ccn-orleans.com/archives-2018-2019" title="">2018-2019</a>
+				  	</li>
 					</ul>
 				</li>
-				<li class="open-newsletter-form">
-					Recevoir la newsletter
-					<!-- <a href="https://my.sendinblue.com/users/subscribe/js_id/2x7ls/id/5" title="" target="_blank">Recevoir la newsletter</a> -->
-				</li>
 			</ul>
-			<?php //snippet('subscribe')?>
-			<?php snippet('social');?>
-		</div>
+
 		</div>
 	</nav>
 </header>
+
+<?php function flottant($field){
+	foreach ($field->split() as $category):
+  	return $category;
+  endforeach;
+}
+
+

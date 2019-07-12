@@ -10,6 +10,11 @@
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
 		
 		<div class="main-content">
+			<div class="arrow-back">
+				<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
+					<
+				</a>
+			</div>
 				<h1 class="small-9 medium-7 large-7 orleans"><?= $page->title()->html() ?></h1>
 				<?php snippet('icone-page')?>
 				<div class="text icones-wrapper-text small-18 medium-16 large-16 xlarge-10">

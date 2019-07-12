@@ -1,0 +1,56 @@
+Title: Atelier du spectateur <br>autour de <span class='orleans'>Berezina </span class> <br>création de David Wampach
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+## Jeudi 6 décembre, 18h30 <br> Mardi 11 décembre, 18h30 <br> Vendredi 14 décembre, 19h
+Avec l'équipe artistique de *Berezina*
+Durée : 1h environ
+Gratuit sur inscription, engagement sur tous les rendez-vous
+
+En résidence de création pour son projet (link: http://www.ccn-orleans.com/dans-les-studios/accueil-studio/berezina text: *Berezina* (titre provisoire)), David Wampach et son équipe souhaitent inviter un groupe de spectateurs sous forme de rendez-vous privilégiés et avant l’ouverture publique : en fin de journée de répétitions, ces participants sont les seuls regardeurs du travail et discutent, interrogent, critiquent, exercent leur regard dans un échange direct avec les artistes.
+
+(image:martin-colombet-140.jpg)
+© Martin Colombet
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: 'Autour de la création <i>Berezina</i> (titre provisoire) de David Wampach'
+  type: Atelier du spectateur
+  personne: ""
+  from: 2018-12-06
+  to: 2018-12-14
+  hours: 18h30
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Type: Pour les amateurs et les professionnels :
+
+----
+
+Displaytitle: oui
+
+----
+
+Icone: pictogrammes-25.png
+
+----
+
+Displaydates: non

@@ -1,0 +1,38 @@
+Title: <i>Jours étranges</i>
+
+----
+
+Type: 
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Displaydates: oui
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Jours étranges</i>, Dominique Bagouet'
+  type: Auditions
+  personne: ""
+  from: 2019-11-16
+  to: 2019-11-17
+  hours: ""
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

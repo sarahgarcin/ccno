@@ -1,0 +1,51 @@
+Title: <span class='orleans'>We can be heroes</span class> <br>performance
+
+----
+
+Summary: 
+
+L’Astrolabe, La Scène nationale d'Orléans, le CCNO et le CDNO s’associent pour proposer le projet We Can Be Heroes imaginé par la compagnie Groupenfonction. Cette performance collective liant danse, musiques actuelles et expression corporelle accompagne le festival Hop Pop Hop depuis sa création et revient cette année pour un dernier tour de piste. Pour réaliser cette performance nous recherchons 40 héros qui raviront festivaliers et passants le 15
+septembre prochain sur le parvis de la cathédrale d’Orléans. Pour participer, pas besoin d’être un pro de la danse ou du chant, il faut être disponible sur l’ensemble des temps de préparation, prendre connaissance des textes de la
+nouvelle playlist du projet,
+
+----
+
+Text: 
+
+### Ateliers de préparation
+#### Du samedi 8 au mardi 11 septembre au Théâtre d’Orléans
+### Performance
+#### Samedi 15 septembre, 15h et 18h, parvis de la Cathédrale
+### Gratuit sur inscription
+(slider:018a)
+Dans le cadre du festival Hop Pop Hop de l'Astrolabe L’Astrolabe, La Scène nationale d'Orléans, le CCNO et le CDNO s’associent pour proposer le projet We can be heroes imaginé par la compagnie Groupenfonction. Cette performance collective liant danse, musiques actuelles et expression corporelle accompagne le festival Hop Pop Hop depuis sa création et revient cette année pour un dernier tour de piste. Pour réaliser cette performance nous recherchons 40 héros qui raviront festivaliers et passants le 15 septembre prochain sur le parvis de la cathédrale d’Orléans.
+Pour participer, pas besoin d’être un pro de la danse ou du chant, il faut être disponible sur l’ensemble des temps de préparation, prendre connaissance des textes de la nouvelle playlist du projet, et surtout, avoir envie de passer un bon moment !
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: We can be heroes
+  type: Performance
+  personne: ""
+  from: 2018-09-15
+  to: 2018-09-15
+  hours: 15h et 18h
+  place: Parvis de la Cathédrale
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Type: Pour les amateurs :
+
+----
+
+Displaytitle: oui

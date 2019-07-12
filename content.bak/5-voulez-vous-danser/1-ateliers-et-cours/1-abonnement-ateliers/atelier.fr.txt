@@ -1,0 +1,25 @@
+Title: Carte d'abonnement aux ateliers
+
+----
+
+Type: NOUVEAU !
+
+----
+
+Text: 
+
+#### NOUVEAU ! 
+Carte d'abonnement aux ateliers du CCNO :
+Pour le paiement intégral de 4 ateliers (after work ou brunch), le 5e est offert. Valable sur toute la saison (hors stage), de septembre 2018 à juin 2019 sur présentation de la carte d'abonnement.
+
+----
+
+Displaytitle: oui
+
+----
+
+Display: dates
+
+----
+
+Dates: 

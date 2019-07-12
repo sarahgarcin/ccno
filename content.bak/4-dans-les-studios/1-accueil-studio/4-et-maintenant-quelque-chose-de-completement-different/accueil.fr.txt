@@ -1,0 +1,80 @@
+Title: <i>Et maintenant quelque chose de complètement différent</i>
+
+----
+
+Icone: 
+
+----
+
+Personne: Herman Diephuis et Dalila Khatir
+
+----
+
+Text: 
+
+# Herman Diephuis et Dalila Khatir
+
+(image:visuel-et-maintenant-nb-onno.jpg)
+© ONNO
+<br>
+Création avec des amateurs
+<br>
+« Pour la deuxième fois, un duo. They’re back, plus vieux, plus gros, plus arthrosés, plus névrosés mais moins polis et plus en colère. Ils ont envie de régler leurs comptes, entre eux, avec vous, avec la vie. Ils veulent faire mal pour ne pas souﬀrir, s’oﬀrir le plaisir de passer du coq à l’âne pour éviter d’aller jusqu’au bout. <i>Et maintenant quelque chose de complètement diﬀérent</i> : allons-nous faire voir. » — Herman Diephuis et Dalila Khatir
+<br>
+Conception, chorégraphie et interprétation Dalila Khatir, Herman Diephuis 
+Création lumière Sylvie Mélis 
+Régie générale Sam Mary 
+Régie son Emmanuel Hospital 
+<br>
+
+Herman Diephuis 
+a travaillé comme interprète avec Régine Chopinot, Mathilde Monnier, Jean-Francois Duroure, Philippe Decouﬂé, Francois Verret, Jérôme Bel, Xavier Le Roy et Alain Buﬀard. En 2004, il crée sa compagnie, l’association ONNO, aﬁn de mettre en œuvre ses propres créations : <i>D’après J.-C.</i>, <i>Ciao Bella</i>, <i>Objet principal du voyage</i>, <i>CLAN</i>, <i>Tremor and more</i>, entre autres. En parallèle, il développe des projets avec des amateurs dont récemment <i>It’s my party</i> (création 2018) ainsi que des propositions in situ. Depuis 2017, il est artiste en résidence à la Ville de Lognes (77), en partenariat avec la Ferme du Buisson - scène nationale de Marne-la-Vallée.  
+
+Dalila Khatir 
+De formation lyrique, la chanteuse et performeuse Dalila Khatir interprète diﬀérents spectacles musicaux en particulier avec Opéra Eclaté. Elle travaille également avec des musiciens issus de l'improvisation (Fred Frith, Maggie Nichols, Maguelone Vidal, Jerôme Bourdellon, Erik'M, Roscoe Mitchell…). Elle a été interprète chez Mathilde Monnier, Julia Cima, Herman Diephuis et dans les créations théâtrales et musicales de Jean-Pierre Laroche, Phillipe Ulysse, François–Michel Pesenti et Michel Schweizer. Elle anime également des ateliers de voix et d'improvisation auprès de chorégraphes et metteurs en scène.
+
+----
+
+Dates: 
+
+- 
+  title: "Présentation de l'atelier sur <i>Et maintenant quelque chose de...</i> par les artistes"
+  type: >
+    Apéro de présentation pour les
+    participants
+  personne: ""
+  from: 2019-05-13
+  to: 2019-05-13
+  hours: 19h
+  place: au CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/appel-a-participation/et-maintenant-d-herman-diephuis-dalila-khatir
+  agenda: non
+  home: ""
+- 
+  title: "Ateliers de recherche et de création avec les amateurs de <I>Et maintenant quelque chose de...</i> d'Herman Diephuis et Dalila Khatir"
+  type: Création avec amateurs
+  personne: ""
+  from: 2019-05-18
+  to: 2019-05-19
+  hours: '14h - 19h le samedi 18 et 11h - 18h le dimanche 19'
+  place: au CCNO
+  link: >
+    http://www.ccn-orleans.com/voulez-vous-danser/appel-a-participation/et-maintenant-d-herman-diephuis-dalila-khatir
+  agenda: non
+  home: ""
+- 
+  title: "<i> Et maintenant quelque chose de complètement différent</i> d'Herman Diephuis et Dalila Khatir"
+  type: Ouverture publique
+  personne: ""
+  from: 2019-05-23
+  to: 2019-05-23
+  hours: 19h
+  place: au CCNO
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Bio: 

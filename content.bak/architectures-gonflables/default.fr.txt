@@ -1,0 +1,39 @@
+Title: Exposition : Architectures gonflables
+
+----
+
+Icone: pictogrammes-21.png
+
+----
+
+Text: 
+
+#### du jeudi 20 septembre au vendredi 19 octobre <br> au CCNO
+Collaboration CCN¹ x FRAC
+(slider: p0)
+Pensée en résonance avec le projet de gonflable porté par le CCNO et réalisé par l'artiste François Dallegret avec l'architecte François Perrin et le chorégraphe Dimitri Chamblas, cette exposition présente une sélection de films d’architectes de la collection du Frac Centre-Val de Loire consacrés à des projets de gonflables.
+
+Avec la montée en puissance au cours des années 1960-1970 des matières plastiques dans le champ de l’architecture et du design, de nombreux artistes et architectes expérimentaux envisagent le gonflable comme la voie d’une dématérialisation radicale de l’architecture, ouvrant à de nouveaux modes d’habiter, marquée par l’éphémère. Le film s’affirme alors comme le media à-même d'enregistrer et de témoigner d’une approche performative qui gagne à son tour l’architecture : le gonflable n'existe que dans la durée de l'action.
+
+Artistes et architectes présentés : UFO (Lapo Binazzi), Dominic Michaelis, Haus-Rucker-Co.
+
+Collection Fonds régional d'art contemporain du Centre-Val de Loire, Orléans, France.
+
+Horaires d’ouverture
+Du lundi au vendredi 9h – 12h30 et 14h – 17h30
+Le samedi 11h – 13h
+
+----
+
+Dates: 
+
+- 
+  title: Architectures gonflables
+  type: Exposition
+  personne: ""
+  from: 2018-09-20
+  to: 2018-10-19
+  hours: ""
+  place: CCNO
+  link: ""
+  home: ""

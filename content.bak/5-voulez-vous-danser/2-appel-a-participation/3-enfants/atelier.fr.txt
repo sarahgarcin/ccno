@@ -1,0 +1,57 @@
+Title: <span class='orleans'>45 enfants</span class> <br>performance
+
+----
+
+Summary: 
+
+----
+
+Text: 
+
+### d'après la pièce *enfant* de Boris Charmatz
+(image:ENFANT_BERLIN-2520.jpg)
+45 enfants est une adaptation inédite de la pièce *enfant* de Boris Charmatz pour 45 enfants d’Orléans, Chécy, Fleury-les-Aubrais, la Chapelle-Saint-Mesmin, Châteauneuf-sur-loire, Olivet, Saint-Jean de Braye, Saint Jean de la Ruelle et Saint- Denis-en-Val.
+*enfant* a été créée en 2011 pour la Cour d’honneur du Festival d’Avignon avec 26 enfants amateurs et 9 danseurs professionnels. La pièce inverse les rapports entre grands et petits, professionnels et amateurs, animé et inanimé. À Orléans, 45 enfants entre 8 et 11 ans jouent tout autant les adultes que les enfants. Dix séances d’ateliers aboutissent à une performance sur le plateau de la salle Touchard au Théâtre d’Orléans, exceptionnellement investi par des enfants avec le musicien Erwan Keravec !
+
+Artistes intervenants : Julien Gallée-Ferré, Dalila Khatir, Maud Le Pladec, Thierry Micouin.
+
+*45 enfants* est un projet du Musée de la danse / CCN de Rennes en collaboration avec le CCNO et la Scène nationale d’Orléans, et le soutien de la Ville d’Orléans.
+
+© Gianmarco Bresadola
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: "<i>45 enfants</i>, d'après <i>enfant</i> de Boris Charmatz, avec des enfants orléanais"
+  type: Performance
+  personne: ""
+  from: 2018-11-15
+  to: 2018-11-15
+  hours: 20h30
+  place: "Théâtre d'Orléans"
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Type: Pour les enfants :
+
+----
+
+Displaytitle: oui
+
+----
+
+Icone: 
+
+----
+
+Displaydates: oui

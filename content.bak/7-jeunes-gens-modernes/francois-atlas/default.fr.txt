@@ -1,0 +1,52 @@
+Title: Frànçois Atlas
+
+----
+
+Icone: francis-2.png
+
+----
+
+Text: 
+
+# Concert littéraire
+# *Fleurs du Mal*
+# Frànçois Atlas 
+
+## Vendredi 1er février, 20h30
+# au CCNO
+Durée 50min
+15€ / 8€
+(link:https://www.weezevent.com/francois-atlas text: Billetterie)
+
+(image:francois-couleur-m.shore-117.jpg)
+
+« À l’automne 2016, pour répondre à l’invitation de proposer un concert à l’exposition “Baudelaire L’Œil Moderne” au musée de La Vie Romantique, je me suis fixé le défi d’apprendre par cœur des poèmes des Fleurs Du Mal. J’ai utilisé des accords de guitare très simples comme structure mnémotechnique. J’ai été frappé de la régularité et de la musicalité des vers, ils se sont glissés dans ce format pop avec limpidité. Heureux de cette performance, j’ai proposé à Astérios Spectacles, producteur de tournée, d’en enregistrer des passages. Cela s’est rapidement transformé en album. »
+— Frànçois Atlas
+
+François Mary, alias Frànçois Atlas (chanteur et fondateur du groupe Frànçois And The Atlas Mountains) présente Fleurs du Mal. Sur fond de notes légères et d’accords de guitare, il y interprète huit poèmes de Charles Baudelaire.
+
+Texte Charles Baudelaire 
+Guitares, chant, piano et claviers Frànçois Atlas 
+Batterie Jean Thevenin
+Basse Romain Vasset 
+
+François Mary, alias Frànçois Atlas 
+est le  leader de la formation Frànçois and The Atlas Mountains. Il a sorti plusieurs disques solo, et réalise également des aquarelles, des dessins et des clips d’animations. L’album Fleurs du Mal est sorti au sein du label Silène en septembre 2018. 
+
+Photo © Margaux Shore
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Fleurs du Mal</i> de Frànçois Atlas'
+  type: Concert littéraire
+  personne: Frànçois Atlas
+  from: 2019-02-01
+  to: 2019-02-01
+  hours: 20h30
+  place: au CCNO
+  link: ""
+  agenda: non
+  home: ""

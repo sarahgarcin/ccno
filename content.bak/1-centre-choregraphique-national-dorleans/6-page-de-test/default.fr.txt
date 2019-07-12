@@ -1,0 +1,26 @@
+Title: Page de test
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+# ceci est un h1 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi eget sapien sodales tincidunt. Nam scelerisque rutrum ante, eu interdum sapien facilisis a. Praesent non augue cursus, placerat libero quis, hendrerit felis. Morbi et purus sit amet quam rutrum posuere. Praesent elementum est non molestie consequat. Aenean pretium nisl non odio tempor pellentesque. Proin at egestas mauris, vestibulum iaculis sapien. Duis tincidunt nunc non neque consectetur tincidunt et eget orci. Donec eu mi non est porttitor vehicula.    
+ ## ceci est un h2
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+  ### ceci est un h3
+  Proin at egestas mauris, vestibulum iaculis sapien. Duis tincidunt nunc non neque consectetur tincidunt et eget orci. Donec eu mi non est porttitor vehicula.   
+  #### et puis voilà un h4
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi eget sapien sodales tincidunt. Nam scelerisque rutrum ante, eu interdum sapien facilisis a. Praesent non augue cursus, placerat libero quis, hendrerit felis. Morbi et purus sit amet quam rutrum posuere. Praesent elementum est non molestie consequat. Aenean pretium nisl non odio tempor pellentesque. Proin at egestas mauris, vestibulum iaculis sapien. Duis tincidunt nunc non neque consectetur tincidunt et eget orci. Donec eu mi non est porttitor vehicula.   
+   ##### on arrive sur un h5
+ Morbi et purus sit amet quam rutrum posuere. Praesent elementum est non molestie consequat. Aenean pretium nisl non odio tempor pellentesque. Proin at egestas mauris, vestibulum iaculis sapien. Duis tincidunt nunc non neque consectetur tincidunt et eget orci. Donec eu mi non est porttitor vehicula.  
+   ###### puis le h6
+Proin at egestas mauris, vestibulum iaculis sapien. Duis tincidunt nunc non neque consectetur tincidunt et eget orci. Donec eu mi non est porttitor vehicula.
+
+----
+
+Dates: 

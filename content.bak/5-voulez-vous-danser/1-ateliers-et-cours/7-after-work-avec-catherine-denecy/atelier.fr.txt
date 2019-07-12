@@ -1,0 +1,41 @@
+Title: Lundi <span class='orleans'>After work</span class> <br>avec Catherine Dénécy
+
+----
+
+Type: Pour tous :
+
+----
+
+Text: 
+
+(image:fix-me-6648.jpg)
+©DR
+
+À l’occasion de la programmation de Fix Me d’Alban Richard au Théâtre d’Orléans, le CCNO vous propose un after work hors les murs ! Le CCNO vous invite à partager les danses de Fix Me avec Catherine Dénécy, sur la musique électro d'Arnaud Rebotini : concepteur de la bande originale du film 120 battements par minute, il est aussi le compositeur du spectacle d’Alban Richard !
+
+#### exceptionnellement à l'Astrolabe (Bd Jean Jaurès à Orléans, 3e étage de la patinoire)
+
+----
+
+Displaytitle: oui
+
+----
+
+Display: dates
+
+----
+
+Dates: 
+
+- 
+  title: "Avec Catherine Dénécy, interprète de <i>Fix Me</i> d'Alban Richard"
+  type: Lundi after work
+  personne: ""
+  from: 2018-11-26
+  to: 2018-11-26
+  hours: 19h-21h
+  place: "exceptionnellement à l'Astrolabe (Bd Jean Jaurès à Orléans, 3e étage de la patinoire)"
+  text: ""
+  link: ""
+  agenda: oui
+  home: ""

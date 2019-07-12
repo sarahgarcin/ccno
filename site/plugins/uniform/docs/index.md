@@ -14,7 +14,7 @@ Builtin actions:
 
 ## Installation
 
-Uniform requires PHP 5.5 or higher. It is highly recommended to use a version under [active support](https://php.net/supported-versions.php).
+Uniform requires PHP 5.6 or higher. It is highly recommended to use a version under [active support](https://php.net/supported-versions.php).
 
 ### Kirby CLI
 
@@ -26,7 +26,7 @@ Get the [Kirby CLI](https://github.com/getkirby/cli) and run `kirby plugin:insta
 
 ### Composer
 
-Run `composer require mzur/kirby-uniform`. Then create the file `site/plugins/autoload.php` with the content:
+Run `composer require mzur/kirby-uniform:^3.0`. Then create the file `site/plugins/autoload.php` with the content:
 
 ```php
 <?php
@@ -57,6 +57,9 @@ See [here](https://github.com/mzur/kirby-uniform/tree/master/languages) for all 
 
 !!! warning "Note"
     [Disable the Kirby cache](https://getkirby.com/docs/developer-guide/advanced/caching#ignoring-pages) for pages where you use Uniform to make sure the form is generated dynamically.
+
+!!! warning "Note"
+    Uniform makes use of Kirby sessions and the CSRF helper. This requires a session cookie to be set.
 
 ## Questions
 

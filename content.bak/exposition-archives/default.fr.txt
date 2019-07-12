@@ -1,0 +1,25 @@
+Title: Exposition : <i>Archives</i>
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Archives</i>, Anne Teresa De Keersmaeker'
+  type: Exposition
+  personne: ""
+  from: 2019-10-21
+  to: 2019-11-15
+  hours: ""
+  place: CCNO
+  link: ""
+  agenda: non
+  home: ""

@@ -1,0 +1,122 @@
+Title: Cours du <span class='orleans'>samedi MAtIn</span>
+
+----
+
+Type: Pour adultes :
+
+----
+
+Icone: 
+
+----
+
+Text: 
+
+----
+
+Displaydates: non
+
+----
+
+Displaytitle: oui
+
+----
+
+Dates: 
+
+- 
+  title: Cours pour adultes
+  type: Cours de danse
+  personne: ""
+  from: 2019-09-21
+  to: 2019-09-21
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-09-28
+  to: 2019-09-28
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-10-12
+  to: 2019-10-12
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-11-16
+  to: 2019-11-16
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-11-23
+  to: 2019-11-23
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-11-30
+  to: 2019-11-30
+  hours: 11h -13h
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-12-07
+  to: 2019-12-07
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""
+- 
+  title: Cours pour adultes
+  type: Cours
+  personne: ""
+  from: 2019-12-14
+  to: 2019-12-14
+  hours: '11h - 13h'
+  place: CCNO
+  text: ""
+  link: ""
+  agenda: non
+  home: ""

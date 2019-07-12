@@ -10,28 +10,16 @@ Back: image-site-v0.png
 
 ----
 
-Homeimage: konstantin.lipatov-concrete-8.jpg
+Homeimage: dsc_7112.jpg.jpg
 
 ----
 
-Col1: the-white-piece
+Namecol1: Pour tous :
 
 ----
 
-Col2: borderline
+Namecol2: Pour les danseurs professionnels :
 
 ----
 
-Col3: dancing-kids-niveau-eveil
-
-----
-
-Namecol1: En tournée
-
-----
-
-Namecol2: Au CCNO
-
-----
-
-Namecol3: Au CCNO
+Namecol3: Pour tous :

@@ -16,7 +16,7 @@ function init(){
 
 	var randomTop = Math.floor(Math.random()* (window.innerHeight-100));
 	var randomLeft = Math.floor(Math.random()* (window.innerWidth-100));
-	$('.encart-jgm').css({
+	$('.flottant').css({
 		'top': randomTop,
 		'left': randomLeft
 	})
@@ -65,13 +65,13 @@ function init(){
 		
 	});
 
-	$('.module--menu--mainNav .menu-top-list > .open-newsletter-form').on('click',function(){
+	$('.open-newsletter-form').on('click',function(){
 		console.log('open newsletter');
 		$('.modal-newsletter').css('display', 'block').addClass('active');
 		$(window).on('click', function(e){
 			if(e.target == $('.modal-newsletter')[0]){
 				$('.modal-newsletter').css('display', 'none').removeClass('active');
-				$('.module--menu--mainNav .menu-top-list > .open-newsletter-form').removeClass('active');
+				$('.open-newsletter-form').removeClass('active');
 			}
 		});
 	});

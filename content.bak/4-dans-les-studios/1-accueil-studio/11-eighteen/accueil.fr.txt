@@ -1,0 +1,45 @@
+Title: <i>Eighteen</i>
+
+----
+
+Icone: 
+
+----
+
+Personne: Thierry Micouin
+
+----
+
+Text: 
+
+# Thierry Micouin
+
+(slider: eighteen)
+© Thierry Micouin
+<br> 
+Antidote sur le temps qui passe, ni nostalgique, ni grave, <i>Eighteen</i> évoque la relation père fille. La pièce visite une portion d'histoire de la danse contemporaine à travers le vécu de Thierry Micouin et celui de sa fille Ilana qui a assisté aux répétitions et spectacles que son père a créés ou auxquels il a participé en tant qu'interprète et vidéaste. A la fois dialoguée et dansée, la pièce comportera des images d'archives. La composition sonore de Pauline Boyer, à travers un processus de mise en abîme, écrira la nouvelle sémantique de cette relation dans son actualité.
+
+##### Conception, chorégraphie et interprétation : Thierry Micouin <br> Musique et interprétation : Pauline Boyer <br> Interprétation : Ilana Micouin <br> Regard extérieur : Pénélope Parrau <br> Régie son : Benjamin Furbacco  <br> Lumières et vidéo : (en cours)
+
+<br>
+##### Thierry Micouin <br> Après avoir obtenu une thèse de médecine, Thierry Micouin se forme au théâtre et à la danse et est interprète notamment pour Philippe Minyana, Mié Coquempot, Valérie Onnis, Catherine Diverrès, Boris Charmatz, Olivier Dubois. En 2008, il crée la Cie T.M Project et développe des projets chorégraphiques dans lesquels la notion d’installation tient une place centrale. La vidéo, la projection, le paysage sonore sont les matières qui approfondissent ses recherches, accompagné dans cette démarche depuis 2014 par Pauline Boyer, plasticienne sonore. Ils imaginent leurs projets sous de multiples formats et envergures et les présentent sur des plateaux, dans des galeries, sur des scènes de musique actuelle, dans des centres d’art ou en extérieur. Après les créations de <i>Double Jack</i> (2014), <i>Synapse</i> (2015), <i>Backline</i> (2017) et <i>Faille</i> (2018) ils préparent pour le printemps 2019 une nouvelle pièce : <i>Eighteen</i>.
+
+----
+
+Dates: 
+
+- 
+  title: '<i>Eighteen</i>, Thierry Micouin'
+  type: Ouverture publique
+  personne: ""
+  from: 2019-01-17
+  to: 2019-01-17
+  hours: 19h
+  place: au CCNO
+  link: ""
+  agenda: oui
+  home: ""
+
+----
+
+Bio: 
