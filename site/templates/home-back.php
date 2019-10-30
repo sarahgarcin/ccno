@@ -37,15 +37,14 @@
 ?>
 
 
-<div class ="row">
-
-	<?php snippet('left-col') ?>
+<div>
+	<?php //snippet('left-col') ?>
 	<?php snippet('menu') ?>
+	<div class="big-image-wrapper image-wrapper">
+		<img src="<?php echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
+	</div>
+	
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		
-		<div class="big-image-wrapper image-wrapper">
-				<img src="<?php echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
-		</div>	
 		<div class='row col-wrapper main-content'>
 			<div class='col-1 large-6 columns'>
 				<h4><?php echo $page->namecol1()->html()?></h4>
@@ -134,7 +133,7 @@
 					</div>
 				</a>
 			</div>
-			<div class='col-3 large-6 columns end'>
+				<div class='col-3 large-6 columns end'>
 				<h4><?php echo $page->namecol3()->html()?></h4>
 				<?php if($project3->icone()->isNotEmpty()):?>
 					<?php 
@@ -177,7 +176,7 @@
 						</p>
 					</div>
 				</a>
-			</div>
+				</div>
 		</div>	
 
 	</main>

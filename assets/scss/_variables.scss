@@ -6,14 +6,13 @@ $orleans-font: "orleans", sans-serif;
 
 // color
 $rose: rgb(255, 84, 153);
-//$roseClair: rgb(253, 224, 234);
 $roseClair: #F5F5F5;
 $jaune: yellow;
 
 // margins
-$marginSmall:1.5rem / 2;
-$marginNormal:1.5rem;
-$marginBig:1.5rem * 2;
+$marginSmall: 20px / 2;
+$marginNormal: 20px;
+$marginBig: 20px * 2;
 $columnPadding: 0.9375rem;
 
 $margin-decale: -15%;
@@ -25,6 +24,7 @@ $h2: 	1.8rem;
 $h3:	rem-calc(36);
 $h4:	1.8rem;
 $p: 1.25rem;
+$smallfont: 0.8rem;
 
 // font-size
 @mixin H1{
@@ -33,6 +33,7 @@ $p: 1.25rem;
 	margin: 0;
 	padding: 0;
 	color: #000;
+	font-weight:normal;
 }
 
 @mixin H2{
@@ -40,6 +41,7 @@ $p: 1.25rem;
 	line-height: 1;
 	margin: 0;
 	color: #000;
+	font-weight:normal;
 }
 
 @mixin H3{
@@ -47,6 +49,7 @@ $p: 1.25rem;
 	line-height: 1;
 	margin: 0;
 	color: #000;
+	font-weight:normal;
 }
 
 @mixin H4{
@@ -54,6 +57,7 @@ $p: 1.25rem;
 	line-height: 1;
 	color: $rose;
 	margin: 0;
+	font-weight:normal;
 }
 
 @mixin H5{
@@ -61,6 +65,7 @@ $p: 1.25rem;
 	line-height: 1;
 	color: $rose;
 	margin: 0;
+	font-weight:normal;
 }
 
 @mixin H6{
@@ -68,6 +73,7 @@ $p: 1.25rem;
 	line-height: 1.2;
 	color: #000;
 	margin: 0;
+	font-weight:normal;
 }
 
 @mixin textCourant{
@@ -113,14 +119,14 @@ $p: 1.25rem;
 	line-height: 0.8;
 }
 
-@media #{$xlarge-up} {
-  @include grid-html-classes($size:xlarge);
-  @for $i from 0 through $total-columns - 1 {
-    .push-#{$i} {
-      @include grid-column($push:$i, $collapse:null, $float:false);
-    }
-    .pull-#{$i} {
-      @include grid-column($pull:$i, $collapse:null, $float:false);
-    }
-  }
-}
+// @media #{$xlarge-up} {
+//   @include grid-html-classes($size:xlarge);
+//   @for $i from 0 through $total-columns - 1 {
+//     .push-#{$i} {
+//       @include grid-column($push:$i, $collapse:null, $float:false);
+//     }
+//     .pull-#{$i} {
+//       @include grid-column($pull:$i, $collapse:null, $float:false);
+//     }
+//   }
+// }

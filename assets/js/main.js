@@ -24,18 +24,22 @@ function init(){
 
 
 	//mobile menu functions
-	$('.menu-mobile-btn').on('click', function(){
-		if($('.module--menu--mainNav').hasClass('active')){
-			$('.module--menu--mainNav').fadeOut(500);
-			setTimeout(function(){
-				$('.module--menu--mainNav').removeClass('active');
-			}, 100);
+	$('.mobile-menu_btn').on('click', function(){
+		if($('.nav').hasClass('active')){
+			$('.nav').slideUp(500);
+			$('.nav').removeClass('active');
+			// $('.nav').fadeOut(500);
+			// setTimeout(function(){
+			// 	$('.nav').removeClass('active');
+			// }, 100);
 		}
 		else{
-			$('.module--menu--mainNav').fadeIn(500);
-			setTimeout(function(){
-				$('.module--menu--mainNav').addClass('active');
-			}, 100);
+			$('.nav').slideDown(500);
+			$('.nav').addClass('active');
+			// $('.nav').fadeIn(500);
+			// setTimeout(function(){
+			// 	$('.nav').addClass('active');
+			// }, 100);
 		}
 
 	});
@@ -53,13 +57,12 @@ function init(){
 	// 		$('header').addClass('active');
 	// 	}, 100);
 	// });
-	$('.module--menu--mainNav .menu-top-list > li').on('click', function(e){
+	$('.main-nav_first-level > li').on('click', function(e){
 		if($(this).hasClass('active') && $(this).find('ul').hasClass('active')){
-			console.log('test youhou');
 			$(this).removeClass('active').find('ul').slideUp(400);
 			$(this).find('ul').removeClass('active');
 		}else{
-			$('.module--menu--mainNav .menu-top-list > li').removeClass('active').find('ul').slideUp(400);
+			$('.main-nav_first-level > li').removeClass('active').find('ul').slideUp(400);
 			$(this).addClass('active').find('ul').slideDown(400).addClass('active');
 		}
 		

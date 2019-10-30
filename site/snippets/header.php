@@ -11,15 +11,9 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
   <?php echo css('bower_components/slick-carousel/slick/slick.css') ?>
-  <?php if ( c::get('environment') == 'local' ) : ?>
-
+  <?php echo css('bower_components/flexboxgrid/dist/flexboxgrid.css') ?>
   <?php echo css('assets/css/main.css') ?>
 
-  <?php else: ?>
-
-  <?php echo css('assets/production/main.min.css') ?>
-
-  <?php endif ?>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn’t work if you view the page via file:// -->
@@ -61,22 +55,17 @@
    data-login="<?php e($site->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
    data-intended-template="<?php echo $page->intendedTemplate() ?>"
-  data-parent-template="<?php echo $page->parent()->template() ?>"
-  <?php
-      //if(!$page->isHomePage()):
-        $section = getRubriqueFromUri($page->uri());
-      //?>
-        data-rubrique="<?= $section ?>"
+    data-parent-template="<?php echo $page->parent()->template() ?>"
+    <?php $section = getRubriqueFromUri($page->uri());?>
+    data-rubrique="<?= $section ?>"
+    data-count = "<?= $pages->visible()->count()?>"
     
-        data-count = "<?= $pages->visible()->count()?>"
-  
-  <?php if($section == 'voulez-vous-danser'):?>
-    style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>"
-  <?php endif;?>
+
+    <?php if($section == 'voulez-vous-danser'):?>
+      style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>"
+    <?php endif;?>
   >
 
   <?php snippet('popupnewsletter') ?>
-  <?php if($page->intendedTemplate() != 'jgm'):
-    //snippet('lienjgm');
-  endif; ?>
+
 
