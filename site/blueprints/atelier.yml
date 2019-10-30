@@ -17,6 +17,9 @@ fields:
   text:
     label: Texte
     type:  markdown
+  billeterie: 
+    label: Lien vers la billeterie
+    type: url
   displayDates:
     label: Afficher la liste des dates dans la page ?
     type: radio

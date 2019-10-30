@@ -3,6 +3,13 @@
 ?>
 
 <div class="notes-dates small-16 medium-16 large-5 large-push-2 xlarge-3 xlarge-push-2 end columns">
+	<?php if($page->billeterie()->isNotEmpty()):?>
+		<a href="<?php echo $page->billeterie()->text()?>" title="Réservation" target="_blank">
+			<div class="bouton-billeterie">
+				Réservation
+			</div>
+		</a>
+	<?php endif?>
 	<ul>
 		<?php foreach($page->dates()->toStructure() as $dates):?>
 			<li>

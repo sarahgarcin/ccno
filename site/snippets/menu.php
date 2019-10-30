@@ -48,7 +48,13 @@
 			<ul class="menu-top-list menu-col-middle small-18 medium-4 large-5 columns">
 		    <?php foreach($pages->visible()->slice($halfPagesLength,$halfPagesLength) as $p): ?>
 			    	<li class="<?= r($p->isOpen(), 'active') ?>">
-			        <?php echo $p->title()->html() ?>
+			        <?php if($p->hasVisibleChildren()):?>
+			        	<?php echo $p->title()->html() ?>
+			        <?php else: ?>
+			        	<a href="<?php echo $p->url()?>" title="<?php echo $p->title()?>">
+			        		<?php echo $p->title()->html() ?>
+			        	</a>
+			        <?php endif;?>
 			        <ul class="module--menu--submenu">
 								<?php foreach($p->children()->visible() as $child): ?>
 							  	<li>
@@ -63,15 +69,15 @@
 			</ul>
 			<ul class="menu-top-list menu-col-right small-18 medium-5 large-5 columns">
 		    <?php foreach($pages->visible()->slice($halfPagesLength+3,$halfPagesLength) as $p): ?>
-			    	<li class="<?php if($p->uri()=='jeunes-gens-modernes'):echo 'jgm'; if(flottant($site->flottant())=='jgm'): echo ' flottant';endif; endif;?> <?php if($p->uri()=='la-bulle'):echo 'bulle'; if(flottant($site->flottant())=='bulle'): echo ' flottant';endif; endif;?> <?= r($p->isOpen(), 'active') ?>">
-			        <?php if($p->hasVisibleChildren()):?>
+			    	<li class="<?php if($p->uri()=='jeunes-gens-modernes'):echo 'jgm'; if(flottant($site->flottant())=='jgm'): echo ' flottant';endif; endif;?> <?php if($p->uri()=='ouverture-de-saison'):echo 'bulle'; if(flottant($site->flottant())=='bulle'): echo ' flottant';endif; endif;?> <?= r($p->isOpen(), 'active') ?>">
+			        <?php if($p->hasVisibleChildren() && $p->intendedTemplate() != 'bulle'):?>
 			        	<?php echo $p->title()->html() ?>
 			        <?php else: ?>
 			        	<a href="<?php echo $p->url()?>" title="<?php echo $p->title()?>">
 			        		<?php echo $p->title()->html() ?>
 			        	</a>
 			        <?php endif;?>
-			        <?php if($p->hasChildren()):?>
+			        <?php if($p->hasChildren() && $p->intendedTemplate() != 'bulle'):?>
 				        <ul class="module--menu--submenu">
 									<?php foreach($p->children()->visible() as $child): ?>
 								  	<li>
@@ -100,6 +106,24 @@
 			</ul>
 
 		</div>
+		<div class="address show-for-small-only">
+				<?php snippet('language') ?>
+				<?php snippet('social');?>
+				<div class="bouton-billeterie">
+					<a href="https://ccn-orleans-reservations.mapado.com/" title="Billetterie" target="_blank">Réservations</a>
+				</div>
+				<div class="newsletter small-18">
+					<ul>
+						<li class="open-newsletter-form">
+							Recevoir la newsletter
+							<!-- <a href="https://my.sendinblue.com/users/subscribe/js_id/2x7ls/id/5" title="" target="_blank">Recevoir la newsletter</a> -->
+						</li>
+					</ul>
+				</div>							
+
+				<?php echo $site->address()->kirbytext() ?>
+			
+			</div>
 	</nav>
 </header>
 

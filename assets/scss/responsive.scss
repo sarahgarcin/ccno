@@ -79,9 +79,10 @@
 		}
 	}
 
-	nav .menu-col-right{
+	nav .menu-col-right, nav .menu-col-middle{
 		margin-top:0;
 	}
+
 
 	.address.mobile-address{
 		position:relative;	
@@ -92,6 +93,25 @@
 		ul{margin-bottom:$marginSmall/2;}
 		li{line-height:0;}
 		padding-left:0.9375rem;
+	}
+
+	.address{
+		width: 80%;
+		margin-top: 20px;
+		border-top: 1px solid #000;
+		padding-top:20px;
+		a, li{
+			font-size: 1rem !important;
+		}
+		p, p a{
+			font-size: 0.8rem !important;
+		}
+		p{
+			margin-bottom: 0;
+		}
+		.socialnetwork{
+			margin-bottom: 15px;
+		}
 	}
 
 

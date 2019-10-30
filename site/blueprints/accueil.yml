@@ -17,6 +17,9 @@ fields:
   text:
     label: Texte
     type:  markdown
+  billeterie: 
+    label: Lien vers la billeterie
+    type: url
   dates: 
     label: Dates
     type: structure

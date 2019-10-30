@@ -134,7 +134,7 @@
 					</div>
 				</a>
 			</div>
-			<div class='col-3 large-6 columns end'>
+				<div class='col-3 large-6 columns end'>
 				<h4><?php echo $page->namecol3()->html()?></h4>
 				<?php if($project3->icone()->isNotEmpty()):?>
 					<?php 
@@ -177,7 +177,7 @@
 						</p>
 					</div>
 				</a>
-			</div>
+				</div>
 		</div>	
 
 	</main>

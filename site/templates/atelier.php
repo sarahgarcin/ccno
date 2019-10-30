@@ -78,6 +78,11 @@
 			<?php snippet('icone-page')?>
 			<div class="row">
 				<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8 columns">
+				<a class="billet-link" href="<?php echo $page->billeterie()->text()?>" title="Billetterie" target="_blank">
+					<div class="bouton-billeterie">
+						Réservation
+					</div>
+				</a>
 					<div class="summary-liste small-18 medium-18 xlarge-18">
 						<?php echo $page->text()->kirbytext()?>
 					</div>

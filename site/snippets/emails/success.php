@@ -1,12 +1,12 @@
 Bonjour,
 
-Nous avons bien reçu votre demande d’accueil studio pour la période de janvier à juin 2020.
-Le comité de lecture du CCNO se réunit en mai 2019 et nous vous redonnerons des nouvelles en juin 2019.
+Nous avons bien reçu votre demande d’accueil studio pour la période de septembre à décembre 2020.
+Le comité de lecture du CCNO se réunit en novembre 2019 et nous vous redonnerons des nouvelles en décembre 2019.
 
 Cordialement,
 
-Amphay Tran
-Chargée de l’accueil et des relations aux publics
+Elsa Jourdain
+Chargée des relations aux publics et de l’accueil
 
 Centre chorégraphique national d'Orléans
 37 rue du Bourdon Blanc BP 42348

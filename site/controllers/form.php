@@ -108,9 +108,9 @@ return function ($site, $pages, $page)
 
     if (r::is('POST')) {
         $form->emailAction([
-            'to' => 'amphaytran@ccn-orleans.com',
-            // 'to' => 'garcinsarah@gmail.com',
-            'from' => 'amphaytran@ccn-orleans.com',
+            'to' => 'elsajourdain@ccn-orleans.com',
+            //'to' => 'garcinsarah@gmail.com',
+            'from' => 'elsajourdain@ccn-orleans.com',
             'subject' => 'Nouvelle demande de prêt de studio et accueil studio',
             // Use a snippet for the email body (see below).
             'snippet' => 'emails/demande',
@@ -118,20 +118,20 @@ return function ($site, $pages, $page)
         ->emailAction([
             // Send the success email to the email address of the submitter.
             'to' => $form->data('email1'),
-            'from' => 'amphaytran@ccn-orleans.com',
+            'from' => 'elsajourdain@ccn-orleans.com',
             // Set replyTo manually, else it would be set to the value of 'email'.
-            'replyTo' => 'amphaytran@ccn-orleans.com',
+            'replyTo' => 'elsajourdain@ccn-orleans.com',
             'subject' => '[CCNO] - Confirmation de demande de prêt de studio et accueil studio',
             // Use a snippet for the email body (see below).
             'snippet' => 'emails/success',
         ])
         ->uploadAction(['fields' => [
             'presentation' => [
-                'target' => kirby()->roots()->content(),
+                'target' => kirby()->roots()->content().'/demande-accueil-studio',
                 'prefix' => false,
             ],
             'budgetpdf' => [
-                'target' => kirby()->roots()->content(),
+                'target' => kirby()->roots()->content().'/demande-accueil-studio',
                 'prefix' => false,
             ],
         ]])

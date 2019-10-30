@@ -19,6 +19,6 @@ Montant du budget de création : <?php echo $data['budget'] ?>
 Montant de l’aide sollicitée : <?php echo $data['aide'] ?> 
 Coproductions et dates envisagés et confirmés : <?php echo $data['coproductions'] ?> 
 Liens vidéo d’extraits du projet: <?php echo $data['liensvideos'] ?> 
-Pièce-jointe 1 : dossier de présentation du projet (distribution, note d’intention, biographies…): http://www.ccn-orleans.com/content/<?php echo $data['presentation']['name'] ?> 
-Pièce-jointe 2 : le budget: http://www.ccn-orleans.com/content/<?php echo $data['budgetpdf']['name'] ?> 
+Pièce-jointe 1 : dossier de présentation du projet (distribution, note d’intention, biographies…): http://www.ccn-orleans.com/content/demande-accueil-studio/<?php echo $data['presentation']['name'] ?> 
+Pièce-jointe 2 : le budget: http://www.ccn-orleans.com/content/demande-accueil-studio/<?php echo $data['budgetpdf']['name'] ?> 
  

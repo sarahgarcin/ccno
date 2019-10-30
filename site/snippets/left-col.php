@@ -1,5 +1,12 @@
-<div class="left-col small-18 medium-3 columns hide-for-small-only">
+<div class="left-col small-18 medium-3 large-3 columns hide-for-small-only">
 		<div class="address hide-for-small-only">
+			<?php snippet('language') ?>
+			<?php snippet('social');?>
+			<a href="https://ccn-orleans-reservations.mapado.com/" title="Billetterie" target="_blank">
+				<div class="bouton-billeterie">
+					Réservations
+				</div>
+			</a>
 			<div class="newsletter small-18">
 				<ul class="menu-top-list archives">
 					<li class="open-newsletter-form">
@@ -7,7 +14,7 @@
 						<!-- <a href="https://my.sendinblue.com/users/subscribe/js_id/2x7ls/id/5" title="" target="_blank">Recevoir la newsletter</a> -->
 					</li>
 				</ul>
-				<?php snippet('social');?>
+				
 			</div>
 			<?php if($site->pdf()->isNotEmpty()):?>
 				<div class="pdf">

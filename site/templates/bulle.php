@@ -5,11 +5,11 @@
 	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
-<div class ="row">
+<div class ="row bulle">
 
 	<?php snippet('left-col') ?>
 	<?php snippet('menu') ?>
-	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
+	<main class="small-18 medium-11 medium-push-4 xlarge-push-4 xlarge-13 end columns">
 		<div class="main-content">
 			<?php if($page->imagefond()->isNotEmpty()):?>
 				<div class="background-image">
@@ -35,7 +35,7 @@
 			<?php snippet('icone-page')?>
 			<div class="row col-wrapper">
 				<?php if($page->colonne1()->isNotEmpty()):?>
-					<div class='col-1 large-5 columns'>
+					<div class='col-1 large-10 columns'>
 					<h4><?php echo $page->colonne1titre()->html()?></h4>
 					<?php foreach($page->colonne1()->split(',') as $colonne1):?>
 						<?php $colonne1 =  $page->find($colonne1);?>
@@ -69,7 +69,7 @@
 					</div>
 				<?php endif; ?>
 				<?php if($page->colonne2()->isNotEmpty()):?>
-					<div class='col-2 large-5 columns'>
+					<div class='col-2 large-5 columns end'>
 					<h4><?php echo $page->colonne2titre()->html()?></h4>
 					<?php foreach($page->colonne2()->split(',') as $colonne2):?>
 						<?php $colonne2 =  $page->find($colonne2);?>
@@ -103,7 +103,7 @@
 					</div>
 				<?php endif; ?>
 				<?php if($page->colonne3()->isNotEmpty()):?>
-					<div class='col-3 large-5 columns'>
+					<div class='col-3 large-5 columns end'>
 						<h4><?php echo $page->colonne3titre()->html()?></h4>
 						<?php foreach($page->colonne3()->split(',') as $colonne3):?>
 							<?php $colonne3 =  $page->find($colonne3);?>

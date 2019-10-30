@@ -86,7 +86,7 @@
 			<?php //if no errors carry on
 		    if($form->success()):
 		    	$jsonfile = kirby()->roots()->site().'/messages.log'; 
-		    	$csvfile = kirby()->roots()->site()."/demandes-accueil-studio.csv";
+		    	$csvfile = kirby()->roots()->site()."/demande-accueil-studio/demandes-accueil-studio.csv";
 
 		    	snippet('uniform/log-csv');
 		    	// $json_str = file_get_contents($jsonfile);

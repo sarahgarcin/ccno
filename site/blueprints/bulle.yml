@@ -1,0 +1,70 @@
+title: Bulle
+
+pages:
+  template: 
+    - default
+    - jgm
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  subtitle: 
+    label: Sous-Titre
+    type: text
+  infos: 
+    label: Infos
+    type: markdown
+  colonne1titre: 
+    label: Titre de la colonne 1
+    type: text
+  colonne1:
+    label: À afficher dans la colonne 1 
+    type: relationship
+    search: true
+    options: children
+  colonne2titre: 
+    label: Titre de la colonne 2
+    type: text
+  colonne2:
+    label: À afficher dans la colonne 2
+    type: relationship
+    search: true
+    options: children
+  colonne3titre: 
+    label: Titre de la colonne 3
+    type: text
+  colonne3:
+    label: À afficher dans la colonne 3 - Samedi 2 février 
+    type: relationship
+    search: true
+    options: children
+  text:
+    label: Édito
+    type:  markdown
+  actus:
+    label: Actualités
+    type:  markdown
+  affiche:
+    label: Affiche de l'édition
+    type: selector
+    mode: single
+  icone:
+    label: Icônes 
+    type: selector
+    mode: single
+    options: query
+    query:
+      page: /
+      fetch: images
+      value: '{{filename}}'
+      text: '{{filename}}'
+      flip: true
+  imagefond: 
+    label: Image de fond
+    type: selector
+    mode: single
+
+
+

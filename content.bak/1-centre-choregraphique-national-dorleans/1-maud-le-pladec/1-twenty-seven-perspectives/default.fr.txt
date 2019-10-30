@@ -76,7 +76,7 @@ Dates:
   agenda: oui
   actus: non
   personne: ""
-  home: ""
+  home: col3
 - 
   title: '<i>Twenty-seven perspectives</i>, Maud Le Pladec'
   type: Tournée
@@ -195,3 +195,7 @@ Dates:
   link: ""
   agenda: oui
   home: ""
+
+----
+
+Billeterie: https://ccn-orleans-reservations.mapado.com/event/orleans/dacing-kids-avec-anne-perbal-seance-dessai
