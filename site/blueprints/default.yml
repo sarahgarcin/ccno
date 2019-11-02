@@ -27,6 +27,7 @@ fields:
     entry: >
       {{title}} <br> {{personne}} <br> Du {{from}} au {{to}} <br> {{hours}} <br> {{place}}<br>
       {{link}} <br>
+      Image de couverture: {{cover}} <br>
       Afficher cette page dans la {{home}} de la page d'accueil
     fields:
       title:
@@ -70,4 +71,8 @@ fields:
           col1: Colonne 1
           col2: Colonne 2
           col3: Colonne 3
+      cover:
+        label: Image de couverture
+        type: selector
+        mode: single
 

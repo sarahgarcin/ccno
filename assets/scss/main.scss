@@ -308,6 +308,28 @@ main{
 	}
 }
 
+.pdf {
+	// margin-left: 20px;
+	li{
+		margin-bottom: $marginSmall;
+		line-height: 0.7;
+		&:before{
+			content:"⚡";
+			color: #000; 
+			font-size: 12px;
+			// margin-left: -20px;
+			margin-right: 0;
+		}
+	}
+	a{
+		font-size: $smallfont;
+		color: $rose;
+		&:hover{
+			color: #000; 
+		}
+	}
+}
+
 
 .btn{
 	a{
@@ -422,9 +444,6 @@ body[data-template="home"]{
 	}
 }
 
-@media only screen and (min-width: 64em){
-	
-}
 
 
 @media only screen and (min-width: 64em){
@@ -463,7 +482,7 @@ body[data-template="home"]{
 	}
 
 	main{
-		padding-top: 200px;
+		padding-top: 170px;
 		width: 100%;
 	}
 
@@ -478,6 +497,8 @@ body[data-template="home"]{
 		ul{
 			justify-content: flex-end;
 			li{
+				margin-right:0;
+				margin-left: 15px;
 				a{
 					font-size: $smallfont; 
 				}

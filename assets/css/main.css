@@ -2377,6 +2377,21 @@ main {
   .second-nav_address p {
     font-size: 0.8rem; }
 
+.pdf li {
+  margin-bottom: 10px;
+  line-height: 0.7; }
+  .pdf li:before {
+    content: "⚡";
+    color: #000;
+    font-size: 12px;
+    margin-right: 0; }
+
+.pdf a {
+  font-size: 0.8rem;
+  color: #ff5499; }
+  .pdf a:hover {
+    color: #000; }
+
 .btn a {
   border: 1px solid;
   padding: 5px 20px;
@@ -2495,7 +2510,7 @@ body[data-template="home"] h3 {
     header .desktop-second-nav {
       text-align: right; }
   main {
-    padding-top: 200px;
+    padding-top: 170px;
     width: 100%; }
   .languages {
     margin-bottom: 0; }
@@ -2506,8 +2521,11 @@ body[data-template="home"] h3 {
     .socialnetwork ul {
       -ms-flex-pack: end;
       justify-content: flex-end; }
-      .socialnetwork ul li a {
-        font-size: 0.8rem; }
+      .socialnetwork ul li {
+        margin-right: 0;
+        margin-left: 15px; }
+        .socialnetwork ul li a {
+          font-size: 0.8rem; }
   .big-image-wrapper img {
     margin-left: 0;
     max-width: 100%; }
