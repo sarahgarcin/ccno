@@ -42,14 +42,14 @@
 
 	<main class="row">
 		<?php snippet('left-col') ?>
-		<div class="home_main_colonnes col-md-9 col-md-offset-1 row">		
-			<div class='col-1 col-md-4'>
+		<div class="home_main_colonnes col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-1 row">		
+			<div class='col-1 col-sm-6 col-md-4'>
 				<?php echo createColumns($page->namecol1()->html(), $project1, $url1, $col1);?>
 			</div>
-			<div class='col-2 col-md-4'>
+			<div class='col-2 col-sm-6 col-md-4'>
 				<?php echo createColumns($page->namecol2()->html(), $project2, $url2, $col2);?>
 			</div>
-			<div class='col-3 col-md-4'>
+			<div class='col-3 col-sm-6 col-md-4'>
 				<?php echo createColumns($page->namecol3()->html(), $project3, $url3, $col3);?>
 			</div>
 		</div>
@@ -89,8 +89,17 @@
 				</div>';
 		}					
 	}
+	$cover = $col->cover()->toFile();
+	$colonnehtml = $colonnehtml . '<a href="' . $url . '" title="">';
+	if($col->cover()->isNotEmpty()){
+		$colonnehtml = $colonnehtml . 
+				'<div class="cover-wrapper image-wrapper-rose">
+					<figure>
+						<img src="'.$cover->url().'" title="'.$col->title().'">
+					</figure>
+				</div>';
+	}
 	$colonnehtml = $colonnehtml . '
-		<a href="' . $url . '" title="">
 			<div class="title-wrapper">
 				<h3>'.$col->type()->html().'</h3>
 				<h1>'.$col->title()->html().'</h1>

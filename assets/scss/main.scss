@@ -58,6 +58,25 @@ img {
 	height: auto;
 }
 
+.image-wrapper-rose{
+	background-color: $rose;
+	margin-bottom: $marginSmall;
+	margin-top: $marginSmall;
+	width: 80%;
+	transition: all 1s ease;
+	&:hover{
+		background-color: transparent;
+		figure{filter: grayscale(0);}
+	}
+	figure{
+		filter: grayscale(1);
+		mix-blend-mode: multiply;
+		margin:0;
+	}
+}
+
+
+
 .bulle{
 	font-family: "invisible", serif;
 }
@@ -70,7 +89,7 @@ img {
 .modal-newsletter{
 	display:none;
 	position: fixed; 
-	z-index: 2000;
+	z-index: 10001;
 	top:0;
 	left:0;
 	width: 100%;
@@ -79,19 +98,73 @@ img {
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0,0.4);
 	.modal-content{
-		background-color: #FEFEFE;
-		margin: 5% auto;
-		padding: 20px; 
+		background-color: #FFF;
+		margin: 2% auto;
+		padding: $marginSmall; 
 		border: 1px solid #888;
-		width: 50%;
+		width: 90%;
+		max-width: 600px;
 		.close-modal{
 			color: $rose;
 			float: right;
-			font-size: 32px;
+			font-size: 50px;
+			line-height: 0.5;
 			&:hover, &:focus{
 				color: #000;
 				text-decoration: none;
 				cursor: pointer;
+			}
+		}
+	}
+	// sendin blue customize
+	.sib-container{
+		padding: $marginNormal;
+		font-size: $p;
+		h1{
+			margin-bottom: $marginNormal;
+		}
+		.asterix{
+			color: $rose;
+		}
+		input[type="text"]{
+			display: block;
+			border: none;
+			border: 1px solid #000;
+			width: 100%;
+			max-width: 350px;
+			margin-bottom: $marginSmall;
+			font-size: $p;
+			padding: 5px;
+		}
+		.sib_list_row{
+			margin-top: $marginSmall;
+			font-size: $smallfont;
+			display:block;
+			& > div {
+				margin-bottom: 5px;
+			}
+			input{margin-right: 5px;}
+		}
+		button[type="submit"]{
+			border: 1px solid; 
+			padding: $marginSmall/2 $marginNormal;
+			text-align:center;
+			font-size: $p;
+			font-family: $font-family;
+			font-weight: normal;
+			margin-top: $marginSmall;
+			transition: all 0.4s ease; 
+			display:inline-block;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			cursor: pointer;
+			border-color: transparent;
+			background: $rose;
+			color: #FFF;
+			&:hover{
+				background: #FFF; 
+				border-color: $rose;
+				color: $rose;
 			}
 		}
 	}
@@ -104,8 +177,6 @@ img {
 .hide-for-small-only{
 	display:none;
 }
-
-
 
 // -------- FIN STYLE GENERAL ------------
 
@@ -147,7 +218,7 @@ header{
 			margin-right: $marginSmall/2;
 		}
 	}
-	.nav{display:none; height:100vh; background: #FFF;}
+	.nav{display:none; height:100vh; background: #FFF;margin:0;}
 	.main-nav{
 		margin-top: $marginNormal;
 		li{
@@ -161,11 +232,18 @@ header{
 	}
 	.main-nav_first-level{
 		> li{
+			&:hover, &:hover a{
+				color: $rose;
+				&::before{
+					color: #000; 
+				}
+			}
 			&::before{
 				content: "◼";
 				font-family: "orleans", sans-serif;
 				font-size: 12px;
 				margin-right: 3px;
+				color: $rose;
 			}
 		}
 	}
@@ -191,7 +269,7 @@ main{
 
 .languages{
 	text-transform: uppercase; 
-	margin-bottom: 5px;
+	margin-bottom: $marginSmall;
 	display:inline-block;
 	li{
 		display:inline-block;
@@ -207,12 +285,11 @@ main{
 }
 
 .socialnetwork {
-	margin-bottom: 7px;
-	
+	margin-bottom: $marginNormal;
 	ul{
 		display:flex;
 		li{
-			margin-left: 15px;
+			margin-right: 15px;
 			a{
 				font-size: $p; 
 				line-height: 1;
@@ -225,35 +302,45 @@ main{
 }
 
 .second-nav_address{
+	margin-top: $marginNormal;
 	p{
 		font-size:$smallfont;
 	}
 }
 
+
 .btn{
-	border: 1px solid; 
-	padding: 5px 10px;
-	text-align:center;
-	font-size: $p;
-	margin-bottom: $marginSmall;
-	transition: all 0.3s ease; 
-	&.btn-rose{
+	a{
+		border: 1px solid; 
+		padding: $marginSmall/2 $marginNormal;
+		text-align:center;
+		font-size: $p;
+		font-weight: normal;
+		margin-bottom: $marginSmall;
+		transition: all 0.4s ease; 
+		display:inline-block;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		cursor: pointer;
+	}
+	
+	&.btn-rose a{
 		border-color: transparent;
 		background: $rose;
-		color: #000; 
+		color: #FFF;
 		&:hover{
 			background: #FFF; 
 			border-color: $rose;
-			a{color: $rose;}
+			color: $rose;
 		}
 	}
-	&.btn-blanc{
-		border-color: #000;
+	&.btn-blanc a{
+		border-color: $rose;
 		background: #FFF;
 		color: #000;
 		&:hover{ 
-			border-color: $rose;
-			a{color: $rose;}
+			// border-color: transparent;
+			color: $rose;
 		}
 	}
 }
@@ -305,6 +392,10 @@ body[data-template="home"]{
 		a:hover h1, a:hover h2, a:hover h3{
 			color: $rose;
 		}
+		a:hover .image-wrapper-rose{
+			background-color: transparent;
+			figure{filter: grayscale(0);}
+		}
 		.home_main_colonnes > div{
 			margin-bottom: $marginBig;
 			position:relative;
@@ -331,8 +422,12 @@ body[data-template="home"]{
 	}
 }
 
+@media only screen and (min-width: 64em){
+	
+}
 
-@media only screen and (min-width: 75em){
+
+@media only screen and (min-width: 64em){
 	.show-for-small-only{
 		display:none !important;
 	}
@@ -379,6 +474,7 @@ body[data-template="home"]{
 
 	.socialnetwork{
 		padding-right: 0;
+
 		ul{
 			justify-content: flex-end;
 			li{
@@ -401,6 +497,7 @@ body[data-template="home"]{
 		padding: $marginNormal;
 	}
 	.home_main_colonnes{
+		margin-left: 4%;
 		&>div{
 			padding-right: $marginNormal;
 		}

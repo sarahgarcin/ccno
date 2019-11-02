@@ -66,7 +66,7 @@
 			</div>
 			<div class="second-nav_newsletter">
 				<ul>
-					<li class="open-newsletter-form btn btn-blanc">Recevoir la newsletter</li>
+					<li class="open-newsletter-form btn btn-blanc"><a class="link-not-active">Recevoir la newsletter</a></li>
 				</ul>
 			</div>							
 			<div class="second-nav_address">
