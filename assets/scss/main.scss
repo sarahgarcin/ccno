@@ -52,6 +52,10 @@ ul{
 	}
 }
 
+figure{
+	margin: $marginNormal 0;
+}
+
 img {
 	max-width: 100%;
 	width: 100%;
@@ -74,7 +78,6 @@ img {
 		margin:0;
 	}
 }
-
 
 
 .bulle{
@@ -178,6 +181,28 @@ img {
 	display:none;
 }
 
+
+// style pour le corps de texte
+.text {
+	margin-top: $marginNormal;
+	h1 + p, h2 + p{
+		margin-top: 0;
+	}
+	h4, .notes-dates h4, h2{
+		color: $rose;
+	}
+	a{
+		text-decoration: underline;
+	}
+
+}
+
+// note de côté de page
+.note{
+	color: $rose;
+	font-size: $note;
+}
+
 // -------- FIN STYLE GENERAL ------------
 
 
@@ -190,6 +215,7 @@ header{
 	z-index: 10000; 
 	padding: $marginSmall $marginNormal;
 	border-bottom: 1px solid #000; 
+	// position:relative;
 	a{text-decoration:none;}
 	.mobile-menu{
 		display:flex;
@@ -225,14 +251,19 @@ header{
 			padding-top: 2px; 
 			padding-bottom:2px;
 			cursor: pointer;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 			&.active{
 				color: $rose;
+				&::before{
+					color: #000;
+				}
 			}
 		}
 	}
 	.main-nav_first-level{
-		> li{
-			&:hover, &:hover a{
+		& > li{
+			&:hover, &:hover > a{
 				color: $rose;
 				&::before{
 					color: #000; 
@@ -245,13 +276,31 @@ header{
 				margin-right: 3px;
 				color: $rose;
 			}
+			ul > li{
+				a{color: #000;}
+				&:hover, &:hover a{
+					color: #FFF;
+				}
+			}
 		}
 	}
 	.main-nav_submenu{
 		background: $rose; 
 		color: #000;  
-		padding: $marginSmall;
-		display:none;
+		height:0;
+		max-height:0;
+		overflow: hidden; 
+		padding:0 $marginSmall;
+		transition: all 1s ease;
+		&.active{
+			padding: $marginSmall;
+			height: auto;
+			max-height: 200px; 
+			transition: all 1s ease;
+		}
+		a.active{
+			color:#FFF;
+		}
 	}
 
 	.second-nav{
@@ -259,6 +308,8 @@ header{
 
 	}
 }
+
+// --------- FIN MENU HEADER ----------
 
 main{
 	width: 90%;
@@ -309,7 +360,7 @@ main{
 }
 
 .pdf {
-	// margin-left: 20px;
+	margin-top: $marginNormal;
 	li{
 		margin-bottom: $marginSmall;
 		line-height: 0.7;
@@ -332,13 +383,13 @@ main{
 
 
 .btn{
+	margin-bottom: $marginSmall;
 	a{
 		border: 1px solid; 
 		padding: $marginSmall/2 $marginNormal;
 		text-align:center;
 		font-size: $p;
 		font-weight: normal;
-		margin-bottom: $marginSmall;
 		transition: all 0.4s ease; 
 		display:inline-block;
 		-webkit-font-smoothing: antialiased;
@@ -397,6 +448,67 @@ main{
 		width: 170px;
 	}
 }
+
+// -------------------- SLIDER -------------------------
+.slider{
+  margin-bottom: $marginSmall;
+  overflow:hidden;
+  margin-left: 0;
+  margin-top: $marginNormal;
+  .slider-image{
+  	&:after{
+    	content:"";
+    }
+  }
+  img {
+    margin:auto;
+    max-width:none;
+  }
+  button{
+    background: transparent;
+    padding: 0;
+    color: #FFF;
+    font-size: 2em;
+    font-weight: normal;
+    position:absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 999;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    &.slick-prev{
+      left:10px;
+    }
+    &.slick-next{
+      right:10px;
+    }
+  }
+  .slick-dots{
+    margin-left:0;
+    margin-top: $marginSmall;
+    li{
+      width: 10px;
+      height:10px;
+      background: grey;
+      border-radius: 100%;
+      display:inline-block;
+      margin-right: 0.5em;
+      cursor: pointer;
+      &:after{
+      	content:"";
+      }
+      &.slick-active{
+        background: $rose;
+      }
+    }
+    button{display:none;}
+  }
+}
+
+
+
+// -------------------------- FIN SLIDER ------------------------------------
 
 body[data-template="home"]{
 	// icone derriere le titre
@@ -475,6 +587,21 @@ body[data-template="home"]{
 		.main-nav_first-level{
 			column-count: 3;
 			-moz-column-count: 3;
+		}
+		.main-nav_submenu{
+			position: absolute;
+			top: calc(100% + 1px);
+			left:0; 
+			right:0;
+			padding: 0px $marginNormal;
+			&.active{
+				display:flex; 
+				justify-content: center;
+				padding: $marginSmall $marginNormal;
+			}
+			li{
+				padding: 0px $marginSmall;
+			}
 		}
 		.desktop-second-nav{
 			text-align: right;
