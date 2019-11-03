@@ -19,12 +19,12 @@
 						</a>
 					</div>
 				<?php endif ?>
-			<h1 class="col-xs-12">
+			<h1 class="main-content_title col-xs-12">
 				<?= $page->title()->html() ?>	
 			</h1>
 			<?php snippet('icone-page')?>
 			<div class="row">
-				<div class="text col-xs-12">
+				<div class="text col-xs-12 col-md-7 col-md-offset-1">
 					<?php echo $page->text()->kirbytext() ?>
 					<?php if($page->bio()->isNotEmpty()):?>
 						<div class="biography">

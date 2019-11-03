@@ -42,6 +42,10 @@ a:focus{
 	color: $rose;
 }
 
+.main-content_title{
+	font-size: $h1fat;
+}
+
 ul{
 	margin:0;
 	padding: 0;
@@ -60,6 +64,11 @@ img {
 	max-width: 100%;
 	width: 100%;
 	height: auto;
+}
+
+iframe{
+	margin: $marginSmall 0px 0px; 
+	width: 98%;
 }
 
 .image-wrapper-rose{
@@ -194,6 +203,12 @@ img {
 	a{
 		text-decoration: underline;
 	}
+	p:first-child{
+		margin-top:0;
+	}
+	h5 + h6{
+		margin-top: $marginNormal;
+	}
 
 }
 
@@ -201,6 +216,10 @@ img {
 .note{
 	color: $rose;
 	font-size: $note;
+}
+
+.main-content{
+	position:relative;
 }
 
 // -------- FIN STYLE GENERAL ------------
@@ -287,16 +306,16 @@ header{
 	.main-nav_submenu{
 		background: $rose; 
 		color: #000;  
-		height:0;
+		// height:0;
 		max-height:0;
 		overflow: hidden; 
-		padding:0 $marginSmall;
-		transition: all 1s ease;
+		padding: 0 $marginSmall;
+		transition: max-height 0.3s ease, padding 0.2s linear 0.2s;
 		&.active{
 			padding: $marginSmall;
-			height: auto;
+			// height: auto;
 			max-height: 200px; 
-			transition: all 1s ease;
+			transition: all 0.3s ease;
 		}
 		a.active{
 			color:#FFF;
@@ -449,12 +468,57 @@ main{
 	}
 }
 
+.main-content .icone{
+	top:-15px;
+	left: -10%;
+}
+
+
+// flèche de retour de page
+.arrow-back{
+	display: inline-block;
+    position: absolute;
+    font-size: 55px;
+    top:0;
+    left:-20px;
+    &:hover{
+    	a{
+    		color: $rose;
+    	}
+    }
+}
+
+// notes de dates côté de pages
+.notes-dates{
+	margin-top: $marginNormal;
+	li{
+		margin-bottom: $marginNormal;
+		a{
+			text-decoration: none !important;
+			&:hover{
+				h4{color: #000;}
+				h5, h6{color:$rose;}
+			}
+		}
+	}
+	h5, h6{
+		margin:0;
+		font-size: $p;
+	}
+	h4{
+		line-height: 1;
+		margin: 0;
+		font-size: $p;
+	}
+}
+
+
 // -------------------- SLIDER -------------------------
 .slider{
   margin-bottom: $marginSmall;
   overflow:hidden;
   margin-left: 0;
-  margin-top: $marginNormal;
+  &:not(:first-child){margin-top: $marginNormal;}
   .slider-image{
   	&:after{
     	content:"";
@@ -566,6 +630,25 @@ body[data-template="home"]{
 		display:block !important;
 	}
 
+	.icone{
+		left:0;
+	}
+
+	.arrow-back{
+		left: -40px;
+    top: 0px;
+	}
+
+	.text{
+		figure{
+			width: 80%;
+		}
+		.slider{
+			width: 90%;
+		}
+	}
+
+
 	header{
 		padding: $marginNormal;
 		h1, h1 a{
@@ -591,13 +674,15 @@ body[data-template="home"]{
 		.main-nav_submenu{
 			position: absolute;
 			top: calc(100% + 1px);
+			// top: 0;
 			left:0; 
 			right:0;
-			padding: 0px $marginNormal;
+			padding: 0 $marginNormal;
+			display:flex;
+			justify-content: center;
 			&.active{
-				display:flex; 
-				justify-content: center;
 				padding: $marginSmall $marginNormal;
+				// top:calc(100% + 1px);
 			}
 			li{
 				padding: 0px $marginSmall;

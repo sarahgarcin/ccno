@@ -2,13 +2,12 @@
   $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
 ?>
 
-<div class="notes-dates small-16 medium-16 large-5 large-push-2 xlarge-3 xlarge-push-2 end columns">
+<div class="notes-dates col-xs-12 col-md-4">
 	<?php if($page->billeterie()->isNotEmpty()):?>
-		<a href="<?php echo $page->billeterie()->text()?>" title="Réservation" target="_blank">
-			<div class="bouton-billeterie">
-				Réservation
-			</div>
-		</a>
+		<div class="notes-dates_billeterie btn btn-rose">
+			<a href="<?php echo $page->billeterie()->text()?>" title="Réservation" target="_blank">Réservation
+			</a>
+		</div>
 	<?php endif?>
 	<ul>
 		<?php foreach($page->dates()->toStructure() as $dates):?>
