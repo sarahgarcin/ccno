@@ -1,10 +1,5 @@
 <?php snippet('header') ?>
 
-<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-  $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
-?>
-
-
 <div>
 	<?php snippet('menu') ?>
 
@@ -19,14 +14,15 @@
 				<div class="col-xs-12 col-md-offset-1">
 					<div class="creations list-with-images col-md-10">
 						<h1>Créations</h1>
-						<ul>
+						<ul class="row">
 							<?php foreach($page->children()->visible() as $child):?>
-								<li>
+								<li class="col-sm-6">
 									<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
 										<?php echo $child->title()->html()?>
 										<?php if($child->hasImages()):?>
 											<div class="thumb-wrapper">
 												<figure>
+													<!-- <?//= $child->images()->first()->crop(500, 500);?> -->
 													<img src="<?php echo $child->images()->first()->url()?>" alt="<?php echo $child->title()?>">
 												</figure>
 												

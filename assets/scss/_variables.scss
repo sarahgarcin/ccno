@@ -124,7 +124,6 @@ $smallfont: 0.8rem;
 @mixin imageRose{
 	background-color: $rose;
 	transition: all 1s ease;
-	height: 98%;
 	&:hover{
 		background-color: transparent;
 		figure{filter: grayscale(0) brightness(1);}
