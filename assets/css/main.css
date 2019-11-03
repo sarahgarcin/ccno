@@ -2525,7 +2525,7 @@ main {
     font-size: 1.25rem; }
 
 .slider {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   overflow: hidden;
   margin-left: 0; }
   .slider:not(:first-child) {
@@ -2615,6 +2615,8 @@ body[data-template="maud"] .creations {
 
 body[data-template="maud"] .list-with-images, body[data-template="accueils"] .list-with-images, body[data-template="ateliers"] .list-with-images {
   margin-top: 40px; }
+  body[data-template="maud"] .list-with-images h3, body[data-template="accueils"] .list-with-images h3, body[data-template="ateliers"] .list-with-images h3 {
+    font-size: 21px; }
   body[data-template="maud"] .list-with-images li, body[data-template="accueils"] .list-with-images li, body[data-template="ateliers"] .list-with-images li {
     display: block;
     position: relative;
@@ -2645,6 +2647,12 @@ body[data-template="maud"] .list-with-images, body[data-template="accueils"] .li
       filter: grayscale(0) brightness(1); }
     body[data-template="maud"] .list-with-images li figure, body[data-template="accueils"] .list-with-images li figure, body[data-template="ateliers"] .list-with-images li figure {
       margin-top: 10px; }
+
+body[data-template="atelier"] .text .btn {
+  margin: 20px 0px 40px;
+  text-align: center; }
+  body[data-template="atelier"] .text .btn a {
+    text-decoration: none; }
 
 @media only screen and (max-width: 48em) {
   .row {

@@ -516,7 +516,7 @@ main{
 
 // -------------------- SLIDER -------------------------
 .slider{
-  margin-bottom: $marginSmall;
+  margin-bottom: $marginNormal;
   overflow:hidden;
   margin-left: 0;
   &:not(:first-child){margin-top: $marginNormal;}
@@ -618,34 +618,16 @@ body[data-template="home"]{
 body[data-template="maud"]{
 	.creations{
 		margin: $marginBig 0px;
-		h1{
-			margin-bottom: $marginBig;
-		}
-		figure{
-			margin: $marginSmall 0px;
-		}
-		li{
-			// margin: $marginSmall 0px;
-			font-size: $h2;
-			// position: relative;
-			// display:inline-block;
-			// .thumb-wrapper{
-			// 	@include imageRose;
-			// }
-			// a:hover{
-			// 	color: $rose;
-			// 	.thumb-wrapper{
-			// 		background-color: transparent;
-			// 	}
-			// 	figure{filter: grayscale(0) brightness(1);}
-			// }
-		}
+		h1{margin-bottom: $marginBig;}
+		figure{margin: $marginSmall 0px;}
+		li{font-size: $h2;}
 	}
 }
 
 body[data-template="maud"], body[data-template="accueils"], body[data-template="ateliers"]{
 	.list-with-images{
 		margin-top: $marginBig;
+		h3{font-size: 21px;}
 		li{
 			display:block;
 			position:relative;
@@ -669,15 +651,17 @@ body[data-template="maud"], body[data-template="accueils"], body[data-template="
 			figure{
 				margin-top: 10px;
 			}
-			// &:last-child:after{
-			// 	content:"";
-			// }
-			// &::before{
-			// 	content:"—";
-			// 	font-family: $font-family;
-			// 	line-height: 60px;
-			// 	padding-left: 0;
-			// }
+		}
+	}
+}
+
+body[data-template="atelier"]{
+
+	.text .btn{
+		margin: $marginNormal 0px $marginBig;
+		text-align: center;
+		a{
+			text-decoration:none;
 		}
 	}
 }
@@ -715,6 +699,7 @@ body[data-template="maud"], body[data-template="accueils"], body[data-template="
 	}
 	body[data-template="maud"], body[data-template="accueils"], body[data-template="ateliers"]{
 		.list-with-images{
+
 			li{
 				padding: 0px $marginNormal;
 				.carre-rose{
