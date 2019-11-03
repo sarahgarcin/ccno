@@ -64,6 +64,7 @@ img {
 	max-width: 100%;
 	width: 100%;
 	height: auto;
+	vertical-align: top;
 }
 
 iframe{
@@ -614,9 +615,58 @@ body[data-template="home"]{
 	}
 }
 
+body[data-template="maud"]{
+	.creations{
+		margin: $marginBig 0px;
+		h1{
+			margin-bottom: $marginNormal;
+		}
+		figure{
+			margin: $marginSmall 0px;
+		}
+		li{
+			margin: $marginSmall 0px;
+			font-size: $h2;
+			position: relative;
+			display:inline-block;
+			.thumb-wrapper{
+				@include imageRose;
+			}
+			a:hover{
+				color: $rose;
+				.thumb-wrapper{
+					background-color: transparent;
+				}
+				figure{filter: grayscale(0) brightness(1);}
+			}
+		}
+	}
+}
 @media only screen and (max-width: 48em){
 	.row{
 		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 48em){
+
+	body[data-template="maud"]{
+		.creations{
+			li{
+				margin:2px 0;
+				&:after{
+					@include listSepartor($h2)
+				}
+				.thumb-wrapper{
+					position:absolute;
+					width: 270px;
+					left: 70%;
+					top: -100px;
+					z-index: 100;
+					display:none;
+				}
+			}
+		}
 	}
 }
 
