@@ -642,6 +642,37 @@ body[data-template="maud"]{
 		}
 	}
 }
+
+body[data-template="accueils"]{
+	.list-with-images{
+		margin-top: $marginBig;
+		li{
+			display:block;
+			position:relative;
+			margin-bottom: $marginNormal;
+			.thumb-wrapper{
+				@include imageRose;
+			}
+			a:hover{
+				h2, h3{color: $rose;}
+				.thumb-wrapper{
+					background-color: transparent;
+				}
+				figure{filter: grayscale(0) brightness(1);}
+			}
+			&:last-child:after{
+				content:"";
+			}
+			&::before{
+				content:"—";
+				font-family: $font-family;
+				line-height: 60px;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 48em){
 	.row{
 		margin: auto;
@@ -657,6 +688,22 @@ body[data-template="maud"]{
 				&:after{
 					@include listSepartor($h2)
 				}
+				.thumb-wrapper{
+					position:absolute;
+					width: 270px;
+					left: 70%;
+					top: -100px;
+					z-index: 100;
+					display:none;
+				}
+			}
+		}
+	}
+	body[data-template="accueils"]{
+		.list-with-images{
+			li{
+				margin-bottom: 0;
+				// h2{margin-bottom: $marginSmall;}
 				.thumb-wrapper{
 					position:absolute;
 					width: 270px;

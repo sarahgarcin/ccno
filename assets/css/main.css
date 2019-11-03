@@ -2636,6 +2636,40 @@ body[data-template="maud"] .creations {
         -webkit-filter: grayscale(0) brightness(1);
         filter: grayscale(0) brightness(1); }
 
+body[data-template="accueils"] .list-with-images {
+  margin-top: 40px; }
+  body[data-template="accueils"] .list-with-images li {
+    display: block;
+    position: relative;
+    margin-bottom: 20px; }
+    body[data-template="accueils"] .list-with-images li .thumb-wrapper {
+      background-color: #ff5499;
+      transition: all 1s ease;
+      height: 98%; }
+      body[data-template="accueils"] .list-with-images li .thumb-wrapper:hover {
+        background-color: transparent; }
+        body[data-template="accueils"] .list-with-images li .thumb-wrapper:hover figure {
+          -webkit-filter: grayscale(0) brightness(1);
+          filter: grayscale(0) brightness(1); }
+      body[data-template="accueils"] .list-with-images li .thumb-wrapper figure {
+        -webkit-filter: grayscale(1) brightness(1.5);
+        filter: grayscale(1) brightness(1.5);
+        mix-blend-mode: multiply; }
+    body[data-template="accueils"] .list-with-images li a:hover h2, body[data-template="accueils"] .list-with-images li a:hover h3 {
+      color: #ff5499; }
+    body[data-template="accueils"] .list-with-images li a:hover .thumb-wrapper {
+      background-color: transparent; }
+    body[data-template="accueils"] .list-with-images li a:hover figure {
+      -webkit-filter: grayscale(0) brightness(1);
+      filter: grayscale(0) brightness(1); }
+    body[data-template="accueils"] .list-with-images li:last-child:after {
+      content: ""; }
+    body[data-template="accueils"] .list-with-images li::before {
+      content: "—";
+      font-family: "directrice", serif;
+      line-height: 60px;
+      padding-left: 0; }
+
 @media only screen and (max-width: 48em) {
   .row {
     margin: auto; } }
@@ -2650,6 +2684,15 @@ body[data-template="maud"] .creations {
       padding-left: 1rem;
       padding-right: 0.8rem; }
     body[data-template="maud"] .creations li .thumb-wrapper {
+      position: absolute;
+      width: 270px;
+      left: 70%;
+      top: -100px;
+      z-index: 100;
+      display: none; }
+  body[data-template="accueils"] .list-with-images li {
+    margin-bottom: 0; }
+    body[data-template="accueils"] .list-with-images li .thumb-wrapper {
       position: absolute;
       width: 270px;
       left: 70%;
