@@ -64,6 +64,9 @@
     <?php if($section == 'voulez-vous-danser'):?>
       style="background: <?php echo $site->index()->find('voulez-vous-danser')->color()?>"
     <?php endif;?>
+    <?php if($page->template() == 'jgm'):?>
+      style="background: <?php echo $page->backcolor()?>"
+    <?php endif;?>
   >
 
   <?php snippet('popupnewsletter') ?>

@@ -23,14 +23,14 @@
 						<input name="req_hid" id="req_hid" value="~Captcha~NOM~PRENOM~interestList" style="font-size: 13px;" type="hidden"> 
 						<div class="header"> 
 							<h1 class="title editable" data-editfield="newsletter_name">
-								Inscription à la newsletter <br>du CCNO
+								<?= l::get('inscription') ?>
 							</h1> 
 						</div> 
 						<div class="view-messages" style=" margin:5px 0;"> </div> 
 						<!-- an email as primary --> 
 						<div class="primary-group email-group forms-builder-group ui-sortable" style=""> 
 							<div>
-								<div class="lbl-tinyltr" style="clear:both; float:none;" >Nom / Structure<red class="asterix">*</red>
+								<div class="lbl-tinyltr" style="clear:both; float:none;" ><?= l::get('nom') ?>
 								</div> 
 								<input name="NOM" id="NOM" value="" type="text"> 
 								<div class="clear" style="clear:both;"></div>
@@ -39,7 +39,7 @@
 								</div> 
 							</div>
 							<div>
-								<div class="lbl-tinyltr" style="clear:both; float:none;" >Prénom<red class="asterix">*</red>
+								<div class="lbl-tinyltr" style="clear:both; float:none;" ><?= l::get('prenom') ?>
 								</div> 
 								<input name="PRENOM" id="PRENOM" value="" type="text">
 								<div class="clear" style="clear:both;"></div>
@@ -47,28 +47,28 @@
 								</div> 
 							</div>
 							<div class="mandatory-email"> 
-								<div class="lbl-tinyltr" style="clear: both; float: none;" >Email&nbsp;<red class="asterix">*</red>
+								<div class="lbl-tinyltr" style="clear: both; float: none;" ><?= l::get('email') ?>
 								</div> 
 								<input name="email" id="email" value="" type="text"> 
 								<div style="clear:both;"></div> <div class="hidden-btns"> <a class="btn move" href="#"><i class="fa fa-arrows"></i></a><br> <!--<a class="btn btn-danger delete" href="#"><i class="fa fa-trash-o fa-inverse"></i></a>--> 
 								</div> 
 							</div> 
 							<div class="row sib_list_row"> 
-								<div class="lbl-tinyltr sib_list_label" style="clear:both; float:none; " >Quelles informations souhaitez-vous recevoir ?<red class="asterix">*</red>
+								<div class="lbl-tinyltr sib_list_label" style="clear:both; float:none; " ><?= l::get('infos') ?>
 								</div>
 								<div class="lbl-tinyltr sib_list" id="list_4" data-listid="4" data-listname="NOUVEAUX CONTACTS" style="clear:both; float:none;" >
-									<input value="4" name="listIds[]" type="checkbox">Toutes</div>
+									<input value="4" name="listIds[]" type="checkbox"><?= l::get('toutes') ?></div>
 									<div class="lbl-tinyltr sib_list" id="list_17" data-listid="17" data-listname="PUBLICS" style="clear:both; float:none;" >
-										<input value="17" name="listIds[]" type="checkbox">Spectacles et événements
+										<input value="17" name="listIds[]" type="checkbox"><?= l::get('spectaclesetevenements') ?>
 									</div>
 									<div class="lbl-tinyltr sib_list" id="list_24" data-listid="24" data-listname="ARTISTES" style="clear:both; float:none;" >
-										<input value="24" name="listIds[]" type="checkbox">Auditions, stages, formations PROS
+										<input value="24" name="listIds[]" type="checkbox"><?= l::get('auditions') ?>
 									</div>
 									<div class="lbl-tinyltr sib_list" id="list_21" data-listid="21" data-listname="Cours et ateliers amateurs" style="clear:both; float:none;" >
-										<input value="21" name="listIds[]" type="checkbox">Cours et ateliers amateurs
+										<input value="21" name="listIds[]" type="checkbox"><?= l::get('coursetateliers') ?>
 									</div>
 									<div class="lbl-tinyltr sib_list" id="list_18" data-listid="18" data-listname="PROS" style="clear:both; float:none;" >
-										<input value="18" name="listIds[]" type="checkbox">Tournées de Maud Le Pladec
+										<input value="18" name="listIds[]" type="checkbox"><?= l::get('tourneesmaud') ?>
 									</div> 
 									<input name="interestLists" value="~4~17~24~21~18" type="hidden"> 
 									<div class="clear" style="clear:both;"></div> 
@@ -84,7 +84,7 @@
 						<!-- end of primary -->
 						<div class="byline" display: block;"> 
 							<button class="button editable " type="submit" data-editfield="subscribe">
-								S'inscrire
+								<?= l::get('sinscrire') ?>
 							</button>
 						</div> 
 						<div style="clear:both;"></div> 

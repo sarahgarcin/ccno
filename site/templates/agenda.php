@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];?>
+<?php $mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];?>
 
 <?php 
 	$projets = $site->index()->filterBy('template',  'in', ['default', 'atelier', 'accueil']);
@@ -128,7 +128,7 @@
 		
 		<div class="main-content">
 			<h1 class="orleans"><?= $page->title()->html() ?></h1>
-
+			<?php snippet('icone-page')?>
 			<div class="themes row">
 				<?php foreach($site->index()->find('themes')->children()->visible() as $theme):?>
 					<div class="theme-module small-10 medium-6 large-4 columns end">
@@ -143,18 +143,18 @@
 
 			<hr>
 
-			<h2 class="click---past-events">→ Voir les rendez-vous passés</h2>	
-			<h3 class="title--next-events">← Retour aux rendez-vous futurs </h3>
+			<h2 class="click---past-events"><?= l::get('rdvpasses') ?></h2>	
+			<h3 class="title--next-events"><?= l::get('rdvfutur') ?></h3>
 				
 
 			
 			<div class="tags">
-				<span>Trier par:</span>
+				<span><?= l::get('trier') ?></span>
 				<ul>
-					<li class="all active">tout</li>
-					<li class="spectacle">spectacles</li>
-					<li class="inorleans">à orléans</li>
-					<li class="cours">cours/ateliers/stages</li>
+					<li class="all active"><?= l::get('tout') ?></li>
+					<li class="spectacle"><?= l::get('spectacles') ?></li>
+					<li class="inorleans"><?= l::get('inorleans') ?></li>
+					<li class="cours"><?= l::get('cours') ?></li>
 				</ul>
 			</div>
 
@@ -190,7 +190,7 @@
 					    		<?php if($date["datestart"] == $date["dateend"]):?>
 					    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
 					    		<?php else:?>
-					    			<?php echo 'Du '.$date['fromDay']." ".$date['fromMonth'].' Au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+					    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
 					    		<?php endif;?>
 					    	</a>
 					    </td>
@@ -241,7 +241,7 @@
 							    		<?php if($date["datestart"] == $date["dateend"]):?>
 							    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
 							    		<?php else:?>
-							    			<?php echo 'du '.$date['fromDay']." ".$date['fromMonth'].' au '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+							    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
 							    		<?php endif;?>
 							    	</a>
 							    </td>

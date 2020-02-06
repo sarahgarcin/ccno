@@ -1,7 +1,7 @@
 Bonjour,
 
-Nous avons bien reçu votre demande d’accueil studio pour la période de septembre à décembre 2020.
-Le comité de lecture du CCNO se réunit en novembre 2019 et nous vous redonnerons des nouvelles en décembre 2019.
+Nous avons bien reçu votre demande d’accueil studio pour la période de janvier à juin 2021.
+Le comité de lecture du CCNO se réunit en juin 2020 et nous vous redonnerons des nouvelles en juin 2020.
 
 Cordialement,
 

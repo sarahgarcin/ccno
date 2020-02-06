@@ -1,8 +1,8 @@
-<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-  $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
+<?php $mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];
+  $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 ?>
 
-<div class="notes-dates col-xs-12 col-md-4">
+<div class="notes-dates small-16 medium-16 large-5 large-push-2 xlarge-3 xlarge-push-2 end columns">
 	<?php if($page->billeterie()->isNotEmpty()):?>
 		<div class="notes-dates_billeterie btn btn-rose">
 			<a href="<?php echo $page->billeterie()->text()?>" title="Réservation" target="_blank">Réservation

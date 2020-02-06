@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 
-<?php $mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-	 $day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
+<?php $mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];
+  $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 ?>
 
 <div class ="row">
@@ -10,7 +10,7 @@
 	<?php snippet('left-col') ?>
 	<?php snippet('menu') ?>
 	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<div class="main-content">
+		<div class="main-content" data-fontcolor="<?php echo $page->fontcolor()?>">
 			<?php if($page->imagefond()->isNotEmpty()):?>
 				<div class="background-image">
 					<?php $imageback = $page->imagefond()->toFile();?>
@@ -26,7 +26,7 @@
 				</div>
 			<?php endif; ?>
 			<div class="jgm-entete">
-				<h1 class="small-9 medium-7 large-7">
+				<h1 class="small-9 medium-7 large-7" style="text-shadow: -1px -1px 0 <?php echo $page->fontcolor()?>, 1px -2px 0 <?php echo $page->fontcolor()?>, -1px 1px 0 <?php echo $page->fontcolor()?>, 3px 1px 0 <?php echo $page->fontcolor()?>;">
 					<?= $page->title()->html() ?>	
 				</h1>
 				<h2 class="subtitle"><?= $page->subtitle()->html() ?></h2>
@@ -139,14 +139,14 @@
 			</div>
 			<?php if($page->text()->isNotEmpty()):?>
 				<div class='edito'>
-					<h1>Edito</h1>
+					<h1 style="text-shadow: -1px -1px 0 <?php echo $page->fontcolor()?>, 1px -2px 0 <?php echo $page->fontcolor()?>, -1px 1px 0 <?php echo $page->fontcolor()?>, 3px 1px 0 <?php echo $page->fontcolor()?>;">Edito</h1>
 					<br>
 					<?php echo $page->text()->kt()?>
 				</div>
 			<?php endif ?>
 			<?php if($page->actus()->isNotEmpty()):?>
 				<div class='actus'>
-					<h1>Actualités</h1>
+					<h1 style="text-shadow: -1px -1px 0 <?php echo $page->fontcolor()?>, 1px -2px 0 <?php echo $page->fontcolor()?>, -1px 1px 0 <?php echo $page->fontcolor()?>, 3px 1px 0 <?php echo $page->fontcolor()?>;">Actualités</h1>
 					<br>
 					<?php echo $page->actus()->kt()?>
 				</div>
@@ -161,7 +161,7 @@
 					endforeach; 
 				}?>
 				<?php if (findJGMchildren($page->children())):?>
-					<h1>Anciennes éditions</h1>
+					<h1 style="text-shadow: -1px -1px 0 <?php echo $page->fontcolor()?>, 1px -2px 0 <?php echo $page->fontcolor()?>, -1px 1px 0 <?php echo $page->fontcolor()?>, 3px 1px 0 <?php echo $page->fontcolor()?>;">Anciennes editions</h1>
 				
 					<ul class="row">
 					<?php foreach($page->children()->filterBy('intendedTemplate', 'jgm') as $child):?>

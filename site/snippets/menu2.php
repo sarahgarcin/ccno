@@ -1,5 +1,5 @@
 <header class="module--menu menu-bottom">
-	<nav class="module--menu--mainNav">
+	<nav class="module--menu--mainNav nav">
 		<ul id="menu-bottom-list">
 			<?php $position = $page->parent()->num();
 						$count = $pages->visible()->count();
