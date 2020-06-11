@@ -2203,6 +2203,9 @@ iframe {
 .orleans {
   font-family: "orleans", sans-serif; }
 
+.barre {
+  text-decoration: line-through; }
+
 .modal-newsletter, .modal-alert {
   position: fixed;
   z-index: 10001;
@@ -2856,9 +2859,14 @@ body[data-template='jgm'] .main-content h1 {
   text-shadow: -1px -1px 0 #000, 1px -2px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
   line-height: 0.8; }
 
-body[data-template='jgm'] .main-content h2.subtitle {
+body[data-template='jgm'] .main-content .subtitle {
   padding-left: 0;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 36px;
+  line-height: 1; }
+  body[data-template='jgm'] .main-content .subtitle p, body[data-template='jgm'] .main-content .subtitle li {
+    font-size: 36px;
+    line-height: 1; }
 
 body[data-template='jgm'] .main-content .list-with-images a {
   text-decoration: none; }

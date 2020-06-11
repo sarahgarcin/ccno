@@ -39,7 +39,7 @@
 					<?php endif; ?>
 				</h1>
 				<?php snippet('icone-page')?>
-				<h2 class="subtitle col-md-9"><?= $page->subtitle()->html() ?></h2>
+				<div class="subtitle col-md-9"><?= $page->subtitle()->kt() ?></div>
 				<div class="text col-xs-12 col-md-11 col-md-offset-1">
 					<div class="col-md-8">
 						<?= $page->infos()->kt() ?>

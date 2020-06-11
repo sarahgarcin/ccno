@@ -102,6 +102,11 @@ iframe{
 	font-family: $orleans-font;
 }
 
+// tags barré pour barrer le texte
+.barre {
+	text-decoration: line-through;
+}
+
 // Newsletter + Pop up alert
 .modal-newsletter, .modal-alert{
 	position: fixed; 
@@ -910,9 +915,15 @@ body[data-template='jgm']{
 		h1{
 			@include degaulle;
 		}
-		h2.subtitle{
+		.subtitle{
 			padding-left:0;
 			margin-top: 10px;
+			font-size: 36px;
+			line-height:1;
+			p, li{
+				font-size: 36px;
+				line-height:1;
+			}
 		}
 		.list-with-images{
 			a {
