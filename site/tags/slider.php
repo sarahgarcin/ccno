@@ -9,9 +9,9 @@ kirbytext::$tags['slider'] = array(
 
     foreach($tag->page()->images()->filterBy('filename', '*=', $tag->attr('slider')) as $slide) {
       $html .= '<li class="slider-image">';
-      // $html .= '<img src="' . $slide->url() . '">';
+      $html .= '<img src="' . $slide->url() . '">';
       // $html .= thumb($slide, array('width' => 800));
-      $html .= $slide->crop(1200, 800);
+      // $html .= $slide->crop(1200, 800);
       $html .= '</li>';
     }
 

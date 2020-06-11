@@ -2587,7 +2587,7 @@ main {
     background: transparent;
     padding: 0;
     color: #FFF;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: normal;
     position: absolute;
     top: 45%;
@@ -2596,7 +2596,14 @@ main {
     z-index: 999;
     outline: none;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    background: #969696;
+    border-radius: 100%;
+    opacity: 0.4;
+    padding: 0px 6px 2px 6px;
+    transition: opacity 0.5s linear; }
+    .slider button:hover {
+      opacity: 0.8; }
     .slider button.slick-prev {
       left: 10px; }
     .slider button.slick-next {
