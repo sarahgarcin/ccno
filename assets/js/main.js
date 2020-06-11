@@ -104,6 +104,7 @@ function init(){
 	$('.close-modal').on('click',function(){
 		console.log('close newsletter');
 		$('.modal-newsletter').css('display', 'none').removeClass('active');
+		$('.modal-alert').css('display', 'none');
 		$('.module--menu--mainNav .menu-top-list > .open-newsletter-form').removeClass('active');
 	});
 
@@ -241,7 +242,7 @@ function init(){
 				$('.click---past-events').addClass('active');
 				$('.title--next-events').removeClass('active');
 				$('.click---past-events').html('Rendez-vous passés');
-				$('.title--next-events').show();
+				$('.title--next-events').css("display", "inline-block");
 			}
 		}
 		// Trier par tags

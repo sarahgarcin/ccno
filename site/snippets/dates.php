@@ -2,7 +2,7 @@
   $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 ?>
 
-<div class="notes-dates small-16 medium-16 large-5 large-push-2 xlarge-3 xlarge-push-2 end columns">
+<div class="notes-dates col-xs-12 col-md-4">
 	<?php if($page->billeterie()->isNotEmpty()):?>
 		<div class="notes-dates_billeterie btn btn-rose">
 			<a href="<?php echo $page->billeterie()->text()?>" title="Réservation" target="_blank">Réservation

@@ -1,4 +1,5 @@
 <?php snippet('header') ?>
+<?php snippet('alertpopup') ?>
 
 <?php 
 	$projets = $site->index()->filterBy('template', 'in', ['default', 'atelier', 'accueil', 'maud']);
@@ -34,11 +35,10 @@
 
 
 <div>
-	<?php //snippet('left-col') ?>
 	<?php snippet('menu') ?>
-	<!-- <div class="big-image-wrapper image-wrapper">
-		<img src="<?php //echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
-	</div> -->
+	<div class="big-image-wrapper image-wrapper">
+		<img src="<?php echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
+	</div> 
 
 	<main class="row">
 		<?php snippet('left-col') ?>
@@ -63,8 +63,8 @@
 
 
 <?php function createColumns($colname, $project, $url, $col){
-	$mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-	$day = ['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
+	$mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];
+  $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 
 
 	$colonnehtml = '<h4>'. $colname .'</h4>';
@@ -95,13 +95,16 @@
 		$colonnehtml = $colonnehtml . 
 				'<div class="cover-wrapper image-wrapper-rose">
 					<figure>
-						<img src="'.$cover->url().'" title="'.$col->title().'">
+						'. $cover->crop(500, 350).'
 					</figure>
 				</div>';
 	}
+	// <h3>'.$col->type()->html().'</h3>
+	// <figure>
+	// 	<img src="'.$cover->url().'" title="'.$col->title().'">
+	// </figure>
 	$colonnehtml = $colonnehtml . '
 			<div class="title-wrapper">
-				<h3>'.$col->type()->html().'</h3>
 				<h1>'.$col->title()->html().'</h1>
 				<h2>'.$col->personne()->html().'</h2> 
 			</div>';
@@ -110,7 +113,7 @@
 		$colonnehtml = $colonnehtml . $day[date("N", strtotime($col->from())) - 1]. " " . date("d", strtotime($col->from())) . " " . $mois[date("n", strtotime($col->from())) - 1] . " " . date("Y", strtotime($col->from()));
 	}
 	else{
-	$colonnehtml = $colonnehtml . 'du '.$day[date("N", strtotime($col->from())) - 1]. " " . date("d", strtotime($col->from())) . " " . $mois[date("n", strtotime($col->from())) - 1] . "</br>au " . $day[date("N", strtotime($col->to())) - 1]. " " . date("d", strtotime($col->to())) . " " . $mois[date("n", strtotime($col->to())) - 1]. " " . date("Y", strtotime($col->to()));
+	$colonnehtml = $colonnehtml . ' '.l::get('du').' '.$day[date("N", strtotime($col->from())) - 1]. " " . date("d", strtotime($col->from())) . " " . $mois[date("n", strtotime($col->from())) - 1] . '</br>'.l::get('au').' ' . $day[date("N", strtotime($col->to())) - 1]. " " . date("d", strtotime($col->to())) . " " . $mois[date("n", strtotime($col->to())) - 1]. " " . date("Y", strtotime($col->to()));
 	}
 	if($col->hours()->isNotEmpty()){
 		$colonnehtml = $colonnehtml . '</br>' . $col->hours()->html();

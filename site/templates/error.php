@@ -1,13 +1,14 @@
 <?php snippet('header') ?>
 
-<div class ="row">
-
-	<?php snippet('left-col') ?>
+<div>
 	<?php snippet('menu') ?>
-	<main class="error-page small-18 medium-6 medium-push-7 large-7 large-push-6 end columns">
-		<div class="main-content">
+
+	<main class="row">
+		<?php snippet('left-col') ?>
+		<div class="default_main col-xs-12 col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-1">
+			<div class="main-content">
 			<h2><?php echo $page->text()->html() ?></h2>
-			<div class="image-wrapper small-18">
+			<div class="image-wrapper col-xs-12 col-md-8">
 				<img src="<?php echo $page->images()->first()->url()?>" alt="<?php echo $page->image()->first()->filename()?>">
 			</div>
 

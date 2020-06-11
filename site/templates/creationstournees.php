@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
 
 <?php $mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];
+  $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 ?>
 
 <?php 
@@ -52,88 +53,94 @@
 
 ?>
 
-
-
-<div class ="row">
-
-	<?php snippet('left-col') ?>
+<div>
 	<?php snippet('menu') ?>
-	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		
-		<div class="main-content">
-			<h1 class="orleans"><?= l::get('creations') ?></h1>
-			<?php snippet('icone-page')?>
-			<div class="creations list-with-images small-18 medium-16 large-14 xlarge-8">
-				<ul>
-					<?php foreach($site->index()->find('centre-choregraphique-national-dorleans/maud-le-pladec')->children()->visible() as $child):?>
-						<li>
-							<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
-							<?php echo $child->title()->html()?>
-							</a>
-							<?php if($child->hasImages()):?>
-								<div class="thumb-wrapper">
-									<img src="<?php echo $child->images()->first()->url()?>" alt="<?php echo $child->title()?>">
-								</div>
-							<?php endif ?>
-						</li>
-					<?php endforeach ?>
-				</ul>
-			</div>
-			<div class="creations-text small-18 medium-16 large-12 xlarge-8">
-				<?php echo $page->text()->kt()?>
-			</div>
 
-			<hr>
-
-			<h1 class="orleans"><?= l::get('calendriertournee') ?></h1>
-			<?php $previousMonth = null;
-				$previousYear = null;
-				foreach($arrayMaud as $date):?>
-				<?php 
-					if($previousYear != $date['fromYear']):?>
-				 		<h2><?php echo $date['fromYear'];?></h2>
-				 	<?php endif;
-					$previousYear = $date['fromYear'];
-				?>
-				<table>
-				<colgroup>
-					<col span="1" style="width: 20%;">
-		      <col span="1" style="width: 25%;">
-		      <col span="1" style="width: 15%;">
-		      <col span="1" style="width: 40%;">
-		    </colgroup>
-				<tr>
-			    <td>
-			    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-			    		<?php echo $date['type']?>
-			    	</a>
-			    </td>
-			    <td>
-			    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-			    		<?php if($date["datestart"] == $date["dateend"]):?>
-			    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
-			    		<?php else:?>
-			    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
-			    		<?php endif;?>
-			    	</a>
-			    </td>
-			    <td>
-			    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-			    		<?php echo $date['lieu']?>
-			    	</a>
-			    </td>
-			    <td>
-			    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-			    		<?php echo $date['titre']?>
-			    	</a>
-			    </td>
-				</tr>
-				</table>
-			<?php endforeach;?>
+	<main class="row">
+		<?php snippet('left-col') ?>
+		<div class="creationstournees_main col-xs-12 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-1">
+			<div class="main-content">
+				<?php snippet('icone-page')?>
+				<h1 class="main-content_title orleans col-xs-12">
+					<?= l::get('creations') ?>
+				</h1>
+				<div class="col-xs-12">
+					<div class="creations list-with-images col-md-10">
+						<ul class="row">
+							<?php foreach($projetsMaud as $child):?>
+								<li class="col-xs-6 col-sm-6 col-md-4">
+									<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
+										<div class="title-wrapper">
+											<?php echo $child->title()->html()?>
+										</div>
+										<?php if($child->hasImages()):?>
+											<div class="thumb-wrapper">
+												<figure>
+													<?= $child->images()->first()->crop(500, 500);?>
+												</figure>
+											</div>
+										<?php endif ?>
+									</a>
+								</li>
+							<?php endforeach ?>
+						</ul>
+					</div>
+					<div class="creations-text">
+						<?php echo $page->text()->kt()?>
+					</div>
+				</div>
+				<h1 class="main-content_title orleans col-xs-12">
+					<?= l::get('calendriertournee') ?>
+				</h1>
+				<div class="calendriertournee_agenda col-xs-12">
+					<?php 
+					$previousMonth = null;
+					$previousYear = null;
+					foreach($arrayMaud as $date):?>
+						<?php if($previousYear != $date['fromYear']):?>
+						 	<h2><?php echo $date['fromYear'];?></h2>
+						<?php endif;
+							$previousYear = $date['fromYear'];
+						?>
+						<table>
+							<colgroup>
+								<col span="1" style="width: 20%;">
+					      <col span="1" style="width: 25%;">
+					      <col span="1" style="width: 15%;">
+					      <col span="1" style="width: 40%;">
+					    </colgroup>
+							<tr>
+						    <td>
+						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+						    		<?php echo $date['type']?>
+						    	</a>
+						    </td>
+						    <td>
+						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+						    		<?php if($date["datestart"] == $date["dateend"]):?>
+						    			<?php echo $date['fromDay']." ".$date['fromMonth']." ".$date['heures']?>
+						    		<?php else:?>
+						    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth']." ".$date['heures']?>
+						    		<?php endif;?>
+						    	</a>
+						    </td>
+						    <td>
+						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+						    		<?php echo $date['lieu']?>
+						    	</a>
+						    </td>
+						    <td>
+						    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+						    		<?php echo $date['titre']?>
+						    	</a>
+						    </td>
+							</tr>
+						</table>
+					<?php endforeach;?>
+				</div>
+			</div>
 		</div>
 	</main>
-	
 </div>
-
 
 <?php snippet('footer') ?>

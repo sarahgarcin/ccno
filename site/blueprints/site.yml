@@ -64,4 +64,8 @@ fields:
   address: 
     label : Coordonnées
     type: markdown
+  alert: 
+    label: Afficher un pop-up d'information sur la page d'accueil
+    type: markdown
+    help: le pop-up ne s'affiche pas s'il n'y a pas de contenu dedans
 

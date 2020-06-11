@@ -3,7 +3,7 @@
 <?php $mois = [l::get('janvier'), l::get('fevrier'), l::get('mars'), l::get('avril'), l::get('mai'), l::get('juin'), l::get('juillet'), l::get('aout'), l::get('septembre'), l::get('octobre'), l::get('novembre'), l::get('decembre')];?>
 
 <?php 
-	$projets = $site->index()->filterBy('template',  'in', ['default', 'atelier', 'accueil']);
+	$projets = $site->index()->filterBy('template',  'in', ['default', 'atelier', 'accueil', 'jgm', 'bulle']);
 
 	$i = 0;
 	$currentTime = date('Ymd');
@@ -39,7 +39,7 @@
 					// GET TAGS
 					// spectacles, à orléans, tournée Maud Le Pladec, cours/ateliers/stages
 					$tags = array();
-					if($dates->type() == 'Spectacle'){
+					if($dates->type() == 'Spectacle' || $dates->type() == 'Évènement' || $dates->type() == 'Performance' || $dates->type() == 'Concert'){
 						$tags[] ='spectacle';
 					}
 					if($dates->place() == "CCNO" || $dates->place() == "Théâtre d'Orléans"){
@@ -50,7 +50,7 @@
 						$tags[] ='maud';
 					}
 
-					if($project->parent()->template() == "ateliers"){
+					if($project->parent()->template() == "ateliers" || $dates->type() == "Atelier"){
 						$tags[] ='cours';
 					}
 
@@ -112,118 +112,90 @@
 	usort($arrayPast, function($a, $b) {
 	  return $b['datestart'] - $a['datestart'];
 	});
-
-	
-
-
 ?>
 
-
-
-<div class ="row">
-
-	<?php snippet('left-col') ?>
+<div>
 	<?php snippet('menu') ?>
-	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		
-		<div class="main-content">
-			<h1 class="orleans"><?= $page->title()->html() ?></h1>
-			<?php snippet('icone-page')?>
-			<div class="themes row">
-				<?php foreach($site->index()->find('themes')->children()->visible() as $theme):?>
-					<div class="theme-module small-10 medium-6 large-4 columns end">
-						<?php $thumb = $theme->thumb()->toFile(); ?>
-						<a href="<?php echo $theme->url()?>" title="<?php echo $theme->title()?>">
-							<?php echo thumb($thumb, array('width' =>400, 'height' =>400, 'crop'=>true));?>
-							<h5><?php echo $theme->title()?></h5>
-						</a>
+
+	<main class="row">
+		<?php snippet('left-col') ?>
+		<div class="agenda_main col-xs-12 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-1">
+			<div class="main-content">
+				<?php snippet('icone-page')?>
+				<h1 class="main-content_title orleans col-xs-12">
+					<?= $page->title()->html() ?>
+				</h1>
+				<div class="col-xs-12">
+					<?php snippet('themes') ?>
+					<h2 class="click---past-events"><?= l::get('rdvpasses') ?></h2>	
+					<h3 class="title--next-events"><?= l::get('rdvfutur') ?></h3>
+					<div class="tags">
+						<span><?= l::get('trier') ?></span>
+						<ul>
+							<li class="all active"><?= l::get('tout') ?></li>
+							<li class="spectacle"><?= l::get('spectacles') ?></li>
+							<li class="inorleans"><?= l::get('inorleans') ?></li>
+							<li class="cours"><?= l::get('cours') ?></li>
+						</ul>
 					</div>
-				<?php endforeach ?>
-			</div>
 
-			<hr>
+					<div class="pastEvents">
+						<div class="pastEvents-wrapper">
+							<?php 
+							$previousMonthPast = null;
+							foreach($arrayPast as $date):
+					 			if($previousMonthPast != $date['fromMonth']):?>
+					 				<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
+					 			<?php endif;
+								$previousMonthPast = $date['fromMonth'];?>
+					
+								<table class="<?php foreach($date['tags'] as $tag){echo $tag. " ";}?><?php echo str::slug($date['type'])?>">
+									<colgroup>
+										<col span="1" style="width: 20%;">
+							      <col span="1" style="width: 25%;">
+							      <col span="1" style="width: 15%;">
+							      <col span="1" style="width: 40%;">
+							    </colgroup>
+								  <tr>
+								    <td>
+								    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+								    		<?php echo $date['type']?>
+								    	</a>
+								    </td>
+								    <td>
+								    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+								    		<?php if($date["datestart"] == $date["dateend"]):?>
+								    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
+								    		<?php else:?>
+								    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
+								    		<?php endif;?>
+								    	</a>
+								    </td>
+								    <td>
+								    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+								    		<?php echo $date['lieu']?>
+								    	</a>
+								    </td>
+								    <td>
+								    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
+								    		<?php echo $date['titre']?>
+								    	</a>
+								    </td>
+								  </tr>
+								</table>
+							<?php endforeach ?>
+						</div>
+					</div>
 
-			<h2 class="click---past-events"><?= l::get('rdvpasses') ?></h2>	
-			<h3 class="title--next-events"><?= l::get('rdvfutur') ?></h3>
-				
-
-			
-			<div class="tags">
-				<span><?= l::get('trier') ?></span>
-				<ul>
-					<li class="all active"><?= l::get('tout') ?></li>
-					<li class="spectacle"><?= l::get('spectacles') ?></li>
-					<li class="inorleans"><?= l::get('inorleans') ?></li>
-					<li class="cours"><?= l::get('cours') ?></li>
-				</ul>
-			</div>
-
-			<div class="pastEvents">
-				<div class="pastEvents-wrapper">
-					<?php $previousMonthPast = null;
-						foreach($arrayPast as $date):?>
+					<div class="nextEvents">
 						<?php 
-							if($previousMonthPast != $date['fromMonth']):?>
-						 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
-						 	<?php endif;
-							$previousMonthPast = $date['fromMonth'];
-						?>
-						
-						<table class="<?php 
-						foreach($date['tags'] as $tag){
-							echo $tag. " ";
-						}?><?php echo str::slug($date['type'])?>">
-						<colgroup>
-							<col span="1" style="width: 20%;">
-				      <col span="1" style="width: 25%;">
-				      <col span="1" style="width: 15%;">
-				      <col span="1" style="width: 40%;">
-				    </colgroup>
-					  <tr>
-					    <td>
-					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-					    		<?php echo $date['type']?>
-					    	</a>
-					    </td>
-					    <td>
-					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-					    		<?php if($date["datestart"] == $date["dateend"]):?>
-					    			<?php echo $date['fromDay']." ".$date['fromMonth'].", ".$date['heures']?>
-					    		<?php else:?>
-					    			<?php echo l::get('du').' '.$date['fromDay']." ".$date['fromMonth'].' '.l::get('au').' '.$date['toDay']." ".$date['toMonth'].", ".$date['heures']?>
-					    		<?php endif;?>
-					    	</a>
-					    </td>
-					    <td>
-					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-					    		<?php echo $date['lieu']?>
-					    	</a>
-					    </td>
-					    <td>
-					    	<a href="<?php echo $date['url']?>" title="<?php echo $date['titre']?>">
-					    		<?php echo $date['titre']?>
-					    	</a>
-					    </td>
-					  </tr>
-				</table>
-				<?php //endif ?>
-					<?php endforeach ?>
-				</div>
-			</div>
-
-				<div class="nextEvents">
-					<?php $previousMonth = null;
-						foreach($array as $date):?>
-						<?php
+						$previousMonth = null;
+						foreach($array as $date):
 							if($previousMonth != $date['fromMonth']):?>
-						 		<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
-						 	<?php endif;
-							$previousMonth = $date['fromMonth'];
-						?>
-						<table class="<?php 
-							foreach($date['tags'] as $tag){
-								echo $tag. " ";
-							}?>">
+					 			<h2><?php echo $date['fromMonth'];?> <?php echo $date['fromYear'];?></h2>
+					 		<?php endif;
+							$previousMonth = $date['fromMonth'];?>
+							<table class="<?php foreach($date['tags'] as $tag){echo $tag. " ";}?>">
 								<colgroup>
 									<col span="1" style="width: 20%;">
 						      <col span="1" style="width: 25%;">
@@ -256,13 +228,17 @@
 							    	</a>
 							    </td>
 							  </tr>
-						</table>
-					<?php endforeach ?>
+							</table>
+						<?php endforeach ?>
+					</div>
 				</div>
+			</div>
 		</div>
 	</main>
-	
-</div>
+
+
+
+
 
 
 <?php snippet('footer') ?>

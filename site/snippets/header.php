@@ -26,13 +26,13 @@
   <meta property="og:title" content="<?php echo $site->title()->html() ?>">
   <meta property="og:description" content="<?php echo $site->description()->html() ?>">
   <meta property="og:url" content="<?php echo $site->url() ?>">
-  <meta property="og:image" content="<?php echo $site->ogimage()->html() ?>">
+  <meta property="og:image" content="<?php echo $site->index()->find('home')->homeImage()->toFile()->url() ?>">
   <meta property="og:type" content="website">
 
   <meta name="twitter:title" content="<?php echo $site->title()->html() ?>">
   <meta name="twitter:description" content="<?php echo $site->description()->html() ?>">
   <meta name="twitter:url" content="<?php echo $site->url() ?>">
-  <meta name="twitter:image" content="<?php echo $site->ogimage()->html() ?>">
+  <meta name="twitter:image" content="<?php echo $site->index()->find('home')->homeImage()->toFile()->url() ?>">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
   <meta name="twitter:creator" content="<?php echo $site->author()->html() ?>">
@@ -67,6 +67,10 @@
     <?php if($page->template() == 'jgm'):?>
       style="background: <?php echo $page->backcolor()?>"
     <?php endif;?>
+    <?php if($page->parent()->intendedTemplate() == 'jgm'):?>
+      style="background: <?php echo $page->parent()->backcolor()?>"
+    <?php endif;?>
+    
   >
 
   <?php snippet('popupnewsletter') ?>

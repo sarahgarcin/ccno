@@ -1,20 +1,22 @@
 <?php snippet('header') ?>
 <?php date_default_timezone_set('Europe/Paris');?>
 
-<div class ="row">
-
-	<?php snippet('left-col') ?>
+<div>
 	<?php snippet('menu') ?>
-	<main class="small-18 medium-13 medium-push-4 xlarge-push-4 xlarge-13 end columns">
-		<div class="main-content">
-			<div class="arrow-back">
-				<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
-					<
-				</a>
-			</div>
-			<h1><?= $page->title()->html() ?></h1>
-			<div class="row">
-				<div class="text icones-wrapper-text small-18 medium-16 medium-push-2 large-11 large-push-2 xlarge-8 columns">
+
+	<main class="row">
+		<?php snippet('left-col') ?>
+		<div class="form_main col-xs-12 col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-1">
+			<div class="main-content">
+				<div class="arrow-back">
+					<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
+						<
+					</a>
+				</div>
+				<h1 class="main-content_title col-xs-12"><?= $page->title()->html() ?></h1>
+				<?php snippet('icone-page')?>
+				<div class="row">
+					<div class="text col-xs-12 col-md-7 col-md-offset-1">
 					<?php if($form->success()): ?>
 					  <div class="form-success">
 					  	<p>Le formulaire de demande de prêt de studio et accueil studio a bien été envoyé.</p>
@@ -89,18 +91,6 @@
 		    	$csvfile = kirby()->roots()->site()."/demande-accueil-studio/demandes-accueil-studio.csv";
 
 		    	snippet('uniform/log-csv');
-		    	// $json_str = file_get_contents($jsonfile);
-		    	// $json_obj = json_decode($json_str, true);
-		    	// print('json file: '.$jsonfile.'<br>'.'json string: '.$json_str.'<br>');
-		    	// echo '<pre>JSON OBJ' . print_r($json_obj, true) . '</pre>';
-
-					// $fp = fopen($csvfile, 'w');
-
-					// foreach ($json_obj as $fields) {
-					//     fputcsv($fp, $fields);
-					// }
-
-					// fclose($fp);	
 				else: 
 					snippet('uniform/errors', ['form' => $form]);
 				endif; 

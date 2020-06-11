@@ -1,7 +1,7 @@
 <?php
 
 	l::set(array(
-		// général
+	// général
         "reservations"=> "Réservations", 
         "newsletter" => "Recevoir la newsletter",
     // page créations et tournées / maud
@@ -9,13 +9,16 @@
         "calendriertournee" => "Calendrier de tournée",
         "biographie" => "Biographie",
     // agenda
-        "rdvpasses" => "→ Voir les rendez-vous passés",
-        "rdvfutur" => "← Retour aux rendez-vous futurs",
+        "rdvpasses" => "Voir les rendez-vous passés",
+        "rdvfutur" => "Retour aux rendez-vous futurs",
         "trier" => "Trier par&thinsp;:",
         "tout" => "tout",
         "spectacles" => "spectacles",
         "inorleans" => "à orleans",
         "cours" => "cours/ateliers/stages",
+    //Page Jeunes gens modernes
+        "actualités" => "Actualités",
+        "ancienneseditions" => "Anciennes editions",
     // mois et jours de l'année
         "du" => "du",
         "au" => "au",
