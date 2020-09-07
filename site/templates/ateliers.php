@@ -8,6 +8,13 @@
 		<?php snippet('left-col') ?>
 		<div class="ateliers_main col-xs-12 col-sm-11 col-sm-offset-1 col-md-9 col-md-offset-1">
 			<div class="main-content">
+				<?php if($page->parent()->intendedTemplate() == 'ateliers'):?>
+					<div class="arrow-back">
+						<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
+							<
+						</a>
+					</div>
+				<?php endif;?>
 				<h1 class="main-content_title orleans col-xs-12">
 					<?= $page->title()->html() ?>	
 				</h1>

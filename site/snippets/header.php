@@ -26,13 +26,17 @@
   <meta property="og:title" content="<?php echo $site->title()->html() ?>">
   <meta property="og:description" content="<?php echo $site->description()->html() ?>">
   <meta property="og:url" content="<?php echo $site->url() ?>">
-  <meta property="og:image" content="<?php echo $site->index()->find('home')->homeImage()->toFile()->url() ?>">
+  <?php if($image = $site->index()->find('home')->homeImage()->toFile()):?>
+    <meta property="og:image" content="<?php echo $image->url() ?>">
+  <?php endif;?>
   <meta property="og:type" content="website">
 
   <meta name="twitter:title" content="<?php echo $site->title()->html() ?>">
   <meta name="twitter:description" content="<?php echo $site->description()->html() ?>">
   <meta name="twitter:url" content="<?php echo $site->url() ?>">
-  <meta name="twitter:image" content="<?php echo $site->index()->find('home')->homeImage()->toFile()->url() ?>">
+  <?php if($image = $site->index()->find('home')->homeImage()->toFile()):?>
+    <meta name="twitter:image" content="<?php echo $image->url() ?>">
+  <?php endif;?>
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
   <meta name="twitter:creator" content="<?php echo $site->author()->html() ?>">
@@ -48,6 +52,21 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//www.ccn-orleans.com/analytics/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 
 
 </head>

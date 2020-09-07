@@ -5,6 +5,7 @@ pages:
     - list
     - default
     - atelier
+    - ateliers
 files: true
 
 fields:

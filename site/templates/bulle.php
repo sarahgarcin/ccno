@@ -5,7 +5,6 @@
   $day = [l::get('lundi'),l::get('mardi'),l::get('mercredi'),l::get('jeudi'),l::get('vendredi'),l::get('samedi'),l::get('dimanche')];
 ?>
 
-
 <div>
 	<?php snippet('menu') ?>
 
@@ -19,12 +18,42 @@
 						<img src="<?php echo $imageback->url()?>" alt="<?php echo $page->title()?>">
 					</div>
 				<?php endif;?>
+				<?php if($page->parent()->intendedTemplate() == 'bulle'):?>
+					<div class="arrow-back">
+						<a href="" onclick="window.history.go(-1); return false;" title="<?php echo $page->parent()->title()?>">
+							<
+						</a>
+					</div>
+				<?php endif; ?>
 					<h1 class="main-content_title col-xs-12"><?= $page->title()->html() ?></h1>
 					<?php snippet('icone-page')?>
 					<h2 class="subtitle"><?= $page->subtitle()->html() ?></h2>
 					<div class="text col-xs-12 col-md-11 col-md-offset-1">
 						<?= $page->infos()->kt() ?>
 						<?php snippet('festival-programmation') ?>
+						<div class="artistes list-with-images col-md-10">
+							<ul class="row">
+								<?php foreach($page->children()->visible() as $child):?>
+									<?php if($child->intendedTemplate() != 'jgm'):?>
+										<li class="col-xs-6 col-sm-6 col-md-4">
+											<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
+												<div class="title-wrapper">
+													<?php echo $child->title()->html()?>
+												</div>
+												<?php if($child->hasImages()):?>
+													<div class="thumb-wrapper">
+														<figure>
+															<?= $child->images()->first()->crop(500, 500);?>
+														</figure>
+														
+													</div>
+												<?php endif ?>
+											</a>
+										</li>
+									<?php endif; ?>
+								<?php endforeach ?>
+							</ul>
+						</div>
 						<?php if($page->text()->isNotEmpty()):?>
 							<div class='edito'>
 								<h1>Edito</h1>
@@ -38,11 +67,11 @@
 								<?php echo $page->actus()->kt()?>
 							</div>
 						<?php endif ?>
-						<div class="archives-gallerie">
+						<div class="archives-gallerie col-md-10">
 							<?php 
 							function findJGMchildren($children){
 								foreach($children as $child):
-									if($child->intendedTemplate() == 'jgm'){
+									if($child->intendedTemplate() == 'bulle'){
 										return true;
 									}
 								endforeach; 
@@ -52,7 +81,7 @@
 							
 								<ul class="row">
 								<?php foreach($page->children()->filterBy('intendedTemplate', 'bulle') as $child):?>
-									<li class="small-4">
+									<li class="col-xs-6 col-md-3">
 										<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
 											<figure>
 											<?php $affiche = $child->affiche()->toFile();?>

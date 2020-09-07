@@ -935,22 +935,22 @@ body[data-template='jgm']{
 			}
 		}
 
-		.archives-gallerie{
-			li:hover{
-				a{
-					color: $rose;
-				}
-			}
-			a{
-				text-decoration:none;
-			}
-		}
 	}
 
 }
 
 body[data-template='bulle'], [data-template='jgm']{
 	background-color: #FFF;
+	.archives-gallerie{
+		li:hover{
+			a{
+				color: $rose;
+			}
+		}
+		a{
+			text-decoration:none;
+		}
+	}
 	.arrow-back{
 		background-color: #FFF;
 		padding: 0 10px;

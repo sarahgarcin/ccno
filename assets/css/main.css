@@ -2873,14 +2873,12 @@ body[data-template='jgm'] .main-content .list-with-images a {
   body[data-template='jgm'] .main-content .list-with-images a .title-wrapper {
     text-decoration: none; }
 
-body[data-template='jgm'] .main-content .archives-gallerie li:hover a {
-  color: #ff5499; }
-
-body[data-template='jgm'] .main-content .archives-gallerie a {
-  text-decoration: none; }
-
 body[data-template='bulle'], [data-template='jgm'] {
   background-color: #FFF; }
+  body[data-template='bulle'] .archives-gallerie li:hover a, [data-template='jgm'] .archives-gallerie li:hover a {
+    color: #ff5499; }
+  body[data-template='bulle'] .archives-gallerie a, [data-template='jgm'] .archives-gallerie a {
+    text-decoration: none; }
   body[data-template='bulle'] .arrow-back, [data-template='jgm'] .arrow-back {
     background-color: #FFF;
     padding: 0 10px;

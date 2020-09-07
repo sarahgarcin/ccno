@@ -36,9 +36,11 @@
 
 <div>
 	<?php snippet('menu') ?>
-	<div class="big-image-wrapper image-wrapper">
-		<img src="<?php echo $page->homeImage()->toFile()->url()?>" alt="CCNO">
-	</div> 
+	<?php if($cover = $page->homeImage()->toFile()):?>
+		<div class="big-image-wrapper image-wrapper">
+			<img src="<?php echo $cover->url()?>" alt="CCNO">
+		</div> 
+	<?php endif;?>
 
 	<main class="row">
 		<?php snippet('left-col') ?>
