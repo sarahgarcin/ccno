@@ -53,6 +53,9 @@
 				  	<li>
 				  		<a href="http://www.ccn-orleans.com/archives-2019-2020" title="">2019-2020</a>
 				  	</li>
+				  	<li>
+				  		<a href="http://www.ccn-orleans.com/archives-2020-2021" title="">2020-2021</a>
+				  	</li>
 					</ul>
 				</li>
 			</ul>
@@ -60,10 +63,20 @@
 		<nav class="desktop-second-nav hide-for-small-only col-md-1">
 			<?php snippet('language') ?> 
 			<?php snippet('social');?>
+			<div class="fonds-doc">
+				<a href="https://ccn-orleans.com/fonds-doc/" itemprop="url" target="_blank" title="Le fonds documentaire du CCNO">
+					Fonds doc
+		    </a>
+			</div>
 		</nav>
 		<nav class="second-nav show-for-small-only">
 			<?php snippet('language') ?>
 			<?php snippet('social');?>
+			<div class="fonds-doc">
+				<a href="" itemprop="url">
+					Fonds doc
+		    </a>
+			</div>
 			<div class="second-nav_billetterie btn btn-rose">
 				<a href="https://ccn-orleans-reservations.mapado.com/" title="Billetterie" target="_blank"><?= l::get('reservations') ?></a>
 			</div>

@@ -77,13 +77,13 @@ return function ($site, $pages, $page)
                 'required',
                 'file',
                 'mime' => ['application/pdf'],
-                'filesize' => 10000,
+                'filesize' => 5000,
             ],
             'message' => [
                 'Please choose a file.',
                 'Please choose a file.',
                 'Please choose a PDF.',
-                'Please choose a file that is smaller than 10 MB.',
+                'Please choose a file that is smaller than 5 MB.',
             ],
         ],
         'budgetpdf' => [

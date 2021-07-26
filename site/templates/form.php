@@ -65,10 +65,10 @@
 					  <input required name="aide" type="text" value="<?php echo $form->old('aide'); ?>">
 					  <label for='coproductions'>Coproductions et dates envisagées et confirmées* <br><i>Coproductions  and tour dates (planned and confirmed)*</i></label>
 					  <textarea required name="coproductions"><?php echo $form->old('coproductions'); ?></textarea>
-					  <label for='liensvideos'>Liens vidéo d’extraits du projet* <br><i>Video links of project excerpts*</i></label>
+					  <label for='liensvideos'>Liens vidéos d’extraits du projet ou des créations précédentes* <br><i>Video links of the creation or previous creations*</i></label>
 					  <textarea required name="liensvideos"><?php echo $form->old('liensvideos'); ?></textarea>
 					 	
-					 	<label for="presentation">Pièce-jointe 1 — Dossier de présentation du projet (distribution, note d’intention, biographies…)* <br><i>Attachment 1 - Project presentation (distribution, note of intent, biographies…)*</i><br>[PDF] [max 10Mo]</label>
+					 	<label for="presentation">Pièce-jointe 1 — Dossier de présentation du projet (distribution, note d’intention, biographies…)* <br><i>Attachment 1 - Project presentation (distribution, note of intent, biographies…)*</i><br>[PDF] [max 5Mo]</label>
 	    			<input type="file" name="presentation" required/>
 	    			<label for="budgetpdf">Pièce-jointe 2 — Dossier présentant le budget* <br><i>Attachment 2 - The budget*</i><br>[PDF] [max 5Mo]</label>
 	    			<input type="file" name="budgetpdf" required/>

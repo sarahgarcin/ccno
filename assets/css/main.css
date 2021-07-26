@@ -2447,7 +2447,7 @@ main {
       color: #ff5499; }
 
 .socialnetwork {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .socialnetwork ul {
     display: -ms-flexbox;
     display: flex; }
@@ -2459,6 +2459,18 @@ main {
   .socialnetwork i {
     -ms-transform: none;
     transform: none; }
+
+.fonds-doc {
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  max-width: 150px; }
+  .fonds-doc a {
+    font-size: 1.25rem; }
+  .fonds-doc:hover {
+    background: #ff5499; }
 
 .second-nav_address {
   margin-top: 20px; }
@@ -2986,7 +2998,9 @@ body[data-template="form"] form {
   .text .slider {
     width: 100%; }
   header {
-    padding: 20px; }
+    padding: 20px 10px; }
+    header.row {
+      margin: 0; }
     header h1, header h1 a {
       font-size: 25px;
       cursor: pointer;
@@ -3025,7 +3039,7 @@ body[data-template="form"] form {
     padding-top: 170px;
     width: 100%; }
   .languages {
-    margin-bottom: 0; }
+    margin-bottom: 5px; }
     .languages a {
       font-size: 0.8rem; }
   .socialnetwork {
@@ -3038,6 +3052,8 @@ body[data-template="form"] form {
         margin-left: 15px; }
         .socialnetwork ul li a {
           font-size: 0.8rem; }
+  .fonds-doc a {
+    font-size: 0.8rem; }
   .big-image-wrapper img {
     margin-left: 0;
     width: 100%; }
