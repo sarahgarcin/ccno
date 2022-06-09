@@ -108,35 +108,19 @@ return function ($site, $pages, $page)
 
     if (r::is('POST')) {
         $form->emailAction([
-            'service' => 'phpmailer',
-	    'service-options' => array(
-		'host'     => 'mail.infomaniak.com',
-		'port'     => 465,
-		'security' => 'ssl',
-	        'user'     => 'elsajourdain@ccn-orleans.com',
-	        'password' => 'Mai2019mai'
-	    ),
-            'to' => 'elsajourdain@ccn-orleans.com',
-            // 'to' => 'garcinsarah@gmail.com',
+            // 'to' => 'elsajourdain@ccn-orleans.com',
+            'to' => 'garcinsarah@gmail.com',
             'from' => 'elsajourdain@ccn-orleans.com',
             'subject' => 'Nouvelle demande de prêt de studio et accueil studio',
             // Use a snippet for the email body (see below).
             'snippet' => 'emails/demande',
         ])
         ->emailAction([
-	    'service' => 'phpmailer',
-            'service-options' => array(
-                'host'     => 'mail.infomaniak.com',
-                'port'     => 465,
-                'security' => 'ssl',
-                'user'     => 'elsajourdain@ccn-orleans.com',
-                'password' => 'Mai2019mai'
-            ),
             // Send the success email to the email address of the submitter.
             'to' => $form->data('email1'),
             'from' => 'elsajourdain@ccn-orleans.com',
             // Set replyTo manually, else it would be set to the value of 'email'.
-	    'replyTo' => 'elsajourdain@ccn-orleans.com',
+            'replyTo' => 'elsajourdain@ccn-orleans.com',
             'subject' => '[CCNO] - Confirmation de demande de prêt de studio et accueil studio',
             // Use a snippet for the email body (see below).
             'snippet' => 'emails/success',

@@ -4,7 +4,10 @@
 	</div>
 	<div class="second-nav_newsletter">
 		<ul>
+			<li class="btn btn-blanc"><a href="https://ccn-orleans-reservations.mapado.com/" title="Shop" target="_blank">Shop</a></li>
+			<li class="btn btn-blanc"><a href="/fonds-doc/" title="Fonds doc" target="_blank">Fonds doc</a></li>
 			<li class="open-newsletter-form btn btn-blanc"><a class="link-not-active">Newsletter</a></li>
+			
 		</ul>
 	</div>
 	<?php if($site->pdf()->isNotEmpty()):?>

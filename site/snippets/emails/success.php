@@ -1,18 +1,22 @@
-Bonjour,
+<html>
+	<body>
+		<p>Bonjour,</p>
 
-Nous avons bien reçu votre demande d’accueil studio pour la période de janvier à juin 2022.
+		<p>Nous avons bien reçu votre demande d’accueil studio pour la période de janvier à juin 2023.</p>
 
-Le comité de lecture du CCNO se réunit en mai 2021 et nous vous redonnerons des nouvelles en juin 2021.
+		<p>Le comité de lecture du CCNO se réunit en juin 2022 et nous vous redonnerons des nouvelles à cette période.</p>
 
-Cordialement,
+		<p>Cordialement,</p>
 
-Elsa Jourdain
-Chargée des relations aux publics et de l’accueil
+		<p>Elsa Jourdain<br>
+		Chargée des relations aux publics et de l’accueil</p>
 
-Centre chorégraphique national d'Orléans
-37 rue du Bourdon Blanc
-BP 42348
-45023 Orléans cedex 1
-Tél. : +33 2 38 62 41 00
-Fax : +33 2 38 77 08 55
-www.ccn-orleans.com
+		<p><small>Centre chorégraphique national d'Orléans<br>
+		37 rue du Bourdon Blanc<br>
+		BP 42348<br>
+		45023 Orléans cedex 1<br>
+		Tél. : +33 2 38 62 41 00<br>
+		Fax : +33 2 38 77 08 55<br>
+		www.ccn-orleans.com</small></p>
+	</body>
+</html>

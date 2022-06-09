@@ -24,7 +24,7 @@
 			</h1>
 			<?php snippet('icone-page')?>
 			<div class="row">
-				<div class="text col-xs-12 col-md-7 col-md-offset-1">
+				<div class="text col-xs-12 col-md-7 col-md-offset-1 <?php if($page->parent()->uid() == 'demander-un-accueil-studio'): echo 'form'; endif; ?>">
 					<?php echo $page->text()->kirbytext() ?>
 					<?php if($page->bio()->isNotEmpty()):?>
 						<div class="biography">

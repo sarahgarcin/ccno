@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	$(document).foundation();
-
 	init();
 
 });
@@ -26,48 +24,25 @@ function init(){
 	//mobile menu functions
 	$('.mobile-menu_btn').on('click', function(){
 		if($('.nav').hasClass('active')){
+			// $('.nav').css('display', 'none');
 			$('.nav').slideUp(500);
 			$('.nav').removeClass('active');
-			// $('.nav').fadeOut(500);
-			// setTimeout(function(){
-			// 	$('.nav').removeClass('active');
-			// }, 100);
 		}
 		else{
 			$('.nav').slideDown(500);
+			// $('.nav').css('display', 'block');
 			$('.nav').addClass('active');
-			// $('.nav').fadeIn(500);
-			// setTimeout(function(){
-			// 	$('.nav').addClass('active');
-			// }, 100);
 		}
-
 	});
 
-	// $('.close-menu-button').on('click', function(){
-	// 	$('header').fadeOut(100);
-	// 	setTimeout(function(){
-	// 		$('header').removeClass('active');
-	// 	}, 100);
-	// });
 
-	// $('.menu-btn').on('click', function(){
-	// 	$('header').fadeIn(100);
-	// 	setTimeout(function(){
-	// 		$('header').addClass('active');
-	// 	}, 100);
-	// });
 	$('.main-nav_first-level > li').on('click', function(e){
 		if($(this).hasClass('active') && $(this).find('ul').hasClass('active')){
-			// $(this).removeClass('active').find('ul').slideUp(400);
-			// $(this).find('ul').removeClass('active');
 			$(this).removeClass('active');
 			$(this).find('ul').removeClass('active');
 		}else{
-			// $('.main-nav_first-level > li').removeClass('active').find('ul').slideUp(400);
-			// $(this).addClass('active').find('ul').slideDown(400).addClass('active');
 			$('.main-nav_first-level > li').removeClass('active').find('ul').removeClass('active');
-			$(this).addClass('active')
+			$(this).addClass('active');
 			$(this).find('ul').addClass('active');
 		}
 		
@@ -77,14 +52,9 @@ function init(){
 		if($(this).hasClass('active') && $(this).find('ul').hasClass('active')){
 			$(this).removeClass('active').find('ul').slideUp(400);
 			$(this).find('ul').removeClass('active');
-			// $(this).removeClass('active');
-			// $(this).find('ul').removeClass('active');
 		}else{
 			$('.menu-top-list > li').removeClass('active').find('ul').slideUp(400);
 			$(this).addClass('active').find('ul').slideDown(400).addClass('active');
-			// $('.menu-top-list > li').removeClass('active').find('ul').removeClass('active');
-			// $(this).addClass('active')
-			// $(this).find('ul').addClass('active');
 		}
 		
 	});
@@ -107,22 +77,6 @@ function init(){
 		$('.modal-alert').css('display', 'none');
 		$('.module--menu--mainNav .menu-top-list > .open-newsletter-form').removeClass('active');
 	});
-
-
-	// $('.tablet-close-menu-button').on('click', function(){
-	// 	$('header').fadeOut(100);
-	// 	setTimeout(function(){
-	// 		$('header').removeClass('active');
-	// 	}, 100);
-	// });
-
-	if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-		initMobile();
-	}
-
-	if(!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-	}
 
 	// ----
 
@@ -185,29 +139,8 @@ function init(){
 	if($("body").attr("data-template")=="jgm"){
 		var outlinecolor = $('.main-content').attr('data-fontcolor');
 		console.log(outlinecolor);
-		$('.main-content h1').css('text-shadow', '-1px -1px 0 '+outlinecolor+', 1px -2px 0 '+outlinecolor+', -1px 1px 0 '+outlinecolor+', 3px 1px 0 '+outlinecolor+'')
+		$('.main-content h1').css('text-shadow', '-1px -1px 0 '+outlinecolor+', 1px -2px 0 '+outlinecolor+', -1px 1px 0 '+outlinecolor+', 3px 1px 0 '+outlinecolor+'');
 	}
-
-	// console.log($(window).width());
-	// if($(window).width() > 720){
-	// 	$('.list-with-images li a').mouseenter(function() {
-	// 		$(this).parent('li').find('.thumb-wrapper').show();
-	// 	});
-	// 	$('.list-with-images li a').mouseleave(function() {
-	// 		$(this).parent('li').find('.thumb-wrapper').hide();
-	// 	});
-	// }
-
-	// $(window).resize(function(){
-	// 	if($(window).width() > 720){
-	// 		$('.list-with-images li a').mouseenter(function() {
-	// 			$(this).parent('li').find('.thumb-wrapper').show();
-	// 		});
-	// 		$('.list-with-images li a').mouseleave(function() {
-	// 			$(this).parent('li').find('.thumb-wrapper').hide();
-	// 		});
-	// 	}
-	// });
 
 	//AGENDA
 	$('.click---past-events').on('click', function(){
@@ -300,16 +233,6 @@ function initMobile(){
 			$('.address').fadeIn(1000);
 		});
 	}
-
-	// ----
-	// $(window).on('load', function(){
-	// 	var headerH = $('.header-mobile').outerHeight();
-	// 	var navH = $('.module--navigation-in-page').outerHeight();
-	// 	//console.log(headerH + navH);
-	// 	$('main').css({
-	// 		'padding-top': headerH+navH+'px'
-	// 	});
-	// });
 
 
 }

@@ -19,9 +19,7 @@ write your local dev url in the localDevUrl variable.
 */
 
 var pluginsScripts = [
-  'bower_components/jquery/dist/jquery.js',
-  'bower_components/foundation/js/foundation.js',
-  'bower_components/lazysizes/lazysizes.min.js',
+  'bower_components/jquery/dist/jquery.min.js',
   'bower_components/slick-carousel/slick/slick.min.js',
   'bower_components/jquery-ui/jquery-ui.min.js'
 ];

@@ -42,7 +42,7 @@
         "samedi" => "saturday",
         "dimanche" => "sunday",
        // newsletter
-        "inscription" => "Subscribe to the CCNO Newsletter",
+        "inscription" => "Subscribe to the CCN¹ Newsletter",
         "nom" => "Name / Organisation<red class='asterix'>*",
         "prenom" => "First Name<red class='asterix'>*",
         "email" => "Email<red class='asterix'>*</red>",

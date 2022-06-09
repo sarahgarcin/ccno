@@ -63,25 +63,27 @@
 		<nav class="desktop-second-nav hide-for-small-only col-md-1">
 			<?php snippet('language') ?> 
 			<?php snippet('social');?>
-			<div class="fonds-doc">
+			<!-- <div class="fonds-doc">
 				<a href="https://ccn-orleans.com/fonds-doc/" itemprop="url" target="_blank" title="Le fonds documentaire du CCNO">
 					Fonds doc
 		    </a>
-			</div>
+			</div> -->
 		</nav>
 		<nav class="second-nav show-for-small-only">
 			<?php snippet('language') ?>
 			<?php snippet('social');?>
-			<div class="fonds-doc">
+<!-- 			<div class="fonds-doc">
 				<a href="" itemprop="url">
 					Fonds doc
 		    </a>
-			</div>
+			</div> -->
 			<div class="second-nav_billetterie btn btn-rose">
 				<a href="https://ccn-orleans-reservations.mapado.com/" title="Billetterie" target="_blank"><?= l::get('reservations') ?></a>
 			</div>
 			<div class="second-nav_newsletter">
 				<ul>
+					<li class="btn btn-blanc"><a href="https://ccn-orleans-reservations.mapado.com/" title="Shop" target="_blank">Shop</a></li>
+					<li class="btn btn-blanc"><a href="/fonds-doc/" title="Fonds doc" target="_blank">Fonds doc</a></li>
 					<li class="open-newsletter-form btn btn-blanc"><a class="link-not-active">Newsletter</a></li>
 				</ul>
 			</div>							

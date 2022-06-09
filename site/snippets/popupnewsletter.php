@@ -54,7 +54,15 @@
 								</div> 
 							</div> 
 							<div class="row sib_list_row"> 
-								<div class="lbl-tinyltr sib_list_label" style="clear:both; float:none; " ><?= l::get('infos') ?>
+								<div class="lbl-tinyltr sib_list_label">Choisissez la liste à laquelle vous souhaitez vous inscrire</div>
+								<div class="lbl-tinyltr sib_list" id="list_17" data-listid="17" data-listname="PUBLICS">
+									<input type="checkbox" value="17" name="listIds[]">Newsletter générale
+								</div>
+								<div class="lbl-tinyltr sib_list" id="list_18" data-listid="18" data-listname="PROS FR">
+									<input type="checkbox" value="18" name="listIds[]">Newsletter professionnelle
+								</div>                             
+								<input type="hidden" name="interestLists" value="~17~18">                       
+								<!-- <div class="lbl-tinyltr sib_list_label" style="clear:both; float:none; " ><?= l::get('infos') ?>
 								</div>
 								<div class="lbl-tinyltr sib_list" id="list_4" data-listid="4" data-listname="NOUVEAUX CONTACTS" style="clear:both; float:none;" >
 									<input value="4" name="listIds[]" type="checkbox"><?= l::get('toutes') ?></div>
@@ -70,7 +78,7 @@
 									<div class="lbl-tinyltr sib_list" id="list_18" data-listid="18" data-listname="PROS" style="clear:both; float:none;" >
 										<input value="18" name="listIds[]" type="checkbox"><?= l::get('tourneesmaud') ?>
 									</div> 
-									<input name="interestLists" value="~4~17~24~21~18" type="hidden"> 
+									<input name="interestLists" value="~4~17~24~21~18" type="hidden">  -->
 									<div class="clear" style="clear:both;"></div> 
 									<div class="hidden-btns"> <a href="#" class="btn move"><i class="fa fa-arrows"></i></a><br> <a href="#" class="btn btn-danger delete"><i class="fa fa-trash-o fa-inverse"></i></a> 
 									</div> 

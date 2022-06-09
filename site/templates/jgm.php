@@ -95,7 +95,7 @@
 							<h1 style="text-shadow: -1px -1px 0 <?php echo $page->fontcolor()?>, 1px -2px 0 <?php echo $page->fontcolor()?>, -1px 1px 0 <?php echo $page->fontcolor()?>, 3px 1px 0 <?php echo $page->fontcolor()?>;"><?php echo l::get('ancienneseditions')?></h1>
 						
 							<ul class="row">
-							<?php foreach($page->children()->filterBy('intendedTemplate', 'jgm') as $child):?>
+							<?php foreach($page->children()->visible()->filterBy('intendedTemplate', 'jgm') as $child):?>
 								<li class="col-xs-6 col-md-3">
 									<a href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
 										<figure>
